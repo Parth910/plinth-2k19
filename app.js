@@ -5,6 +5,19 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+// database connect
+var DBconfig = require('./config/dbconfig')
+mongoose.Promise = global.Promise;
+mongoose.connect(DBconfig.url, { useMongoClient: true });
+var db = mongoose.connection;
+db.on('error',console.error.bind(console, 'connection error:'));
+db.once('open', function(){
+  console.log('connected to db server successfully');
+});
+// done
+
 
 var routes = require('./routes/index');
 
