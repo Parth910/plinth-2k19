@@ -5,6 +5,9 @@ router.get('/',function(req, res, next) {
     res.render('index');
   
 });
-
+router.get('/sop',function(req, res, next) {
+    res.render('sop');
+  
+});
 
 module.exports = router;
