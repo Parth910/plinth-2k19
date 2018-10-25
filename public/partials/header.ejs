@@ -1,12 +1,24 @@
 <div class="menu">
     <div class="fluid">
         <ul class="menu-list">
-            <li class="menu-list-item"><a class="text-code-hover-feel" href="#">home</a></li>
-            <li class="menu-list-item"><a class="text-code-hover-feel" href="#">competitions</a></li>
-            <li class="menu-list-item"><a class="text-code-hover-feel" href="#">workshops</a></li>
-            <li class="menu-list-item"><a class="text-code-hover-feel" href="#">mun</a></li>
-            <li class="menu-list-item"><a class="text-code-hover-feel" href="#">talks</a></li>
-            <li class="menu-list-item"><a class="text-code-hover-feel" href="#">sop</a></li>
+            <li class="menu-list-item" <%if(page=="home" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/">home</a></li>
+            <li class="menu-list-item" <%if(page=="competitions" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/competitions">competitions</a></li>
+            <li class="menu-list-item" <%if(page=="workshops" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/workshops">workshops</a></li>
+            <li class="menu-list-item" <%if(page=="mun" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/mun">mun</a></li>
+            <li class="menu-list-item" <%if(page=="talks" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/talks">talks</a></li>
+            <li class="menu-list-item" <%if(page=="sop" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/sop">sop</a></li>
         </ul>
     </div>
     <div class="hud-bottom">
@@ -68,12 +80,24 @@
 
             <nav>
                 <ul class="header__nav">
-                    <li><a class="text-code-hover-feel" href="#">home</a><span></span></li>
-                    <li><a class="text-code-hover-feel" href="#">competitions</a><span></span></li>
-                    <li><a class="text-code-hover-feel" href="#">workshops</a><span></span></li>
-                    <li><a class="text-code-hover-feel" href="#">mun</a><span></span></li>
-                    <li><a class="text-code-hover-feel" href="#">talks</a><span></span></li>
-                    <li><a class="text-code-hover-feel" href="/sop">sop</a><span></span></li>
+                    <li <%if(page=="home" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/">home</a><span></span></li>
+                    <li <%if(page=="competitions" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/competitions">competitions</a><span></span></li>
+                    <li <%if(page=="workshops" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/workshops">workshops</a><span></span></li>
+                    <li <%if(page=="mun" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/mun">mun</a><span></span></li>
+                    <li <%if(page=="talks" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/talks">talks</a><span></span></li>
+                    <li <%if(page=="sop" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/sop">sop</a><span></span></li>
                     <li><a class="text-code-hover-feel" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff">Login/Register</a><span></span></li>
                 </ul>
             </nav>
@@ -100,12 +124,14 @@
             </div>
             <div class="modal-footer">
                 <div class="col-sm-6 text-left">
-                    <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary" ><i class="fab fa-google g_in"></i>
-                        &nbspGoogle</button></a>
+                    <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary"><i
+                                class="fab fa-google g_in"></i>
+                            &nbspGoogle</button></a>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><i class="fab fa-facebook-f f_in"></i>
-                        &nbspFacebook</button></a>
+                    <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><i
+                                class="fab fa-facebook-f f_in"></i>
+                            &nbspFacebook</button></a>
                 </div>
             </div>
         </div>
