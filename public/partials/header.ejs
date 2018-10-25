@@ -77,47 +77,40 @@
                     <li><a class="text-code-hover-feel" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff">Login/Register</a><span></span></li>
                 </ul>
             </nav>
-            <!-- <button class="header__logout is-hidden">
-                <svg viewBox="0 0 71 78">
-                    <path class="logout-svg" d="M59.4,20c0.6,0.6,1.2,1.3,1.7,1.9C72,35.1,71,54.7,58.4,66.7c-13.2,12.6-34.1,12.1-46.7-1s-12.1-34.1,1-46.7" />
-                    <line class="logout-svg" x1="36" y1="3" x2="36" y2="28.8" />
-                </svg>
-            </button> -->
-
         </div>
     </div>
 </header>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title w-100 text-center" id="exampleModalLongTitle">Register Yourself</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>Register yourself for different competitions through this portal to know further details and
-                            proceedings of PLINTH'19.
-                            Morever if you register through this platform , you would be able to get exclusive coupons
-                            and offers.
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center" id="exampleModalLongTitle">Register Yourself</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Register yourself for different competitions through this portal to know further details and
+                    proceedings of PLINTH'19.
+                    Morever if you register through this platform , you would be able to get exclusive coupons
+                    and offers.
 
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="col-sm-6 text-left">
-                            <button type="button" class="btn btn-outline-primary"><i class="fab fa-google g_in"></i>
-                                &nbspGoogle</button>
-                        </div>
-                        <div class="col-sm-6 text-right">
-                            <button type="button" class="btn btn-outline-primary"><i class="fab fa-facebook-f f_in"></i>
-                                &nbspFacebook</button>
-                        </div>
-                    </div>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-6 text-left">
+                    <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary" ><i class="fab fa-google g_in"></i>
+                        &nbspGoogle</button></a>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><i class="fab fa-facebook-f f_in"></i>
+                        &nbspFacebook</button></a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 <div class="fixed-logo">
     <div class="fluid">
         <a class="header__logo" href="#main">
