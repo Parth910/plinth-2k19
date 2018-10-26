@@ -12,6 +12,11 @@
     "url": "git+https://github.com/nimbus1212/plinth-2k19.git"
   },
   "author": "Swarnim",
+  "contributors": [
+    "Swarnim <swarnim.1212@gmail.com>",
+    "Parth Patel <17ucs107@lnmiit.ac.in>",
+    "Raj Vaibhav Dubey <17dec004@lnmiit.ac.in>"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nimbus1212/plinth-2k19/issues"
