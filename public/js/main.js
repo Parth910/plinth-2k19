@@ -28,7 +28,7 @@ $(function () {
     }() ? $("body").removeClass("ie") : $("body").addClass("ie"), $(".hamburger, .menu-list-item").click(function () {
         if ($(this).hasClass("menu-list-item")) {
             var e = $(this).find("a").attr("href");
-            if ("/" === e[0] && (e = e.slice(1)), 0 !== $(e).length) {
+            if ("" === e[0] && (e = e.slice(1)), 0 !== $(e).length) {
                 event.preventDefault();
                 var t = $(e).offset().top + parseInt($(e).css("padding-top"));
                 $("html, body").animate({
@@ -69,7 +69,7 @@ $(function () {
     }), $("a[href]").on("click", function (e) {
         if (1 === $(this).parents("#panel").length) return !1;
         var t = $(this).attr("href");
-        if ("/" === t[0] && (t = t.slice(1)), 0 !== $(t).length) {
+        if ("" === t[0] && (t = t.slice(1)), 0 !== $(t).length) {
             e.preventDefault();
             var i = $(t).offset().top + parseInt($(t).css("padding-top"));
             $("html, body").animate({
@@ -1003,3 +1003,7 @@ $(function () {
 });
 /* End */
 ;; 
+function userLoginInitiate(url){
+    localStorage.setItem("tempURL", location.href);
+    window.location = location.origin + url;
+  }
