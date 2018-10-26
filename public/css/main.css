@@ -6128,3 +6128,14 @@ body::-webkit-scrollbar-thumb {
 .pg-active > a {
     font-weight: bold;
 }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .nav-link{
+      padding: 0;
+  }
+  
+  .dropdown-menu{
+      background: transparent;
+  }

@@ -98,7 +98,28 @@
                     <li <%if(page=="sop" ){%>class="pg-active"
                         <%}%>>
                         <a class="text-code-hover-feel" href="/sop">sop</a><span></span></li>
-                    <li><a class="text-code-hover-feel" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff">Login/Register</a><span></span></li>
+                    <% if(isLoggedIn){ %>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Hi,
+                            <%- user.name %>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                            <a class="dropdown-item" href="/profile">Profile</a>
+
+
+                            <a class="dropdown-item" href="/user/logout">LogOut</a>
+
+                        </div>
+                    </li>
+
+                    <% } else { %>
+
+                    <li><a data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff">Login/Register</a><span></span></li>
+                    <% } %>
                 </ul>
             </nav>
         </div>

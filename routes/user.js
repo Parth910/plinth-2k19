@@ -131,7 +131,7 @@ router.post('/user_register_complete', Verify.verifyOrdinaryUser, function (req,
     }
     if (user) {
         res.cookie('access-token', Verify.getToken(user), { httpOnly: true, secure: false });
-        Utils.resSheet(user);
+        //Utils.resSheet(user);
         res.json({status: true});
         return;
         

@@ -67,5 +67,15 @@
             })();
         });
     </script>
+     <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
 </body>
 </html>
