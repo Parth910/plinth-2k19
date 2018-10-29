@@ -1946,3 +1946,11 @@
         display: none;
     }
 }
+
+@media only screen and (min-width:1024px){
+    .hud-timer__inner {
+        max-width: 18%;
+        margin-right: auto;
+        margin-bottom: -10%;
+    }
+}

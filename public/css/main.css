@@ -933,7 +933,8 @@ h5 {
     font-weight: 400;
     color: #f3f2ff;
     text-transform: uppercase;
-    letter-spacing: 3.6px
+    letter-spacing: 3.6px;
+    text-align: center;
 }
 
 .hud-timer__cell span {
