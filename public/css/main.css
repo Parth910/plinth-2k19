@@ -5966,26 +5966,6 @@ path.logout-svg {
     opacity: .7
 }
 
-@font-face {
-    font-family: Clarke;
-    src: url(../fonts/clarke/Clarke.woff2) format("woff2"), url(../fonts/clarke/Clarke.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Geometria;
-    src: url(../fonts/geometria/Geometria-Bold.woff2) format("woff2"), url(../fonts/geometria/Geometria-Bold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Mont;
-    src: url(../fonts/mont/Mont-Bold.woff2) format("woff2"), url(../fonts/mont/Mont-Bold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal
-}
 
 @font-face {
     font-family: Muller;
@@ -6015,12 +5995,7 @@ path.logout-svg {
     font-style: normal
 }
 
-@font-face {
-    font-family: 'Osnova Pro';
-    src: url(../fonts/osnova/OsnovaPro-Regular.woff2) format("woff2"), url(../fonts/osnova/OsnovaPro-Regular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
-}
+
 
 /* Start Here */
 .modal-title {

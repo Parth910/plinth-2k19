@@ -1642,8 +1642,9 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-color: white !important;
+    color: white !important;
     text-transform: uppercase;
+    padding-top: 15px;
 
 }
 
