@@ -1,8 +1,8 @@
 /* Preloader */
 .preloader {
-    background: -webkit-radial-gradient(#090025 , #2f0028);
-    background: -o-radial-gradient(#090025 , #2f0028);
-    background: radial-gradient(#090025 , #2f0028);
+    background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#090025', endColorstr='#2f0028', GradientType=1);
     position: fixed;
     top: 0;
@@ -575,9 +575,9 @@ body {
     font-weight: 400;
     position: relative;
     opacity: 1;
-    background: -webkit-gradient(linear, left top, right top, from(#090025), to(#2f0028));
-    background: -o-radial-gradient(#090025 , #2f0028);
-    background: radial-gradient(#090025 , #2f0028);
+    background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
 }
 
 h2 {
@@ -641,9 +641,9 @@ h5 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#090025), to(#2f0028));
-    background: -o-radial-gradient(#090025 , #2f0028);
-    background: radial-gradient(#090025 , #2f0028);
+    background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
     -webkit-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
@@ -1197,9 +1197,9 @@ h5 {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#090025), to(#2f0028));
-    background: -o-radial-gradient(#090025 , #2f0028);
-    background: radial-gradient(#090025 , #2f0028);
+    background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
     z-index: -1;
     opacity: 0;
     -webkit-transition: .2s ease-in-out;
@@ -2210,9 +2210,9 @@ path.logout-svg {
 }
 
 .cover {
-    background-image: -webkit-gradient(linear, left top, right top, from(#18112e), to(#321635));
-    background-image: -o-radial-gradient(#090025 , #2f0028);
-    background-image: radial-gradient(#090025 , #2f0028);
+    background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
     padding: 4em 0 4em 0;
     opacity: 1
 }
@@ -2443,9 +2443,9 @@ path.logout-svg {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: -webkit-gradient(linear, right top, left top, from(#583991), to(#223991));
-    background: -o-radial-gradient(#090025 , #2f0028);
-    background: radial-gradient(#090025 , #2f0028);
+    background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
     mix-blend-mode: hard-light
 }
 
