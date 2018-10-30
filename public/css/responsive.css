@@ -1642,8 +1642,9 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-color: white !important;
+    color: white !important;
     text-transform: uppercase;
+    padding-top: 15px;
 
 }
 
@@ -1946,9 +1947,10 @@
     }
 }
 
-@media only screen and (max-width:500)
-{
-    .request{
-        margin-bottom: 1.7em !important;
+@media only screen and (min-width:1024px){
+    .hud-timer__inner {
+        max-width: 18%;
+        margin-right: auto;
+        margin-bottom: -10%;
     }
 }

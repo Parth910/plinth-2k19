@@ -933,7 +933,8 @@ h5 {
     font-weight: 400;
     color: #f3f2ff;
     text-transform: uppercase;
-    letter-spacing: 3.6px
+    letter-spacing: 3.6px;
+    text-align: center;
 }
 
 .hud-timer__cell span {
@@ -5967,7 +5968,40 @@ path.logout-svg {
     opacity: .7
 }
 
+<<<<<<< HEAD
 
+=======
+
+@font-face {
+    font-family: Muller;
+    src: url(../fonts/muller/MullerLight.woff2) format("woff2"), url(../fonts/muller/MullerLight.woff) format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Muller;
+    src: url(../fonts/muller/MullerRegular.woff2) format("woff2"), url(../fonts/muller/MullerRegular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Muller;
+    src: url(../fonts/muller/MullerMedium.woff2) format("woff2"), url(../fonts/muller/MullerMedium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Muller;
+    src: url(../fonts/muller/MullerBold.woff2) format("woff2"), url(../fonts/muller/MullerBold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+
+>>>>>>> upstream/master
 
 /* Start Here */
 .modal-title {
