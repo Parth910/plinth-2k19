@@ -1954,6 +1954,15 @@
         margin-bottom: -10%;
     }
 }
+@media only screen and (max-height:768px)
+{
+   .main__desc{
+       margin-top: 60%
+   }
+   #npt{
+       margin-top: 100% !important
+   }
+}
 
 
 
@@ -1964,15 +1973,8 @@
     .request__list-item::before {
         background: transparent !important
     }
-    #npt{
-        margin-top: -60% !important
-    }
-    .request__info{
-        margin-top: 20% !important;
-        margin-bottom: -30% !important
-    }
-    #faqbtn_rm{
-        display: none !important
+    .section-header{
+        text-align: center !important
     }
    
 }
