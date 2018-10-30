@@ -3686,7 +3686,8 @@ path.logout-svg {
 .page-main .menu {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    overflow: hidden;
 }
 
 .page-main .menu .lang__btn {
@@ -6008,7 +6009,7 @@ path.logout-svg {
     width: 300px;
     height: 120px;
     padding-top: 30px;
-    margin-bottom: -20px;
+    margin-bottom: 150px;
 }
 body::-webkit-scrollbar {
 	width: 2px;
