@@ -29,7 +29,7 @@
     transition: all 0.3s ease 0s;
 }
 @media only screen and (max-height:768px){
-    .text-center{
-        margin-top: 40% !important
+    .main{
+        margin-top: 30% !important
     }
 }
