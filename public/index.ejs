@@ -50,7 +50,7 @@
     <main id="sections">
         <section class="section section-main" id="main" data-section="1">
             <div class="fluid fluid--center">
-                <div class="int-canvas-wrap int-canvas-wrap--brain" id="pt_ani">
+                <div class="int-canvas-wrap int-canvas-wrap--brain">
                     <canvas class="int-canvas int-canvas--pt" style="margin-left:80%"></canvas>
                 </div>
                 <div class="main text-center">
@@ -60,7 +60,6 @@
                     </p>
                 </div>
             </div>
-            <!-- <h1 id="txt">Techno-Management Literary Fest</h1> -->
             <div class="hud--main hud-bottom">
                 <div class="fluid">
                     <span class="line"></span>
@@ -133,7 +132,7 @@
         </section>
         <section class="section section--request" id="request" data-section="3">
             <div class="section-padding"></div>
-            <div class="fluid" id="des">
+            <div class="fluid">
                 <h3 class="request__info-header section-header">Contact Us</h3>
                 <div class="request">
                     <div class="request__info">
@@ -193,70 +192,6 @@
                         <button class="request__form-btn noise-btn" style="text-align:center !important" type="submit"><span>Submit</span></button>
 
                     </form>
-
-                </div>
-            </div>
-            <div class="fluid" id="mob">
-                <h3 class="request__info-header section-header">Contact Us</h3>
-                <div class="request" >
-                    
-                    <form class="request__form" action="#" method="POST">
-
-                        <div class="request__group">
-                            <div class="request__group-input">
-
-                                <input class="request__input" type="text" name="name" placeholder="Name" required>
-                            </div>
-                        </div>
-
-                        <div class="request__group">
-                            <div class="request__group-input">
-
-                                <input class="request__input" type="tel" name="telegram" placeholder="Mob No." required>
-                            </div>
-                        </div>
-
-
-                        <div class="request__group">
-                            <div class="request__group-input">
-                                <input class="request__input" type="email" name="email" placeholder="E-mail" required>
-                            </div>
-                        </div>
-
-                        <div class="request__group">
-                            <div class="request__group-input">
-
-                                <textarea class="request__textarea" name="project-description" rows="4" placeholder="Query"
-                                    required></textarea>
-                            </div>
-                        </div>
-                        <button class="request__form-btn noise-btn" style="text-align:center !important" type="submit"><span>Submit</span></button>
-
-                    </form>
-                    <div class="request__info">
-                        <ul class="request__list" >
-                            <li class="request__list-item">
-                                <h6><i class="fas fa-phone fa-rotate-90"></i>&nbsp&nbspPhone<br /></h6>
-                                Anvesh Sharma <br /> <a href="tel:+91-9460521981">+91-9460521981 <br /></a>
-                                Suyash Agarwal <br /> <a href="tel:+91-7339875167">+91-7339875167 <br /></a>
-
-                            </li>
-                            <li class="request__list-item">
-                                <h6><i class="fas fa-envelope"></i>&nbsp&nbspMail Us<br /></h6>
-                                <a href="mailto:query@plinth.in">query@plinth.in</a>
-
-                            </li>
-                            <li class="request__list-item">
-                                <h6><i class="fas fa-location-arrow"></i>&nbsp&nbspLocation<br /></h6>
-
-                                <a href="https://goo.gl/maps/5wNkk4FoFDy">Rupa ki Nangal,Via-Jamdoli,<br> Jaipur,
-                                    Rajasthan 302031 </a>
-                            </li>
-                        </ul>
-
-                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><span>FAQ</span></button>
-
-                    </div>
 
                 </div>
             </div>
@@ -324,45 +259,11 @@
             function remove() {
                 var elem = document.getElementById('npt');
                 elem.parentNode.removeChild(elem);
-               
                 return false;
             }
             remove();
         }
     </script>
-    <script>
-        if (screen.width == 731 && screen.height ==411) {
-            function remove() {
-                var elem = document.getElementById('pt_ani');
-               
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-            function remove1() {
-                var elem1 = document.getElementById('txt');
-               
-                elem1.parentNode.removeChild(elem1);
-                return false;
-            }
-            remove1();
-            
-        }
-    </script>
-    <script>
-        if (screen.width == 736 && screen.height ==414) {
-            function remove() {
-                var elem = document.getElementById('npt');
-               
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-           
-            
-        }
-    </script>
-    
     <script>
         if (screen.width > 769) {
             function remove() {
@@ -373,9 +274,8 @@
             remove();
         }
     </script>
-
     <script>
-        if (screen.width < 500 ) {
+        if (screen.width < 500) {
             function remove() {
                 var elem = document.getElementById('faqbtn_rm');
                 elem.parentNode.removeChild(elem);
@@ -394,27 +294,6 @@
             remove();
         }
     </script>
-    <script>
-        if (screen.width > 500) {
-            function remove() {
-                var elem = document.getElementById('mob');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-
-<script>
-    if (screen.width < 500) {
-        function remove() {
-            var elem = document.getElementById('des');
-            elem.parentNode.removeChild(elem);
-            return false;
-        }
-        remove();
-    }
-</script>
 
 
     <script>
