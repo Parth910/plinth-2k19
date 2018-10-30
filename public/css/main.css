@@ -3181,7 +3181,8 @@ path.logout-svg {
     width: 16.7em;
     height: 4.4em;
     min-width: 16.7em;
-    min-height: 4.4em
+    min-height: 4.4em;
+    
 }
 
 .request__form-btn span {
@@ -5968,40 +5969,6 @@ path.logout-svg {
     opacity: .7
 }
 
-<<<<<<< HEAD
-
-=======
-
-@font-face {
-    font-family: Muller;
-    src: url(../fonts/muller/MullerLight.woff2) format("woff2"), url(../fonts/muller/MullerLight.woff) format("woff");
-    font-weight: 300;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Muller;
-    src: url(../fonts/muller/MullerRegular.woff2) format("woff2"), url(../fonts/muller/MullerRegular.woff) format("woff");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Muller;
-    src: url(../fonts/muller/MullerMedium.woff2) format("woff2"), url(../fonts/muller/MullerMedium.woff) format("woff");
-    font-weight: 500;
-    font-style: normal
-}
-
-@font-face {
-    font-family: Muller;
-    src: url(../fonts/muller/MullerBold.woff2) format("woff2"), url(../fonts/muller/MullerBold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal
-}
-
-
->>>>>>> upstream/master
 
 /* Start Here */
 .modal-title {
