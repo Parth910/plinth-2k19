@@ -1,0 +1,30 @@
+#txt{
+    color: #4C4D64 !important;
+    font-family: Muller, sans-serif;
+    font-weight: 5 !important;
+} 
+#exampleModalLongTitle{
+    color: black !important;
+    text-transform: uppercase !important
+}
+.modal-body{
+    color: #696d72 !important
+}
+.g_icon{
+    font-size: 20px !important
+}
+.btn{
+    color: #2d3542 !important;
+    border: none !important
+    
+}
+.btn:hover{
+    color: #404040 !important;
+    font-weight: 700 !important;
+    /* letter-spacing: 3px; */
+    border: none !important;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}

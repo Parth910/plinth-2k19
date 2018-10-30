@@ -55,9 +55,9 @@
                 </div>
                 <div class="main text-center">
                     <div id="npt"><img src="./media/plinth2019text.png" alt="Plinth2019"></div>
-                    <!-- <p class="main__desc">
+                    <p class="main__desc">
                         <h1 id="txt">Techno-Management Literary Fest</h1>
-                    </p> -->
+                    </p>
                 </div>
             </div>
             <div class="hud--main hud-bottom">
@@ -156,7 +156,7 @@
                             </li>
                         </ul>
 
-                        <button class="request__btn noise-btn" style="text-align:center !important"><span>FAQ</span></button>
+                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><span>FAQ</span></button>
 
                     </div>
                     <form class="request__form" action="#" method="POST">
@@ -237,8 +237,9 @@
     <div class="navbar-x">
         <a class="foo" href="/gallery" class="active">GALLERY</a>
         <a class="foo" href="/sponsors">SPONSORS</a>
-        <a class="foo" href="/faq">FAQ</a>
         <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
+        <a class="foo" href="/faq" id="faq_rm">FAQ</a>
+
         <a class="foo" href="/terms" class="sp"><span class="nowarp">TERM</span><span class="nowarp "> AND CONDITION</span></a>
         <a class="foo" href="/archive">ARCHIVE</a>
 
@@ -267,6 +268,26 @@
         if (screen.width > 769) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('faqbtn_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
                 elem.parentNode.removeChild(elem);
                 return false;
             }
