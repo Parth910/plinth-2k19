@@ -23,7 +23,12 @@
     color: #696d72 !important
 }
 .g_icon{
-    font-size: 20px !important
+    width: 30px;
+    height: 30px;
+}
+.f_icon {
+    width: 30px;
+    height: 30px;
 }
 .btn{
     color: #2d3542 !important;
