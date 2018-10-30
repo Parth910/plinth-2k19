@@ -88,3 +88,10 @@
     
 
 }
+
+@media only screen and (min-width: 360px) and (max-height: 640px) and (orientation : landscape) {
+    #npt img {
+        padding-bottom: 10px;
+        margin-bottom: 90px;
+    }
+}
