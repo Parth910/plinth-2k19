@@ -1606,7 +1606,7 @@ h5 {
 }
 
 .main__header {
-    font-family: Muller, sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight: 500;
     font-size: 5.625rem;
     color: #dddbfe;
@@ -1654,7 +1654,7 @@ h5 {
     width: 18.2em;
     height: 4.4em;
     font-size: 1rem;
-    font-family: Muller, sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight: 700;
     color: #d2cfff;
     text-transform: uppercase;
@@ -1979,7 +1979,7 @@ path.logout-svg {
 
 .about__header {
     line-height: 1.4;
-    margin-bottom: .8em
+    margin-bottom: 0em
 }
 
 .about__header .br-2 {

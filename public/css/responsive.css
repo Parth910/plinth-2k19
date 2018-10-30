@@ -1954,3 +1954,26 @@
         margin-bottom: -10%;
     }
 }
+@media only screen and (max-height:768px)
+{
+   .main__desc{
+       margin-top: 60%
+   }
+   #npt{
+       margin-top: 100% !important
+   }
+}
+
+
+
+@media only screen and (max-width:500px){
+    .request__info{
+        text-align: center !important
+    }
+    .request__list-item::before {
+        background: transparent !important
+    }
+    .section-header{
+        text-align: center !important
+    }
+}
