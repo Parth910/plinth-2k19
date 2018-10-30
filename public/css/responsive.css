@@ -1945,3 +1945,10 @@
         display: none;
     }
 }
+
+@media only screen and (max-width:500)
+{
+    .request{
+        margin-bottom: 1.7em !important;
+    }
+}
