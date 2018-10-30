@@ -1125,6 +1125,7 @@ h5 {
 .noise-btn {
     display: block;
     position: relative;
+
     background: 0 0;
     border: none;
     cursor: pointer;
@@ -2969,7 +2970,7 @@ path.logout-svg {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 1.7em
+    margin-bottom: 6em
 }
 
 .request__info {
@@ -5967,6 +5968,9 @@ path.logout-svg {
     opacity: .7
 }
 
+<<<<<<< HEAD
+
+=======
 
 @font-face {
     font-family: Muller;
@@ -5997,6 +6001,7 @@ path.logout-svg {
 }
 
 
+>>>>>>> upstream/master
 
 /* Start Here */
 .modal-title {
