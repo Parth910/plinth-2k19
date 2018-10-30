@@ -3,6 +3,18 @@
     font-family: Muller, sans-serif;
     font-weight: 5 !important;
 } 
+@media only screen and (max-width: 1366px){
+    #txt{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+}
+@media only screen and (min-width: 1920px){
+    #txt{
+        margin-top: -100px;
+        padding-left: 10px;
+    }
+}
 #exampleModalLongTitle{
     color: black !important;
     text-transform: uppercase !important

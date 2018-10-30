@@ -1945,17 +1945,6 @@
     #txt{
         display: none;
     }
-    .request__info{
-        margin-bottom: -20% !important; 
-        margin-top: 20% !important;
-        margin-left: -18px !important
-    }
-    #faqbtn_rm{
-        display: none
-    }
-    .request__form-btn{
-        margin-left: 48px !important
-    }
 }
 
 @media only screen and (min-width:1024px){
