@@ -125,7 +125,7 @@
         </section>
         <section class="section section--request" id="request" data-section="3">
             <div class="section-padding"></div>
-            <div class="fluid">
+            <div class="fluid" id="mob">
                 <h3 class="request__info-header section-header">Contact Us</h3>
                 <div class="request">
                     <div class="request__info">
@@ -188,7 +188,7 @@
 
                 </div>
             </div>
-            <div class="fluid" id="mob">
+            <div class="fluid" id="des">
                     <h3 class="request__info-header section-header" style="color:white">Contact Us</h3>
                     <div class="request" >
                         
@@ -314,101 +314,152 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script>
-<<<<<<< HEAD
+        <script>
         
-=======
->>>>>>> upstream/master
-        if (screen.width > 767) {
-            function remove() {
-                var elem = document.getElementById('npt');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width > 769) {
-            function remove() {
-                var elem = document.getElementById('rlbuttn');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width < 500) {
-            function remove() {
-                var elem = document.getElementById('faqbtn_rm');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width > 500) {
-            function remove() {
-                var elem = document.getElementById('faq_rm');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-
-
-    <script>
-        window.addEventListener('load', function () {
-
-            var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
-
-            (function fade() {
-                if ((el.style.opacity -= 0.15) < 0) {
-                    window.scrollTo(0, 0);
-                    el.style.display = "none";
-                    controls.redraw();
-                    controls.rend();
-                    controls.start();
-                } else {
-                    requestAnimationFrame(fade);
+                if (screen.width > 767) {
+                    function remove() {
+                        var elem = document.getElementById('npt');
+                        elem.parentNode.removeChild(elem);
+                       
+                        return false;
+                    }
+                    remove();
                 }
-            })();
-        });
-    </script>
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter48570191 = new Ya.Metrika({
-                        id: 48570191,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) {}
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () {
-                    n.parentNode.insertBefore(s, n);
-                };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "./js/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
+            </script>
+            <script>
+                if (screen.width == 731 && screen.height ==411) {
+                    function remove() {
+                        var elem = document.getElementById('pt_ani');
+                       
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                    function remove1() {
+                        var elem1 = document.getElementById('txt');
+                       
+                        elem1.parentNode.removeChild(elem1);
+                        return false;
+                    }
+                    remove1();
+                    
+                }
+            </script>
+            <script>
+                if (screen.width == 736 && screen.height ==414) {
+                    function remove() {
+                        var elem = document.getElementById('npt');
+                       
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                   
+                    
+                }
+            </script>
+            
+            <script>
+                if (screen.width > 769) {
+                    function remove() {
+                        var elem = document.getElementById('rlbuttn');
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                }
+            </script>
+        
+            <script>
+                if (screen.width < 500 ) {
+                    function remove() {
+                        var elem = document.getElementById('faqbtn_rm');
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                }
+            </script>
+            <script>
+                if (screen.width > 500) {
+                    function remove() {
+                        var elem = document.getElementById('faq_rm');
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                }
+            </script>
+            <script>
+                if (screen.width > 500) {
+                    function remove() {
+                        var elem = document.getElementById('mob');
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                }
+            </script>
+        
+        <script>
+            if (screen.width < 500) {
+                function remove() {
+                    var elem = document.getElementById('des');
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
             }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
+        </script>
+        
+        
+            <script>
+                window.addEventListener('load', function () {
+                    var el = document.querySelector('.preloader');
+                    el.style.opacity = 5;
+                    (function fade() {
+                        if ((el.style.opacity -= 0.15) < 0) {
+                            window.scrollTo(0, 0);
+                            el.style.display = "none";
+                            controls.redraw();
+                            controls.rend();
+                            controls.start();
+                        } else {
+                            requestAnimationFrame(fade);
+                        }
+                    })();
+                });
+            </script>
+            <script type="text/javascript">
+                (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function () {
+                        try {
+                            w.yaCounter48570191 = new Ya.Metrika({
+                                id: 48570191,
+                                clickmap: true,
+                                trackLinks: true,
+                                accurateTrackBounce: true,
+                                webvisor: true
+                            });
+                        } catch (e) {}
+                    });
+                    var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () {
+                            n.parentNode.insertBefore(s, n);
+                        };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "./js/watch.js";
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else {
+                        f();
+                    }
+                })(document, window, "yandex_metrika_callbacks");
+            </script>
+        
+         
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/48570191" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
