@@ -797,11 +797,12 @@ body {
 
 .heading-primary--sub {
   display: block;
-  font-size: 3.3rem;
+  font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 1.1rem;
   -webkit-animation: moveInRight 1s ease-out;
   animation: moveInRight 1s ease-out;
+  width: 100vh;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2238,7 +2239,7 @@ only screen and (min-width: 125em) {
   z-index: 9;
   width: 100%;
   height: 75px;
-  background: rgba(0, 0, 0, 0.6);
+  
 }
 
 
@@ -2251,21 +2252,6 @@ only screen and (min-width: 125em) {
   min-height: 100vh;
 }
 
-
-/* If the business decides they don't like the parallax effect, default to this code */
-
-
-/* header #bg-photo {
-              position: absolute;
-              top: 0;
-              left: 0;
-              display: block;
-              width: 100%;
-              min-height: 100%;
-              height: 100%;
-              object-fit: cover;
-              opacity: .6;
-            } */
 
 #location {
   display: flex;
@@ -2366,7 +2352,7 @@ only screen and (min-width: 125em) {
   width: 250px;
   height: 100%;
   padding: 120px 0;
-  background: #1c1c1a;
+  background: #2998fff2;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: .8s;
@@ -2430,7 +2416,7 @@ only screen and (min-width: 125em) {
   width: 37px;
   height: 1px;
   margin-top: 10px;
-  background: rgb(119, 119, 119);
+  background:#edeeef;
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform-origin: left top;
@@ -2644,11 +2630,9 @@ only screen and (min-width: 125em) {
     display: none;
   }
 
-
-  /*  Resize Landing Page Content  */
-
-
-
-
-
+}
+@media only screen  and (max-width: 360px){
+  .header__logo-box {
+    display: none;
+  }
 }
