@@ -578,23 +578,6 @@
   content: "\e028";
 }
 
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
-
-1em = 16px
-*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -851,6 +834,7 @@ body {
 
 .paragraph {
   font-size: 2.5rem;
+  text-align: justify;
 }
 
 .paragraph:not(:last-child) {
@@ -2416,7 +2400,7 @@ only screen and (min-width: 125em) {
   width: 37px;
   height: 1px;
   margin-top: 10px;
-  background:#edeeef;
+  background:#333;
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform-origin: left top;
