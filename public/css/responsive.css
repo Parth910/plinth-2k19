@@ -1901,6 +1901,9 @@
         outline: none !important;
         box-shadow: none;
     }
+    .request__list-item {
+        padding-left: 0;
+    }
 
 }
 
