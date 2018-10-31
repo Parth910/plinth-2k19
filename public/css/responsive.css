@@ -1762,7 +1762,9 @@
         padding-right: 4vw;
         max-width: 55vw !important;
     }
-
+    .request__form-btn{
+        margin-left: 140px;
+    }
 }
 @media only screen and (max-width:1025px){
     .regi_lo{
@@ -1904,6 +1906,10 @@
     .request__list-item {
         padding-left: 0;
     }
+
+.request__form-btn {
+    margin-left: 48px;
+}
 
 }
 
