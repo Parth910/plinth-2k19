@@ -3075,7 +3075,7 @@ path.logout-svg {
     padding-left: 5.8em;
     padding-right: 8vw;
     padding-bottom: 4.8em;
-    border-left: 1px solid #dddcde
+    /* border-left: 1px solid #dddcde */
 }
 
 .request__form-header {
@@ -6034,3 +6034,5 @@ body::-webkit-scrollbar-thumb {
   .dropdown-menu{
       background: transparent;
   }
+
+
