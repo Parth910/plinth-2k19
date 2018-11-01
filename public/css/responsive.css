@@ -1564,7 +1564,8 @@
     .hud__deadline-date {
         font-size: .75rem;
         font-family: Muller, sans-serif;
-        font-weight: 500
+        font-weight: 500;
+        /* padding-left: 48px; */
     }
 
     .about__info {
