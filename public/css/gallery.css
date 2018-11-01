@@ -1,186 +1,101 @@
-* {
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
-  }
-  
-  html {
-	font-size: 100%;
-  }
-  
-  body {
-	word-wrap: break-word;
-  }
-  
-  .body,
-  .imageCaption {
-	line-height: 1.4;
-  }
-  
-  .clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-  
-  .galleryWrapper {
-	font-size: 0.85rem;
-	width: 90%;
-	margin: 3rem auto;
-	
-  }
-  
-  .galleryWrapper,
-  .imageBox {
-	max-width: 60rem;
-  }
-  
-  .header {
-	font: 2.1em 'Oswald', sans-serif;
-	margin: 1.25rem 0;
-	padding: 0 0.5rem;
-  }
-  
-  .imageBox,
-  .header {
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+	padding-top: 7% !important;
+	padding-bottom: 8% !important
+
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
 	text-align: center;
-  }
-  
-  .imageContainer {
-	padding: 0 0.5rem 1.25rem;
-	padding-top: 20% !important
-  }
-  
-  .imageLink {
-	display: inline-block;
-  }
-  
-  .imageLink,
-  .imageBox {
-	line-height: 0;  
-  }
-  
-  .imageLink:nth-of-type(-n+3) {
-	margin-bottom: 0.8rem;
-  }
-  
-  .imageBox,
-  .largeImage,
-  .image,
-  .imageCaption {
-	width: 100%;
-  }
-  
-  .image,
-  .largeImage {
-	-webkit-transform: perspective(1px);
-	-moz-transform: perspective(1px);
-	transform: perspective(1px);
-  }
-  
-  .overlayContainer {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 250;
-  }
-  
-  .overlayContainer,
-  .imageCaption {
-	bottom: 0;
-  }
-  
-  .relativeContainer {
-	position: relative;
-	margin: 0 0.5rem;
-  }
-  
-  .imageBox,
-  .imageCaption {
-	position: absolute;
-  }
-  
-  .imageBox {
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-  }
-  
-  .display {
+	padding: 3.5rem 0;
+	color: white;
+	transform: scale(1) !important;	
+}
+
+.heading span {
 	display: block;
-  }
-  
-  .imageCaption {
-	margin: 0;
-	font-size: 1.3em;
-	padding: 0.325rem;
-  }
-  
-  
-  
-  /***Colors***/
-  body {
-	color: #333;
-	background-color: rgba(176, 196, 222, .4);
-  }
-  
-  .imageLink {
-	outline: none;
-	-webkit-transition: all ease .2s;
-	transition: all ease .2s;
-  }
-  
-  .imageLink:hover,
-  .imageLink:focus {
-	opacity: 0.8;
-  }
-  
-  .overlayContainer {
-	visibility: hidden;
-	opacity: 0;
-	background-color: rgba(51, 51, 51, .9);
-	-webkit-transition: all ease .5s;
-	transition: all ease .5s;
-  }
-  
-  .imageBox {
-	cursor: pointer;
-  }
-  
-  .largeImage {
-	box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
-  }
-  
-  .imageCaption {
-	background: rgba(51, 51, 51, .8);
-	color: #fff;
-  }
-  
-  .opacity {
-	visibility: visible;
-	opacity: 1;
-  }
-  
-  
-  
-  @media only screen and (min-width: 30em) {
-	
-  .imageLink {  
-	float: left;
-	width: 48.33%;
-  }
-	
-  .imageLink:nth-of-type(1),
-  .imageLink:nth-of-type(3) {
-	margin-right: 3.33%;
-  }  
-	
-  .imageLink:nth-of-type(3) {
-	margin-bottom: 0;
-  }
-   
-	
-	
-  }
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+	transform: scale(1) !important;	
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
