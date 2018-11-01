@@ -398,7 +398,7 @@ router.get('/ca', Verify.verifyOrdinaryUser ,function(req, res, next) {
     {
         isLoggedIn = false;
         res.render('ca', {
-            "page" : 'ca',
+            "page" : 'Campus Ambassdor',
             "isLoggedIn" : isLoggedIn,
         });
     }
