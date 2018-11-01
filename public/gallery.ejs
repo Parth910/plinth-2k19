@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <% include partials/head %>
-    <link rel="stylesheet" href="../public/css/workshops.css">
+    <link rel="stylesheet" href="../public/css/gallery.css">
 
 </head>
 <body>
@@ -44,26 +44,45 @@
 
     <div class="bg-mask"></div>
    
-   <h1>.</h1>
-   
-    <footer style="  background: transparent;
-    position : fixed;
-     bottom : 0;
-    width: 100%;
-    text-align: center;
-    color: white !important;
-    text-transform: uppercase;">
-    <div class="navbar-x">
-        <a class="foo" href="/gallery" class="active">GALLERY</a>
-        <a class="foo" href="/sponsors">SPONSORS</a>
-        <a class="foo" href="/faq">FAQ</a>
-        <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
-        <a class="foo" href="/terms" class="sp"><span class="nowarp">TERM</span><span class="nowarp "> AND CONDITION</span></a>
-        <a class="foo" href="/archive">ARCHIVE</a>
+    <section class="galleryWrapper">
+            <h1 class="header">Click Image to Enlarge</h1>
+            
+            <div class="imageContainer clearfix">
+              <a class="imageLink" href="https://www.dropbox.com/s/huauyagks8n4xvh/bagpipes-1600.jpg?raw=1" title="Man playing the bagpipes">
+                <img class="image" src="https://www.dropbox.com/s/huauyagks8n4xvh/bagpipes-1600.jpg?raw=1" alt="Man playing the babpipes">
+              </a>
 
-    </div>
-
-    </footer>
+              <a class="imageLink" href="https://www.dropbox.com/s/qxy5jnqereb9to6/machu-picchu-1600.jpg?raw=1" title="Machu-picchu">
+                <img class="image" src="https://www.dropbox.com/s/qxy5jnqereb9to6/machu-picchu-1600.jpg?raw=1" alt="Machu-picchu">
+              </a>
+              
+              <a class="imageLink" href="https://www.dropbox.com/s/bjqwj4dqjt43ayv/berlin-cathedral-1600.jpg?raw=1" title="Berlin Cathedral">
+                <img class="image" src="https://www.dropbox.com/s/bjqwj4dqjt43ayv/berlin-cathedral-1600.jpg?raw=1" alt="Berlin Cathedral">
+              </a>
+              
+              <a class="imageLink" href="https://www.dropbox.com/s/4vzfoyutt0bz3ji/mountain-lake-1600.jpg?raw=1" title="Mountain lake">
+                <img class="image" src="https://www.dropbox.com/s/4vzfoyutt0bz3ji/mountain-lake-1600.jpg?raw=1" alt="Mountain lake">
+              </a>
+              
+              <a class="imageLink" href="https://www.dropbox.com/s/qxy5jnqereb9to6/machu-picchu-1600.jpg?raw=1" title="Machu-picchu">
+                <img class="image" src="https://www.dropbox.com/s/qxy5jnqereb9to6/machu-picchu-1600.jpg?raw=1" alt="Machu-picchu">
+              </a>
+             
+            </div>  <!-- /imageContainer-->
+            
+            <div class="overlayContainer">
+              
+              <div class="imageBox">
+                <div class="relativeContainer">
+                  <img class="largeImage" src="" alt="">
+                  <p class="imageCaption"></p>
+                </div>  <!-- /relativeContainer -->
+              </div>  <!-- /imageBox -->
+              
+            </div>  <!-- overlayContainer -->
+            
+          </section>  <!-- /galleryWrapper -->   
+        <% include partials/footer %>
     <script src="js/jquery.min.js"></script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/sphere.js"></script>
@@ -89,6 +108,99 @@
             })();
         });
     </script>
+    <script>
+(function() {
+  
+  let overlay = document.querySelector('.overlayContainer'),
+      largeImage = document.querySelector('.largeImage');
+      
+  const hideOverlay = () => {
+    overlay.removeEventListener('click', hideOverlay, false);
+    overlay.classList.remove('opacity');
+    
+    setTimeout(function() {
+      largeImage.removeAttribute('src');
+      largeImage.removeAttribute('alt');
+      overlay.classList.remove('display');
+    }, 400);
+  }
+  
+  function lightbox(event) {
+    const caption = document.querySelector('.imageCaption');
+    let href, alt;
+    
+    event.preventDefault();
+    href = this.getAttribute('href');
+    alt = this.children[0].getAttribute('alt');
+    
+    largeImage.setAttribute('src', href);
+    largeImage.setAttribute('alt', alt);
+    caption.innerHTML = alt;
+    overlay.classList.add('display');
+    
+    setTimeout(function() { overlay.classList.add('opacity'); }, 25);
+    setTimeout(function() { overlay.addEventListener('click', hideOverlay, false); }, 400);
+  }
+    
+  /***Event Listener***/
+  const runCode = () => {
+    const image = document.querySelectorAll('.imageLink');
+    if ( image ) {
+      for ( var i = 0; i < image.length; i++ ) {
+        image[i].addEventListener('click', lightbox, false);
+      }
+    }
+  }
+  
+  runCode();
+  
+})();
+  //Old version below (compatible with older browser versions)
+
+  //Version 1.0
+  /*
+  var image = document.querySelectorAll('.imageLink'),
+      overlay = document.querySelector('.overlayContainer'),
+      largeImage = document.querySelector('.largeImage'),
+      caption = document.querySelector('.imageCaption'),
+      display = new RegExp('(^| )' + 'display' + '($| )', 'g'),
+      opacity = new RegExp('(^| )' + 'opacity' + '($| )', 'g'),
+      href,
+      alt;
+  
+  function hideOverlay() {
+    overlay.removeEventListener('click', hideOverlay, false);
+    overlay.className = overlay.className.replace(opacity, '');
+    
+    setTimeout(function() {
+      largeImage.removeAttribute('src');
+      largeImage.removeAttribute('alt');
+      overlay.className = overlay.className.replace(display, '');
+    }, 400);
+  }
+  
+  function lightbox(event) {
+    event.preventDefault();
+    href = this.getAttribute('href');
+    alt = this.children[0].getAttribute('alt');
+    
+    largeImage.setAttribute('src', href);
+    largeImage.setAttribute('alt', alt);
+    caption.innerHTML = alt;
+    overlay.className += ' display';
+    
+    setTimeout(function() { overlay.className += ' opacity'; }, 25);
+    setTimeout(function() { overlay.addEventListener('click', hideOverlay, false); }, 400);
+  }
+  */
+  
+  /***Event Listener***/
+  /*if ( overlay ) {
+    for ( var i = 0; i < image.length; i++ ) {
+      image[i].addEventListener('click', lightbox, false);
+    }
+  }*/  
+    </script>
      <script>
         if (screen.width > 769) {
             function remove() {
@@ -99,5 +211,6 @@
             remove();
         }
     </script>
+    
 </body>
 </html>

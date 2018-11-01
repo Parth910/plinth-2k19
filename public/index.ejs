@@ -4,6 +4,20 @@
 <head>
 
     <% include partials/head %>
+    <script>
+            $(window).scroll(function() {
+        
+        if ($(this).scrollTop()>0)
+         {
+            $('.navbar-x').fadeOut();
+         }
+        else
+         {
+          $('.navbar-x').fadeIn();
+         }
+        });
+        
+    </script>
 
 </head>
 
@@ -289,8 +303,8 @@
      left: 0;
      bottom: 0;
      height: 60px;
-     width: 100%;">
-        <div class="navbar-x">
+     width: 100%;" >
+        <div class="navbar-x" class="a">
             <a class="foo" href="/gallery" class="active">GALLERY</a>
             <a class="foo" href="/sponsors">SPONSORS</a>
             <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
@@ -300,6 +314,11 @@
                     CONDITION</span></a>
             <a class="foo" href="/archive">ARCHIVE</a>
             </span>
+            <span id="mobsep">
+                    <a class="foo" href="/terms" class="sp"><span class="nowarp">TERM</span><span class="nowarp "> AND
+                            CONDITION</span></a>
+                    <a class="foo" href="/archive">ARCHIVE</a>
+                    </span>
         </div>
 
     </footer>
@@ -325,6 +344,26 @@
         }
     </script>
     <script>
+            if (screen.width <  769) {
+                function remove() {
+                    var elem = document.getElementById('seprate');
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
+        </script>
+        <script>
+                if (screen.width >  769) {
+                    function remove() {
+                        var elem = document.getElementById('mobsep');
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                }
+            </script>
+    <script>
         if (screen.width == 731 && screen.height == 411) {
             function remove() {
                 var elem = document.getElementById('pt_ani');
@@ -344,6 +383,7 @@
 
         }
     </script>
+
     <script>
         if (screen.width == 736 && screen.height == 414) {
             function remove() {

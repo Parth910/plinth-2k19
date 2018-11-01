@@ -1991,4 +1991,31 @@
     color: white !important
 }
 
-/* Rotate responsive */
+
+
+
+
+/* footer respo */
+@media only screen and (max-width:1921px){
+    #seprate{
+        margin-left: 56% !important
+    }
+}
+
+@media only screen and (max-width:1746px){
+    #seprate{
+        margin-left: 53% !important
+    }
+}
+@media only screen and (max-width:1460px){
+    #seprate{
+        margin-left: 45% !important
+    }
+}
+
+@media only screen and (max-width:1030px){
+    #seprate{
+        margin-left: 26% !important
+    }
+}
+
