@@ -393,5 +393,35 @@ router.get('/profile', Verify.verifyOrdinaryUser, function (req, res, next) {
 
 });
 
+router.get('/ca', Verify.verifyOrdinaryUser ,function(req, res, next) {
+    if(req.decoded.sub === "")
+    {
+        isLoggedIn = false;
+        res.render('ca', {
+            "page" : 'ca',
+            "isLoggedIn" : isLoggedIn,
+        });
+    }
+    else {
+        User.findOne({'email' : req.decoded.sub }, function(err, user) {
+        
+            isLoggedIn = user.valid;
+            // if there are any errors, return the error
+            if (err)
+                return done(err);
+            // check to see if theres already a user with that email
+            if (user){
+                res.render('ca',{
+                    "page" : 'ca',
+                    "isLoggedIn" : isLoggedIn,
+                    "user" : user
+                });
+            }
+        });
+    }
+  
+  
+});
+
 
 module.exports = router;

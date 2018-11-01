@@ -890,7 +890,8 @@ h5 {
 }
 
 .hud__deadline {
-    float: right
+    float: right;
+    padding-right: 3.5em;
 }
 
 .hud__deadline-date {
@@ -903,7 +904,8 @@ h5 {
 }
 
 .hud__deadline .line {
-    margin-right: 1.7em
+    margin-right: -17.7em 
+   
 }
 
 .hud-timer {

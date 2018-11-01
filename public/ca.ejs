@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalNorm">
+        Register
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        CA Registration Form
+                    </h4>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <form class="form-horizontal">
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="textinput">Full Name</label>
+                                <input id="textinput" name="textinput" type="text" placeholder="Rohan Aggarwal" class="form-control input-md"
+                                    required="">  
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="Email">Email ID</label>
+                            
+                                <input id="Email" name="Email" type="text" placeholder="abc@xyz.com" class="form-control input-md"
+                                    required="">
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Phone_Num">Phone Number</label>
+                                <input id="Phone_Num" name="Phone_Num" type="text" placeholder="9876543210" class="form-control input-md"
+                                    required="">    
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="Whatsapp Number">Whatsapp Number</label>
+                                <input id="Whatsapp Number" name="Whatsapp Number" type="text" placeholder="9876543210"
+                                    class="form-control input-md">
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="College_Name">College Name</label>
+                                <input id="College_Name" name="College_Name" type="text" placeholder="LNM Institute of Information Technology"
+                                    class="form-control input-md" required="">
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="College_City">City</label>
+                            
+                                <input id="College_City" name="College_City" type="text" placeholder="Jaipur" class="form-control input-md"
+                                    required="">  
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="College_State">State of College</label>
+                            
+                                <input id="College_State" name="College_State" type="text" placeholder="Rajasthan"
+                                    class="form-control input-md" required="">
+                        </div>
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="control-label" for="Study_Year">Year of Study</label>
+                                <label class="radio-inline" for="Study_Year-0">
+                                    <input type="radio" name="Study_Year" id="Study_Year-0" value="1" checked="checked">
+                                    1
+                                </label>
+                                <label class="radio-inline" for="Study_Year-1">
+                                    <input type="radio" name="Study_Year" id="Study_Year-1" value="2">
+                                    2
+                                </label>
+                                <label class="radio-inline" for="Study_Year-2">
+                                    <input type="radio" name="Study_Year" id="Study_Year-2" value="3">
+                                    3
+                                </label>
+                                <label class="radio-inline" for="Study_Year-3">
+                                    <input type="radio" name="Study_Year" id="Study_Year-3" value="4">
+                                    4
+                                </label>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="control-label" for="experience">Relevant Past Experiences</label> 
+                                <textarea class="form-control" id="experience" name="experience"></textarea>  
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="control-label" for="why_choose">Why Should we choose you?</label>
+                            
+                                <textarea class="form-control" id="why_choose" name="why_choose"></textarea>
+                            
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="control-label" for="submit"></label>
+                           
+                                <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+                            
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sphere.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
