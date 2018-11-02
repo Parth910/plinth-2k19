@@ -1640,13 +1640,12 @@
 .navbar-x {
     background: transparent;
     overflow: hidden;
-    /* position: absolute; */
     bottom: 0;
     width: 100%;
     text-align: center;
     color: white !important;
     text-transform: uppercase;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 
 }
 
@@ -2031,3 +2030,8 @@
     }
 }
 
+@media only screen and (min-width:769px){
+    .hud-bottom {
+        position: fixed;
+    }
+}
