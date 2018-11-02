@@ -1487,7 +1487,8 @@
 
     .hud-timer__inner {
         max-width: 60%;
-        margin-right: auto
+        margin-right: auto;
+        padding-top: 55px;
     }
 
     .news__desc {
