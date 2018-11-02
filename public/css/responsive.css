@@ -1951,6 +1951,12 @@
         position: fix !important;
         margin-left: 0.3% !important;
     }
+    footer {
+        background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+        background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+        background: linear-gradient(to right, #090025 0%, #2f0028 100%);
+       
+    }
 }
 @media only screen and (max-width:500px){
     #txt{
