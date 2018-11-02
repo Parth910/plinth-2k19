@@ -1,0 +1,16 @@
+.hud--main {
+    position: fixed;
+    bottom: 5vh;
+}
+.hud-timer__inner{
+    display: none;
+}
+.navbar-x{
+    padding-top: 12px;
+}
+
+@media only screen and (max-width:360px){
+    .hud--main{
+        display: none;
+    }
+}
