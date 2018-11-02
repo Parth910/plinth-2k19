@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    setTimeout(function () {
+        $('.divDelay').fadeIn(500);
+    }, 3000);
+});
 ;; /*main.js*/
 var isMob, controls;
 

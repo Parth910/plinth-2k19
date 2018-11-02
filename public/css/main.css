@@ -903,8 +903,7 @@ h5 {
 }
 
 .hud__deadline .line {
-    margin-right: -17.7em 
-   
+    margin-right: -17.7em
 }
 
 .hud-timer {
@@ -3009,6 +3008,7 @@ path.logout-svg {
     position: relative;
     margin-bottom: 2.2em
 }
+
 .request__list-item a {
     color: #b836c6
 }
@@ -3185,7 +3185,7 @@ path.logout-svg {
     min-height: 4.4em;
     margin-left: 80px;
     margin-right: 50px;
-    
+
 }
 
 .request__form-btn span {
@@ -6008,37 +6008,45 @@ path.logout-svg {
 .modal-footer {
     border-top: 0 none;
 }
-#npt img{
+
+#npt img {
     width: 300px;
     height: 120px;
     padding-top: 30px;
     margin-bottom: 150px;
 }
+
 body::-webkit-scrollbar {
-	width: 2px;
-	height: 4px
+    width: 2px;
+    height: 4px
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #b836c6;
-	border-radius: 100px
+    background-color: #b836c6;
+    border-radius: 100px
 }
-.pg-active > a {
+
+.pg-active>a {
     font-weight: bold;
 }
 
 .dropdown:hover>.dropdown-menu {
     display: block;
-  }
-  .nav-link{
-      padding: 0;
-  }
-  
-  .dropdown-menu{
-      background: transparent;
-  }
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.dropdown-menu {
+    background: transparent;
+}
 
 
-  #seprate {
+#seprate {
     margin-left: 42% !important;
+}
+
+.divDelay{
+    display: none;
 }
