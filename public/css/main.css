@@ -913,6 +913,7 @@ h5 {
 
 .hud-timer__inner {
     margin-left: auto;
+    margin-top: -50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

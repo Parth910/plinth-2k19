@@ -300,7 +300,7 @@
      left: 0;
      bottom: 0;
      height: 60px;
-     width: 100%;" >
+     width: 100%;">
         <div class="navbar-x" class="a" id="desfoo">
             <a class="foo" href="/gallery" class="active">GALLERY</a>
             <a class="foo" href="/sponsors">SPONSORS</a>
@@ -312,10 +312,10 @@
                 <a class="foo" href="/archive">ARCHIVE</a>
             </span>
             <span id="mobsep">
-                    <a class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> AND
-                            CONDITION</span></a>
-                    <a class="foo" href="/archive">ARCHIVE</a>
-                    </span>
+                <a class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> AND
+                        CONDITION</span></a>
+                <a class="foo" href="/archive">ARCHIVE</a>
+            </span>
         </div>
 
     </footer>
@@ -340,28 +340,27 @@
             }
             remove();
         }
-   
     </script>
     <script>
-            if (screen.width <  769) {
-                function remove() {
-                    var elem = document.getElementById('seprate');
-                    elem.parentNode.removeChild(elem);
-                    return false;
-                }
-                remove();
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
             }
-        </script>
-        <script>
-                if (screen.width >  769) {
-                    function remove() {
-                        var elem = document.getElementById('mobsep');
-                        elem.parentNode.removeChild(elem);
-                        return false;
-                    }
-                    remove();
-                }
-            </script>
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
     <script>
         if (screen.width == 731 && screen.height == 411) {
             function remove() {
