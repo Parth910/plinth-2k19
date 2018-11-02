@@ -1650,9 +1650,9 @@
 }
 
 .foo {
-    margin: 10px !important;
+    margin: 7px !important;
     border: 0px solid black;
-    padding: 1px 1px 1px 1px;
+    padding: 1px 1px 1px 0px;
     color: #E8E0F3;
     letter-spacing: 0.3em;
     font-size: 13.5px;
