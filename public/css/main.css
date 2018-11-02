@@ -6050,3 +6050,6 @@ body::-webkit-scrollbar-thumb {
 .divDelay{
     display: none;
 }
+.divDelayFoo {
+    display: none;
+}

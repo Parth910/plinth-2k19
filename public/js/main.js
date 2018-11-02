@@ -1,7 +1,18 @@
 $(document).ready(function () {
-    setTimeout(function () {
-        $('.divDelay').fadeIn(500);
-    }, 3000);
+    if ( $(window).width() > 739) {      
+        setTimeout(function () {
+            $('.divDelay').fadeIn(500);
+        }, 3000);
+        setTimeout(function () {
+            $('.divDelayFoo').fadeIn(500);
+        }, 3000);
+      } 
+      else {
+        setTimeout(function () {
+            $('.divDelayFoo').fadeIn(500);
+        }, 1000);
+      }
+     
 });
 ;; /*main.js*/
 var isMob, controls;
