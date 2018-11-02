@@ -34,7 +34,6 @@
     "google-auth-library": "^0.12.0",
     "googleapis": "^23.0.0",
     "jsonwebtoken": "^8.3.0",
-    "lightbox2": "^2.10.0",
     "mongoose": "^4.13.6",
     "mongoose-csv": "^1.1.0",
     "morgan": "^1.9.1",

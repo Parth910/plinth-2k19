@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./css/competitions.css">
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloader-ring"></div>
@@ -35,32 +38,66 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <h1>Competitions</h1>
-    <footer style="  background: transparent;
-    position : fixed;
-     bottom : 0;
-    width: 100%;
-    text-align: center;
-    color: white !important;
-    text-transform: uppercase;">
-   <div class="navbar-x">
-    <a class="foo" href="/gallery" class="active">GALLERY</a>
-    <a class="foo" href="/sponsors">SPONSORS</a>
-    <a class="foo" href="/faq">FAQ</a>
-    <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
-    <a class="foo" href="/terms" class="sp"><span class="nowarp">TERM</span><span class="nowarp "> AND CONDITION</span></a>
-    <a class="foo" href="/archive">ARCHIVE</a>
+    
+    <main id="sections">
+            <h1 style="padding-top:15vh; text-align: center">Competitons</h1>
+    <div class="hud--main hud-bottom">
+        <div class="fluid">
+            <span class="line"></span>
+            <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
+                <i class="fab fa-facebook-f"></i>
 
-</div>
+            </a>
+            <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank" style="color:aliceblue;margin-left:1.5%">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
+                    2019 </span></span>
+        </div>
+    </div>
+
+</main>
+    <footer style="background-color: transparent;
+    color: aliceblue;
+    text-align:center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;">
+        <div class="navbar-x" class="a" id="desfoo">
+            <a class="foo" href="/gallery" class="active">GALLERY</a>
+            <a class="foo" href="/sponsors">SPONSORS</a>
+            <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
+            <a class="foo" href="/faq" id="faq_rm">FAQ</a>
+            <span id="seprate">
+                <a class="foo" href="/terms" class="sp"><span class="nowarp">TERM</span><span class="nowarp "> AND
+                        CONDITION</span></a>
+                <a class="foo" href="/archive">ARCHIVE</a>
+            </span>
+            <span id="mobsep">
+                <a class="foo" href="/terms" class="sp"><span class="nowarp">TERM</span><span class="nowarp "> AND
+                        CONDITION</span></a>
+                <a class="foo" href="/archive">ARCHIVE</a>
+            </span>
+        </div>
 
     </footer>
-   
+
     <script src="js/jquery.min.js"></script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/sphere.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script>
         window.addEventListener('load', function () {
 
@@ -80,10 +117,50 @@
             })();
         });
     </script>
-        <script>
-            if (screen.width > 769) {
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+      <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('faqbtn_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+      <script>
+        if (screen.width <  769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+            if (screen.width >  769) {
                 function remove() {
-                    var elem = document.getElementById('rlbuttn');
+                    var elem = document.getElementById('mobsep');
                     elem.parentNode.removeChild(elem);
                     return false;
                 }
@@ -91,4 +168,5 @@
             }
         </script>
 </body>
+
 </html>
