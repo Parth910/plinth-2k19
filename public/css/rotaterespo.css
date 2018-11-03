@@ -100,3 +100,15 @@
     bottom: 10vh;
 } */
 
+
+
+/* custom  */
+.foo{
+    color: white !important;
+    font-weight: 400 !important
+}
+
+.foo:hover {
+  
+    color: aqua !important
+}

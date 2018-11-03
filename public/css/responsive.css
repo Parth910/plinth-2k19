@@ -2035,3 +2035,18 @@
         position: fixed;
     }
 }
+
+@media only screen and (height: 690px) and (width:856px){
+    
+    #txt{
+        font-size: 29px !important;
+       margin-top: 21% !important 
+    }
+    .hud--main {
+        margin-bottom: 2% !important
+    }
+    
+    #seprate{
+        margin-left: 18% !important
+    }
+}
