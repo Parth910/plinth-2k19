@@ -52,7 +52,7 @@
                     <h1 class="divDelay" id="txt">Techno-Management Literary Fest</h1>
                 </div>
             </div>
-            <div class="hud--main hud-bottom">
+            <div class="hud--main hud-bottom" id="des_so">
                 <div class="fluid">
                     <span class="line"></span>
                     <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
@@ -297,14 +297,34 @@
     background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
     background: linear-gradient(to right, #090025 0%, #2f0028 100%);
      color: aliceblue;
-     text-align:center;
-     position: fixed;
+          position: fixed;
      left: 0;
      bottom: -10px;
      height: 50px;
      width: 100%;">
+     <div class="hud--main hud-bottom" id="mob_so">
+        <div class="fluid" >
+            <span class="line"></span>
+            <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
+                <i class="fab fa-facebook-f"></i>
+
+            </a>
+            <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank"
+                style="color:aliceblue;margin-left:1.5%">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
+                    2019 </span></span>
+        </div>
+    </div>
         <div class="navbar-x divDelayFoo" class="a" id="desfoo">
-            <a class="foo" href="/gallery" class="active">GALLERY</a>
+            <a class="foo " href="/gallery" class="active">GALLERY</a>
             <a class="foo" href="/sponsors">SPONSORS</a>
             <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
             <a class="foo" href="/faq" id="faq_rm">FAQ</a>
@@ -336,6 +356,28 @@
         if (screen.width > 767) {
             function remove() {
                 var elem = document.getElementById('npt');
+                elem.parentNode.removeChild(elem);
+
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('des_so');
+                elem.parentNode.removeChild(elem);
+
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('mob_so');
                 elem.parentNode.removeChild(elem);
 
                 return false;
