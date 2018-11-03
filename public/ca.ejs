@@ -3,9 +3,143 @@
 
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./css/ca.css">
 </head>
 
 <body>
+        <div id="mobile-bar"></div>
+		<input type="checkbox" class="check" id="checked">
+		<label class="menu-btn" for="checked">
+			  <span class="bar top"></span>
+			  <span class="bar middle"></span>
+			  <span class="bar bottom"></span>
+			  <span class="menu-btn__text"></span>
+			</label>
+		<label class="close-menu" for="checked"></label>
+		<nav class="drawer-menu">
+		  <ul>
+			<li><a href="#home"class="page_scroll">Home</a></li>
+			<li><a href="#about" class="page_scroll">About</a></li>
+			<li><a href="whatweexpect" class="page_scroll">Why we expect?</a></li>
+			<li><a href="#perks" class="page_scroll">Perks</a></li>
+			<li><a href="#contact" class="page_scroll">Contact Us</a></li>
+			<li><a href="#about" class="page_scroll">Plinth</a></li>
+		  </ul>
+        </nav>
+        <div id="desk-nav" class="fadeIn delay-10s animated "style="animation-delay:0.9s">
+            <nav >
+              <ul>
+                <li><a href="#home" class="page_scroll">Home</a></li>
+                <li><a href="#about" class="page_scroll" >About</a></li>
+                <li><a href="#whatweexpect" class="page_scroll" >Why we expect?</a></li>
+                <li><a href="#perks" class="page_scroll">Perks</a></li>
+                <li><a href="#" class="page_scroll">Contact Us</a></li>
+                <li><a href="plinth.in" class="page_scroll">Plinth</a></li>
+              </ul>
+            </nav>
+          </div>
+        <header class="showcase">
+            <div class="test">
+                    <div class="content">
+
+                            <img src="./img/img/plinthlogo.png" class="logo" alt="plinth">
+                            <div class="title">
+                             Campus Ambassador Program
+                                  </div>
+                            <div class="text">
+                           Apply for Campus Ambassador program!
+                            </div>
+                          </div>
+            </div>
+               
+                
+              </header>
+              <div>
+                    <a href="#" class="button"><span>Register</span></a>
+              </div>
+            
+              
+            
+              <!-- About -->
+              <section class="about bg-light" id="about">
+                <div class="container">
+                  <div class="grid-2">
+                    <div class="center">
+                      <i class="fas fa-laptop-code fa-10x"></i>
+                    </div>
+                    <div>
+                      <h3>About Us</h3>
+                     <p>
+                            Campus ambassadorship is a program run by an institution or an organization where enthusiastic applicants are selected to represent brand in the positive light.  A campus ambassador is instrumental in igniting this spirit among the young minds of their college. Candidates selected as campus ambassadors get exclusive offers and deals. With this program we seek overall growth and benefit of all those who participate and promotion of Plinth’19. .</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- <section class="about bg-light" id="whyca">
+                    <div class="container">
+                      <div class="grid-2">
+                        
+                        <div>
+                          <h3>Why Campus Ambassador?</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
+                            similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
+                            nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
+                        </div>
+                        <div class="center">
+                                <i class="far fa-question-circle fa-10x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </section> -->
+                  <section class="about bg-dark" id="whatweexpect">
+                        <div class="container">
+                          <div class="grid-2">
+                            <div class="center">
+                                    <i class="fas fa-user-alt fa-10x"></i>
+                            </div>
+                            <div>
+                              <h3>What we expect from you?</h3>
+                             <ul>
+                                <li>Bringing maximum registrations for events/ workshops</li>
+                                <li>Conducting promotional activities in college as directed.</li>
+                                <li>Becoming word of mouth for Plinth’19 in your college.</li>
+                                <li>Serving as point of contact for your college and Plinth’19.</li>
+                                <li>Publicizing Plinth’19 on social media like Facebook, Instagram etc.</li>
+                             </ul>
+                            </div>
+                          </div>
+                        </div>
+                   </section>
+                   <section class="about bg-light" id="perks">
+                    <div class="container">
+                      <div class="grid-2">
+                        <div class="center">
+                          <i class="fas fa-bolt fa-10x"></i>
+                        </div>
+                        <div>
+                          <h3>What is in store for you?</h3>
+                         <ul>
+                         <li>Obtain leadership roles in your campus which can reflect positively in your resume or Curriculum Vitae.</li> 
+                          <li>Campus Ambassadors would be given stipends based on performance.(Based solely on points earned).</li>
+                         <li> Every Campus Ambassador would be provided with an official joining letter certified by Plinth 2019 organization committee.</li>
+                          <li>Top Campus Ambassadors will be awarded with Certificate of Organization.
+                           <li>Campus Ambassadors can attend all the workshops and events that will be organized in Plinth 2019. Get unmediated experience in the upcoming domains of technological advancement.</li> 
+                         <li>Special Internship opportunities by Qrato.</li>  
+                          <li>Free goodies and coupons from sponsors.</li>
+                          <li>Custom-built Plinth merchandise(Stickers or T-Shirts) top top Campus Ambassadors.</li>
+                          <li>opportunity to show off on LinkedIn, Facebook etc.</li>
+                         </ul>
+                        </div>
+                      </div>
+                    </div>
+               </section>
+                      
+            
+              <footer class="center bg-dark">
+                <p>Plinth &copy; 2K19</p>
+              </footer>
+             
+             
 
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalNorm">
         Register
@@ -143,6 +277,23 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+               
+        $("a").on('click', function(event) {
+         if (this.hash !== "") {
+         event.preventDefault();
+         var hash = this.hash;
+              
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+         }, 900, function(){
+         window.location.hash = hash;
+                  });
+                 } 
+             });
+        });
+    </script>
 
 
 </body>
