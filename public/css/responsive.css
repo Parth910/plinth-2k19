@@ -2075,10 +2075,17 @@
         padding-left: -10px;
         color: #f3f2ff;
     }
-    .hamburger{
+
+    .hamburger {
         right: 0.5%;
     }
-    .header__nav li a{
+
+    .header__nav li a {
         font-size: 12px;
+    }
+
+    a.dropdown-item {
+        background-color: #2A002B;
+      
     }
 }
