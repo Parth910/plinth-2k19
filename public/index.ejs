@@ -149,7 +149,8 @@
                             </li>
                         </ul>
 
-                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a href="/faqs"><span>FAQ</span></a></button>
+                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a
+                                href="/faqs"><span>FAQ</span></a></button>
 
                     </div>
                     <form class="request__form gform " action="https://script.google.com/macros/s/AKfycbyNgIv7o86unD2w1ugjBgQd351xubu6Ho5El08iWVmciloy83s6/exec"
@@ -257,7 +258,8 @@
                             </li>
                         </ul>
 
-                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a href="/faqs"><span>FAQ</span></a></button>
+                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a
+                                href="/faqs"><span>FAQ</span></a></button>
 
                     </div>
 
@@ -302,27 +304,26 @@
      bottom: -10px;
      height: 50px;
      width: 100%;">
-     <div class="hud--main hud-bottom" id="mob_so">
-        <div class="fluid divDelayFoo" >
-            <span class="line"></span>
-            <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
-                <i class="fab fa-facebook-f"></i>
+        <div class="hud--main hud-bottom" id="mob_so">
+            <div class="fluid divDelayFoo">
+                <span class="line"></span>
+                <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
+                    <i class="fab fa-facebook-f"></i>
 
-            </a>
-            <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank"
-                style="color:aliceblue;margin-left:1.5%">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
-                    2019 </span></span>
+                </a>
+                <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank" style="color:aliceblue;margin-left:1.5%">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
+                        2019 </span></span>
+            </div>
         </div>
-    </div>
         <div class="navbar-x divDelayFoo" class="a" id="desfoo">
             <a class="foo " href="/gallery" class="active">GALLERY</a>
             <a class="foo" href="/sponsors">SPONSORS</a>
@@ -444,6 +445,16 @@
         if (screen.width > 769) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);
                 return false;
             }
