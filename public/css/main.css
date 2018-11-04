@@ -6028,6 +6028,10 @@ body::-webkit-scrollbar-thumb {
 
 .pg-active>a {
     font-weight: bold;
+    
+}
+li.pg-active>a{
+    color: #4C4D64;
 }
 
 .dropdown:hover>.dropdown-menu {
