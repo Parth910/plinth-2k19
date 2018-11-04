@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+    <link rel="stylesheet" href="./css/404.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-ring"></div>
+    </div>
+    <% include partials/header %>
+
+    <!-- Shaders -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+	    precision highp float;
+	    #endif
+	  void main(void) {
+	   gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+	  }
+	</script>
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 vertexPosition;
+
+	  uniform mat4 modelViewMatrix;
+	  uniform mat4 perspectiveMatrix;
+
+	  void main(void) {
+	    gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+	  }
+	</script>
+
+
+    <!-- three.js -->
+
+    <div id="webgl-output"></div>
+
+    <div class="bg-mask"></div>
+    <h1 style="padding-top:25vh; text-align: center">Error 404!!! <br> Page Not Found!</h1>
+    <h4 style="padding-top:5vh; text-align: center">Try Using The Given Links!</h4>
+
+    <% include partials/footer %>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sphere.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', function () {
+
+            var el = document.querySelector('.preloader');
+            el.style.opacity = 5;
+
+            (function fade() {
+                if ((el.style.opacity -= 0.15) < 0) {
+                    window.scrollTo(0, 0);
+                    el.style.display = "none";
+                    // controls.redraw();
+                    // controls.rend();
+                    controls.start();
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        });
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('faqbtn_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        var obj = {
+            Title: 'Status',
+            Url: 'https://plinth.in/404'
+        };
+        history.pushState(obj, obj.Title, obj.Url);
+    </script>
+</body>
+
+</html>
