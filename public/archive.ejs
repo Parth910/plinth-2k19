@@ -44,11 +44,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xl-12">
-                <button class="main__btn noise-btn" style="text-align:center !important"> <a href="https://2018.plinth.in" target="_blank"><span>2018</span></a> </button>
+                <button class="main__btn noise-btn" style="text-align:center !important"> <a href="https://2018.plinth.in"
+                        target="_blank"><span>2018</span></a> </button>
             </div>
         </div>
     </div>
-   
+
     <% include partials/footer %>
 
     <script src="js/jquery.min.js"></script>
@@ -82,6 +83,16 @@
         if (screen.width > 769) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);
                 return false;
             }
