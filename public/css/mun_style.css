@@ -12,6 +12,9 @@
 
 }
 
+html,body{
+  overflow-x: hidden;
+}
 [data-icon]:before {
   font-family: "linea-basic-10" !important;
   content: attr(data-icon);
@@ -2619,4 +2622,7 @@ only screen and (min-width: 125em) {
   .header__logo-box {
     display: none;
   }
+}
+.committees{
+  padding-top: 6%;
 }
