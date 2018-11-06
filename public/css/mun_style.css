@@ -2626,3 +2626,9 @@ only screen and (min-width: 125em) {
 .committees{
   padding-top: 6%;
 }
+
+@media only screen and (max-width: 414px){
+  img.composition__photo.org-pic {
+    margin-left: 30% !important;
+  }
+}
