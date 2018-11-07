@@ -3,7 +3,7 @@
 
 <head>
     <% include partials/head %>
-    <link rel="stylesheet" href="./css/sop.css">
+    <link rel="stylesheet" href="./css/404.css">
 </head>
 
 <body>
@@ -38,10 +38,8 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-
-
-    <h1 style="padding-top:15vh; text-align: center">School Outreach Program</h1>
-
+    <h1 style="padding-top:25vh; text-align: center">Error 404!!! <br> Page Not Found!</h1>
+    <h4 style="padding-top:5vh; text-align: center">Try Using The Given Links!</h4>
 
     <% include partials/footer %>
 
@@ -63,8 +61,8 @@
                 if ((el.style.opacity -= 0.15) < 0) {
                     window.scrollTo(0, 0);
                     el.style.display = "none";
-                    controls.redraw();
-                    controls.rend();
+                    // controls.redraw();
+                    // controls.rend();
                     controls.start();
                 } else {
                     requestAnimationFrame(fade);
@@ -82,7 +80,7 @@
             remove();
         }
     </script>
-      <script>
+    <script>
         if (screen.width > 769) {
             function remove() {
                 var elem = document.getElementById('rlbuttn_menu');
@@ -131,6 +129,13 @@
             }
             remove();
         }
+    </script>
+    <script>
+        var obj = {
+            Title: 'Status',
+            Url: 'https://plinth.in/404'
+        };
+        history.pushState(obj, obj.Title, obj.Url);
     </script>
 </body>
 

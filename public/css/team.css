@@ -10,7 +10,7 @@
     padding-top: 12px; 
 }
 
-@media only screen and (max-width:360px){
+@media only screen and (max-width:415px){
     .hud--main{
         display: none;
     }

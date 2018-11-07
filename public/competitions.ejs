@@ -41,7 +41,7 @@
     <h1 style="padding-top:15vh; text-align: center">Competitons</h1>
 
 
-    <% include partials/footer %>    
+    <% include partials/footer %>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/scrollmagic.js"></script>
@@ -80,7 +80,17 @@
             remove();
         }
     </script>
-      <script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
         if (screen.width < 500) {
             function remove() {
                 var elem = document.getElementById('faqbtn_rm');
@@ -100,8 +110,8 @@
             remove();
         }
     </script>
-      <script>
-        if (screen.width <  769) {
+    <script>
+        if (screen.width < 769) {
             function remove() {
                 var elem = document.getElementById('seprate');
                 elem.parentNode.removeChild(elem);
@@ -111,15 +121,15 @@
         }
     </script>
     <script>
-            if (screen.width >  769) {
-                function remove() {
-                    var elem = document.getElementById('mobsep');
-                    elem.parentNode.removeChild(elem);
-                    return false;
-                }
-                remove();
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
             }
-        </script>
+            remove();
+        }
+    </script>
 </body>
 
 </html>
