@@ -1564,7 +1564,7 @@
 
     .hud__deadline-date {
         font-size: .75rem;
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 500;
         /* padding-left: 48px; */
     }
@@ -1647,6 +1647,7 @@
     color: white !important;
     text-transform: uppercase;
     /* padding-top: 15px; */
+    font-family: 'Arame-Regular';
 
 }
 
@@ -1686,7 +1687,7 @@
     background: transparent;
     margin-right: 270px !important;
     margin-top: 3px !important;
-    font-family: Muller, sans-serif;
+    font-family: 'Arame-Regular';
     font-weight: 700;
     color: #f3f2ff;
     border: none;
@@ -1781,7 +1782,7 @@
         margin-right: 295px !important;
         margin-top: 2px !important;
 
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 700;
         color: #f3f2ff;
         border: none;
@@ -1810,7 +1811,7 @@
         margin-right: 285px !important;
         margin-top: -3px !important;
 
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 700;
         color: #f3f2ff;
         border: none;
@@ -1839,7 +1840,7 @@
         margin-right: 275px !important;
         margin-top: 5px !important;
 
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 700;
         color: #f3f2ff;
         border: none;
@@ -1867,7 +1868,7 @@
         background-color: transparent;
         margin-right: 68%;
         margin-top: 2px !important;
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 700;
         color: #f3f2ff;
         border: none;
@@ -1895,7 +1896,7 @@
         margin-right: 275px !important;
         margin-top: 0px !important;
 
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 700;
         color: #f3f2ff;
         border: none;
@@ -1904,7 +1905,7 @@
         letter-spacing: 2.4px;
         position: fixed;
         top: 7;
-        right: -28px;
+        right: -40px;
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);
@@ -1932,7 +1933,7 @@
         margin-right: 265px !important;
         margin-top: -2px !important;
 
-        font-family: Muller, sans-serif;
+        /* font-family: Muller, sans-serif; */
         font-weight: 700;
         color: #f3f2ff;
         border: none;

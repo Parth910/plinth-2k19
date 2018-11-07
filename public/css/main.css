@@ -571,7 +571,8 @@ a:visited {
 body {
     font-size: 1.125rem;
     color: #b0aeda;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
+    font-family: 'Arame-Regular';
     font-weight: 400;
     position: relative;
     opacity: 1;
@@ -714,7 +715,8 @@ h5 {
     white-space: nowrap;
     cursor: pointer;
     font-size: 1.875rem;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
+    font-family: 'Arame-Regular';
     font-weight: 500;
     color: #dcdbfd;
     text-transform: uppercase;
@@ -773,7 +775,7 @@ h5 {
 
 .hamburger-text {
     position: absolute;
-    top: 0;
+    top: -4px;
     right: -15px;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
@@ -781,10 +783,10 @@ h5 {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     color: #f3f2ff;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2.4px
 }
@@ -895,7 +897,7 @@ h5 {
 
 .hud__deadline-date {
     color: #f3f2ff;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     font-size: 1.125rem;
     text-transform: uppercase;
@@ -925,12 +927,12 @@ h5 {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .hud-timer__cell {
     font-size: .625rem;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 400;
     color: #f3f2ff;
     text-transform: uppercase;
@@ -941,7 +943,7 @@ h5 {
 .hud-timer__cell span {
     display: block;
     color: #7c167f;
-    font-family: Mont, sans-serif;
+    /* font-family: Mont, sans-serif; */
     font-weight: 700;
     font-size: 1.75rem
 }
@@ -3033,7 +3035,7 @@ path.logout-svg {
     width: 200px;
     height: 4.4em;
     color: #495163;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.8px
@@ -3190,7 +3192,7 @@ path.logout-svg {
 
 .request__form-btn span {
     text-transform: uppercase;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     font-size: .875rem;
     letter-spacing: 2.8px

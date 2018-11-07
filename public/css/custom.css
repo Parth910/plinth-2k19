@@ -3,6 +3,12 @@
     src: url("../fonts/Arame-Regular.otf");
 }
 
+@font-face {
+    font-family:'Arame-Bold';
+    src: url("../fonts/Arame-Bold.otf");
+}
+
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Arame-Regular';
 }
