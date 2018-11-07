@@ -1,3 +1,12 @@
+@font-face {
+    font-family:'Arame-Regular';
+    src: url("../fonts/Arame-Regular.otf");
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Arame-Regular';
+}
+
 #txt{
     color: #4C4D64 !important;
     font-family: Muller, sans-serif;
@@ -62,3 +71,4 @@
 .form-elements {
     margin-right: 10px;
 }
+
