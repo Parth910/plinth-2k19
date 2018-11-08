@@ -1657,7 +1657,7 @@ h5 {
     width: 18.2em;
     height: 4.4em;
     font-size: 1rem;
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
     font-weight: 700;
     color: #d2cfff;
     text-transform: uppercase;
@@ -3289,8 +3289,8 @@ path.logout-svg {
     border: none;
     border-bottom: 1px solid #9ea2ab;
     padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 11px;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
     width: 100%;
     background: 0 0;
     font-size: 1rem;
