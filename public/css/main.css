@@ -1996,7 +1996,9 @@ path.logout-svg {
 
 .about__text {
     line-height: 2;
-    max-width: 30em
+    max-width: 30em;
+    font-family: Muller, sans-serif;
+    text-align: justify;
 }
 
 .prizes {
@@ -5981,7 +5983,7 @@ path.logout-svg {
 
     color: black !important;
     text-transform: uppercase;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 70;
 }
 
