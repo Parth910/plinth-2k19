@@ -6038,6 +6038,11 @@ li.pg-active>a{
     color: #4C4D64;
 }
 
+a.pg-active{
+    /* font-weight: bold;  */
+    color: #4C4D64;
+    
+}
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
