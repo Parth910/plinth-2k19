@@ -6019,7 +6019,7 @@ path.logout-svg {
     padding-top: 30px;
     margin-bottom: 150px;
 }
-
+/* Scroll Bar */
 body::-webkit-scrollbar {
     width: 2px;
     height: 4px
@@ -6030,6 +6030,15 @@ body::-webkit-scrollbar-thumb {
     border-radius: 100px
 }
 
+body::-moz-scrollbar {
+    width: 2px;
+    height: 4px
+}
+
+body::-moz-scrollbar-thumb {
+    background-color: #b836c6;
+    border-radius: 100px
+}
 .pg-active>a {
     font-weight: bold;
     
