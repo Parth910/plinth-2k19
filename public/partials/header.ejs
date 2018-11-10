@@ -16,6 +16,9 @@
             <li class="menu-list-item" <%if(page=="talks" ){%>class="pg-active"
                 <%}%>>
                 <a class="text-code-hover-feel" href="/talks">talks</a></li>
+            <li class="menu-list-item" <%if(page=="ca" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/ca">CA</a></li>
             <li class="menu-list-item" <%if(page=="sop" ){%>class="pg-active"
                 <%}%>>
                 <a class="text-code-hover-feel" href="/sop">sop</a></li>
@@ -74,9 +77,9 @@
                 <img class="rimg" id="ele1" src="../media/logo.svg" alt="plinth2k19">
 
             </a>
-            
+
             <% if(isLoggedIn){ %>
-                <ul class="header__nav">
+            <ul class="header__nav">
                 <li class="nav-item dropdown" id="rlbuttn_menu">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -94,10 +97,10 @@
                 </li>
                 <% } else { %>
 
-               <button class="regi_lo" id="rlbuttn" data-toggle="modal" data-target="#exampleModalCenter">Login|Register</button> 
-                <% } %> 
-                </ul>
-            
+                <button class="regi_lo" id="rlbuttn" data-toggle="modal" data-target="#exampleModalCenter">Login|Register</button>
+                <% } %>
+            </ul>
+
             <nav>
                 <ul class="header__nav">
                     <li <%if(page=="home" ){%>class="pg-active"
@@ -115,6 +118,9 @@
                     <li <%if(page=="talks" ){%>class="pg-active"
                         <%}%>>
                         <a class="text-code-hover-feel" href="/talks">talks</a><span></span></li>
+                    <li <%if(page=="ca" ){%>class="pg-active"
+                        <%}%>>
+                        <a class="text-code-hover-feel" href="/ca">CA</a><span></span></li>
                     <li <%if(page=="sop" ){%>class="pg-active"
                         <%}%>>
                         <a class="text-code-hover-feel" href="/sop">sop</a><span></span></li>
