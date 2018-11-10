@@ -116,14 +116,19 @@ button.btn-side {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     margin-bottom: 5px;
-   
+
 }
 
-button.btn-live{
+button.btn-live {
     -webkit-animation: glowing 1500ms infinite;
     -moz-animation: glowing 1500ms infinite;
     -o-animation: glowing 1500ms infinite;
     animation: glowing 1500ms infinite;
+}
+
+button.btn-live#ca:hover {
+    color: #fff;
+    background-color: #001F3F;
 }
 
 button.btn-side:hover {
