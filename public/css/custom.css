@@ -24,17 +24,29 @@ h6 {
     font-weight: 5 !important;
 }
 
+@media only screen and (max-width: 1024px) {
+    #txt {
+        font-size: 2rem;
+    }
+}
+
 @media only screen and (max-width: 1366px) {
     #txt {
         padding-top: 55px;
         padding-left: 15px;
     }
 }
+@media only screen and (min-width: 1440px) {
+    #txt {
+        margin-top: -100px;
+        padding-left: 15px;
+    }
+}
 
 @media only screen and (min-width: 1920px) {
     #txt {
-        margin-top: -122px;
-        margin-left: 60px;
+        margin-top: -125px;
+        margin-left: 50px;
         font-size: 3.1rem;
     }
 }
