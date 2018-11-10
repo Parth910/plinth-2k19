@@ -44,12 +44,17 @@
     <main id="sections">
         <section class="section section-main" id="main" data-section="1">
             <div class="fluid fluid--center">
+                <div class="btn-grp divDelayFoo" id="btn-grp">
+                    <div> <a href="/ca"><button class='btn-side' id="ca">Campus Ambassdor</button></a></div>
+                    <!-- <div> <a href="#"><button class='btn-side' id="sch">Bus Time Table</button></a></div> -->
+                </div>
                 <div class="int-canvas-wrap int-canvas-wrap--brain">
                     <canvas class="int-canvas int-canvas--pt" style="margin-left:80%"></canvas>
                 </div>
                 <div class="main text-center">
                     <div id="npt"><img src="./media/plinth2019text.png" alt="Plinth2019"></div>
                     <h1 class="divDelay" id="txt">Techno-Management Literary Fest</h1>
+
                 </div>
             </div>
             <div class="hud--main hud-bottom" id="des_so">
@@ -503,7 +508,16 @@
             remove();
         }
     </script>
-
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('btn-grp');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
 
     <script>
         window.addEventListener('load', function () {

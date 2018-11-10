@@ -78,3 +78,29 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 10px;
 }
 
+.btn-grp{
+    width: 100%;
+    margin-left: 85% !important;
+    position: absolute;
+    /* padding-bottom: 35% !important; */
+    /* padding-top: 10% !important; */
+}
+button.btn-side {
+    width: 11%;
+    transition: all .5s ease;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 12px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+button.btn-side:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
