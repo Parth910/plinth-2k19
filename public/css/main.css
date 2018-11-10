@@ -251,7 +251,7 @@
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -471,13 +471,15 @@ html {
 
 * {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
 }
 
 :after,
 :before {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
 }
 
 body {

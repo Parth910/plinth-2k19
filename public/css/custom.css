@@ -103,6 +103,7 @@ h6 {
 button.btn-side {
     width: 10.5%;
     transition: all .5s ease;
+    -moz-transition: all .5s ease;
     color: #fff;
     border: 2px solid white;
     text-transform: uppercase;
@@ -134,6 +135,16 @@ button.btn-live#ca:hover {
 button.btn-side:hover {
     color: #001F3F;
     background-color: #fff;
+}
+
+@-moz-document url-prefix() {
+    .btn-grp {
+        width: 100%;
+        margin-left: 170% !important;
+        position: absolute;
+        /* padding-bottom: 35% !important; */
+        /* padding-top: 10% !important; */
+    }
 }
 
 @-webkit-keyframes glowing {
