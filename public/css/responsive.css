@@ -2094,7 +2094,7 @@
         margin-top: -24% !important;
     }
     .hud--main{
-        bottom: 10vh;
+        bottom: 14vh;
     }
     .regi_lo{
         margin-top: 6px !important;
@@ -2102,5 +2102,11 @@
     }
     .foo {
         margin: 12px !important;
+    }
+    .request__list {
+        padding-right: 30px;
+    }
+    .form-elements {
+        margin-left: 20px;
     }
 } 
