@@ -2086,3 +2086,11 @@
       
     }
 }
+@media only screen and (min-width:422px) and (max-width:455px){
+    .hud-timer__inner {
+        width: 36% !important;
+        align-items: center;
+        margin-right:30%;
+    }
+    
+} 
