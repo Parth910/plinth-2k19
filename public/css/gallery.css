@@ -1,7 +1,11 @@
 * { margin: 0; padding: 0; border: 0; font: inherit; box-sizing: border-box; }
 /* body { min-height: 100vh; font: 1em Roboto, FontAwesome, sans-serif; font-weight: 300; } */
 /* html { background: deeppink; color: #000; } */
-
+html,body{
+  height: 100%;
+  width: 100%;
+  overflow-x:hidden;
+}
 label[for] { cursor: pointer; }
 input[type="checkbox"] { display: none; }
 
@@ -42,7 +46,7 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
   align-items: flex-start;
   align-content: flex-start;
   height: 80%;
-  margin-top: 10%;
+  margin-top: 12%;
  
   padding: 16px;
   overflow: auto;
@@ -67,3 +71,4 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 @media screen and (max-width: 480px)  { .grid .grid-item { width: 100%; }  .grid{margin-top: 44% !important } }
 
 .grid img { max-width: 100%; max-height: 100%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); }
+
