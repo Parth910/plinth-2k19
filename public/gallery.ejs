@@ -4,6 +4,8 @@
 <head>
     <% include partials/head %>
     <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.js" async></script>
 </head>
 
 <body>
@@ -30,7 +32,11 @@
 	  void main(void) {
 	    gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
 	  }
-	</script>
+    </script>
+    <script>
+    const baguetteBox = require('baguettebox.js');
+    import baguetteBox from 'baguettebox.js';
+    baguetteBox.run('.gallery');</script>
 
 
     <!-- three.js -->
@@ -40,6 +46,15 @@
     <div class="bg-mask"></div>
     <main id="sections">
         <h1 style="padding-top:15vh; text-align: center">Gallery</h1>
+        <div class="gallery">
+            <a href="img/2-1.jpg" data-caption="Image caption">
+                <img src="img/thumbnails/2-1.jpg" alt="First image">
+            </a>
+            <a href="img/2-2.jpg">
+                <img src="img/thumbnails/2-2.jpg" alt="Second image">
+            </a>
+            ...
+        </div>
     </main>
     <% include partials/footer %>
 
@@ -51,6 +66,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        
     <script>
         window.addEventListener('load', function () {
 
