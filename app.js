@@ -25,7 +25,7 @@ db.once('open', function(){
 var routes = require('./routes/index');
 var user = require('./routes/user');
 var sheet = require('./routes/sheet');
-//var ex = require('./routes/404');
+var ex = require('./routes/404');
 
 var app = express();
 
@@ -54,7 +54,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/user', user);
 app.use('/sheet', sheet);
-//app.use('/*', ex);
+app.use('/*', ex);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

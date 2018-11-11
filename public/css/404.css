@@ -1,23 +1,24 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden
+}
 .hud--main {
     position: fixed;
-    bottom: 5vh;
+    bottom: 7vh;
 }
-
-.hud-timer__inner {
+.hud-timer__inner{
     display: none;
 }
-
-.navbar-x {
-    padding-top: 12px;
+.navbar-x{
+    padding-top: 2px; 
 }
 
-@media only screen and (max-width:415px) {
-    .hud--main {
+@media only screen and (max-width:415px){
+    .hud--main{
         display: none;
     }
-
-    .navbar-x {
+    .navbar-x{
         padding-top: 0px;
     }
 }
-

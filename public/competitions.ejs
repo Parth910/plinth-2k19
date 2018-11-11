@@ -38,8 +38,9 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <h1 style="padding-top:15vh; text-align: center">Competitons</h1>
-
+    <main id="sections">
+        <h1 style="padding-top:15vh; text-align: center">Competitons</h1>
+    </main>
 
     <% include partials/footer %>
 
@@ -71,7 +72,7 @@
         });
     </script>
     <script>
-        if (screen.width > 769) {
+        if (screen.width > 1024) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
                 elem.parentNode.removeChild(elem);
@@ -81,7 +82,7 @@
         }
     </script>
     <script>
-        if (screen.width > 769) {
+        if (screen.width > 1024) {
             function remove() {
                 var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);

@@ -1,24 +1,26 @@
 <div class="hud--main hud-bottom">
-        <div class="fluid divDelayFoo">
-            <span class="line"></span>
-            <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
-                <i class="fab fa-facebook-f"></i>
+    <div class="fluid divDelayFoo">
+        <span class="line"></span>
+        <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
+            <i class="fab fa-facebook-f"></i>
 
-            </a>
-            <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank" style="color:aliceblue;margin-left:1.5%">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
-                    2019 </span></span>
-        </div>
+        </a>
+        <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank" style="color:aliceblue;margin-left:1.5%">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
+                2019 </span></span>
     </div>
-<footer style="background-color: transparent;
+</div>
+<footer style="background: -webkit-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0%, #2f0028 100%);
     color: aliceblue;
     text-align:center;
     position: fixed;
@@ -26,21 +28,29 @@
     bottom: -10px;
     height: 50px;
     width: 100%;">
-        <div class="navbar-x divDelayFoo" class="a" id="desfoo">
-            <a class="foo" href="/gallery" class="active">GALLERY</a>
-            <a class="foo" href="/sponsors">SPONSORS</a>
-            <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
-            <a class="foo" href="/faqs" id="faq_rm">FAQ</a>
-            <span id="seprate">
-                <a class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> &
-                        CONDITION</span></a>
-                <a class="foo" href="/archive">ARCHIVE</a>
-            </span>
-            <span id="mobsep">
-                <a class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> &
-                        CONDITION</span></a>
-                <a class="foo" href="/archive">ARCHIVE</a>
-            </span>
-        </div>
+    <div class="navbar-x divDelayFoo" class="a" id="desfoo">
+        <a <%if(page=="gallery" ){%>class="pg-active"
+            <%}%> class="foo" href="/gallery" class="active">GALLERY</a>
+        <a <%if(page=="sponsors" ){%>class="pg-active"
+            <%}%> class="foo" href="/sponsors">SPONSORS</a>
+        <a <%if(page=="team" ){%>class="pg-active"
+            <%}%> class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
+        <a <%if(page=="faqs" ){%>class="pg-active"
+            <%}%>class="foo" href="/faqs" id="faq_rm">FAQS</a>
+        <span id="seprate">
+            <a <%if(page=="terms" ){%>class="pg-active"
+                <%}%>class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> &
+                    CONDITION</span></a>
+            <a <%if(page=="archive" ){%>class="pg-active"
+                <%}%> class="foo" href="/archive">ARCHIVE</a>
+        </span>
+        <span id="mobsep">
+            <a <%if(page=="terms" ){%>class="pg-active"
+                <%}%>class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> &
+                    CONDITION</span></a>
+            <a <%if(page=="archive" ){%>class="pg-active"
+                <%}%>class="foo" href="/archive">ARCHIVE</a>
+        </span>
+    </div>
 
-    </footer>
+</footer>

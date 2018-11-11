@@ -1,12 +1,17 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden
+}
 .hud--main {
     position: fixed;
-    bottom: 5vh;
+    bottom: 7vh;
 }
 .hud-timer__inner{
     display: none;
 }
 .navbar-x{
-    padding-top: 12px; 
+    padding-top: 2px; 
 }
 
 @media only screen and (max-width:415px){

@@ -68,6 +68,132 @@ router.get('/competitions', Verify.verifyOrdinaryUser, function (req, res, next)
 
 });
 
+router.get('/competitions/:category', Verify.verifyOrdinaryUser, function (req, res, next) {
+    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management'];
+    var competitionUrls = require('../data/competitions').competitionUrl;
+    var category = req.params.category;
+    var valid = false;
+    if (categories.indexOf(category) > -1) {
+        valid = true;
+    }
+
+
+    if (req.decoded.sub === "") {
+        isLoggedIn = false;
+
+        if (valid) {
+            res.render('categories', {
+                "page": category,
+                "isLoggedIn": isLoggedIn,
+                "category": category,
+                "competitionUrl": competitionUrls.competitions,
+            });
+        } else {
+            res.redirect('/404');
+        }
+
+    } else {
+        User.findOne({
+            'email': req.decoded.sub
+        }, function (err, user) {
+            isLoggedIn = user.valid;
+            // if there are any errors, return the error
+            if (err)
+                return done(err);
+            // check to see if theres already a user with that email
+            if (user) {
+                if (valid) {
+                    res.render('categories', {
+                        "page": category,
+                        "isLoggedIn": isLoggedIn,
+                        "user": user,
+                        "category": category,
+                        "competitionUrl": competitionUrls.competitions,
+                    });
+                } else {
+                    res.redirect('/404');
+                }
+
+            }
+        });
+    }
+
+
+});
+
+router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, function (req, res, next) {
+    var competitionDetail = require('../data/competitions').competitions;
+    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management', 'design'];
+    var competitions = {
+        astronomy: ['intotheuniverse', 'astrohunt', 'astroquiz'],
+        coding: ['iupc', 'enigma', 'codeswap'],
+        robotics: ['robowar', 'robosoccer', 'droneobstruction', 'lfr', 'mazesolver', 'roborace', 'rcplane', 'transporter'],
+        quizzing: ['brandwagon', 'thequest'],
+        literature: ['rostrum'],
+        management: ['sif'],
+    };
+    var category = req.params.category;
+    var competition = req.params.competition;
+    var valid = false;
+
+    var detail;
+    if (categories.indexOf(category) > -1) {
+
+        if (competitions[category].indexOf(competition) > -1) {
+            valid = true;
+
+            competitionDetail.competitions.forEach(element => {
+
+                if (element.eventUrl == competition) {
+                    detail = element;
+                }
+            });
+        }
+
+    }
+    if (req.decoded.sub === "") {
+        isLoggedIn = false;
+
+        if (valid) {
+            res.render('competition', {
+                "page": competition,
+                "isLoggedIn": isLoggedIn,
+                "competition": detail,
+            });
+        } else {
+            res.redirect('/404');
+        }
+
+    } else {
+        User.findOne({
+            'email': req.decoded.sub
+        }, function (err, user) {
+            isLoggedIn = user.valid;
+            // if there are any errors, return the error
+            if (err)
+                return done(err);
+            // check to see if theres already a user with that email
+            if (user) {
+                if (valid) {
+                    res.render('competition', {
+                        "page": competition,
+                        "isLoggedIn": isLoggedIn,
+                        "user": user,
+                        "competition": detail,
+                    });
+                } else {
+                    res.redirect('/404');
+                }
+
+            }
+        });
+    }
+
+
+});
+
+
+
 router.get('/workshops', Verify.verifyOrdinaryUser, function (req, res, next) {
     //var workshopUrl = require('../data/workshops').workshopUrl;
 
