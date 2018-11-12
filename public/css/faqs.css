@@ -95,14 +95,14 @@ html,body{
     color: #6a6c6f;
   }
 h4{
-    font-size: calc(.825rem + .21818vw);
+    font-size: calc(.835rem + .24848vw);
 }
 a{
     color: #fff;
 }
 p{
     font-family: Muller;
-    font-size: calc(.810rem + .21818vw);
+    font-size: calc(.825rem + .24838vw);
     margin-left: 4% !important;
     
 }
