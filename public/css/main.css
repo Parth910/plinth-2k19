@@ -566,7 +566,8 @@ a:active,
 a:focus,
 a:hover,
 a:visited {
-    text-decoration: none
+    text-decoration: none;
+    color: #fff;
 }
 
 
