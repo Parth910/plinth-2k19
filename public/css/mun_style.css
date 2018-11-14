@@ -2081,8 +2081,8 @@ only screen and (min-width: 125em) {
 
 .section-features {
   padding: 20rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 139, 190, 0.5)), to(rgba(11, 55, 112, 0.5))), url(../img/nat-4.jpg);
-  background-image: linear-gradient(to right bottom, rgba(51, 139, 190, 0.5), rgba(11, 55, 112, 0.5)), url(../img/nat-4.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(51, 139, 190, 0.9)), to(rgba(48, 119, 212, 0.9))), url(../media/mun/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(51, 139, 190, 0.9), rgba(11, 55, 112, 0.9)), url(../media/mun/nat-4.jpg);
   background-size: cover;
   -webkit-transform: skewY(-7deg);
   transform: skewY(-7deg);
@@ -2627,8 +2627,10 @@ only screen and (min-width: 125em) {
   padding-top: 6%;
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 480px){
   img.composition__photo.org-pic {
-    margin-left: 30% !important;
+    margin-left: 60% !important;
+    margin-top: -10% !important;
   }
+
 }
