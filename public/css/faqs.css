@@ -81,3 +81,9 @@ p {
     margin-left: 4% !important;
 
 }
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    .main-content {
+        height: 65%;
+
+    }
+}
