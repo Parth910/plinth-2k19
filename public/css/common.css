@@ -75,12 +75,20 @@ body {
         height: 68%;
     }
 }
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
     .main-content {
         top: 52%;
         width: 100%;
         height: 60%;
+
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    .main-content {
+        top: 52%;
+        width: 100%;
+        height: 70%;
 
     }
 }
