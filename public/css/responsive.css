@@ -2086,7 +2086,7 @@
       
     }
 }
-@media only screen and (min-width:422px) and (max-width:455px){
+@media only screen and (min-width:420px) and (max-width:480px){
     .hud-timer__inner {
         width: 36% !important;
         align-items: center;
@@ -2101,7 +2101,7 @@
         font-size: 14px;
     }
     .foo {
-        margin: 12px !important;
+        margin: 14px !important;
     }
     .request__list {
         padding-right: 30px;
