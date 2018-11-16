@@ -39,6 +39,8 @@
     <meta name="msapplication-TileImage" content="https://plinth.in/media/ms-icon-144x144.png">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./css/mun_style.css">
     <link rel="stylesheet" href="./css/mun-icon-font.css">
 
@@ -60,6 +62,40 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example" data-offset="200">
+    <style>
+        #exampleModalLongTitle {
+                    color: black !important;
+                    text-transform: uppercase !important;
+                    font-size: 20px;
+                }
+            
+                .modal-body {
+                    color: #696d72 !important;
+                    font-size: 18px;
+                }
+            
+                .g_icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            
+                .f_icon {
+                    width: 30px;
+                    height: 30px;
+            }
+            @media only screen and (max-width: 360px){
+                .modal-footer {
+                 margin-left: 41% !important;
+            }
+        }
+            @media only screen and (min-width: 1024px){
+                .dropdown-toggle::after{
+                    margin-top: 8% !important;
+                }
+            }
+       
+            
+            </style>
     <div id="mobile-bar"></div>
     <input type="checkbox" class="check" id="checked">
     <label class="menu-btn" for="checked">
@@ -71,12 +107,34 @@
     <label class="close-menu" for="checked"></label>
     <nav class="drawer-menu">
         <ul>
-            <li><a href="#home" class="page_scroll">Home</a></li>
             <li><a href="#about" class="page_scroll">About</a></li>
             <li><a href="#organiser" class="page_scroll">Organiser's desk</a></li>
             <li><a href="#committees" class="page_scroll">Committees</a></li>
             <li><a href="#contact" class="page_scroll">Contact Us</a></li>
             <li><a href="/" class="page_scroll">Plinth</a></li>
+            <% if(isLoggedIn){ %>
+
+            <li class="nav-item dropdown page_scroll">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Hi,
+                    <%- user.name %>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                    <a class="dropdown-item" href="/profile" style="color:#333">Profile</a>
+
+
+                    <a class="dropdown-item" href="/user/logout" style="color:#333">LogOut</a>
+
+                </div>
+            </li>
+
+            <% } else { %>
+
+            <li><a class="page_scroll" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff">Login
+                    | Register</a><span></span></li>
+            <% } %>
         </ul>
     </nav>
     <div id="desk-nav" class="fadeIn delay-10s animated " style="animation-delay:0.9s">
@@ -88,6 +146,29 @@
                 <li><a href="#committees" class="page_scroll">Committees</a></li>
                 <li><a href="#contact" class="page_scroll">Contact Us</a></li>
                 <li><a href="/" class="page_scroll">Plinth</a></li>
+                <% if(isLoggedIn){ %>
+
+                <li class="nav-item dropdown page_scroll">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hi,
+                        <%- user.name %>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                        <a class="dropdown-item" href="/profile" style="color:#333">Profile</a>
+
+
+                        <a class="dropdown-item" href="/user/logout" style="color:#333">LogOut</a>
+
+                    </div>
+                </li>
+
+                <% } else { %>
+
+                <li><a class="page_scroll" data-toggle="modal" data-target="#exampleModalCenter" style="color:#fff">Login
+                        | Register</a><span></span></li>
+                <% } %>
             </ul>
         </nav>
     </div>
@@ -102,7 +183,8 @@
             <h1 class="heading-primary">
                 <span class="heading-primary--main"><img src="./media/plinth-logo.png" height="100px"></span>
                 <span class="heading-primary--sub" style="padding-top: 20px;">Model United Nation</span>
-                <span class="heading-primary--sub" style="float: right; font-size: 1.7rem">12<sup style="text-transform:lowercase">th</sup>-13<sup style="text-transform:lowercase">th</sup> January</span>
+                <span class="heading-primary--sub" style="float: right; font-size: 1.7rem">12<sup style="text-transform:lowercase">th</sup>-13<sup
+                        style="text-transform:lowercase">th</sup> January</span>
             </h1>
 
             <a href="#committees" class="btn btn--white btn--animated">Register</a>
@@ -120,9 +202,10 @@
             <div class="row">
                 <div class="col-1-of-2">
                     <p class="paragraph">
-                       <em>"As the young leaders of tomorrow you have the passion, energy and commitment to make a
-                        difference. What I would like to really urge you do is to have a global vision. Go beyond your
-                        countries; go beyond your national boundaries."</em> 
+                        <em>"As the young leaders of tomorrow you have the passion, energy and commitment to make a
+                            difference. What I would like to really urge you do is to have a global vision. Go beyond
+                            your
+                            countries; go beyond your national boundaries."</em>
 
                         -Ban Ki-moon <br><br>
 
@@ -136,7 +219,8 @@
 
                         LNMIIT MUN 2k19 brings to you this efficacious opportunity where you can explore yourself and
                         this world. The novice will get a taste of diplomacy and the extremes will get a perfect
-                        platform to keep their points on, getting a chance to debate amongst the consummate delegates. <br>
+                        platform to keep their points on, getting a chance to debate amongst the consummate delegates.
+                        <br>
 
                         LNMIIT MUN consists of UNHRC, DISEC and Lok Sabha. You can try out your skills in the one you
                         prefer to, because ,"your preference is our priority". Also, it will be a two day conference
@@ -178,7 +262,8 @@
                 <div class="col-1-of-2">
                     <p class="paragraph" style="color: rgb(201, 201, 201)">
                         Dear friends, It gives me immense pleasure to bring you the 5th edition of LNMIIT Model United
-                        Nations, to be held on 12<sup>th</sup>-13<sup>th</sup> of January, 2019 at LNMIIT, Jaipur. It is my privilege to lead
+                        Nations, to be held on 12<sup>th</sup>-13<sup>th</sup> of January, 2019 at LNMIIT, Jaipur. It
+                        is my privilege to lead
                         the team which will be your host for this conference. Every MUN that I have been a part of, has
                         strengthened the belief, that an MUN is the most complete form of debate. It is a great
                         opportunity to enhance skills in research, writing, public speaking, problem solving, consensus
@@ -306,7 +391,7 @@
                     <h1 class="heading-secondary" style="padding-top:40px; font-size: 5.6rem">Revealing Soon!</h1>
                 </div>
             </div>
-            
+
             <!-- <div class="row">
                 <div class="story">
                     <figure class="story__shape">
@@ -382,17 +467,21 @@
 
         <section class="section-book" id="contact">
             <div class="row">
-                <div class="book">
-                    <div class="book__form">
+                <div class="col-md-12 col-sm-6">
+                    <div class="book">
+                        <div class="book__form">
 
-                        <div class="u-margin-bottom-medium">
-                            <h2 class="heading-secondary">
-                                Contact Us
-                            </h2>
-                        </div>
-                        <div class="contact-us">
-                            <h3 class='heading-secondary' style="font-size:20px;">Pulkit Mathur : <a href="tel:+91-9462230822" style="text-decoration:none;color: #1E4D8B">+91-9462230822</a></h3><br>
-                            <h3 class='heading-secondary' style="font-size:20px;">Mail Us At : <a href="mailto: mun@plinth.in" style="text-decoration:none;text-transform: lowercase;color: #1E4D8B">mun@plinth.in</a></h3>
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Contact Us
+                                </h2>
+                            </div>
+                            <div class="contact-us">
+                                <h3 class='heading-secondary' style="font-size:18px;">Pulkit Mathur: <a href="tel:+91-9462230822"
+                                        style="text-decoration:none;color: #1E4D8B">+919462230822</a></h3><br>
+                                <h3 class='heading-secondary' style="font-size:18px;">Mail Us At : <a href="mailto: mun@plinth.in"
+                                        style="text-decoration:none;text-transform: lowercase;color: #1E4D8B">mun@plinth.in</a></h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -489,8 +578,46 @@
         </div>
     </div>
 
+    <!-- Register Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="exampleModalLongTitle">Register Yourself</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Register yourself for different competitions through this portal to know further details and
+                        proceedings of PLINTH'19.
+                        Morever if you register through this platform , you would be able to get exclusive coupons
+                        and offers.
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-sm-6 text-left">
+                        <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary "><img
+                                    class="g_icon" src="../media/g_icon.png">
+                                &nbspGoogle</button></a>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><img
+                                    class="f_icon" src="../media/f_icon.png">
+                                &nbspFacebook</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
@@ -506,6 +633,12 @@
                 }
             });
         });
+    </script>
+    <script>
+        function userLoginInitiate(url) {
+            localStorage.setItem("tempURL", location.href);
+            window.location = location.origin + url;
+        }
     </script>
 </body>
 
