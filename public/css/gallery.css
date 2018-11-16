@@ -68,10 +68,9 @@ input[type="checkbox"]:checked~.grid {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
-  height: 80%;
-  margin-top: 12%;
-
-  padding: 16px;
+  height: 75%;
+  margin-top: 10%;
+  padding: 60px;
   overflow: auto;
   z-index: 0;
   /* background-color: #222; */
@@ -82,8 +81,8 @@ input[type="checkbox"]:checked~.grid {
 
 .grid .grid-item {
   display: block;
-  width: 25%;
-  padding: 16px;
+  width: 75%;
+  padding: 10px;
   opacity: .75;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
@@ -119,7 +118,8 @@ input[type="checkbox"]:checked~.grid {
   }
 
   .grid {
-    margin-top: 44% !important
+    margin-top: 32% !important;
+    padding: 20px !important;
   }
 }
 
@@ -129,6 +129,3 @@ input[type="checkbox"]:checked~.grid {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.hud-timer__inner{
-  display: none;
-}
