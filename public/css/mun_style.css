@@ -2629,8 +2629,11 @@ only screen and (min-width: 125em) {
 
 @media only screen and (max-width: 480px){
   img.composition__photo.org-pic {
-    margin-left: 60% !important;
-    margin-top: -10% !important;
+    margin-left: 66% !important;
+    margin-top: -70% !important;
+  }
+  .org-name {
+    padding-top: 24% !important;
   }
 
 }
