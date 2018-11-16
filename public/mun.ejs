@@ -83,15 +83,22 @@
                     width: 30px;
                     height: 30px;
             }
-            @media only screen and (max-width: 360px){
+            @media only screen and (max-width: 480px){
                 .modal-footer {
                  margin-left: 41% !important;
             }
+            .dropdown-menu.show {
+                    left: 50px !important;
+                }
+            .dropdown-menu.show > a.dropdown-item {
+                    margin-left: -30px !important;
+                }
         }
             @media only screen and (min-width: 1024px){
                 .dropdown-toggle::after{
                     margin-top: 8% !important;
                 }
+                
             }
        
             
@@ -122,8 +129,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                    <a class="dropdown-item" href="/profile" style="color:#333;margin-left: 0px !important;">Profile</a>
-                    <a class="dropdown-item" href="/user/logout/mun" style="color:#333; margin-left: 0px !important;">LogOut</a>
+                    <a class="dropdown-item" href="/profile" style="color:#333;margin-left: 0px;">Profile</a>
+                    <a class="dropdown-item" href="/user/logout/mun" style="color:#333; margin-left: 0px;">LogOut</a>
 
                 </div>
             </li>
