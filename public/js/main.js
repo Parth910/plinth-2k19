@@ -48,7 +48,7 @@ $(function () {
                 event.preventDefault();
                 var t = $(e).offset().top + parseInt($(e).css("padding-top"));
                 $("html, body").animate({
-                    scrollTop: t - 5
+                     scrollTop: t - 5
                 }, 1e3)
             } else event.preventDefault(), $("#sections, .footer").toggleClass("is-hidden"), TweenMax.to(controls, .4, {
                 tube: 40,
@@ -224,70 +224,7 @@ $(function () {
         }, 6e4)
     })()
 }), 
-// $(function () {
-//     if (!isMob()) {
-//         var o, e = "!<>-_\\/[]{}вЂ”=+*^?#________",
-//             t = $(".text-code-hover-feel");
 
-//         function s(e, t) {
-//             for (var i = "", n = "!<>-_\\/[]{}вЂ”=+*^?#________" + e, o = 0; o < t; o++) i += n.charAt(Math.floor(Math.random() * n.length));
-//             return i
-//         }
-//         t.each(function (e, t) {
-//             $(t).attr("data-text-scramble-original", $(t).text())
-//         }), $(".header__nav li").each(function (e, t) {
-//             0 !== $(t).width() && ($(t).width($(t).width()), $(t).height($(t).height()), $(t).find("span").width($(t).width()))
-//         }), $(".example__link").each(function (e, t) {
-//             0 !== $(t).width() && ($(t).width($(t).width()), $(t).height($(t).height()))
-//         }), extrachars = t.text(), $(".header__nav li").mouseenter(function () {
-//             var e = $(this).find("a"),
-//                 t = e.text().length,
-//                 i = 1;
-
-//             function n() {
-//                 e.text(s(extrachars, t))
-//             }
-//             n(), o = setInterval(function () {
-//                 if (2 < i) return e.text(e.attr("data-text-scramble-original")), clearInterval(o), !1;
-//                 n(), i++
-//             }, 150)
-//         }).mouseleave(function () {
-//             var e = $(this).find("a");
-//             $(e).text($(e).attr("data-text-scramble-original")), clearInterval(o)
-//         }), $(".example__link").mouseenter(function () {
-//             var e = $(this),
-//                 t = e.text().length,
-//                 i = 1;
-
-//             function n() {
-//                 e.text(s(extrachars, t))
-//             }
-//             n(), o = setInterval(function () {
-//                 if (2 < i) return e.text(e.attr("data-text-scramble-original")), clearInterval(o), !1;
-//                 n(), i++
-//             }, 150)
-//         }).mouseleave(function () {
-//             var e = $(this);
-//             $(e).text($(e).attr("data-text-scramble-original")), clearInterval(o)
-//         });
-//         var n = A(t.text()),
-//             a = A(e);
-//         for (i = 0; i < n; i++) g(n), r(e, g(a));
-
-//         function r(e, t) {
-//             return e.charAt(t + 1)
-//         }
-
-//         function A(e) {
-//             return e.length
-//         }
-
-//         function g(e) {
-//             return Math.floor(Math.random() * e) + 1
-//         }
-//         r(e, g(a))
-//     }
-// }), 
 $(function () {
     var a = new THREE.Scene;
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, .1, 1e3);

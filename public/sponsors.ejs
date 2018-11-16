@@ -3,7 +3,8 @@
 
 <head>
     <% include partials/head %>
-    <link rel="stylesheet" href="./css/competitions.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sponsors.css">
 </head>
 
 <body>
@@ -57,7 +58,7 @@
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 2;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
@@ -73,9 +74,19 @@
         });
     </script>
     <script>
-        if (screen.width > 769) {
+        if (screen.width > 1024) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);
                 return false;
             }

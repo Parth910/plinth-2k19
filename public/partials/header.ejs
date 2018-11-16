@@ -16,6 +16,9 @@
             <li class="menu-list-item" <%if(page=="talks" ){%>class="pg-active"
                 <%}%>>
                 <a class="text-code-hover-feel" href="/talks">talks</a></li>
+            <li class="menu-list-item" <%if(page=="ca" ){%>class="pg-active"
+                <%}%>>
+                <a class="text-code-hover-feel" href="/ca">Campus Ambassdor</a></li>
             <li class="menu-list-item" <%if(page=="sop" ){%>class="pg-active"
                 <%}%>>
                 <a class="text-code-hover-feel" href="/sop">sop</a></li>
@@ -33,7 +36,8 @@
             <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" style="color:aliceblue" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" style="color:aliceblue;margin-left:1.5%" target="_blank">
+            <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" style="color:aliceblue;margin-left:1.5%"
+                target="_blank">
 
                 <i class="fab fa-youtube"></i>
             </a>
@@ -74,9 +78,28 @@
 
             </a>
 
+            <% if(isLoggedIn){ %>
+            <ul class="header__nav">
+                <li class="nav-item dropdown" id="rlbuttn_menu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hi,
+                        <%- user.name %>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-            <button class="regi_lo" id="rlbuttn" data-toggle="modal" data-target="#exampleModalCenter">Login|Register</button>
+                        <a class="dropdown-item" href="/profile">Profile</a>
 
+
+                        <a class="dropdown-item" href="/user/logout">LogOut</a>
+
+                    </div>
+                </li>
+                <% } else { %>
+
+                <button class="regi_lo" id="rlbuttn" data-toggle="modal" data-target="#exampleModalCenter">Login|Register</button>
+                <% } %>
+            </ul>
 
             <nav>
                 <ul class="header__nav">
@@ -145,11 +168,13 @@
             </div>
             <div class="modal-footer">
                 <div class="col-sm-6 text-left">
-                    <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary "><img class="g_icon" src="../media/g_icon.png">
+                    <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary "><img
+                                class="g_icon" src="../media/g_icon.png">
                             &nbspGoogle</button></a>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><img class="f_icon" src="../media/f_icon.png">
+                    <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><img
+                                class="f_icon" src="../media/f_icon.png">
                             &nbspFacebook</button></a>
                 </div>
             </div>

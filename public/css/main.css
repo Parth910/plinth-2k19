@@ -251,7 +251,7 @@
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -471,13 +471,15 @@ html {
 
 * {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
 }
 
 :after,
 :before {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
 }
 
 body {
@@ -503,7 +505,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #23527c
+    color: #4C4D64;
 }
 
 a:focus {
@@ -528,6 +530,7 @@ img {
     margin-left: auto;
     padding-left: 2.9%;
     padding-right: 2.9%;
+
 }
 
 .fluid:after,
@@ -554,7 +557,7 @@ ul {
 ol,
 ul {
     padding: 0;
-    list-style: none
+    list-style: none;
 }
 
 a,
@@ -563,7 +566,8 @@ a:active,
 a:focus,
 a:hover,
 a:visited {
-    text-decoration: none
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -571,7 +575,8 @@ a:visited {
 body {
     font-size: 1.125rem;
     color: #b0aeda;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
+    font-family: 'Arame-Regular';
     font-weight: 400;
     position: relative;
     opacity: 1;
@@ -714,7 +719,8 @@ h5 {
     white-space: nowrap;
     cursor: pointer;
     font-size: 1.875rem;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
+    font-family: 'Arame-Regular';
     font-weight: 500;
     color: #dcdbfd;
     text-transform: uppercase;
@@ -773,7 +779,7 @@ h5 {
 
 .hamburger-text {
     position: absolute;
-    top: 0;
+    top: -4px;
     right: -15px;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
@@ -781,10 +787,10 @@ h5 {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     color: #f3f2ff;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2.4px
 }
@@ -895,7 +901,7 @@ h5 {
 
 .hud__deadline-date {
     color: #f3f2ff;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     font-size: 1.125rem;
     text-transform: uppercase;
@@ -925,12 +931,12 @@ h5 {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .hud-timer__cell {
     font-size: .625rem;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 400;
     color: #f3f2ff;
     text-transform: uppercase;
@@ -941,7 +947,7 @@ h5 {
 .hud-timer__cell span {
     display: block;
     color: #7c167f;
-    font-family: Mont, sans-serif;
+    /* font-family: Mont, sans-serif; */
     font-weight: 700;
     font-size: 1.75rem
 }
@@ -1414,7 +1420,7 @@ h5 {
 }
 
 .header {
-    padding-top: 2.6%;
+    padding-top: 0.5%;
     position: absolute;
     top: 0;
     left: 0;
@@ -1511,7 +1517,7 @@ h5 {
     color: #f3f2ff;
     white-space: nowrap;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: .3em;
     display: block;
     min-height: 40px
@@ -1655,7 +1661,7 @@ h5 {
     width: 18.2em;
     height: 4.4em;
     font-size: 1rem;
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
     font-weight: 700;
     color: #d2cfff;
     text-transform: uppercase;
@@ -1994,7 +2000,9 @@ path.logout-svg {
 
 .about__text {
     line-height: 2;
-    max-width: 30em
+    max-width: 30em;
+    font-family: Muller, sans-serif;
+    text-align: justify;
 }
 
 .prizes {
@@ -3033,7 +3041,7 @@ path.logout-svg {
     width: 200px;
     height: 4.4em;
     color: #495163;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.8px
@@ -3190,7 +3198,7 @@ path.logout-svg {
 
 .request__form-btn span {
     text-transform: uppercase;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 700;
     font-size: .875rem;
     letter-spacing: 2.8px
@@ -3286,7 +3294,7 @@ path.logout-svg {
 .request__input {
     border: none;
     border-bottom: 1px solid #9ea2ab;
-    padding-top: 12px;
+    padding-top: 14px;
     padding-bottom: 12px;
     margin-bottom: 11px;
     width: 100%;
@@ -5979,7 +5987,7 @@ path.logout-svg {
 
     color: black !important;
     text-transform: uppercase;
-    font-family: Muller, sans-serif;
+    /* font-family: Muller, sans-serif; */
     font-weight: 70;
 }
 
@@ -6016,6 +6024,7 @@ path.logout-svg {
     margin-bottom: 150px;
 }
 
+/* Scroll Bar */
 body::-webkit-scrollbar {
     width: 2px;
     height: 4px
@@ -6026,8 +6035,28 @@ body::-webkit-scrollbar-thumb {
     border-radius: 100px
 }
 
+body::-moz-scrollbar {
+    width: 2px;
+    height: 4px
+}
+
+body::-moz-scrollbar-thumb {
+    background-color: #b836c6;
+    border-radius: 100px
+}
+
 .pg-active>a {
     font-weight: bold;
+
+}
+
+li.pg-active>a {
+    color: #4C4D64;
+}
+
+a.pg-active {
+    /* font-weight: bold;  */
+    color: #4C4D64;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -6047,9 +6076,10 @@ body::-webkit-scrollbar-thumb {
     margin-left: 42% !important;
 }
 
-.divDelay{
+.divDelay {
     display: none;
 }
+
 .divDelayFoo {
     display: none;
 }

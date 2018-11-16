@@ -3,6 +3,7 @@
 
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/talks.css">
 </head>
 
@@ -39,6 +40,16 @@
     <div class="bg-mask"></div>
 
     <h1 style="padding-top:15vh; text-align: center">Talks</h1>
+    <div class="conatiner">
+            <div class="row">
+                <div class="col col-12">
+                    <div class="reveal_txt text-center" style="padding-top:25vh;">
+                        <h2 class="align-middle" style="color:#4C4D64">Revealing Soon!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 
 
     <% include partials/footer %>
@@ -55,7 +66,7 @@
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 2;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
@@ -71,9 +82,19 @@
         });
     </script>
     <script>
-        if (screen.width > 769) {
+        if (screen.width > 1024) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);
                 return false;
             }

@@ -44,16 +44,21 @@
     <main id="sections">
         <section class="section section-main" id="main" data-section="1">
             <div class="fluid fluid--center">
+                <div class="btn-grp divDelayFoo" id="btn-grp">
+                    <div> <a href="/ca"><button class='btn-live btn-side' id="ca">Campus Ambassdor</button></a></div>
+                    <div> <a href="#"><button class='btn-side' id="sch">Download App</button></a></div>
+                </div>
                 <div class="int-canvas-wrap int-canvas-wrap--brain">
                     <canvas class="int-canvas int-canvas--pt" style="margin-left:80%"></canvas>
                 </div>
                 <div class="main text-center">
                     <div id="npt"><img src="./media/plinth2019text.png" alt="Plinth2019"></div>
                     <h1 class="divDelay" id="txt">Techno-Management Literary Fest</h1>
+
                 </div>
             </div>
-            <div class="hud--main hud-bottom">
-                <div class="fluid">
+            <div class="hud--main hud-bottom" id="des_so">
+                <div class="fluid divDelayFoo">
                     <span class="line"></span>
                     <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
                         <i class="fab fa-facebook-f"></i>
@@ -108,7 +113,7 @@
                         <p class="about__text">
                             A bud when comes out of its cover, strives for the glow which could make it an attractive
                             flower.
-                            So, here in Plinth as we celebrate the fourth year of its successful organization,
+                            So, here in Plinth as we celebrate the fifth year of its successful organization,
                             we are proud to say that the bud found its glow in the enthusiasm and the confidence of its
                             participants.
                             Plinth brings immense opportunities for all the enthusiasts to showcase their talents and
@@ -133,7 +138,7 @@
                             <li class="request__list-item">
                                 <h6><i class="fas fa-phone fa-rotate-90"></i>&nbsp&nbspPhone<br /></h6>
                                 Anvesh Sharma <br /> <a href="tel:+91-9460521981">+91-9460521981 <br /></a>
-                                Suyash Agarwal <br /> <a href="tel:+91-7339875167">+91-7339875167 <br /></a>
+                                Suyash Agrawal <br /> <a href="tel:+91-7339875167">+91-7339875167 <br /></a>
 
                             </li>
                             <li class="request__list-item">
@@ -149,7 +154,8 @@
                             </li>
                         </ul>
 
-                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a href="/faqs"><span>FAQ</span></a></button>
+                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a
+                                href="/faqs"><span>FAQ</span></a></button>
 
                     </div>
                     <form class="request__form gform " action="https://script.google.com/macros/s/AKfycbyNgIv7o86unD2w1ugjBgQd351xubu6Ho5El08iWVmciloy83s6/exec"
@@ -241,7 +247,7 @@
                             <li class="request__list-item">
                                 <h6><i class="fas fa-phone fa-rotate-90"></i>&nbsp&nbspPhone<br /></h6>
                                 Anvesh Sharma <br /> <a href="tel:+91-9460521981">+91-9460521981 <br /></a>
-                                Suyash Agarwal <br /> <a href="tel:+91-7339875167">+91-7339875167 <br /></a>
+                                Suyash Agrawal <br /> <a href="tel:+91-7339875167">+91-7339875167 <br /></a>
 
                             </li>
                             <li class="request__list-item">
@@ -257,7 +263,8 @@
                             </li>
                         </ul>
 
-                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a href="/faqs"><span>FAQ</span></a></button>
+                        <button class="request__btn noise-btn" style="text-align:center !important" id="faqbtn_rm"><a
+                                href="/faqs"><span>FAQS</span></a></button>
 
                     </div>
 
@@ -297,18 +304,38 @@
     background: -o-linear-gradient(left, #090025 0%, #2f0028 100%);
     background: linear-gradient(to right, #090025 0%, #2f0028 100%);
      color: aliceblue;
-     text-align:center;
-     position: fixed;
+          position: fixed;
      left: 0;
      bottom: -10px;
      height: 50px;
      width: 100%;">
+        <div class="hud--main hud-bottom" id="mob_so">
+            <div class="fluid divDelayFoo">
+                <span class="line"></span>
+                <a class="hud__icon" href="https://www.facebook.com/Plinth.LNMIIT/" target="_blank" style="color:aliceblue">
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+                <a class="hud__icon" href="https://twitter.com/plinthlnmiit?lang=en" target="_blank" style="color:aliceblue">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="hud__icon" href="https://www.instagram.com/plinth.lnmiit/" target="_blank" style="color:aliceblue">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="hud__icon sp" href="https://www.youtube.com/user/PlinthLNMIITJaipur" target="_blank" style="color:aliceblue;margin-left:1.5%">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <span class="hud__deadline"><span class="line"></span><span class="hud__deadline-date">19-20 JAN
+                        2019 </span></span>
+            </div>
+        </div>
         <div class="navbar-x divDelayFoo" class="a" id="desfoo">
-            <a class="foo" href="/gallery" class="active">GALLERY</a>
+            <a class="foo " href="/gallery" class="active">GALLERY</a>
             <a class="foo" href="/sponsors">SPONSORS</a>
             <a class="foo" href="/team"><span class="nowarp">Our</span><span class="nowarp "> Team</span></a>
-            <a class="foo" href="/faq" id="faq_rm">FAQ</a>
+            <a class="foo" href="/faqs" id="faq_rm">FAQS</a>
             <span id="seprate">
+                <!-- <a class="foo" href="#request">FAQs</a> -->
                 <a class="foo" href="/terms" class="sp"><span class="nowarp">TERMS</span><span class="nowarp "> &
                         CONDITION</span></a>
                 <a class="foo" href="/archive">ARCHIVE</a>
@@ -336,6 +363,28 @@
         if (screen.width > 767) {
             function remove() {
                 var elem = document.getElementById('npt');
+                elem.parentNode.removeChild(elem);
+
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('des_so');
+                elem.parentNode.removeChild(elem);
+
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('mob_so');
                 elem.parentNode.removeChild(elem);
 
                 return false;
@@ -399,9 +448,19 @@
     </script>
 
     <script>
-        if (screen.width > 769) {
+        if (screen.width > 1024) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);
                 return false;
             }
@@ -450,12 +509,21 @@
             remove();
         }
     </script>
-
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('btn-grp');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
 
     <script>
         window.addEventListener('load', function () {
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 3;
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
                     window.scrollTo(0, 0);

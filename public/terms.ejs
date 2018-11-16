@@ -3,7 +3,8 @@
 
 <head>
     <% include partials/head %>
-    <link rel="stylesheet" href="./css/competitions.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/terms.css">
 </head>
 
 <body>
@@ -40,7 +41,78 @@
     <div class="bg-mask"></div>
 
 
-    <h1 style="padding-top:15vh; text-align: center">Terms & Conditions</h1>
+    <h1 style="padding-top:15vh; text-align: center;transform: scale(1);">Terms & Conditions</h1>
+    <div class="main-content">
+        <div class="scroll-content" id="style-1">
+            <div class="inner-content">
+                <div class="text-padding" style="transform: scale(1);">
+                    <div class="heading">
+                        Disclaimer
+                    </div>
+                    <div class="text">
+                        This service is provided to facilitate access and make payments online. Plinth’19 or the
+                        payment service provider do not
+                        make any representation of any kind, explicit or implicit, as
+                        to the payment gateway other than what is specified on Plinth’s
+                        website. By accepting/agreeing to these terms and conditions,
+                        the user agrees that the use of online payment service is entirely
+                        at own risk and responsibility.
+                    </div>
+                    <div class="heading">
+                        Privacy Policy
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <span class="bolder">Information we collect :</span><span class="text"> We ensure that
+                                    the collection
+                                    of personal information is limited to what is necessary
+                                    to fulfill the purpose as mentioned. If your information
+                                    is used in a manner different than the purpose it is
+                                    collected, then we will ask you for your consent prior
+                                    to its use.</span>
+                            </li>
+                            <li>
+                                <span class="bolder">How do we use your information :</span><span class="text"> Your
+                                    information
+                                    will be used to process transactions. Your information
+                                    will not be sold, exchanged or given to any other institution
+                                    for reason whatsoever, without your consent, other than
+                                    delivering the purchased service or product.</span>
+                            </li>
+                            <li>
+                                <span class="bolder">Cookies :</span><span class="text"> Plinth.in uses cookies to
+                                    store information
+                                    about visitors' preferences, to personalize or customize
+                                    our web page content based upon visitors' browser type
+                                    or other information that the visitor sends via their
+                                    browser. Any information collected via cookies will not
+                                    be shared with any third party.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="heading">
+                        Consent
+                    </div>
+                    <div class="text">
+                        By using our website, you hereby consent to our privacy policy and agree to its terms and
+                        conditions.
+                    </div>
+
+                    <div class="heading">
+                        Cancellation Policy
+                    </div>
+                    <div class="text">
+                        No amount will be refunded upon the cancellation of your tickets or passes. In case of any
+                        conflict, the decision of the
+                        organizers will be final. In any event, the organizers shall
+                        not be liable for special, punitive, consequential or incidental
+                        damages, including lost revenue, profits or other benefits.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <% include partials/footer %>
@@ -57,7 +129,7 @@
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 2;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
@@ -73,9 +145,19 @@
         });
     </script>
     <script>
-        if (screen.width > 769) {
+        if (screen.width > 1024) {
             function remove() {
                 var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
                 elem.parentNode.removeChild(elem);
                 return false;
             }
