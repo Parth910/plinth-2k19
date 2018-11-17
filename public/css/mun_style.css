@@ -1515,18 +1515,9 @@ only screen and (hover: none) {
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
-  -moz-column-count: 2;
-  -moz-column-gap: 4rem;
-  -moz-column-rule: 1px solid #eee;
-  -webkit-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 4rem;
-  column-gap: 4rem;
-  -webkit-column-rule: 1px solid #eee;
-  column-rule: 1px solid #eee;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  
+  
+ 
 }
 
 .popup:target {
