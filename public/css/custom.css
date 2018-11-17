@@ -228,3 +228,13 @@ button.btn-side:hover {
         box-shadow: 0 0 3px #b836c6;
     }
 }
+
+/* circle css */
+.ih-item.circle {
+    width: 180px !important;
+    height: 180px !important;
+}
+.ih-item.circle.effect1 .spinner{
+    width: 190px !important;
+    height: 190px !important;
+}
