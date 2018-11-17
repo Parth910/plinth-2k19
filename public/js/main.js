@@ -48,7 +48,7 @@ $(function () {
                 event.preventDefault();
                 var t = $(e).offset().top + parseInt($(e).css("padding-top"));
                 $("html, body").animate({
-                    scrollTop: t - 5
+                     scrollTop: t - 5
                 }, 1e3)
             } else event.preventDefault(), $("#sections, .footer").toggleClass("is-hidden"), TweenMax.to(controls, .4, {
                 tube: 40,

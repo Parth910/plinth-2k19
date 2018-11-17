@@ -3,6 +3,7 @@
 
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/workshops.css">
 
 </head>
@@ -66,7 +67,7 @@
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 2;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {

@@ -505,7 +505,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #23527c
+    color: #4C4D64;
 }
 
 a:focus {
@@ -530,6 +530,7 @@ img {
     margin-left: auto;
     padding-left: 2.9%;
     padding-right: 2.9%;
+
 }
 
 .fluid:after,
@@ -556,7 +557,7 @@ ul {
 ol,
 ul {
     padding: 0;
-    list-style: none
+    list-style: none;
 }
 
 a,
@@ -565,7 +566,8 @@ a:active,
 a:focus,
 a:hover,
 a:visited {
-    text-decoration: none
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -1418,7 +1420,7 @@ h5 {
 }
 
 .header {
-    padding-top: 2.6%;
+    padding-top: 0.5%;
     position: absolute;
     top: 0;
     left: 0;
@@ -6021,6 +6023,7 @@ path.logout-svg {
     padding-top: 30px;
     margin-bottom: 150px;
 }
+
 /* Scroll Bar */
 body::-webkit-scrollbar {
     width: 2px;
@@ -6041,19 +6044,21 @@ body::-moz-scrollbar-thumb {
     background-color: #b836c6;
     border-radius: 100px
 }
+
 .pg-active>a {
     font-weight: bold;
-    
+
 }
-li.pg-active>a{
+
+li.pg-active>a {
     color: #4C4D64;
 }
 
-a.pg-active{
+a.pg-active {
     /* font-weight: bold;  */
     color: #4C4D64;
-    
 }
+
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
@@ -6071,9 +6076,10 @@ a.pg-active{
     margin-left: 42% !important;
 }
 
-.divDelay{
+.divDelay {
     display: none;
 }
+
 .divDelayFoo {
     display: none;
 }

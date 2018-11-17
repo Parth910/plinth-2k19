@@ -3,6 +3,8 @@
 
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./css/ihover.min.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/competitions.css">
 </head>
 
@@ -38,9 +40,33 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <main id="sections">
-        <h1 style="padding-top:15vh; text-align: center">Competitons</h1>
-    </main>
+    <h1 style="padding-top:15vh; text-align: center; transform: scale(1);">Competitons</h1>
+    <div class="main-content">
+        <div class="scroll-content" id="style-1">
+            <div class="inner-content">
+                <div class="text-padding" style="transform: scale(1);">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+
+                            <!-- colored -->
+                            <div class="ih-item circle colored effect1"><a href="#">
+                                    <div class="spinner"></div>
+                                    <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
+                                    <div class="info">
+                                        <div class="info-back">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <!-- end colored -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <% include partials/footer %>
 
@@ -56,7 +82,7 @@
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 2;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {

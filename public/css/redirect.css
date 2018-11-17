@@ -1,19 +1,11 @@
-.hud--main {
-    position: fixed;
-    bottom: 5vh;
-}
-.hud-timer__inner{
-    display: none;
-}
-.navbar-x{
-    padding-top: 12px;
-}
-
-@media only screen and (max-width:415px){
-    .hud--main{
-        display: none;
+@media only screen and (min-width:320px) and (max-width:480px){
+    .btnfix{
+        margin-left: 5% !important;
     }
-    .navbar-x{
-        padding-top: 0px;
+}
+@media only screen and (min-width:1400px){
+    .main-content{
+        margin-top: 6% !important;
+        margin-left: 8% !important;
     }
 }

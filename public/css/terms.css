@@ -1,24 +1,25 @@
-html,body{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden
-}
-.hud--main {
-    position: fixed;
-    bottom: 7vh;
-}
-.hud-timer__inner{
-    display: none;
-}
-.navbar-x{
-    padding-top: 2px; 
+.heading {
+    font-size: 3.0vh;
+    margin-top: 2% !important;
+    color: #4C4D64;
+    font-weight: bold;
 }
 
-@media only screen and (max-width:415px){
-    .hud--main{
-        display: none;
-    }
-    .navbar-x{
-        padding-top: 0px;
-    }
+.text {
+    font-family: Muller, sans-serif;
+    font-size: 2.4vh;
+    margin-top: 1% !important;
+
+}
+
+.bolder {
+    font-family: Muller, sans-serif;
+    font-size: 2.5vh;
+    margin-top: .2% !important;
+    font-weight: bold;
+}
+
+.main-content ul {
+    list-style: disc;
+    margin-left: 30px;
 }

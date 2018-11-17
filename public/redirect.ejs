@@ -3,6 +3,7 @@
 
 <head>
   <% include partials/head %>
+  <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/redirect.css">
 
 
@@ -34,108 +35,119 @@
     </script>
 
   <% }else{ %>
-  <div class="container" style="padding-top: 100px; color: white !important">
-    <form class="form-horizontal" id="register-form">
-      <div class="form-elements">
-        <h1 style="text-align: center; padding-top:4vh">Registration Form</h1>
-        <div class="row request__group">
-          <div class="col-md-6">
-            <div class="request__group-input">
-              <label for="user_name">Name</label>
-              <input disabled type="text" class="request__input" placeholder="" id="user_name" name="textinput" value="<%-user.name%>">
+  <h1 style="padding-top:15vh; text-align: center;transform: scale(1);">Registration Form</h1>
+  <div class="main-content">
+    <div class="scroll-content" id="style-1">
+      <div class="inner-content">
+        <div class="text-padding" style="transform: scale(1);">
+          <form class="form-horizontal" id="register-form">
+            <div class="form-elements">
+              <div class="row request__group">
+                <div class="col-md-6">
+                  <div class="request__group-input">
+                    <label for="user_name">Name</label>
+                    <input disabled type="text" class="request__input" placeholder="" id="user_name" name="textinput"
+                      value="<%-user.name%>">
+                  </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                  <div class="request__group-input">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="" class="request__input" required="" value="<%- user.email %>"
+                      disabled>
+                  </div>
+                </div>
+                <!--  col-md-6   -->
+              </div>
+
+
+              <div class="row request__group">
+                <div class="col-md-6">
+                  <div class="request__group-input">
+                    <label for="institute">Institute Name</label>
+                    <input id="institute" name="institute" type="text" placeholder="" class="request__input" required="">
+                  </div>
+
+
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+
+                  <div class="request__group-input">
+                    <label for="contact_number">Phone Number</label>
+                    <input id="contact_number" name="contact_number" type="number" placeholder="" class="request__input"
+                      required="" minlength="10">
+                  </div>
+                </div>
+                <!--  col-md-6   -->
+              </div>
+              <!--  row   -->
+
+
+              <div class="row request__group">
+                <div class="col-md-6">
+
+                  <div class="request__group-input">
+                    <label for="user_year">Year</label>
+                    <select id="user_year" name="user_year" class="request__input">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="NA" selected="selected ">NA</option>
+                    </select> </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                  <div class="request__group-input">
+                    <label for="user_city">City</label>
+                    <input id="user_city" name="user_city" type="text" placeholder="" class="request__input" required="">
+                  </div>
+
+                </div>
+                <!--  col-md-6   -->
+              </div>
+              <!--  row   -->
+              <div class="row request__group">
+                <div class="form-group col-md-8 col-12 row">
+                  <label class="col-md-4 col-4 control-label">Gender:</label>
+        
+                    <div class="radio col-md-2 col-4">
+                      <label for="radios-0">
+                        <input type="radio" class="request__input" id="radios-0" name="gender" value="male">
+                        Male
+                      </label>
+                    </div>
+                    <div class="radio col-md-2 col-4">
+                      <label for="radios-1">
+                        <input type="radio" class="request__input" id="radios-1" name="gender" value="female">
+                        Female
+                      </label>
+                    </div>
+                  
+                </div>
+              </div>
+
+
+              <div class="form-group h-100 row align-items-center">
+                <label class="col-md-4 control-label" for="register-button"></label>
+                <div class="col-md-4 align-items-center">
+                  <button class="request__form-btn noise-btn btnfix" style="text-align:center !important; margin-left: 50px"
+                    type="submit"><span>Submit</span></button>
+                </div>
+              </div>
             </div>
-          </div>
-          <!--  col-md-6   -->
-
-          <div class="col-md-6">
-            <div class="request__group-input">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="text" placeholder="" class="request__input" required="" value="<%- user.email %>"
-                disabled>
-            </div>
-          </div>
-          <!--  col-md-6   -->
-        </div>
-
-
-        <div class="row request__group">
-          <div class="col-md-6">
-            <div class="request__group-input">
-              <label for="institute">Institute Name</label>
-              <input id="institute" name="institute" type="text" placeholder="" class="request__input" required="">
-            </div>
-
-
-          </div>
-          <!--  col-md-6   -->
-
-          <div class="col-md-6">
-
-            <div class="request__group-input">
-              <label for="contact_number">Phone Number</label>
-              <input id="contact_number" name="contact_number" type="number" placeholder="" class="request__input"
-                required="" minlength="10">
-            </div>
-          </div>
-          <!--  col-md-6   -->
-        </div>
-        <!--  row   -->
-
-
-        <div class="row">
-          <div class="col-md-6">
-
-            <div class="request__group-input">
-              <label for="user_year">Year</label>
-              <select id="user_year" name="user_year" class="request__input">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="NA" selected="selected ">NA</option>
-              </select> </div>
-          </div>
-          <!--  col-md-6   -->
-
-          <div class="col-md-6">
-            <div class="request__group-input">
-              <label for="user_city">City</label>
-              <input id="user_city" name="user_city" type="text" placeholder="" class="request__input" required="">
-            </div>
-
-          </div>
-          <!--  col-md-6   -->
-        </div>
-        <!--  row   -->
-
-        <br>
-        <div class="form-group col-10 row">
-          <label class="col-2 control-label">Gender :</label>
-          <div class="radio col-1 request__group-input">
-            <label for="radios-0">
-              <input type="radio" class="request__input" id="radios-0" name="gender" value="male">
-              Male
-            </label>
-          </div>
-          <div class="radio col-1">
-            <label for="radios-1">
-              <input type="radio" class="request__input" id="radios-1" name="gender" value="female">
-              Female
-            </label>
-          </div>
-        </div>
-
-        <div class="form-group h-100 row align-items-center">
-          <label class="col-md-4 control-label" for="register-button"></label>
-          <div class="col">
-            <button class="request__form-btn noise-btn" style="text-align:center !important; margin-left: 50px !important"
-              type="submit"><span>Submit</span></button>
-          </div>
+          </form>
         </div>
       </div>
-    </form>
+    </div>
   </div>
+
   <% } %>
 
   <% include partials/footer %>
@@ -153,7 +165,7 @@
     window.addEventListener('load', function () {
 
       var el = document.querySelector('.preloader');
-      el.style.opacity = 5;
+      el.style.opacity = 2;
 
       (function fade() {
         if ((el.style.opacity -= 0.15) < 0) {
