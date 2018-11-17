@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100italic,100,300italic,400italic,700,700italic,900,900italic);
->>>>>>> ace1d3b8528cb005dd382d361bcdd6e0657200ff
 body {
     background: rgba(0, 0, 0, 0.9);
     
@@ -14,13 +11,9 @@ body {
     content: '';
     height: 100vh;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
-=======
     background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.ibb.co/gzOBup/showcase.jpg);
     background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.ibb.co/gzOBup/showcase.jpg);
     background-image:-moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.ibb.co/gzOBup/showcase.jpg);
->>>>>>> ace1d3b8528cb005dd382d361bcdd6e0657200ff
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,13 +153,9 @@ body {
     content: '';
     height: 100vh;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
-=======
     background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.ibb.co/gzOBup/showcase.jpg);
     background-image:-o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.ibb.co/gzOBup/showcase.jpg);
     background-image:-moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://image.ibb.co/gzOBup/showcase.jpg);
->>>>>>> ace1d3b8528cb005dd382d361bcdd6e0657200ff
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -369,10 +358,7 @@ a:hover span:after {
 
 
 
-<<<<<<< HEAD
-=======
   
->>>>>>> ace1d3b8528cb005dd382d361bcdd6e0657200ff
 
 
 
@@ -810,9 +796,6 @@ a:hover span:after {
  
   }
  
-<<<<<<< HEAD
- 
-=======
  label {
      color: #333;
      padding-top: 8px;
@@ -845,4 +828,3 @@ a:hover span:after {
      padding-top: 30px;
      font-size: 1.7rem;
  }
->>>>>>> ace1d3b8528cb005dd382d361bcdd6e0657200ff
