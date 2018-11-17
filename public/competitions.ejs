@@ -40,106 +40,16 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <div class="d-flex justify-content-center"><h1 style="padding-top:15vh; text-align: center; transform: scale(1);margin-bottom: 20%">Competitons</h1></div>
-    <!-- <div class="main-content"> -->
-        <!-- <div class="scroll-content" id="style-1">
+    <h1 style="padding-top:15vh; text-align: center; transform: scale(1);">Competitons</h1>
+    <div class="main-content">
+        <div class="scroll-content" id="style-1">
             <div class="inner-content">
                 <div class="text-padding" style="transform: scale(1);">
-                    <div class="row" >
-                        <div class="col-md-6 col-sm-12" > -->
-                        <div class="container">
-                            <div class="d-flex justify-content-center">
-                            <ul class="eff" style="transform: scale(1);">
-                                <li class="lieff"></li>
-                                <li class="lieff">
-                                    <div class="ih-item circle colored effect1">
-                                        <a href="#">
-                                                <div class="spinner"></div>
-                                                <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
-                                                <div class="info">
-                                                    <div class="info-back">
-                                                        <h3>Heading here</h3>
-                                                        <p>Description goes here</p>
-                                                    </div>
-                                                </div>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="lieff">
-                                        <div class="ih-item circle colored effect1">
-                                                <a href="#">
-                                                        <div class="spinner"></div>
-                                                        <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
-                                                        <div class="info">
-                                                            <div class="info-back">
-                                                                <h3>Heading here</h3>
-                                                                <p>Description goes here</p>
-                                                            </div>
-                                                        </div>
-                                                </a>
-                                            </div>
-                                </li>
-                                <li class="lieff">
-                                        <div class="ih-item circle colored effect1">
-                                                <a href="#">
-                                                        <div class="spinner"></div>
-                                                        <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
-                                                        <div class="info">
-                                                            <div class="info-back">
-                                                                <h3>Heading here</h3>
-                                                                <p>Description goes here</p>
-                                                            </div>
-                                                        </div>
-                                                </a>
-                                            </div>
-                                </li>
-                                <li class="lieff">
-                                        <div class="ih-item circle colored effect1">
-                                                <a href="#">
-                                                        <div class="spinner"></div>
-                                                        <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
-                                                        <div class="info">
-                                                            <div class="info-back">
-                                                                <h3>Heading here</h3>
-                                                                <p>Description goes here</p>
-                                                            </div>
-                                                        </div>
-                                                </a>
-                                            </div>
-                                </li>
-                                <li class="lieff">
-                                        <div class="ih-item circle colored effect1">
-                                                <a href="#">
-                                                        <div class="spinner"></div>
-                                                        <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
-                                                        <div class="info">
-                                                            <div class="info-back">
-                                                                <h3>Heading here</h3>
-                                                                <p>Description goes here</p>
-                                                            </div>
-                                                        </div>
-                                                </a>
-                                            </div>
-                                </li>
-                                <li class="lieff">
-                                        <div class="ih-item circle colored effect1">
-                                                <a href="#">
-                                                        <div class="spinner"></div>
-                                                        <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
-                                                        <div class="info">
-                                                            <div class="info-back">
-                                                                <h3>Heading here</h3>
-                                                                <p>Description goes here</p>
-                                                            </div>
-                                                        </div>
-                                                </a>
-                                            </div>
-                                </li>
-                                
-                            </ul>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+
                             <!-- colored -->
-                            <!-- <div class="ih-item circle colored effect1"><a href="#">
+                            <div class="ih-item circle colored effect1"><a href="#">
                                     <div class="spinner"></div>
                                     <div class="img"><img src="./media/gallery/DSC_0142.jpg" alt="img"></div>
                                     <div class="info">
@@ -148,15 +58,15 @@
                                             <p>Description goes here</p>
                                         </div>
                                     </div>
-                                </a></div> -->
+                                </a></div>
                             <!-- end colored -->
+
                         </div>
-                        <!-- </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-    <!-- </div> -->
+        </div>
+    </div>
 
     <% include partials/footer %>
 
@@ -168,24 +78,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script>
-        var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
-    radius = '220px', //distance from center
-    start = -90, //shift start from 0
-    $elements = $('.lieff:not(:first-child)'),
-    numberOfElements = (type === 1) ?  $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
-    slice = 360 * type / numberOfElements;
-
-$elements.each(function(i) {
-    var $self = $(this),
-        rotate = slice * i + start,
-        rotateReverse = rotate * -1;
-    
-    $self.css({
-        'transform': 'rotate(' + rotate + 'deg) translate(' + radius + ') rotate(' + rotateReverse + 'deg)'
-    });
-});
-        </script>
     <script>
         window.addEventListener('load', function () {
 
