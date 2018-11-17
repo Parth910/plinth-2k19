@@ -1,0 +1,13 @@
+.eff {
+    position: relative;
+   /* top:100; */
+   aist-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lieff {
+    position: absolute;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    transition: all 2s linear;
+}
