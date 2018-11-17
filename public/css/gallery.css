@@ -81,7 +81,7 @@ input[type="checkbox"]:checked~.grid {
 
 .grid .grid-item {
   display: block;
-  width: 75%;
+  width: 80%;
   padding: 10px;
   opacity: .75;
   -webkit-transition: opacity .5s;
