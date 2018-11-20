@@ -33,28 +33,6 @@
 	  }
 	</script>
     <style>
-        #tabs>li>a {
-            border: unset;
-            font-size: 1.5rem;
-
-        }
-
-        #tabs {
-            background: rgba(109, 121, 231, 0.603);
-            width: 90%;
-            padding: 0px;
-        }
-
-        #tab {
-            font-family: 'Oxygen', sans-serif;
-            font-size: 1.2rem;
-            width: 90%;
-            padding-left: 0%;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        #tab>p,
         ul,
         li {
             font-family: 'Oxygen', sans-serif;
@@ -141,7 +119,6 @@
     </style>
 
     <!-- three.js -->
-    <% include partials/header %>
 
     <div id="webgl-output"></div>
 
@@ -250,13 +227,15 @@
             $("#morecontent").addClass("d-none");
             $("#rulescontent").addClass("d-none");
             $("#synopsiscontent").removeClass("d-none");
+        });
+
             $("#query").click(function () {
                 $("#synopsiscontent").addClass("d-none");
                 $("#morecontent").addClass("d-none");
                 $("#rulescontent").addClass("d-none");
                 $("#querycontent").removeClass("d-none");
             });
-        });
+
         $("#more").click(function () {
             $("#querycontent").addClass("d-none");
             $("#synopsiscontent").addClass("d-none");
@@ -349,9 +328,6 @@
             remove();
         }
     </script>
-</body>
-
-</html>
 </body>
 
 </html>
