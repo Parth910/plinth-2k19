@@ -21,7 +21,7 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <div class="uk-position-center main-content ">
+    <div class="main-content ">
 
         <div class="container" id="style-7" style="padding-top: 150px">
 
@@ -31,7 +31,7 @@
                     </h2>
                 </div>
                 <h1 style="text-align :center">About</h1>
-                <div class="container" style="padding-top: 20px; margin-left: 100px">
+                <div class="container" style="padding-top: 20px; padding-left: 17%">
                     <div class="row">
                         <div class="col-6" style="padding-top :20px;">
                             <h5>
@@ -140,7 +140,7 @@
                 <div style="text-align:center; padding-top:30px">
 
                     <h1>
-                        <span>Registered Events</span>
+                        <span>Paid Events</span>
                     </h1>
                 </div>
                 <div style="text-align:center; padding-top:30px">
@@ -152,25 +152,25 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="head-font uk-text-center">Event Name</th>
-                                <th class="head-font uk-text-center">Team Size</th>
-                                <th class="head-font uk-text-center">Payment Status</th>
-                                <th class="head-font uk-text-center">Actions</th>
+                                <th class="head-font">Event Name</th>
+                                <th class="head-font">Team Size</th>
+                                <th class="head-font">Payment Status</th>
+                                <th class="head-font">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <%   for(var i=1; i<user.events.length; i++) { %>
                             <tr>
-                                <td class="body-font uk-text-center">
+                                <td class="body-font">
                                     <%= user.events[i].event.eventName %>
                                 </td>
-                                <td class="body-font uk-text-center">
+                                <td class="body-font">
                                     <%= user.events[i].team.length %>
                                 </td>
-                                <td class="body-font uk-text-center">
+                                <td class="body-font">
                                     <%= user.events[i].status %>
                                 </td>
-                                <td class="body-font uk-text-center link-text">
+                                <td class="body-font link-text">
                                     <a href="/pdf/generate/<%= user.events[i].orderId %>" target="_blank">Receipt</a>
                                 </td>
                             </tr>
