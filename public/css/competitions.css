@@ -4,7 +4,7 @@
 	list-style: none;
 	display: block;
 	text-align: center;
-	width: 100%;
+	width: 99%;
 }
 
 .ch-grid:after,
@@ -150,7 +150,7 @@
 	transform: scale(1);	
 }
 
-@media only screen and (max-width: 1950px){
+/* @media only screen and (max-width: 1950px){
     .ch-grid {
         margin:-202px 0 0 0 !important; 
     }
@@ -179,4 +179,4 @@
     .ch-grid {
         margin:324px 0 0 0 !important; 
     }
-}
+} */
