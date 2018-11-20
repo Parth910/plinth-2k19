@@ -1073,8 +1073,8 @@ body {
 
 .card__picture--1 {
 
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../media/mun/unicef.png);
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../media/mun/unicef.png);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../media/mun/lok.png);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../media/mun/lok.png);
 }
 
 .card__picture--2 {
