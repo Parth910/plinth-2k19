@@ -523,7 +523,7 @@
     <script>
         window.addEventListener('load', function () {
             var el = document.querySelector('.preloader');
-            el.style.opacity = 3;
+            el.style.opacity = 2;
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
                     window.scrollTo(0, 0);
@@ -537,12 +537,12 @@
             })();
         });
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function () {
                 try {
                     w.yaCounter48570191 = new Ya.Metrika({
-                        id: 48570191,
+                       // id: 48570191,
                         clickmap: true,
                         trackLinks: true,
                         accurateTrackBounce: true,
@@ -564,11 +564,15 @@
                 f();
             }
         })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>
+    </script> -->
+    <!-- <noscript>
         <div><img src="https://mc.yandex.ru/watch/48570191" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-
+    </noscript> -->
+    <script>
+        $(window).on('resize', function () {
+            location.reload();
+        });
+    </script>
 
 </body>
 
