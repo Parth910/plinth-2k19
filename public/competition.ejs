@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/competitions.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-ring"></div>
+    </div>
+    <% include partials/header %>
+
+    <!-- Shaders -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+	    precision highp float;
+	    #endif
+	  void main(void) {
+	   gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+	  }
+	</script>
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 vertexPosition;
+
+	  uniform mat4 modelViewMatrix;
+	  uniform mat4 perspectiveMatrix;
+
+	  void main(void) {
+	    gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+	  }
+	</script>
+    <style>
+        #tabs>li>a {
+            border: unset;
+            font-size: 1.5rem;
+
+        }
+
+        #tabs {
+            background: rgba(109, 121, 231, 0.603);
+            width: 90%;
+            padding: 0px;
+        }
+
+        #tab {
+            font-family: 'Oxygen', sans-serif;
+            font-size: 1.2rem;
+            width: 90%;
+            padding-left: 0%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #tab>p,
+        ul,
+        li {
+            font-family: 'Oxygen', sans-serif;
+        }
+
+        #tab>p>b {
+            font-size: 2.5vh;
+            font-weight: unset;
+        }
+
+        ul {
+            -webkit-transform: rotate(deg) skew(20deg, 5deg);
+            transform: rotate(deg) skew(20deg, 5deg);
+        }
+
+        .list-item {
+            background: #2f0028;
+            color: #575757;
+            text-align: center;
+            height: 2.5em;
+            width: 4em;
+            vertical-align: middle;
+            line-height: 2.5em;
+            border-bottom: 1px solid #2f0028;
+            position: relative;
+            display: block;
+            text-decoration: none;
+            transition: all .25s linear;
+        }
+
+        .list-item:hover {
+            background: #ff6e42;
+            color: #fffcfb;
+            -webkit-transform: translate(0.9em, -0.9em);
+            transform: translate(0.9em, -0.9em);
+            transition: all .25s linear;
+        }
+
+        .list-item:hover:before,
+        .list-item:hover:after {
+            transition: all .25s linear;
+        }
+
+        .list-item:hover:before {
+            background: #b65234;
+            width: 1em;
+            top: .5em;
+            left: -1em;
+        }
+
+        .list-item:hover:after {
+            background: #b65234;
+            width: 1em;
+            bottom: -2.5em;
+            left: 1em;
+            height: 4em;
+        }
+
+        .list-item:before,
+        .list-item:after {
+            content: '';
+            position: absolute;
+            transition: all .25s linear;
+            width: .5em;
+        }
+
+        .list-item:after {
+            height: 4em;
+            background: #2f0028;
+            bottom: -2.25em;
+            left: 1.5em;
+            -webkit-transform: rotate(90deg) skew(0, 45deg);
+            transform: rotate(90deg) skew(0, 45deg);
+        }
+
+        .list-item:before {
+            height: 2.5em;
+            background: #2f0028;
+            top: .25em;
+            left: -.5em;
+            -webkit-transform: skewY(-45deg);
+            transform: skewY(-45deg);
+        }
+    </style>
+
+    <!-- three.js -->
+    <% include partials/header %>
+
+    <div id="webgl-output"></div>
+
+    <div class="bg-mask"></div>
+    <canvas id="canvas"></canvas>
+
+    <div class="main-content">
+        <div class="scroll-content" style="overflow-x: hidden" id="style-1">
+            <h2 style="text-align:center">
+                <%- competition.clubName %>
+            </h2>
+            <h1 style="text-align:center">
+                <%- competition.displayName %>
+            </h1>
+            <br>
+            <div class="row">
+                <% if(competition.eventFee != null ){ %>
+                <div class="offset-1 col-3">Fee :
+                    <strong>
+                        <%- competition.eventFee %></strong>
+                </div>
+                <div class="col-4">Date :
+                    <strong>
+                        <%- competition.eventDate %></strong>
+                </div>
+                <div class="col-4">Venue :
+                    <strong>
+                        <%- competition.eventVenue %></strong>
+                </div>
+                <% } else {%>
+                <div class="col-6">Date :
+                    <strong>
+                        <%- competition.eventDate %></strong>
+                </div>
+                <div class="col-6">Venue :
+                    <strong>
+                        <%- competition.eventVenue %></strong>
+                </div>
+                <%} %>
+            </div>
+            <!-- 
+            <br>
+            <div style="padding-left:23%">
+            <button class="request__form-btn noise-btn btnfix" 
+            type="
+                submit"><span>Event Registration</span></button></div> -->
+            <br>
+            <div class="row">
+                <div class="offset-1 col-2">
+                    <ul>
+                        <li>
+                            <a class='list-item' id="synopsis" href='#'>
+                                Synopsis
+                            </a>
+                        </li>
+                        <li>
+                            <a class='list-item' id="more" href='#'>
+                                More
+                            </a>
+                        </li>
+                        <li>
+                            <a class='list-item' id="rules" href='#'>
+                                Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a class='list-item' id="query" href='#'>
+                                Query
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <div id="synopsiscontent">
+                        <%- competition.synopsis %>
+                    </div>
+                    <div id="morecontent" class="d-none">
+                        <%- competition.eventDescription %>
+                    </div>
+                    <div id="rulescontent" class="d-none">
+                        <%- competition.rules %>
+                    </div>
+                    <div id="querycontent" class="d-none">
+                        <%- competition.query %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <% include partials/footer %>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sphere.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $("#synopsis").click(function () {
+            $("#querycontent").addClass("d-none");
+            $("#morecontent").addClass("d-none");
+            $("#rulescontent").addClass("d-none");
+            $("#synopsiscontent").removeClass("d-none");
+            $("#query").click(function () {
+                $("#synopsiscontent").addClass("d-none");
+                $("#morecontent").addClass("d-none");
+                $("#rulescontent").addClass("d-none");
+                $("#querycontent").removeClass("d-none");
+            });
+        });
+        $("#more").click(function () {
+            $("#querycontent").addClass("d-none");
+            $("#synopsiscontent").addClass("d-none");
+            $("#rulescontent").addClass("d-none");
+            $("#morecontent").removeClass("d-none");
+        });
+        $("#rules").click(function () {
+            $("#synopsiscontent").addClass("d-none");
+            $("#morecontent").addClass("d-none");
+            $("#querycontent ").addClass("d-none");
+            $("#rulescontent").removeClass("d-none");
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+
+            var el = document.querySelector('.preloader');
+            el.style.opacity = 2;
+
+            (function fade() {
+                if ((el.style.opacity -= 0.15) < 0) {
+                    window.scrollTo(0, 0);
+                    el.style.display = "none";
+                    controls.redraw();
+                    controls.rend();
+                    controls.start();
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        });
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('faqbtn_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
