@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/profile.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
 </head>
 
@@ -22,173 +22,182 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <div class="main-content ">
+
+    <h1 style="padding-top:15vh; text-align: center;transform: scale(1);">Profile</h1>
+
+    <!-- <div class="main-content ">
 
         <div class="container" id="style-7" style="padding-top: 150px">
 
+            <div>
+                <h2 style="text-align:center ; padding-bottom: 20px">
+                    Profile
+                </h2>
+            </div>
+            <h1 style="text-align :center">About</h1>
+            <div class="container" style="padding-top: 20px; padding-left: 17%">
+                <div class="row">
+                    <div class="col-6" style="padding-top :20px;">
+                        <h5>
+                            Name :
+                            <%- user.name %>
+                        </h5>
+                    </div>
+                    <div class="col-6" style="padding-top :20px">
+                        <h5>
+                            Contact :
+                            <%- user.phoneNumber %>
+                        </h5>
+                    </div>
+                    <div class="col-6" style="padding-top :20px">
+                        <h5>
+                            E-mail :
+                            <%- user.email %>
+                        </h5>
+                    </div>
+                    <div class="col-6" style="padding-top :20px">
+                        <h5>
+                            College :
+                            <%- user.college %>
+                        </h5>
+                    </div>
+                    <div class="col-6" style="padding-top :20px">
+                        <h5>
+                            City :
+                            <%- user.city %>
+                        </h5>
+                    </div>
+                    <div class="col-6" style="padding-top :20px">
+                        <h5>
+                            Year :
+                            <%- user.year %>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 style="text-align: center; padding-top : 30px">
+                    <span>Registered Events</span>
+                </h1>
+            </div>
+            <div style="text-align: center; padding-top: 30px">
+                <% if(user.rEvents.length === 1) { %>
                 <div>
-                    <h2 style="text-align:center ; padding-bottom: 20px">
-                        Profile
-                    </h2>
+                    No events to display.
                 </div>
-                <h1 style="text-align :center">About</h1>
-                <div class="container" style="padding-top: 20px; padding-left: 17%">
-                    <div class="row">
-                        <div class="col-6" style="padding-top :20px;">
-                            <h5>
-                               Name : <%- user.name %>
-                            </h5>
-                        </div>
-                        <div class="col-6" style="padding-top :20px">
-                            <h5>
-                                Contact : <%- user.phoneNumber %>
-                            </h5>
-                        </div>
-                        <div class="col-6"  style="padding-top :20px">
-                            <h5>
-                                E-mail : <%- user.email %>
-                            </h5>
-                        </div>
-                        <div class="col-6" style="padding-top :20px">
-                            <h5>
-                                College : <%- user.college %>
-                            </h5>
-                        </div>
-                        <div class="col-6" style="padding-top :20px">
-                            <h5>
-                                City : <%- user.city %>
-                            </h5>
-                        </div>
-                        <div class="col-6" style="padding-top :20px">
-                            <h5>
-                                Year : <%- user.year %>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
+                <% } else { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Team Size</th>
+                            <th>Payment Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%   for(var i=1; i<user.rEvents.length; i++) { %>
+                        <tr>
+                            <td>
+                                <%= user.rEvents[i].event.eventName %>
+                            </td>
+                            <td>
+                                <%= user.rEvents[i].team.length %>
+                            </td>
+                            <td>
+                                <%= user.rEvents[i].status %>
+                            </td>
+                            <td>
+                                <a href="/pdf/view/<%= user.rEvents[i].orderId %>" target="_blank">View</a>
+                                <br>
+                                <a href="#" id="payNow<%= i %>">Pay</a>
+                                <script>
+                                    $("#payNow<%= i %>").click(function (e) {
+                                        e.preventDefault();
+                                        var name,
+                                            form = document.createElement("form"),
+                                            node = document.createElement("input");
 
+
+
+                                        form.action =
+                                            "/payment/initiate/<%= user.rEvents[i].event.payName %>";
+                                        form.method = 'POST';
+
+
+                                        node.name = 'orderId';
+                                        node.value = "<%= user.rEvents[i].orderId %>";
+                                        form.appendChild(node.cloneNode());
+
+
+                                        form.style.display = "none";
+                                        document.body.appendChild(form);
+
+                                        form.submit();
+
+                                        document.body.removeChild(form);
+                                    });
+                                </script>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <% }  %>
+            </div>
+
+            <div style="text-align:center; padding-top:30px">
+
+                <h1>
+                    <span>Paid Events</span>
+                </h1>
+            </div>
+            <div style="text-align:center; padding-top:30px">
+                <% if(user.events.length === 1) { %>
                 <div>
-                    <h1 style="text-align: center; padding-top : 30px">
-                        <span>Registered Events</span>
-                    </h1>
+                    No events to display.
                 </div>
-                <div style="text-align: center; padding-top: 30px">
-                    <% if(user.rEvents.length === 1) { %>
-                    <div>
-                        No events to display.
-                    </div>
-                    <% } else { %>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Event Name</th>
-                                <th>Team Size</th>
-                                <th>Payment Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%   for(var i=1; i<user.rEvents.length; i++) { %>
-                            <tr>
-                                <td >
-                                    <%= user.rEvents[i].event.eventName %>
-                                </td>
-                                <td >
-                                    <%= user.rEvents[i].team.length %>
-                                </td>
-                                <td >
-                                    <%= user.rEvents[i].status %>
-                                </td>
-                                <td >
-                                    <a href="/pdf/view/<%= user.rEvents[i].orderId %>" target="_blank">View</a>
-                                    <br>
-                                    <a href="#" id="payNow<%= i %>">Pay</a>
-                                    <script>
-                                        $("#payNow<%= i %>").click(function (e) {
-                                            e.preventDefault();
-                                            var name,
-                                                form = document.createElement("form"),
-                                                node = document.createElement("input");
-
-
-
-                                            form.action =
-                                                "/payment/initiate/<%= user.rEvents[i].event.payName %>";
-                                            form.method = 'POST';
-
-
-                                            node.name = 'orderId';
-                                            node.value = "<%= user.rEvents[i].orderId %>";
-                                            form.appendChild(node.cloneNode());
-
-
-                                            form.style.display = "none";
-                                            document.body.appendChild(form);
-
-                                            form.submit();
-
-                                            document.body.removeChild(form);
-                                        });
-                                    </script>
-                                </td>
-                            </tr>
-                            <% } %>
-                        </tbody>
-                    </table>
-                    <% }  %>
-                </div>
-
-                <div style="text-align:center; padding-top:30px">
-
-                    <h1>
-                        <span>Paid Events</span>
-                    </h1>
-                </div>
-                <div style="text-align:center; padding-top:30px">
-                    <% if(user.events.length === 1) { %>
-                    <div>
-                        No events to display.
-                    </div>
-                    <% } else { %>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="head-font">Event Name</th>
-                                <th class="head-font">Team Size</th>
-                                <th class="head-font">Payment Status</th>
-                                <th class="head-font">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%   for(var i=1; i<user.events.length; i++) { %>
-                            <tr>
-                                <td class="body-font">
-                                    <%= user.events[i].event.eventName %>
-                                </td>
-                                <td class="body-font">
-                                    <%= user.events[i].team.length %>
-                                </td>
-                                <td class="body-font">
-                                    <%= user.events[i].status %>
-                                </td>
-                                <td class="body-font link-text">
-                                    <a href="/pdf/generate/<%= user.events[i].orderId %>" target="_blank">Receipt</a>
-                                </td>
-                            </tr>
-                            <% } %>
-                        </tbody>
-                    </table>
-                    <% }  %>
-                </div>
+                <% } else { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="head-font">Event Name</th>
+                            <th class="head-font">Team Size</th>
+                            <th class="head-font">Payment Status</th>
+                            <th class="head-font">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%   for(var i=1; i<user.events.length; i++) { %>
+                        <tr>
+                            <td class="body-font">
+                                <%= user.events[i].event.eventName %>
+                            </td>
+                            <td class="body-font">
+                                <%= user.events[i].team.length %>
+                            </td>
+                            <td class="body-font">
+                                <%= user.events[i].status %>
+                            </td>
+                            <td class="body-font link-text">
+                                <a href="/pdf/generate/<%= user.events[i].orderId %>" target="_blank">Receipt</a>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <% }  %>
+            </div>
 
 
         </div>
 
 
-    </div>
+    </div> -->
 
 
-    </div>
+
 
 
     <% include partials/footer %>
@@ -197,10 +206,10 @@
 
 
 
-    </div>
 
 
-    <script src="js/jquery.min.js"></script>
+
+
     <script src="js/scrollmagic.js"></script>
     <script src="js/sphere.js"></script>
     <script src="js/main.js"></script>
@@ -208,12 +217,11 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="js/redirect.js "></script>
     <script>
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 5;
+            el.style.opacity = 2;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
@@ -228,95 +236,6 @@
             })();
         });
     </script>
-
-    <script>
-        if (screen.width > 767) {
-            function remove() {
-                var elem = document.getElementById('npt');
-                elem.parentNode.removeChild(elem);
-
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width > 500) {
-            function remove() {
-                var elem = document.getElementById('des_so');
-                elem.parentNode.removeChild(elem);
-
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width < 500) {
-            function remove() {
-                var elem = document.getElementById('mob_so');
-                elem.parentNode.removeChild(elem);
-
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width < 769) {
-            function remove() {
-                var elem = document.getElementById('seprate');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width > 769) {
-            function remove() {
-                var elem = document.getElementById('mobsep');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
-        if (screen.width == 731 && screen.height == 411) {
-            function remove() {
-                var elem = document.getElementById('pt_ani');
-
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-
-            function remove1() {
-                var elem1 = document.getElementById('txt');
-
-                elem1.parentNode.removeChild(elem1);
-                return false;
-            }
-            remove1();
-
-        }
-    </script>
-
-    <script>
-        if (screen.width == 736 && screen.height == 414) {
-            function remove() {
-                var elem = document.getElementById('npt');
-
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-
-
-        }
-    </script>
-
     <script>
         if (screen.width > 1024) {
             function remove() {
@@ -337,7 +256,6 @@
             remove();
         }
     </script>
-
     <script>
         if (screen.width < 500) {
             function remove() {
@@ -359,30 +277,19 @@
         }
     </script>
     <script>
-        if (screen.width > 500) {
-            function remove() {
-                var elem = document.getElementById('mob');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-
-    <script>
-        if (screen.width < 500) {
-            function remove() {
-                var elem = document.getElementById('des');
-                elem.parentNode.removeChild(elem);
-                return false;
-            }
-            remove();
-        }
-    </script>
-    <script>
         if (screen.width < 769) {
             function remove() {
-                var elem = document.getElementById('btn-grp');
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
                 elem.parentNode.removeChild(elem);
                 return false;
             }
