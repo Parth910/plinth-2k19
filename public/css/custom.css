@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'Arame-Bold';
-    src: url("../fonts/Arame-Bold.otf");
+    font-family: 'Roboto-Black';
+    src: url("../fonts/Roboto-Black.ttf");
 }
 
 
@@ -16,6 +16,10 @@ h4,
 h5,
 h6 {
     font-family: 'Arame-Regular';
+}
+
+p,ol,ul,li,span,a{
+    font-family: 'Roboto-Black';
 }
 
 #txt {
