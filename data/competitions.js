@@ -530,9 +530,9 @@ module.exports.competitions = {
                                         +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 70cms."
                                     +"</p>"
                                    
-                                    +"<b>Track</b>"
+                                   // +"<b>Track</b>"
                                     +"<br>"
-                                    +"<div class='uk-text-center'><img src='media/drone-track.png' /></div>"
+                                   // +"<div class='uk-text-center'><img src='media/drone-track.png' /></div>"
                                 +"</p>",
             synopsis: "<p>"
                             +"<p>"

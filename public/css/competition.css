@@ -1,0 +1,83 @@
+ul,
+li {
+    font-family: 'Oxygen', sans-serif;
+}
+
+#tab>p>b {
+    font-size: 2.5vh;
+    font-weight: unset;
+}
+
+ul {
+    -webkit-transform: rotate(deg) skew(20deg, 5deg);
+    transform: rotate(deg) skew(20deg, 5deg);
+}
+
+.list-item {
+    background: #2f0028;
+    color: #575757;
+    text-align: center;
+    height: 2.5em;
+    width: 5em;
+    vertical-align: middle;
+    line-height: 2.5em;
+    border-bottom: 1px solid #2f0028;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: all .25s linear;
+}
+
+.list-item:hover {
+    background: #b836c6;
+    color: #fffcfb;
+    -webkit-transform: translate(0.9em, -0.9em);
+    transform: translate(0.9em, -0.9em);
+    transition: all .25s linear;
+}
+
+.list-item:hover:before,
+.list-item:hover:after {
+    transition: all .25s linear;
+}
+
+.list-item:hover:before {
+    background: #b836c6;
+    width: 1em;
+    top: .5em;
+    left: -1em;
+}
+
+.list-item:hover:after {
+    background: #b836c6;
+    width: 1em;
+    bottom: -2.5em;
+    left: 1em;
+    height: 4em;
+}
+
+.list-item:before,
+.list-item:after {
+    content: '';
+    position: absolute;
+    transition: all .25s linear;
+    width: .5em;
+}
+
+.list-item:after {
+    height: 4em;
+    background: #2f0028;
+    bottom: -2.25em;
+    left: 1.5em;
+    -webkit-transform: rotate(90deg) skew(0, 45deg);
+    transform: rotate(90deg) skew(0, 45deg);
+}
+
+.list-item:before {
+    height: 2.5em;
+    background: #2f0028;
+    top: .25em;
+    left: -.5em;
+    -webkit-transform: skewY(-45deg);
+    transform: skewY(-45deg);
+}

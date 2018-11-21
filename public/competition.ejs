@@ -4,7 +4,7 @@
 <head>
     <% include partials/head %>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/competitions.css">
+    <link rel="stylesheet" href="./css/competition.css">
 </head>
 
 <body>
@@ -32,223 +32,109 @@
 	    gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
 	  }
 	</script>
-    <style>
-        ul,
-        li {
-            font-family: 'Oxygen', sans-serif;
-        }
-
-        #tab>p>b {
-            font-size: 2.5vh;
-            font-weight: unset;
-        }
-
-        ul {
-            -webkit-transform: rotate(deg) skew(20deg, 5deg);
-            transform: rotate(deg) skew(20deg, 5deg);
-        }
-
-        .list-item {
-            background: #2f0028;
-            color: #575757;
-            text-align: center;
-            height: 2.5em;
-            width: 4em;
-            vertical-align: middle;
-            line-height: 2.5em;
-            border-bottom: 1px solid #2f0028;
-            position: relative;
-            display: block;
-            text-decoration: none;
-            transition: all .25s linear;
-        }
-
-        .list-item:hover {
-            background: #ff6e42;
-            color: #fffcfb;
-            -webkit-transform: translate(0.9em, -0.9em);
-            transform: translate(0.9em, -0.9em);
-            transition: all .25s linear;
-        }
-
-        .list-item:hover:before,
-        .list-item:hover:after {
-            transition: all .25s linear;
-        }
-
-        .list-item:hover:before {
-            background: #b65234;
-            width: 1em;
-            top: .5em;
-            left: -1em;
-        }
-
-        .list-item:hover:after {
-            background: #b65234;
-            width: 1em;
-            bottom: -2.5em;
-            left: 1em;
-            height: 4em;
-        }
-
-        .list-item:before,
-        .list-item:after {
-            content: '';
-            position: absolute;
-            transition: all .25s linear;
-            width: .5em;
-        }
-
-        .list-item:after {
-            height: 4em;
-            background: #2f0028;
-            bottom: -2.25em;
-            left: 1.5em;
-            -webkit-transform: rotate(90deg) skew(0, 45deg);
-            transform: rotate(90deg) skew(0, 45deg);
-        }
-
-        .list-item:before {
-            height: 2.5em;
-            background: #2f0028;
-            top: .25em;
-            left: -.5em;
-            -webkit-transform: skewY(-45deg);
-            transform: skewY(-45deg);
-        }
-    </style>
 
     <!-- three.js -->
 
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-    <canvas id="canvas"></canvas>
+    <h1 style="padding-top:15vh; text-align: center; transform: scale(1);">
+        <%- competition.displayName %>
+    </h1>
 
     <div class="main-content">
         <div class="scroll-content" style="overflow-x: hidden" id="style-1">
-            <h2 style="text-align:center">
-                <%- competition.clubName %>
-            </h2>
-            <h1 style="text-align:center">
-                <%- competition.displayName %>
-            </h1>
-            <br>
-            <div class="row">
-                <% if(competition.eventFee != null ){ %>
-                <div class="offset-1 col-3">Fee :
-                    <strong>
-                        <%- competition.eventFee %></strong>
-                </div>
-                <div class="col-4">Date :
-                    <strong>
-                        <%- competition.eventDate %></strong>
-                </div>
-                <div class="col-4">Venue :
-                    <strong>
-                        <%- competition.eventVenue %></strong>
-                </div>
-                <% } else {%>
-                <div class="col-6">Date :
-                    <strong>
-                        <%- competition.eventDate %></strong>
-                </div>
-                <div class="col-6">Venue :
-                    <strong>
-                        <%- competition.eventVenue %></strong>
-                </div>
-                <%} %>
-            </div>
-            <!-- 
-            <br>
-            <div style="padding-left:23%">
+            <div class="inner-content">
+                <div class="text-padding" style="transform: scale(1);">
+
+                    <!-- <div style="padding-left:23%">
             <button class="request__form-btn noise-btn btnfix" 
-            type="
-                submit"><span>Event Registration</span></button></div> -->
-            <br>
-            <div class="row">
-                <div class="offset-1 col-2">
-                    <ul>
-                        <li>
-                            <a class='list-item' id="synopsis" href='#'>
-                                Synopsis
-                            </a>
-                        </li>
-                        <li>
-                            <a class='list-item' id="more" href='#'>
-                                More
-                            </a>
-                        </li>
-                        <li>
-                            <a class='list-item' id="rules" href='#'>
-                                Rules
-                            </a>
-                        </li>
-                        <li>
-                            <a class='list-item' id="query" href='#'>
-                                Query
-                            </a>
-                        </li>
+            type="submit"><span>Event Registration</span></button></div> -->
+                    <div class="row justify-content-center">
+                        <% if(competition.eventFee != null ){ %>
+                        <div class="col-md-3 col-sm-12" style="text-align:center">Fee :
+                            <strong>
+                                <%- competition.eventFee %></strong>
+                        </div>
+                        <div class="col-md-3 col-sm-12" style="text-align:center">Date :
+                            <strong>
+                                <%- competition.eventDate %></strong>
+                        </div>
+                        <div class="col-md-3 col-sm-12" style="text-align:center">Venue :
+                            <strong>
+                                <%- competition.eventVenue %></strong>
+                        </div>
 
-                    </ul>
-                </div>
-                <div class="col-8">
-                    <div id="synopsiscontent">
-                        <%- competition.synopsis %>
+                        <% } else {%>
+
+                        <div class="col-md-6" style="text-align:center">Date :
+                            <strong>
+                                <%- competition.eventDate %></strong>
+                        </div>
+                        <div class="col-md-6" style="text-align:center">Venue :
+                            <strong>
+                                <%- competition.eventVenue %></strong>
+                        </div>
+
+                        <%} %>
                     </div>
-                    <div id="morecontent" class="d-none">
-                        <%- competition.eventDescription %>
-                    </div>
-                    <div id="rulescontent" class="d-none">
-                        <%- competition.rules %>
-                    </div>
-                    <div id="querycontent" class="d-none">
-                        <%- competition.query %>
+                    <div class="row" style="padding-top: 5vh;">
+                        <div class="col-2" style="padding-left: 5px;">
+                            <ul>
+                                <li>
+                                    <a class='list-item' id="synopsis" href='#'>
+                                        Synopsis
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='list-item' id="more" href='#'>
+                                        Description
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='list-item' id="rules" href='#'>
+                                        Rules
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='list-item' id="query" href='#'>
+                                        Query
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="offset-1 col-8">
+                            <div id="synopsiscontent">
+                                <%- competition.synopsis %>
+                            </div>
+                            <div id="morecontent" class="d-none">
+                                <%- competition.eventDescription %>
+                            </div>
+                            <div id="rulescontent" class="d-none">
+                                <%- competition.rules %>
+                            </div>
+                            <div id="querycontent" class="d-none">
+                                <%- competition.query %>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <br>
+
     <% include partials/footer %>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/sphere.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/competition.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script>
-        $("#synopsis").click(function () {
-            $("#querycontent").addClass("d-none");
-            $("#morecontent").addClass("d-none");
-            $("#rulescontent").addClass("d-none");
-            $("#synopsiscontent").removeClass("d-none");
-        });
-
-            $("#query").click(function () {
-                $("#synopsiscontent").addClass("d-none");
-                $("#morecontent").addClass("d-none");
-                $("#rulescontent").addClass("d-none");
-                $("#querycontent").removeClass("d-none");
-            });
-
-        $("#more").click(function () {
-            $("#querycontent").addClass("d-none");
-            $("#synopsiscontent").addClass("d-none");
-            $("#rulescontent").addClass("d-none");
-            $("#morecontent").removeClass("d-none");
-        });
-        $("#rules").click(function () {
-            $("#synopsiscontent").addClass("d-none");
-            $("#morecontent").addClass("d-none");
-            $("#querycontent ").addClass("d-none");
-            $("#rulescontent").removeClass("d-none");
-        });
-    </script>
     <script>
         window.addEventListener('load', function () {
 
