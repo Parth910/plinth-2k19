@@ -83,3 +83,9 @@
 #about {
   padding-left: 16%;
 }
+.heading {
+  /* font-size: 3.0vh;
+  margin-top: 2% !important; */
+  color: #4C4D64;
+  font-weight: bold;
+}
