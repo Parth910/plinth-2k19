@@ -51,27 +51,27 @@
             <button class="request__form-btn noise-btn btnfix" 
             type="submit"><span>Event Registration</span></button></div> -->
                     <div class="row justify-content-center">
-                        <% if(competition.eventFee != null ){ %>
-                        <div class="col-md-3 col-sm-12" style="text-align:center">Fee :
+                        <% if(competition.fee != null ){ %>
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Fee :
                             <strong>
                                 <%- competition.eventFee %></strong>
                         </div>
-                        <div class="col-md-3 col-sm-12" style="text-align:center">Date :
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date :
                             <strong>
                                 <%- competition.eventDate %></strong>
                         </div>
-                        <div class="col-md-3 col-sm-12" style="text-align:center">Venue :
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue :
                             <strong>
                                 <%- competition.eventVenue %></strong>
                         </div>
 
                         <% } else {%>
 
-                        <div class="col-md-6" style="text-align:center">Date :
+                        <div class="col-md-6" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date :
                             <strong>
                                 <%- competition.eventDate %></strong>
                         </div>
-                        <div class="col-md-6" style="text-align:center">Venue :
+                        <div class="col-md-6" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue :
                             <strong>
                                 <%- competition.eventVenue %></strong>
                         </div>
