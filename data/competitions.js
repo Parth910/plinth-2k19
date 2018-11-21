@@ -65,7 +65,7 @@ module.exports.competitions = {
             eventName: "The Quest",
             displayName: "The Quest",
             payName: "TQ",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
@@ -104,7 +104,7 @@ module.exports.competitions = {
         //     eventName: "Cryptex",
         //     displayName: "Cryptex",
         //     payName: "AQ",
-        //     eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2018",
+        //     eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2019",
         //     eventVenue: "The LNMIIT, Jaipur",
         //     memberUpperLimit: 1,
         //     memberLowerLimit: 1,
@@ -142,7 +142,7 @@ module.exports.competitions = {
         //     eventName: "For Hack the Code",
         //     displayName: "For Hack the Code",
         //     payName: "PRA",
-        //     eventDate: "21<sup>st</sup> Jan 2018", //dont know
+        //     eventDate: "21<sup>st</sup> Jan 2019", //dont know
         //     eventVenue: "The LNMIIT, Jaipur",
         //     memberUpperLimit: 2,
         //     memberLowerLimit: 1,
@@ -211,7 +211,7 @@ module.exports.competitions = {
         //                         +"</p>",
         //     rules: "<p>"
         //                 +"<p>"
-        //                     + "Entries will be accepted till 19<sup>th</sup>January, 2018. Offline registration will be subject to the discretion of the organizers."
+        //                     + "Entries will be accepted till 19<sup>th</sup>January, 2019. Offline registration will be subject to the discretion of the organizers."
         //                 +"</p>"
         //                 +"<p>"
         //                     +"<b>Eligibility Criteria</b>"
@@ -257,7 +257,7 @@ module.exports.competitions = {
             eventName: "Robowar",
             displayName: "Robowar",
             payName: "RW",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 6,
             memberLowerLimit: 2,
@@ -420,7 +420,7 @@ module.exports.competitions = {
             eventName: "Robosoccer",
             displayName: "Robosoccer",
             payName: "RS",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 6,
             memberLowerLimit: 1,
@@ -518,7 +518,7 @@ module.exports.competitions = {
             eventName: "Drone Obstruction",
             displayName: "Drone Obstruction",
             payName: "DO",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 5,
             memberLowerLimit: 1,
@@ -576,7 +576,7 @@ module.exports.competitions = {
             eventName: "LFR",
             displayName: "LFR",
             payName: "LFR",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
             memberLowerLimit: 1,
@@ -631,7 +631,7 @@ module.exports.competitions = {
             eventName: "Maze Solver",
             displayName: "Maze Solver",
             payName: "MS",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
             memberLowerLimit: 1,
@@ -734,7 +734,7 @@ module.exports.competitions = {
             eventName: "Roborace",
             displayName: "Roborace",
             payName: "RR",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
             memberLowerLimit: 1,
@@ -829,7 +829,7 @@ module.exports.competitions = {
             eventName: "RC Plane",
             displayName: "RC Plane",
             payName: "RCP",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 5,
             memberLowerLimit: 1,
@@ -946,7 +946,7 @@ module.exports.competitions = {
                                 +"I could really use a wish right now, wish right now, wish right now\""
                             +"</p>"
                             +"<p>"
-                                +"So, if your wishes also coincide with wright brothers you have arrived at right place.Plinth 2018 presents for the first time RC plane flying competition."
+                                +"So, if your wishes also coincide with wright brothers you have arrived at right place.Plinth 2019 presents for the first time RC plane flying competition."
                                 +"<br>"
                                 +"Get ready to feed  your inner pilot and show your enthusiasm by building a remote control plane and show your insane flying skills..... Soo get ready to Rule the Sky!!"
                             +"</p>"
@@ -1018,7 +1018,7 @@ module.exports.competitions = {
             eventName: "Transporter",
             displayName: "Transporter",
             payName: "TP",
-            eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2018",
+            eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 5,
             memberLowerLimit: 1,
