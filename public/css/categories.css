@@ -72,7 +72,8 @@ body {
     .main-content {
         top: 50%;
         width: 90%;
-        height: 64%;
+        height: 80%;
+        margin-top: 10% !important;
     }
 }
 
@@ -80,7 +81,8 @@ body {
     .main-content {
         top: 52%;
         width: 100%;
-        height: 68%;
+        height: 80%;
+        margin-top: 10% !important;
     }
 }
 
@@ -88,17 +90,18 @@ body {
     .main-content {
         top: 52%;
         width: 100%;
-        height: 60%;
+        height: 80%;
+        margin-top: 20% !important;
 
     }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 480px) {
+@media only screen and (min-width: 370px) and (max-width: 480px) {
     .main-content {
         top: 52%;
         width: 100%;
-        height: 70%;
-
+        height: 80%;
+        margin-top: 20% !important;
     }
 }
 
