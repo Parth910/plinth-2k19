@@ -18,8 +18,8 @@
 }
 
 .ch-grid li {
-	width: 240px;
-	height: 240px;
+	width: 220px;
+	height: 220px;
 	display: inline-block;
 	margin: 20px;
 }
@@ -57,7 +57,7 @@
 }
 
 .ch-img-4 {
-	background-image: url(../media/managment.jpeg );
+	background-image: url(../media/coverimage_1706129355502_time-management.png );
 }
 
 .ch-img-5 {
@@ -68,25 +68,25 @@
 	background-image: url(../media/lit.jpeg  );
 }
 .ch-img-into_the_universe{
-	background-image: url();
+	background-image: url(../media/into_the_uni.jpeg);
 }
 .ch-img-astro_hunt{
-	background-image: url();
+	background-image: url(../media/carinaPillarJet_VIShst.jpg);
 }
 .ch-img-astro_quiz{
-	background-image: url();
+	background-image: url(../media/1920x1080-6.jpg);
 }
 .ch-img-iupc{
-	background-image: url();
+	background-image: url(../media/ab5398cf5eee70433c1fe2cd7ff299e7.jpg);
 }
 .ch-img-enigma{
-	background-image: url();
+	background-image: url(../media/498765-binary-code-wallpaper-1920x1200-for-ios.jpg);
 }
 .ch-img-code_swap{
-	background-image: url();
+	background-image: url(../media/2-Man-holds-the-program-code.jpg);
 }
 .ch-img-fhtc{
-	background-image: url();
+	background-image: url(../media/codigo-fonte-da-area-de-trabalho-e-papel-de-parede-por-linguagem-de-computador-com-codificacao-e-programacao_33771-595.jpg);
 }
 .ch-img-robowar{
 	background-image: url(../media/robowar.jpg);
@@ -104,7 +104,7 @@
 	background-image: url(../media/mazesolv.jpg);
 }
 .ch-img-rcp{
-	background-image: url(../media/rc.jpgs);
+	background-image: url(../media/rc.jpg);
 }
 .ch-img-tpr{
 	background-image: url(../media/transp.jpg);
@@ -113,29 +113,30 @@
 	background-image: url(../media/roborace.jpg);
 }
 .ch-img-ice{
-	background-image: url();
+	background-image: url(../media/maxresdefault.jpeg);
 }
 .ch-img-circuitdes{
 	background-image: url(../media/circuit_designlogo.resized.jpg);
 }
 .ch-img-stf{
-	background-image: url();
+	background-image: url(../media/intern.jpg);
 }
 .ch-img-brdw{
-	background-image: url();
+	background-image: url(../media/brandwagon.jpg);
 }
 .ch-img-theq{
-	background-image: url();
+	background-image: url(../media/quest.jpg);
 }
-.ch-img-theq{
-	background-image: url();
+.ch-img-cyptx{
+	background-image: url(../media/cryptex.jpg);
 }
-.ch-img-theq{
-	background-image: url();
+.ch-img-rostrum{
+	background-image: url(../media/rostrum.jpg);
 }
-.ch-img-theq{
-	background-image: url();
+.ch-img-comikaze{
+	background-image: url(../media/comikaze.jpg);
 }
+
 
 
 
