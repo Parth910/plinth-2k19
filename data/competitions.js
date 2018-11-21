@@ -1,7 +1,7 @@
 module.exports.competitions = {
     competitions: [
         {
-            eventUrl: 'Brandwagon',
+            eventUrl: 'brandwagon',
             fee:100,
             paymentURL: true,
             clubName: "Quizzinga",
@@ -58,7 +58,7 @@ module.exports.competitions = {
             otherURL: null,
         },
         {
-            eventUrl: 'TheQuest',
+            eventUrl: 'thequest',
             fee:100, //dont know
             paymentURL: true,
             clubName: "Quizzinga",

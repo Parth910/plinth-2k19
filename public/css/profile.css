@@ -1,72 +1,85 @@
-.table-margin{
-    margin-left: 15%;
-    margin-right:15%;
+.table-margin {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.head-font {
+  font-size: 1.3vw !important;
+  color: white !important;
+}
+
+.body-font {
+  font-size: 1.2vw;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+}
+
+#prof {
+  margin-bottom: 5px;
+}
+
+#userp {
+  margin-top: 10px;
+}
+
+.no-margin {
+  margin-left: unset !important;
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 800px) {
+  #about {
+    padding-left: 10% !important;
   }
-  .head-font{
-    font-size: 1.3vw !important;
-    color: white !important;
-  } 
-  .body-font{
-    font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .tr-font {
+    font-size: 1rem;
   }
-  
-  .sub-heading{
-    font-size: 1.8rem;
+
+  .sub-heading {
+    font-size: 1.5rem;
   }
-  
-  #prof{
-    margin-bottom: 5px;
-    }
-    
-    #userp{
-      margin-top: 10px;
-    }
-    .no-margin{
-      margin-left: unset !important;
-    }
-  
-  @media only screen and (max-width: 1024px) {
-   
+
+  #about {
+    padding-left: 2% !important;
   }
-  
-  @media only screen and (max-width: 767px) {
-   
+}
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 640px) and (orientation: landscape) {
+
+  .sub-heading {
+    font-size: 1.5rem;
   }
-  
-  @media only screen and (max-width: 480px) {
-    
-   
-    .tr-font{
-      font-size: 1rem;
-    }
-    .sub-heading{
-      font-size: 1.5rem;
-    }
+}
+
+@media only screen and (orientation : portrait) {
+
+  .head-font {
+    font-size: 2.4vh !important;
   }
-  
-  
-  @media only screen and (min-device-width: 480px) 
-                     and (max-device-width: 640px) 
-                     and (orientation: landscape) {
-                    
-                      .sub-heading{
-                        font-size: 1.5rem;
-                      }
-  }
-  
-  @media only screen and (orientation : portrait ) {
-                     
-    .head-font{
-      font-size: 2.4vh !important;
-    } 
-    .body-font{
+
+  .body-font {
     font-size: 1.8vh;
-    }
-  
-    .table-margin{
-      margin-left: 2%;
-      margin-right:2%;
-    }
   }
-   
-  
+
+  .table-margin {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .text-padding {
+    padding-left: 12% !important;
+  }
+}
+
+#about {
+  padding-left: 16%;
+}
