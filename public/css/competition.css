@@ -51,9 +51,9 @@ ul {
 .list-item:hover:after {
     background: #b836c6;
     width: 1em;
-    bottom: -2.5em;
-    left: 1em;
-    height: 4em;
+    bottom: -2.9em;
+    left: 1.5em;
+    height: 4.7em;
 }
 
 .list-item:before,
