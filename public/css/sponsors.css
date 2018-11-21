@@ -33,7 +33,7 @@
 	cursor: default;
 	box-shadow:
 		inset 0 0 0 0 rgba(200, 95, 66, 0.4),
-		inset 0 0 0 16px rgba(255, 255, 255, 0.6),
+		inset 0 0 0 0   rgba(255, 255, 255, 0.6),
 		0 1px 2px rgba(0, 0, 0, 0.1);
 
 	-webkit-transition: all 0.4s ease-in-out;
@@ -43,159 +43,312 @@
 	transition: all 0.4s ease-in-out;
 }
 
-ch-img-a{
-  background-image: url(../media/sponsors_2k18/denabank.jpg);
+.ch-img-1s{
+  background-image: url(../media/sponsors_2k18/microsoft.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  /* height: 100px; */
+  
 }
-ch-img-b{
-    background-image: url(../media/sponsors_2k17)
+.ch-img-2s{
+    background-image: url(../media/sponsors_2k18/Havells_Logo.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-3s{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-3s{
+    background-image: url(../media/sponsors_2k18/philips.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-4s{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-4s{
+    background-image: url(../media/sponsors_2k18/peta-india-logo.svg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-5s{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-5s{
+    background-image: url(../media/sponsors_2k18/festPav.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-6s{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-6s{
+    background-image: url(../media/sponsors_2k18/DUAssassins.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-7{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-7{
+    background-image: url(../media/sponsors_2k18/MyCaptain.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-8{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-8{
+    background-image: url(../media/sponsors_2k18/climber.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-ch-img-9{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-9{
+  background-image: url(../media/sponsors_2k18/Zoomcar.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-10{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-10{
+  background-image: url(../media/sponsors_2k18/pedl.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-11{
-    background-image: url(../media/sponsors_2k17)
+.ch-img-11{
+    background-image: url(../media/sponsors_2k18/ola.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-ch-img-12{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-12{
+  background-image: url(../media/sponsors_2k18/hippocabs-logo.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-13{
-    background-image: url(../media/sponsors_2k17)
+.ch-img-13{
+    background-image: url(../media/sponsors_2k18/onnbikes.svg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-ch-img-14{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-14{
+  background-image: url(../media/sponsors_2k18/toppr.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-15{
-    background-image: url(../media/sponsors_2k17)
+.ch-img-15{
+    background-image: url(../media/sponsors_2k18/g4g.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-16{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-16{
+    background-image: url(../media/sponsors_2k18/imagination.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-ch-img-17{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-17{
+  background-image: url(../media/sponsors_2k18/internshala.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-18{
-    background-image: url(../media/sponsors_2k17)
+.ch-img-18{
+    background-image: url(../media/sponsors_2k18/eucoffee.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-19{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-19{
+    background-image: url(../media/sponsors_2k18/Youniverse.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-ch-img-20{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-20{
+  background-image: url(../media/sponsors_2k18/isleoffortune.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-21{
-  background-image: url(../media/sponsors_2k17)
+.ch-img-21{
+  background-image: url(../media/sponsors_2k18/DesiKitchen.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
 }
-ch-img-22{
-    background-image: url(../media/sponsors_2k17)
+.ch-img-22{
+    background-image: url(../media/sponsors_2k18/tvg.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-23{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-23{
+    background-image: url(../media/sponsors_2k18/tgt.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-24{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-24{
+    background-image: url(../media/sponsors_2k18/DesignCut.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-25{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-25{
+    background-image: url(../media/sponsors_2k18/TechieNest.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-26{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-26{
+    background-image: url(../media/sponsors_2k18/hydrolus.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-27{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-27{
+    background-image: url(../media/sponsors_2k18/CodesDope.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-28{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-28{
+    background-image: url(../media/sponsors_2k18/HackerEarth.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-29{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-29{
+    background-image: url(../media/sponsors_2k18/Codechef.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-30{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-30{
+    background-image: url(../media/sponsors_2k18/denabank.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
-  ch-img-31{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-31{
+    background-image: url(../media/sponsors_2k18/Rorito.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-32{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-32{
+    background-image: url(../media/sponsors_2k18/Safarnama.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-33{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-33{
+    background-image: url(../media/sponsors_2k18/aviotron.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-34{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-34{
+    background-image: url(../media/sponsors_2k18/Pustakmandi.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-35{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-35{
+    background-image: url(../media/sponsors_2k18/EnchantingVerses.jpg );
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-36{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-36{
+    background-image: url(../media/sponsors_2k18/sharpvision.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-37{
-    background-image: url(../media/sponsors_2k17)
+  .ch-img-37{
+    background-image: url(../media/sponsors_2k18/HalfBakedBeans.jpeg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: relative;
   }
      
-  ch-img-38{
-    background-image: url(../media/sponsors_2k17)
-  }
-     
-  ch-img-39{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-40{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-41{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-42{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-43{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-44{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-45{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-46{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-47{
-    background-image: url(../media/sponsors_2k17)
-  }
-  ch-img-48{
-    background-image: url(../media/sponsors_2k17)
-  }
-    
+  
   .ch-info {
 	position: absolute;
 	width: 100%;
@@ -227,7 +380,7 @@ ch-img-22{
 	position: relative;
 	letter-spacing: 2px;
 	font-size: 22px;
-	margin: 42px 30px;
+	margin: 76px 30px;
 	padding: 65px 0 0 0;
 	height: 110px;
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -241,9 +394,9 @@ ch-img-22{
 	color: #fff;
 	padding: 10px 5px;
 	font-style: italic;
-	margin: 0 30px;
+	margin: -103px 1px;
 	font-size: 12px;
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 0px solid rgba(255, 255, 255, 0.5);
 }
 
 .ch-info p a {
@@ -255,7 +408,7 @@ ch-img-22{
 	text-transform: uppercase;
 	font-size: 9px;
 	letter-spacing: 1px;
-	padding-top: 4px;
+	padding-top: 1px;
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -267,7 +420,7 @@ ch-img-22{
 .ch-item:hover {
 	box-shadow:
 		inset 0 0 0 110px rgba(200, 95, 66, 0.4),
-		inset 0 0 0 16px rgba(255, 255, 255, 0.8),
+		inset 0 0 0 0px rgba(255, 255, 255, 0.8),
 		0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -296,7 +449,7 @@ ch-img-22{
     .ch-item {
         box-shadow:
             inset 0 0 0 110px rgba(200, 95, 66, 0.4),
-            inset 0 0 0 16px rgba(255, 255, 255, 0.8),
+            inset 0 0 0 0px rgba(255, 255, 255, 0.8),
             0 1px 2px rgba(0, 0, 0, 0.1);
     }
     
