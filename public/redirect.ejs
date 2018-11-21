@@ -116,20 +116,20 @@
               <div class="row request__group">
                 <div class="form-group col-md-8 col-12 row">
                   <label class="col-md-4 col-4 control-label">Gender:</label>
-        
-                    <div class="radio col-md-2 col-4">
-                      <label for="radios-0">
-                        <input type="radio" class="request__input" id="radios-0" name="gender" value="male">
-                        Male
-                      </label>
-                    </div>
-                    <div class="radio col-md-2 col-4">
-                      <label for="radios-1">
-                        <input type="radio" class="request__input" id="radios-1" name="gender" value="female">
-                        Female
-                      </label>
-                    </div>
-                  
+
+                  <div class="radio col-md-2 col-4">
+                    <label for="radios-0">
+                      <input type="radio" class="request__input" id="radios-0" name="gender" value="male">
+                      Male
+                    </label>
+                  </div>
+                  <div class="radio col-md-2 col-4">
+                    <label for="radios-1">
+                      <input type="radio" class="request__input" id="radios-1" name="gender" value="female">
+                      Female
+                    </label>
+                  </div>
+
                 </div>
               </div>
 
@@ -156,10 +156,8 @@
   <script src="js/scrollmagic.js"></script>
   <script src="js/sphere.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/redirect.js "></script>
   <script>
     window.addEventListener('load', function () {
@@ -256,6 +254,17 @@
       }
       remove();
     }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-125190547-1');
   </script>
 
 </body>

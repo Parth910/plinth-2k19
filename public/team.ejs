@@ -43,14 +43,14 @@
 
     <h1 style="padding-top:15vh; text-align: center">Our Team</h1>
     <div class="conatiner">
-            <div class="row">
-                <div class="col col-12">
-                    <div class="reveal_txt text-center" style="padding-top:25vh;">
-                        <h2 class="align-middle" style="color:#4C4D64">Busy Organizing!</h2>
-                    </div>
+        <div class="row">
+            <div class="col col-12">
+                <div class="reveal_txt text-center" style="padding-top:25vh;">
+                    <h2 class="align-middle" style="color:#4C4D64">Busy Organizing!</h2>
                 </div>
             </div>
         </div>
+    </div>
 
     <% include partials/footer %>
 
@@ -58,10 +58,8 @@
     <script src="js/scrollmagic.js"></script>
     <script src="js/sphere.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
         window.addEventListener('load', function () {
 
@@ -141,6 +139,18 @@
             remove();
         }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
+
 </body>
 
 </html>

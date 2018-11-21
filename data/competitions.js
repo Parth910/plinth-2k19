@@ -2,13 +2,13 @@ module.exports.competitions = {
     competitions: [
         {
             eventUrl: 'brandwagon',
-            fee:100,
+            fee:null,
             paymentURL: true,
             clubName: "Quizzinga",
             eventName: "Brandwagon",
             displayName: "Brandwagon",
             payName: "INT", //Dont know
-            eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
@@ -59,13 +59,13 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'thequest',
-            fee:100, //dont know
+            fee: null, //dont know
             paymentURL: true,
             clubName: "Quizzinga",
             eventName: "The Quest",
             displayName: "The Quest",
             payName: "TQ",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,

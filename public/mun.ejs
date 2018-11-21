@@ -39,25 +39,12 @@
     <meta name="msapplication-TileImage" content="https://plinth.in/media/ms-icon-144x144.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/mun_style.css">
     <link rel="stylesheet" href="./css/mun-icon-font.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-        dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-125190547-1');
-</script>
 
 </head>
 
@@ -145,7 +132,6 @@
     <div id="desk-nav" class="fadeIn delay-10s animated " style="animation-delay:0.9s">
         <nav>
             <ul>
-                <li><a href="#home" class="page_scroll">Home</a></li>
                 <li><a href="#about" class="page_scroll">About</a></li>
                 <li><a href="#organiser" class="page_scroll">Organiser's Desk</a></li>
                 <li><a href="#committees" class="page_scroll">Committees</a></li>
@@ -186,7 +172,7 @@
             <h1 class="heading-primary">
                 <span class="heading-primary--main"><img src="./media/plinth-logo.png" height="100px"></span>
                 <span class="heading-primary--sub" style="padding-top: 20px;">Model United Nation</span>
-                <br/>
+                <br />
                 <span class="heading-primary--sub" style="float: right; font-size: 1.7rem">12<sup style="text-transform:lowercase">th</sup>-13<sup
                         style="text-transform:lowercase">th</sup> January</span>
             </h1>
@@ -320,7 +306,7 @@
                             <div class="card__details">
                                 <p style="font-size: 2rem;">
                                     Agenda <br>
-                                    <em>"Revealing Soon"</em> 
+                                    <em>"Revealing Soon"</em>
                                 </p>
 
                             </div>
@@ -348,7 +334,7 @@
                             <div class="card__details">
                                 <p style="font-size: 2rem;">
                                     Agenda <br>
-                                    <em>"Revealing Soon"</em> 
+                                    <em>"Revealing Soon"</em>
                                 </p>
                             </div>
 
@@ -375,8 +361,8 @@
                             </h4>
                             <div class="card__details">
                                 <p style="font-size: 2rem;">
-                                   Agenda <br>
-                                   <em>"Revealing Soon"</em> 
+                                    Agenda <br>
+                                    <em>"Revealing Soon"</em>
                                 </p>
                             </div>
 
@@ -556,15 +542,25 @@
 
     <div class="popup" id="popup1">
         <div class="popup__content">
-           
+
             <div class="popup__right">
                 <a href="#committees" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">The Lok Sabha</h2>
                 <!-- <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
                     booking</h3> -->
                 <p class="popup__text">
-                    "The Lok Sabha" is one of the most representative chamber of the parliament.It is composed of member of parliament who come on  direct election basis of the adult suffrage. The maximum strength of the House envisaged by the Constitution is 552, which is made up by election of upto 530 members to represent the States,  upto 20 members to represent the Union Territories and not more than two members of the Anglo-Indian Community to be nominated by the Hon'ble President, if,  in his/her opinion, that community is not adequately represented in the House. The  total elective membership is distributed among the States in such a way that the ratio between the number of seats allotted to each State and the population of the State is, so far as practicable, the same for all States.
-                    Being a bicameral legislature, lok sabha  performs a number of useful functions from law making ; controlling financial matters ; passing bills ; electing a number of deferential personalities like president, vice-president , speaker and deputy speaker of the house to sharing its power with the upper house to amend the constitution.
+                    "The Lok Sabha" is one of the most representative chamber of the parliament.It is composed of
+                    member of parliament who come on direct election basis of the adult suffrage. The maximum strength
+                    of the House envisaged by the Constitution is 552, which is made up by election of upto 530 members
+                    to represent the States, upto 20 members to represent the Union Territories and not more than two
+                    members of the Anglo-Indian Community to be nominated by the Hon'ble President, if, in his/her
+                    opinion, that community is not adequately represented in the House. The total elective membership
+                    is distributed among the States in such a way that the ratio between the number of seats allotted
+                    to each State and the population of the State is, so far as practicable, the same for all States.
+                    Being a bicameral legislature, lok sabha performs a number of useful functions from law making ;
+                    controlling financial matters ; passing bills ; electing a number of deferential personalities like
+                    president, vice-president , speaker and deputy speaker of the house to sharing its power with the
+                    upper house to amend the constitution.
                     The lower house is somewhere highly connected to general masses of the nation.
                 </p>
                 <a href="#" class="btn btn--green">Register now!</a>
@@ -573,15 +569,18 @@
     </div>
     <div class="popup" id="popup2">
         <div class="popup__content">
-            
+
             <div class="popup__right">
                 <a href="#committees" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">The United Nations Human Rights Council (UNHRC)</h2>
                 <!-- <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
                     booking</h3> -->
                 <p class="popup__text">
-                    The United Nations Human Rights Council (UNHRC) is a United Nations body whose mission is to promote and protect human rights around the world. It is an intergovernmental body within the United Nations system which aims at exterpating human rights violations.
-                    The UNHRC has 47 members elected by the United Nations General Assembly for staggered three-year terms. It meets at the UN Office at Geneva.
+                    The United Nations Human Rights Council (UNHRC) is a United Nations body whose mission is to
+                    promote and protect human rights around the world. It is an intergovernmental body within the
+                    United Nations system which aims at exterpating human rights violations.
+                    The UNHRC has 47 members elected by the United Nations General Assembly for staggered three-year
+                    terms. It meets at the UN Office at Geneva.
                 </p>
                 <a href="#" class="btn btn--green">Register now!</a>
             </div>
@@ -589,14 +588,20 @@
     </div>
     <div class="popup" id="popup3">
         <div class="popup__content">
-          
+
             <div class="popup__right">
                 <a href="#committees" class="popup__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-small">The Disarmament and International Security Committee (DISEC) </h2>
+                <h2 class="heading-secondary u-margin-bottom-small">The Disarmament and International Security
+                    Committee (DISEC) </h2>
                 <!-- <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
                     booking</h3> -->
                 <p class="popup__text">
-                    Formed in 1945, is the very First Committee of the United Nations General Assembly (GA). It was created as one of the six main committees of the General Assembly. It includes all nations that are United Nations Member States. DISEC’s primary role is to maintain peace around the world. The First Committee or the DISEC deals with disarmament, global challenges, and threats to peace that affect the international community and seeks out solutions to the challenges in the international security regime. Ensuring this is vital for the international community.
+                    Formed in 1945, is the very First Committee of the United Nations General Assembly (GA). It was
+                    created as one of the six main committees of the General Assembly. It includes all nations that are
+                    United Nations Member States. DISEC’s primary role is to maintain peace around the world. The First
+                    Committee or the DISEC deals with disarmament, global challenges, and threats to peace that affect
+                    the international community and seeks out solutions to the challenges in the international security
+                    regime. Ensuring this is vital for the international community.
                 </p>
                 <a href="#" class="btn btn--green">Register now!</a>
             </div>
@@ -638,11 +643,9 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
@@ -665,6 +668,18 @@
             window.location = location.origin + url;
         }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
+
 </body>
 
 </html>
