@@ -3,29 +3,30 @@
 
 <head>
     <% include partials/head %>
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/categories.css">
     <link rel="stylesheet" href="css/competitions.css">
-        <script>
-            var urls = <%- JSON.stringify(competitionUrl) %> ;
+    <script>
+        var urls = <%- JSON.stringify(competitionUrl) %> ;
        </script>
 </head>
+
 <body>
-        <div class="preloader">
-            <div class="preloader-ring"></div>
-        </div>
-        <% include partials/header %>
-    
-        <!-- Shaders -->
-        <script id="shader-fs" type="x-shader/x-fragment">
-            #ifdef GL_ES
+    <div class="preloader">
+        <div class="preloader-ring"></div>
+    </div>
+    <% include partials/header %>
+
+    <!-- Shaders -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
             precision highp float;
             #endif
           void main(void) {
            gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
           }
         </script>
-        <script id="shader-vs" type="x-shader/x-vertex">
-            attribute vec3 vertexPosition;
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 vertexPosition;
     
           uniform mat4 modelViewMatrix;
           uniform mat4 perspectiveMatrix;
@@ -34,486 +35,477 @@
             gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
           }
         </script>
-    
-    
-        <!-- three.js -->
-    
-        <div id="webgl-output"></div>
-    
-        <div class="bg-mask"></div>
-        <h1 style="padding-top:15vh; text-align: center; transform: scale(1);">Competitons</h1>
-        <div class="main-content">
-            <div class="scroll-content" id="style-1">
-                    <div class="inner-content ch-grid">
-                            
-                    <div class="text-padding" style="transform: scale(1);">
-                        <% if(category == "astronomy"){ %>
-                            <div id="astronomy-list">    
-            
-                                <div class="row justify-content-md-center">
-                                    <div class="col-sm-12 col-lg-2 col-md-3">
-                                            <li>
-                                                    <div class="ch-item ch-img-astro_quiz">
-                                                        <a href="">
-                                                        <div class="ch-info">
-                                                            <h3>Astro Quiz</h3>
-                                                            
-                                                        </div>
-                                                    </a>
-                                                    </div>
-                                                </li>
-            
-                                    </div>
-                                    <div class="col-sm-12 col-lg-2 col-md-3">
-                                        <li>
-                                            <div class="ch-item ch-img-astro_hunt">
-                                                    <a href="http://drbl.in/eODP">
-                                                <div class="ch-info">
-                                                    <h3>Astro Hunt</h3>
-                                                    
-                                                </div>
-                                            </a>
-                                            </div>
-                                        </li>
-            
-                                    </div>
-                                    <div class="col-sm-12 col-lg-2 col-md-3">
-                                        
-                                        <li>
-                                            
-                                                <div class="ch-item ch-img-into_the_universe">
-                                                    <a href="http://drbl.in/eODP">    
-                                                        <div class="ch-info">  
-                                                        <h3>Into the Universe</h3>
-                                                       
-                                                        </div>
-                                                    </a>  
-                                                </div>
-                                                
-                                            </li>
-            
-                                    </div>
-                                </div> 
-                            </div>
-                                <% } else if(category == "coding"){ %> 
-                                    <div id="astronomy-list">    
-            
-                                            <div class="row justify-content-md-center">
-                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                  <li>
-                                                        
-                                                        <div class="ch-item ch-img-iupc">
-                                                            <a href="http://drbl.in/eODP">    
-                                                                <div class="ch-info">  
-                                                                <h3>IUPC</h3>
-                                                               
-                                                                </div>
-                                                            </a>  
-                                                        </div>
-                                                        
-                                                    </li>
-                        
-                                                </div>
-                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                    <li>
-                                                        <div class="ch-item ch-img-enigma">
-                                                                <a href="http://drbl.in/eODP">
-                                                            <div class="ch-info">
-                                                                <h3>Enigma</h3>
-                                                                
-                                                            </div>
-                                                        </a>
-                                                        </div>
-                                                    </li>
-                        
-                                                </div>
-                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                    <li>
-                                                        <div class="ch-item ch-img-code_swap">
-                                                            <a href="">
-                                                            <div class="ch-info">
-                                                                <h3>Code Swap</h3>
-                                                                
-                                                            </div>
-                                                        </a>
-                                                        </div>
-                                                    </li>
-                        
-                                                </div>
-                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                        <li>
-                                                            <div class="ch-item ch-img-fhtc">
-                                                                <a href="">
-                                                                <div class="ch-info">
-                                                                    <h3>ForHacktheCode</h3>
-                                                                    
-                                                                </div>
-                                                            </a>
-                                                            </div>
-                                                        </li>
-                            
-                                                    </div>
-                                            </div> 
-                                        </div>
-                                        <% } else if(category == "robotics"){ %> 
-                                            <div id="astronomy-list">    
-            
-                                                    <div class="row justify-content-md-center">
-                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-                                                          <li>
-                                                                
-                                                                <div class="ch-item ch-img-robowar">
-                                                                    <a href="http://drbl.in/eODP">    
-                                                                        <div class="ch-info">  
-                                                                        <h3>ROboWar</h3>
-                                                                       
-                                                                        </div>
-                                                                    </a>  
-                                                                </div>
-                                                                
-                                                            </li>
-                                
-                                                        </div>
-                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-                                                            <li>
-                                                                <div class="ch-item ch-img-robosoccer">
-                                                                        <a href="http://drbl.in/eODP">
-                                                                    <div class="ch-info">
-                                                                        <h3>Robosoccer</h3>
-                                                                        
-                                                                    </div>
-                                                                </a>
-                                                                </div>
-                                                            </li>
-                                
-                                                        </div>
-                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                <li>
-                                                                        <div class="ch-item ch-img-lfr">
-                                                                            <a href="">
-                                                                            <div class="ch-info">
-                                                                                <h3>LFR</h3>
-                                                                                
-                                                                            </div>
-                                                                        </a>
-                                                                        </div>
-                                                                    </li>
-                                                        </div>
-                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                
-                                                                <li>
-                                                                        <div class="ch-item ch-img-drone">
-                                                                            <a href="">
-                                                                            <div class="ch-info">
-                                                                                <h3>Drone Obstruction</h3>
-                                                                                
-                                                                            </div>
-                                                                        </a>
-                                                                        </div>
-                                                                    </li>
-                                        
-                                    
-                                                            </div>
-                                                    </div> 
-                                                    <div class="row justify-content-md-center">
-                                                            <div class="col-sm-12 col-lg-2 col-md-3">
-                                                              <li>
-                                                                    
-                                                                    <div class="ch-item ch-img-mazes">
-                                                                        <a href="http://drbl.in/eODP">    
-                                                                            <div class="ch-info">  
-                                                                            <h3>Maze Solver</h3>
-                                                                           
-                                                                            </div>
-                                                                        </a>  
-                                                                    </div>
-                                                                    
-                                                                </li>
-                                                            </div>
-                                                                <div class="col-sm-12 col-lg-2 col-md-3">
 
-                                                                    <li>
-                                                                    
-                                                                            <div class="ch-item ch-img-rcp">
-                                                                                <a href="http://drbl.in/eODP">    
-                                                                                    <div class="ch-info">  
-                                                                                    <h3>RC Plane</h3>
-                                                                                   
-                                                                                    </div>
-                                                                                </a>  
-                                                                            </div>
-                                                                            
-                                                                        </li>
-                                                                </div>
-                                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                        <li>
-                                                                    
-                                                                                <div class="ch-item ch-img-roborace">
-                                                                                    <a href="http://drbl.in/eODP">    
-                                                                                        <div class="ch-info">  
-                                                                                        <h3>Robo Race</h3>
-                                                                                       
-                                                                                        </div>
-                                                                                    </a>  
-                                                                                </div>
-                                                                                
-                                                                            </li> 
-                                                                </div>
-                                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                        
-                                                                            <li>
-                                                                    
-                                                                                    <div class="ch-item ch-img-tpr">
-                                                                                        <a href="http://drbl.in/eODP">    
-                                                                                            <div class="ch-info">  
-                                                                                            <h3>Transporter</h3>
-                                                                                           
-                                                                                            </div>
-                                                                                        </a>  
-                                                                                    </div>
-                                                                                    
-                                                                                </li>
-                                                                </div>
-                                    
-                                                            </div>
-                                                            <div class="row justify-content-md-center">
-                                                                    <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                      <li>
-                                                                            
-                                                                            <div class="ch-item ch-img-ice">
-                                                                                <a href="http://drbl.in/eODP">    
-                                                                                    <div class="ch-info">  
-                                                                                    <h3>Ic Engine</h3>
-                                                                                   
-                                                                                    </div>
-                                                                                </a>  
-                                                                            </div>
-                                                                            
-                                                                        </li>
-                                                                    </div>
-                                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-        
-                                                                            <li>
-                                                                            
-                                                                                    <div class="ch-item ch-img-circuitdes">
-                                                                                        <a href="http://drbl.in/eODP">    
-                                                                                            <div class="ch-info">  
-                                                                                            <h3>Circuit Design</h3>
-                                                                                           
-                                                                                            </div>
-                                                                                        </a>  
-                                                                                    </div>
-                                                                                    
-                                                                                </li>
-                                                                        </div>
-                                                                        
-                                            
-                                                                    </div>
-                                                        
-                                                </div>
-                                                <% } else if(category == "management"){ %> 
-                                                    <div id="astronomy-list">    
-            
-                                                            <div class="row justify-content-md-center">
-                                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                  <li>
-                                                                        
-                                                                        <div class="ch-item ch-img-stf">
-                                                                            <a href="http://drbl.in/eODP">    
-                                                                                <div class="ch-info">  
-                                                                                <h3>StartUp Intern Fair</h3>
-                                                                               
-                                                                                </div>
-                                                                            </a>  
-                                                                        </div>
-                                                                        
-                                                                    </li>
-                                        
-                                                                </div>
-                                                                
-                                                            </div> 
-                                                        </div>
-                                                        <% } else if(category == "quizzing"){ %> 
-                                                            <div id="astronomy-list">    
-            
-                                                                    <div class="row justify-content-md-center">
-                                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                          <li>
-                                                                                
-                                                                                <div class="ch-item ch-img-brdw">
-                                                                                    <a href="http://drbl.in/eODP">    
-                                                                                        <div class="ch-info">  
-                                                                                        <h3>Brandwagon</h3>
-                                                                                       
-                                                                                        </div>
-                                                                                    </a>  
-                                                                                </div>
-                                                                                
-                                                                            </li>
-                                                
-                                                                        </div>
-                                                                        <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                            <li>
-                                                                                <div class="ch-item ch-img-theq">
-                                                                                        <a href="http://drbl.in/eODP">
-                                                                                    <div class="ch-info">
-                                                                                        <h3>The Quest</h3>
-                                                                                        
-                                                                                    </div>
-                                                                                </a>
-                                                                                </div>
-                                                                            </li>
-                                                
-                                                                        </div>
-                                                                        
-                                                                    </div> 
-                                                                </div>
-                                                                <% } else if(category == "literature"){ %> 
-                                                                    <div id="astronomy-list">    
-            
-                                                                            <div class="row justify-content-md-center">
-                                                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                                  <li>
-                                                                                        
-                                                                                        <div class="ch-item ch-img-1">
-                                                                                            <a href="http://drbl.in/eODP">    
-                                                                                                <div class="ch-info">  
-                                                                                                <h3>Into yhe Universe</h3>
-                                                                                               
-                                                                                                </div>
-                                                                                            </a>  
-                                                                                        </div>
-                                                                                        
-                                                                                    </li>
-                                                        
-                                                                                </div>
-                                                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                                    <li>
-                                                                                        <div class="ch-item ch-img-2">
-                                                                                                <a href="http://drbl.in/eODP">
-                                                                                            <div class="ch-info">
-                                                                                                <h3>Astro Hunt</h3>
-                                                                                                
-                                                                                            </div>
-                                                                                        </a>
-                                                                                        </div>
-                                                                                    </li>
-                                                        
-                                                                                </div>
-                                                                                <div class="col-sm-12 col-lg-2 col-md-3">
-                                                                                    <li>
-                                                                                        <div class="ch-item ch-img-3">
-                                                                                            <a href="">
-                                                                                            <div class="ch-info">
-                                                                                                <h3>Astro Quiz</h3>
-                                                                                                
-                                                                                            </div>
-                                                                                        </a>
-                                                                                        </div>
-                                                                                    </li>
-                                                        
-                                                                                </div>
-                                                                            </div> 
-                                                                        </div>
-                                                                        <% }  %> 
+
+    <!-- three.js -->
+
+    <div id="webgl-output"></div>
+
+    <div class="bg-mask"></div>
+
+
+    <div class="main-content">
+        <div class="scroll-content" id="style-1">
+            <div class="inner-content ch-grid">
+                <div class="text-padding" style="transform: scale(1);">
+
+                    <!-- Astronomy -->
+                    <% if(category == "astronomy"){ %>
+                    <div id="astronomy-list">
+                        <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Astronomy</h1>
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-astro_quiz">
+                                        <a href="">
+                                            <div class="ch-info">
+                                                <h3>Astro Quiz</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-astro_hunt">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Astro Hunt</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+
+                                <li>
+
+                                    <div class="ch-item ch-img-into_the_universe">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Into the Universe</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
 
                             </div>
                         </div>
                     </div>
+
+                    <!-- Coding -->
+
+                    <% } else if(category == "coding"){ %>
+                    <div id="coding-list">
+                        <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Coding</h1>
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-iupc">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>IUPC</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-enigma">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Enigma</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-code_swap">
+                                        <a href="">
+                                            <div class="ch-info">
+                                                <h3>Code Swap</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-fhtc">
+                                        <a href="">
+                                            <div class="ch-info">
+                                                <h3>For Hack the Code</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Robotics -->
+
+                    <% } else if(category == "robotics"){ %>
+                    <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Robotics</h1>
+                    <div id="robotics-list">
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-robowar">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>RoboWar</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-robosoccer">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Robosoccer</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-lfr">
+                                        <a href="">
+                                            <div class="ch-info">
+                                                <h3>LFR</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+
+                                <li>
+                                    <div class="ch-item ch-img-drone">
+                                        <a href="">
+                                            <div class="ch-info">
+                                                <h3>Drone Obstruction</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-mazes">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Maze Solver</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+
+                                <li>
+
+                                    <div class="ch-item ch-img-rcp">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>RC Plane</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-roborace">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Robo Race</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+
+                                <li>
+
+                                    <div class="ch-item ch-img-tpr">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Transporter</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-ice">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>IC Engine</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+
+                                <li>
+
+                                    <div class="ch-item ch-img-circuitdes">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Circuit Design</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Management -->
+
+                    <% } else if(category == "management"){ %>
+                    <div id="management-list">
+                        <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Management</h1>
+
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-stf">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>StartUp Intern Fair</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Quizzing -->
+
+                    <% } else if(category == "quizzing"){ %>
+                    <div id="quizzing-list">
+                        <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Quizzing</h1>
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-brdw">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Brandwagon</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+                                    <div class="ch-item ch-img-theq">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>The Quest</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Literature -->
+
+                    <% } else if(category == "literature"){ %>
+                    <div id="literature-list">
+                        <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Literature</h1>
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-12 col-lg-2 col-md-3">
+                                <li>
+
+                                    <div class="ch-item ch-img-stf">
+                                        <a href="http://drbl.in/eODP">
+                                            <div class="ch-info">
+                                                <h3>Rostrum</h3>
+
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </li>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <% }  %>
+
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <% include partials/footer %>
+    <% include partials/footer %>
 
-                <script src="js/jquery.min.js"></script>
-                <script src="js/scrollmagic.js"></script>
-                <script src="js/sphere.js"></script>
-                <script src="js/main.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                    crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                    crossorigin="anonymous"></script>
-                <script>
-            
-                </script>
-                <script>
-                    window.addEventListener('load', function () {
-            
-                        var el = document.querySelector('.preloader');
-                        el.style.opacity = 2;
-            
-                        (function fade() {
-                            if ((el.style.opacity -= 0.15) < 0) {
-                                window.scrollTo(0, 0);
-                                el.style.display = "none";
-                                controls.redraw();
-                                controls.rend();
-                                controls.start();
-                            } else {
-                                requestAnimationFrame(fade);
-                            }
-                        })();
-                    });
-                </script>
-                <script>
-                    if (screen.width > 1024) {
-                        function remove() {
-                            var elem = document.getElementById('rlbuttn');
-                            elem.parentNode.removeChild(elem);
-                            return false;
-                        }
-                        remove();
-                    }
-                </script>
-                <script>
-                    if (screen.width > 1024) {
-                        function remove() {
-                            var elem = document.getElementById('rlbuttn_menu');
-                            elem.parentNode.removeChild(elem);
-                            return false;
-                        }
-                        remove();
-                    }
-                </script>
-                <script>
-                    if (screen.width < 500) {
-                        function remove() {
-                            var elem = document.getElementById('faqbtn_rm');
-                            elem.parentNode.removeChild(elem);
-                            return false;
-                        }
-                        remove();
-                    }
-                </script>
-                <script>
-                    if (screen.width > 500) {
-                        function remove() {
-                            var elem = document.getElementById('faq_rm');
-                            elem.parentNode.removeChild(elem);
-                            return false;
-                        }
-                        remove();
-                    }
-                </script>
-                <script>
-                    if (screen.width < 769) {
-                        function remove() {
-                            var elem = document.getElementById('seprate');
-                            elem.parentNode.removeChild(elem);
-                            return false;
-                        }
-                        remove();
-                    }
-                </script>
-                <script>
-                    if (screen.width > 769) {
-                        function remove() {
-                            var elem = document.getElementById('mobsep');
-                            elem.parentNode.removeChild(elem);
-                            return false;
-                        }
-                        remove();
-                    }
-                </script>
-            </body>
-            
-            </html>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sphere.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+
+            var el = document.querySelector('.preloader');
+            el.style.opacity = 2;
+
+            (function fade() {
+                if ((el.style.opacity -= 0.15) < 0) {
+                    window.scrollTo(0, 0);
+                    el.style.display = "none";
+                    controls.redraw();
+                    controls.rend();
+                    controls.start();
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        });
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn_menu');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 500) {
+            function remove() {
+                var elem = document.getElementById('faqbtn_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+</body>
+
+</html>
