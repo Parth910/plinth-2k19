@@ -45,12 +45,15 @@ body {
     padding-left: 4%;
     padding-right: 4%;
 }
+
 .text-padding h1 {
     padding-left: 4% !important;
 }
-.ch-grid{
+
+.ch-grid {
     margin-top: 0% !important;
 }
+
 #style-1::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -84,6 +87,17 @@ body {
         height: 80%;
         margin-top: 10% !important;
     }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .ch-grid {
+        width: 85% !important;
+    }
+
+    .text-padding h1 {
+        padding-left: 20% !important;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -111,6 +125,7 @@ body {
         width: 100%;
         height: 50%;
     }
+
     .foo {
         margin: 20px !important;
     }
