@@ -30,171 +30,172 @@
                 <div class="text-padding" style="transform: scale(1);">
                     <h3 class="heading" style="text-align :center">About</h3>
                     <div id="about">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12" style="padding-top :20px;">
-                            <h5><img src="./media/2arrow.png">
-                                Name    :
-                                <%- user.name %>
-                            </h5>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" style="padding-top :20px;">
+                                <h5><img src="./media/2arrow.png">
+                                    Name :
+                                    <%- user.name %>
+                                </h5>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="padding-top :20px">
+                                <h5><img src="./media/2arrow.png">
+                                    Contact :
+                                    <span>
+                                        <%- user.phoneNumber %></span>
+                                </h5>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-12" style="padding-top :20px">
-                            <h5><img src="./media/2arrow.png">
-                                Contact :
-                                <span><%- user.phoneNumber %></span>
-                            </h5>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" style="padding-top :20px">
+                                <h5><img src="./media/2arrow.png">
+                                    E-mail :
+                                    <%- user.email %>
+                                </h5>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="padding-top :20px">
+                                <h5><img src="./media/2arrow.png">
+                                    College :
+                                    <%- user.college %>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" style="padding-top :20px">
+                                <h5><img src="./media/2arrow.png">
+                                    City :
+                                    <%- user.city %>
+                                </h5>
+                            </div>
+                            <div class="col-md-6 col-sm-12" style="padding-top :20px">
+                                <h5><img src="./media/2arrow.png">
+                                    Year :
+                                    <%- user.year %>
+                                </h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12" style="padding-top :20px">
-                            <h5><img src="./media/2arrow.png">
-                                E-mail  :
-                                <%- user.email %>
-                            </h5>
-                        </div>
-                        <div class="col-md-6 col-sm-12" style="padding-top :20px">
-                            <h5><img src="./media/2arrow.png">
-                                College :
-                                <%- user.college %>
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-6 col-sm-12" style="padding-top :20px">
-                        <h5><img src="./media/2arrow.png">
-                            City :
-                            <%- user.city %>
-                        </h5>
-                    </div>
-                    <div class="col-md-6 col-sm-12" style="padding-top :20px">
-                        <h5><img src="./media/2arrow.png">
-                            Year :
-                            <%- user.year %>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-                <!-- Registered Events -->
+                    <!-- Registered Events -->
 
-                <div>
-                    <h3 class="heading" style="text-align: center; padding-top : 30px">
-                        <span>Registered Events</span>
-                    </h3>
-                </div>
-                <div style="text-align: center; padding-top: 30px">
-                    <% if(user.rEvents.length === 1) { %>
                     <div>
-                        No events to display.
+                        <h3 class="heading" style="text-align: center; padding-top : 30px">
+                            <span>Registered Events</span>
+                        </h3>
                     </div>
-                    <% } else { %>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Event Name</th>
-                                <th>Team Size</th>
-                                <th>Payment Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%   for(var i=1; i<user.rEvents.length; i++) { %>
-                            <tr>
-                                <td>
-                                    <%= user.rEvents[i].event.eventName %>
-                                </td>
-                                <td>
-                                    <%= user.rEvents[i].team.length %>
-                                </td>
-                                <td>
-                                    <%= user.rEvents[i].status %>
-                                </td>
-                                <td>
-                                    <a href="/pdf/view/<%= user.rEvents[i].orderId %>" target="_blank">View</a>
-                                    <br>
-                                    <a href="#" id="payNow<%= i %>">Pay</a>
-                                    <script>
-                                        $("#payNow<%= i %>").click(function (e) {
-                                            e.preventDefault();
-                                            var name,
-                                                form = document.createElement("form"),
-                                                node = document.createElement("input");
+                    <div style="text-align: center; padding-top: 30px">
+                        <% if(user.rEvents.length === 1) { %>
+                        <div>
+                            No events to display.
+                        </div>
+                        <% } else { %>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Event Name</th>
+                                    <th>Team Size</th>
+                                    <th>Payment Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%   for(var i=1; i<user.rEvents.length; i++) { %>
+                                <tr>
+                                    <td>
+                                        <%= user.rEvents[i].event.eventName %>
+                                    </td>
+                                    <td>
+                                        <%= user.rEvents[i].team.length %>
+                                    </td>
+                                    <td>
+                                        <%= user.rEvents[i].status %>
+                                    </td>
+                                    <td>
+                                        <a href="/pdf/view/<%= user.rEvents[i].orderId %>" target="_blank">View</a>
+                                        <br>
+                                        <a href="#" id="payNow<%= i %>">Pay</a>
+                                        <script>
+                                            $("#payNow<%= i %>").click(function (e) {
+                                                e.preventDefault();
+                                                var name,
+                                                    form = document.createElement("form"),
+                                                    node = document.createElement("input");
 
 
 
-                                            form.action =
-                                                "/payment/initiate/<%= user.rEvents[i].event.payName %>";
-                                            form.method = 'POST';
+                                                form.action =
+                                                    "/payment/initiate/<%= user.rEvents[i].event.payName %>";
+                                                form.method = 'POST';
 
 
-                                            node.name = 'orderId';
-                                            node.value = "<%= user.rEvents[i].orderId %>";
-                                            form.appendChild(node.cloneNode());
+                                                node.name = 'orderId';
+                                                node.value = "<%= user.rEvents[i].orderId %>";
+                                                form.appendChild(node.cloneNode());
 
 
-                                            form.style.display = "none";
-                                            document.body.appendChild(form);
+                                                form.style.display = "none";
+                                                document.body.appendChild(form);
 
-                                            form.submit();
+                                                form.submit();
 
-                                            document.body.removeChild(form);
-                                        });
-                                    </script>
-                                </td>
-                            </tr>
-                            <% } %>
-                        </tbody>
-                    </table>
-                    <% }  %>
-                </div>
-
-                <!-- Paid Events -->
-                <div style="text-align:center; padding-top:30px">
-
-                    <h3 class="heading">
-                        <span>Paid Events</span>
-                    </h3>
-                </div>
-                <div style="text-align:center; padding-top:30px">
-                    <% if(user.events.length === 1) { %>
-                    <div>
-                        No events to display.
+                                                document.body.removeChild(form);
+                                            });
+                                        </script>
+                                    </td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                        <% }  %>
                     </div>
-                    <% } else { %>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th class="head-font">Event Name</th>
-                                <th class="head-font">Team Size</th>
-                                <th class="head-font">Payment Status</th>
-                                <th class="head-font">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%   for(var i=1; i<user.events.length; i++) { %>
-                            <tr>
-                                <td class="body-font">
-                                    <%= user.events[i].event.eventName %>
-                                </td>
-                                <td class="body-font">
-                                    <%= user.events[i].team.length %>
-                                </td>
-                                <td class="body-font">
-                                    <%= user.events[i].status %>
-                                </td>
-                                <td class="body-font link-text">
-                                    <a href="/pdf/generate/<%= user.events[i].orderId %>" target="_blank">Receipt</a>
-                                </td>
-                            </tr>
-                            <% } %>
-                        </tbody>
-                    </table>
-                    <% }  %>
-                </div>
 
+                    <!-- Paid Events -->
+                    <div style="text-align:center; padding-top:30px">
+
+                        <h3 class="heading">
+                            <span>Paid Events</span>
+                        </h3>
+                    </div>
+                    <div style="text-align:center; padding-top:30px">
+                        <% if(user.events.length === 1) { %>
+                        <div>
+                            No events to display.
+                        </div>
+                        <% } else { %>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="head-font">Event Name</th>
+                                    <th class="head-font">Team Size</th>
+                                    <th class="head-font">Payment Status</th>
+                                    <th class="head-font">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%   for(var i=1; i<user.events.length; i++) { %>
+                                <tr>
+                                    <td class="body-font">
+                                        <%= user.events[i].event.eventName %>
+                                    </td>
+                                    <td class="body-font">
+                                        <%= user.events[i].team.length %>
+                                    </td>
+                                    <td class="body-font">
+                                        <%= user.events[i].status %>
+                                    </td>
+                                    <td class="body-font link-text">
+                                        <a href="/pdf/generate/<%= user.events[i].orderId %>" target="_blank">Receipt</a>
+                                    </td>
+                                </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
+                        <% }  %>
+                    </div>
+
+
+                </div>
 
             </div>
-
         </div>
-    </div>
     </div>
     </div>
 
@@ -299,6 +300,18 @@
             remove();
         }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
+
 </body>
 
 </html>

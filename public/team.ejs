@@ -43,14 +43,14 @@
 
     <h1 style="padding-top:15vh; text-align: center">Our Team</h1>
     <div class="conatiner">
-            <div class="row">
-                <div class="col col-12">
-                    <div class="reveal_txt text-center" style="padding-top:25vh;">
-                        <h2 class="align-middle" style="color:#4C4D64">Busy Organizing!</h2>
-                    </div>
+        <div class="row">
+            <div class="col col-12">
+                <div class="reveal_txt text-center" style="padding-top:25vh;">
+                    <h2 class="align-middle" style="color:#4C4D64">Busy Organizing!</h2>
                 </div>
             </div>
         </div>
+    </div>
 
     <% include partials/footer %>
 
@@ -141,6 +141,18 @@
             remove();
         }
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
+
 </body>
 
 </html>

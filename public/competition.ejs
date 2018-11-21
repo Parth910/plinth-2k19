@@ -52,26 +52,31 @@
             type="submit"><span>Event Registration</span></button></div> -->
                     <div class="row justify-content-center">
                         <% if(competition.fee != null ){ %>
-                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Fee :
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Fee
+                            :
                             <strong>
                                 <%- competition.eventFee %></strong>
                         </div>
-                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date :
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date
+                            :
                             <strong>
                                 <%- competition.eventDate %></strong>
                         </div>
-                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue :
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue
+                            :
                             <strong>
                                 <%- competition.eventVenue %></strong>
                         </div>
 
                         <% } else {%>
 
-                        <div class="col-md-6" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date :
+                        <div class="col-md-6" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date
+                            :
                             <strong>
                                 <%- competition.eventDate %></strong>
                         </div>
-                        <div class="col-md-6" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue :
+                        <div class="col-md-6" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue
+                            :
                             <strong>
                                 <%- competition.eventVenue %></strong>
                         </div>
@@ -213,6 +218,18 @@
             }
             remove();
         }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
     </script>
 </body>
 
