@@ -1333,6 +1333,10 @@ module.exports.competitionUrl = {
             eventName: 'Codeswap',
             eventUrl: '/codeswap',
         },
+        {
+            eventName: 'For Hack the Code',
+            eventUrl: '/forhackthecode'
+        },
 
         {
             eventName: 'Brandwagon',
@@ -1377,6 +1381,16 @@ module.exports.competitionUrl = {
         },
 
         {
+            eventName: 'IC Engine',
+            eventUrl: '/icengine',
+        },
+
+        {
+            eventName: 'Circuit Design',
+            eventUrl: '/circuitdesign'
+        },
+
+        {
             eventName: 'StartUp Intern Fair',
             eventUrl: '/sif',
         },
@@ -1386,8 +1400,8 @@ module.exports.competitionUrl = {
             eventUrl: '/rostrum',
         },
         {
-            eventName: 'Pratibimb',
-            eventUrl: '/pratibimb',
+            eventName: 'Comikaze',
+            eventUrl: '/comikaze',
         },
        
     ],

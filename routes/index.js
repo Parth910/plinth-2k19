@@ -123,13 +123,13 @@ router.get('/competitions/:category', Verify.verifyOrdinaryUser, function (req, 
 
 router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, function (req, res, next) {
     var competitionDetail = require('../data/competitions').competitions;
-    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management', 'design'];
+    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management'];
     var competitions = {
         astronomy: ['intotheuniverse', 'astrohunt', 'astroquiz'],
-        coding: ['iupc', 'enigma', 'codeswap'],
-        robotics: ['robowar', 'robosoccer', 'droneobstruction', 'lfr', 'mazesolver', 'roborace', 'rcplane', 'transporter'],
+        coding: ['iupc', 'enigma', 'codeswap', 'forhackthecode'],
+        robotics: ['robowar', 'robosoccer', 'droneobstruction', 'lfr', 'mazesolver', 'roborace', 'rcplane', 'transporter', 'icengine', 'circuitdesign'],
         quizzing: ['brandwagon', 'thequest'],
-        literature: ['rostrum'],
+        literature: ['rostrum', 'comikaze'],
         management: ['sif'],
     };
     var category = req.params.category;
