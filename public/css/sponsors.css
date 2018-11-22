@@ -483,14 +483,7 @@
     }
 }
 
-@media only screen and (max-width: 1450px)and (min-width: 768px){
-	.ch-info h3 {
-		font-size: 20px !important;
-		float: left;
-		margin-right: 10% !important
-	}
-
-}                        
+                        
 .text-padding {
   padding-left: 8%;
   padding-right: 0%;
