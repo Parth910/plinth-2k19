@@ -94,160 +94,7 @@ module.exports.competitions = {
                     +"</p>",
             sponsors: null, 
             otherURL: null,
-        }
-        // {
-
-        //     eventUrl: 'Cryptex', 
-        //     fee:100, //dont know
-        //     paymentURL: true,                       //Details are not given properly
-        //     clubName: "Quizzinga",
-        //     eventName: "Cryptex",
-        //     displayName: "Cryptex",
-        //     payName: "AQ",
-        //     eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2019",
-        //     eventVenue: "The LNMIIT, Jaipur",
-        //     memberUpperLimit: 1,
-        //     memberLowerLimit: 1,
-        //     prizeWorth: null,
-        //     eventFee: '₹ 100/-', //dont know
-        //     synopsis:  "<p>"
-        //                     +"Get ready, all set to dive into the vast ocean of web hunt to unravel the secrets. This whole internet is yours, but mind you, the elusive clues are bound to leave you stumped."
-        //                 +"</p>",
-        //     eventDescription: "<p>&#39;Cryptex&#39; an online treasure hunt based on awesome cryptic trivia.</p>",
-        //     rules: "<p>"
-        //                 +"<b>General Rules </b>"
-        //                 +"<ol>"
-        //                     +"<li>Participants have to compete individually.</li>"
-        //                 +"</ol>"
-        //             +"</p>",
-        //     judges: null,
-        //     query: "<p class='link-text'>"
-        //                 +"Ayush Agarwal: +91-9929926677"
-        //                 +"<br>"
-        //                 +"Hardik Tyagi: +91-8264467624"
-        //                 +"<br>"
-        //                 +"For any query, contact us at <a href='mailto:quizzinga@plinth.in'>quizzinga@plinth.in</a>"
-        //             +"</p>",
-        //     sponsors: null,   
-        //     otherURL: null,
-        // },
-
-        
-        // {
-
-        //     eventUrl: 'ForHacktheCode',
-        //     fee:100,
-        //     paymentURL: true,
-        //     clubName: "Cybros",
-        //     eventName: "For Hack the Code",
-        //     displayName: "For Hack the Code",
-        //     payName: "PRA",
-        //     eventDate: "21<sup>st</sup> Jan 2019", //dont know
-        //     eventVenue: "The LNMIIT, Jaipur",
-        //     memberUpperLimit: 2,
-        //     memberLowerLimit: 1,
-        //     prizeWorth: '₹ 15,000/-',
-        //     eventFee: '₹ 100/-',
-        //     synopsis:  "<p>"
-        //                     +"<p>"
-        //                         +"<b>What is the event about?</b>"
-        //                         +"<p>"
-        //                             +"‘Pratibimb’ provides a platform to the budding designers, whether as individuals aspiring to showcase their skills amidst their deserving audience,or as teams collaborating their efforts towards implementation and proper utilization of their skill-set under a single roof. It will not only help achieve a achieve a common goal, i.e. of coming up with new ideas of sustainability, but will also enhance our designing potential." 
-        //                         +"</p>"
-        //                         +"<p>"
-        //                             +"‘Pratibimb’ under the aegis of Plinth ’18,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
-        //                         +"</p>"
-        //                         +"<p>"
-        //                             +"‘Pratibimb’ is a designing competition which promises to bring before such challenges that would test your mental ability and skills, that you've learnt so far, to it's best." 
-        //                         +"</p>"
-        //                     +"</p>"
-        //                     +"<p>"
-        //                         +"<b>What can you learn?</b>"
-        //                         +"<p>"
-        //                             +"As is rightly said, a competitive environment stimulates oneself to push on their limits. Hence, this event will not only motivate the participants to perform better than their peers, bringing out your talent multifold but also give you a chance to interact and exchange ideas with some of the great minds from all around the country. Presentation imperceptibly helps you enhance your communication skills or offers an opportunity to test them. Designing, in itself, is a field that assists students boost up their creativity and logical thinking." 
-        //                         +"</p>"
-        //                     +"</p>"
-        //                         +"<p>"
-        //                         +"<b>Why should you attend it?</b>"
-        //                         +"<p>"
-        //                             +"‘Pratibimb’ as an event is the first of its kind motivating the participants to come with innovative ideas while enhancing their design skills. Also as it is said, an even greater idea is born in the exchange of some great ideas, Pratibimb is here to give you that very needed ground of exchange. After all, keeping up the world's fads is what defines a mechanical engineer." 
-        //                         +"</p>"                        
-        //                     +"</p>"
-        //                 +"</p>",
-        //     eventDescription: "<p>"
-        //                             +"<b>Problem Statement</b>"
-        //                             +"<p>"
-        //                                 +"<ol>"
-        //                                     +"<li>"
-        //                                         +"<span>SAFETY AND SECURITY</span>"
-        //                                         +"<br>"
-        //                                         +"Model a device which can be placed on any door as one feels like at any position and customized enough to make adjustments affordable. More than anything facility, security is one of the biggest insecurities that the citizens undergo in their daily lives. A machine which can help in serving a purpose to secure houses from thefts, break ins and intruders. If the thieves, of the 21st century, are advancing so should the security. The participants have to come up with such a machine that resolves all the issues pertaining to security these days."
-        //                                     +"</li>"
-        //                                     +"<li>"
-        //                                         +"<span>AGRICULTURE SECTOR MACHINE IN RURAL AREAS</span>"
-        //                                         +"<br>"
-        //                                         +"Participants have to come up with an innovative idea that has the potential to make agricultural activities easier for farmers. The processes that participants wish bring advancements in can be any of the procedure that are involved in agriculture, be it ploughing, threshing etc. Agriculture plays a vital in the GDP of our country. Thus, boosting the technology or the machines used in such a crucial sector of India is the necessity of the hour and usually goes latent under the shelter of Smart City illusions and AI."
-        //                                     +"</li>"
-        //                                     +"<li>"
-        //                                         +"<span>HEALTHCARE</span>"
-        //                                         +"<br>"
-        //                                         +"Participants have to come up with a smart healthcare tools which can make the monitoring of diseases much easier. People, nowadays, prefer all the tasks of check ups to be performed at their homes itself. Today, people tend to rely upon machines for the cures and prevention too. Therefore, the world needs a machine that can serve it’s crucial purpose as the per the requirement of the customer. Participants have to specify the details of the body functionality that are to be measured and what disease the machine will precaution to."
-        //                                     +"</li>"
-        //                                     +"<li>"
-        //                                         +"<span>INDUSTRIES IN 2050</span>"
-        //                                         +"<br>"
-        //                                         +"Like any other species, industries also evolve with time as we can see with the development of AI and data analysis. Participants need to think and come up with a complete insight of what changes will the Mechanical industry undergo along with what are the new machines that might be in production. The machine can be among any category that serves any purpose in the field of mechanical engineering. In a world that is behind the fashion of softwares, people tend to forget the significance of hardware in the daily well-being."
-        //                                     +"</li>"
-        //                                     +"<li>"
-        //                                         +"<span>SOLUTION FOR CURRENTLY PREVAILING PROBLEMS IN INDIAN CITIES</span>"
-        //                                         +"<br>"
-        //                                         +"Be it high traffic, scarcity of water or air pollution, all the cities in India have these problems which prove to be a hindrance in the development of the cities. Participants are supposed to think of one such hindrance/ problem and come up with a machine design that can help the mankind solve the same. India needs a solution that has the potential to bring a great changes with a small difference. There are and have been a lot unrealised changes that go unnoticed yet hold a great importance. Participants have to come with such an imperceptible change for their nation."
-        //                                     +"</li>"
-                                             
-        //                                 +"</ol>"
-        //                             +"</p>"
-                                                             
-                                    
-        //                         +"</p>",
-        //     rules: "<p>"
-        //                 +"<p>"
-        //                     + "Entries will be accepted till 19<sup>th</sup>January, 2019. Offline registration will be subject to the discretion of the organizers."
-        //                 +"</p>"
-        //                 +"<p>"
-        //                     +"<b>Eligibility Criteria</b>"
-        //                     +"<ol>"
-        //                         +"<li>This category is open to students of all ages, because ideas aren't slaves of maturity.</li>"
-        //                         +"<li>The participants may enter this challenge individually, or as a design team, given that we believe in freedom of opinion!</li>"
-        //                         +"<li>All team members must be enrolled as a student in an educational institution or online program during the semester/term in which they contribute to the design.</li>"
-        //                         +"<li>The Challenge is not open to any person who has been employed or is presently working as a professional in 3D printing.</li>"
-        //                     +"</ol>"
-        //                 +"</p>"
-        //                 +"<p>"
-        //                     +"<b>Judging Criteria</b>"
-        //                     +"<ol>"
-        //                         +"<li>Does your design have meaning and impact?</li>"
-        //                         +"<li>Is the design aesthetically pleasing and evokes emotion?</li>"
-        //                         +"<li>Does your design have originality and feasibility?</li>"
-        //                         +"<li>Is your design sustainable?</li>"
-        //                         +"<li>Advanced Manufacturing: Exploration of the impact of 3D printing on your design, shape, structure or material.</li>"
-        //                         +"<li>Make the presentation as articulated as you can.</li>"
-        //                     +"</ol>"
-        //                 +"</p>"
-                      
-                        
-        //             +"</p>",
-        //     judges: null,
-        //     query: "<p class='link-text'>"
-        //                 +"Vishal Singh Jadon: +91-8005614503"
-        //                 +"<br>"
-        //                 +"Mudit Parnami: +91-7340064448"
-        //                 +"<br><br>"
-        //                 +"For any query, contact us at <a href='mailto:asme@lnmiit.ac.in'>asme@lnmiit.ac.in</a>" 
-        //             +"</p>",
-        //     sponsors: null,
-        //     otherURL: null,
-        // }
-        , 
+        }, 
         
         {
             eventUrl: 'robowar',
@@ -1100,6 +947,361 @@ module.exports.competitions = {
             sponsors: null,
             otherURL: null, 
         },
+        {
+
+            eventUrl: 'rostrum',
+            fee:200,
+            paymentURL: true,
+            clubName: "Literature",
+            eventName: "Rostrum",
+            displayName: "Rostrum - The Debate",
+            payName: "RST",
+            eventDate: "19<sup>th</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 2,
+            memberLowerLimit: 2,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                           +"<p>"
+                                +"Step up to the rostrum to prove your point and endurance against backlashes and irenic but firm retaliations in the flagship event organised by the Literary Committee in Plinth&#39;19." 
+                            +"</p>"
+                        +"</p>",
+            eventDescription: "<p>"
+                                 +"<p>"
+                                      +"The Literary Committee offers you the perfect opportunity to join the legacy of intellectual debaters by keeping your own opinion and firmly presenting your unhindered stance on the burning debatable topics of the current world. We welcome you to be a part of the flagship literary event of Plinth 2019.." 
+                                 +"</p>"
+                             +"</p>",
+            rules: "<p>"
+                        +"<p>"
+                            +"<ol>"
+                                +"<li>It is compulsory to participate in pairs.</li>"
+                                +"<li>One member of the pair is supposed to speak for the motion and other, against it.</li>"
+                                +"<li>Each speaker is given a 3 minute time to take his stand and 1 minute is kept for rebuttal.</li>"
+                                +"<li>No cross questioning is allowed during rebuttal.</li>"
+                                +"<li>Decision of the panel members is final.</li>"
+                            +"</ol>"
+                        +"</p>"
+                      
+                        +"<p>"
+                            + "Online Registrations will be open till 19<sup>th</sup>January, 2019. Offline registration will be subject to the discretion of the organizers."
+                        +"</p>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Samruddhi Pathak: +91-08290902886"
+                        +"<br>"
+                        +"Vipul Vaibhav: +91-8009784441"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:literary@plinth.in'>literary@plinth.in</a>" 
+                    +"</p>",
+            sponsors: null,
+            otherURL: null,
+        },
+        {
+
+            eventUrl: 'comikaze',
+            fee:200,
+            paymentURL: true,
+            clubName: "Literature",
+            eventName: "ComiKaze",
+            displayName: "ComiKaze- A creative comic workshop with a comic writing competition",
+            payName: "RST",
+            eventDate: "19<sup>th</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 2,
+            memberLowerLimit: 2,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                           +"<p>"
+                                +"Have you ever been infatuated by Comics? Have you ever thought what would Batman do if The Joker held an entire country hostage? How would a Marvel vs DC fight appear? What new villain would Scooby Do and the gang come face to face with? Did you ever want to create your own comic book but didn’t know where to start? Well, Plinth 2019 is here, and we’ve got just the right thing for you. A Comics Workshop hosted by the one and only Abhijeet Kini. In the end, put all you’ve learnt to use and create a comic piece in the Comic writing competition and get a chance to win lucrative prizes!" 
+                            +"</p>"
+                        +"</p>",
+            eventDescription: "<p>"
+                                 +"<p>"
+                                      +"A Comics Workshop hosted by Abhijeet Kini, who is an acclaimed name in this field shall enlighten the students about how to direct our creative thinking skills onto paper in form of comic strips. You’ll get to learn how to build the narrative, create awesome stories and amazing characters. Following the workshop, a comic writing competition will be held where you’ll have to create your own comic piece based on a given theme and win." 
+                                 +"</p>"
+                             +"</p>",
+            rules: "<p>"
+                        +"<p>"
+                            +"<ol>"
+                                +"<li>Teams can’t be of more than 2 members.</li>"
+                                +"<li>It is compulsory for both the team members to register individually for the workshop.</li>"
+                                +"<li>No Plagiarism allowed.</li>"
+                                +"<li>The story has to be new and original. Famous characters can be present in the story.</li>"
+                                +"<li>No abusive content.</li>"
+                            +"</ol>"
+                        +"</p>"
+                      
+                        +"<p>"
+                            + "Online Registrations will be open till 19<sup>th</sup>January, 2019. Offline registration will be subject to the discretion of the organizers."
+                        +"</p>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Samruddhi Pathak: +91-08290902886"
+                        +"<br>"
+                        +"Vipul Vaibhav: +91-8009784441"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:literary@plinth.in'>literary@plinth.in</a>" 
+                    +"</p>",
+            sponsors: null,
+            otherURL: null,
+        },
+        {
+            eventUrl: 'intotheuniverse',
+            fee:100,
+            paymentURL: true,
+            clubName: "Astronomy",
+            eventName: "Into The Universe",
+            displayName: "Into The Universe",
+            payName: "INT",
+            eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 3,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                            +"<b>Crack the depiction</b>"
+                            +"<p>"
+                                +"It will be a unique visual quiz related to astronomy. You would be provided with some interesting pictures in which different alphabets would be enfused." 
+                                +"<br>"
+                                +"After smartly discovering the alphabets, you need to arrange them to get an astronomical term to conquer the round one. But wait!!!! The heat isn't ended yet. After completing round one, you would be assigned a final task.To move further in the jolly event, you need to complete the final assigned task."
+                                +"<br>"
+                            +"</p>"
+                            +"<b>Messier Marathon</b>"
+                            +"<p>"
+                                +"So are you one of those who sneak out of your rooms during night hours and wander long gazing at the sky, trying to build up your imagination. Then get ready to test your laser and telescope handling skills to briskly point out a celestial object to conquer the dias"
+                                +"<br>"
+                            +"</p>"
+                        +"</p>",
+            eventDescription: "<p>Event is of three rounds, namely :</p>"
+                                +"<p>"
+                                    +"<b>Round 1: Astrobowl</b>"
+                                    +"<br>"
+                                    +"This round will be a pen paper based Question-Answer round testing the knowledge of the participating teams in the field of Astrophysics and observational astronomy. Top 60% teams will qualify for 2nd round."
+                                    +"<br><br>"
+                                    +"<b>Round 2: Messier Marathon</b>"
+                                    +"<br>"
+                                    +"It is the observational sky gazing round. Participants would be required to locate certain constellations, stars and planets in a limited time interval. Based on the accuracy and faster response, top 50% teams will qualify for the final round."
+                                    +"<br><br>"
+                                    +"<b>Round 3: Messier Marathon</b>"
+                                    +"<br>"
+                                    +"This round will happen on the same night after round 2. In this particular round, the participating teams will be provided with a telescope to locate a set of objects in a given time slot. These objects could be Messier objects, planets or any other commonly visible celestial body. Teams will be given 10-15 minutes to locate a given set of these objects."
+                                +"</p>",
+            rules: "<p>"
+                        +"<b>Description of Telescope used</b>"
+                        +"<br>"
+                        +"Telescope used is either 6” Newtonian Telescope or 6” alt-azimuth mount."
+                        +"<br><br>"
+                        +"<b>Team Structure:</b>"
+                        +"<ol>"
+                            +"<li>One team can have maximum 3 participants.</li>"
+                            +"<li> Inter college teams are allowed.</li>"
+                            +"<li>To claim prize you need to be registered here.</li>"
+                        +"</ol>"
+                        +"<br>"
+                        +"<b>Round 1:</b>"
+                        +"<ol>"
+                            +"<li>Use of calculators or any other form of electronic gadgets is strictly prohibited specifically mentioned by the Astronomy club.</li>"
+                            +"<li>Use of unfair means in any form will lead to disqualification from the event.</li><li>Medium of communication and the quizzes will be English.</li>"
+                            +"<li>The decision of the judges will be final and abiding by all the teams.</li>"
+                        +"</ol>"
+                        +"<br>"
+                        +"<b>Round 2:</b>"
+                        +"<ol>"
+                            +"<li>Each team will be provided a pointer and torch during the event.</li>"
+                            +"<li>Use of personal gadgets/ mobile torches is not allowed.</li>"
+                        +"</ol>"
+                        +"<br>"
+                        +"<b>Round 3:</b>"
+                        +"<ol>"
+                            +"<li>Teams will be provided telescope aligned. During the event, if the alignment of Eyepiece and finder is disturbed, then the teams have to align themselves.</li>"
+                            +"<li>Use of personal gadgets/ mobile phones/ torches is not allowed.</li>"
+                        +"</ol>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Gaurav Kulkarni: +91-7742669667"
+                        +"<br>"
+                        +"Malvika Maloo: +91-9950545133"
+                        +"<br>"
+                        +"Abhinav Binjola:+91-7742323105"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
+                    +"</p>",
+            sponsors: null,
+            otherURL: null,
+        },
+        {
+            eventUrl: 'astrohunt',
+            fee:100,
+            paymentURL: true,
+            clubName: "Astronomy",
+            eventName: "Astro Hunt",
+            displayName: "Astro Hunt",
+            payName: "AH",
+            eventDate: "19<sup>th</sup> - 20<sup>st</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 3,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                            +"Foresee the unfathomable and explore the mysteries of the universe. Only the sharp, intelligent and astronomy enthusiasts will make it to the end. The route to solve the mysteries of the universe lies within the depths of the dark sky and your imagination. It’s time to bring out the Galileo Galilei in you and look into the infinite cosmic depths."
+                        +"</p>",
+            eventDescription: "<p>Astro hunt is a fun event in which teams will be participating and they would be required to follow a series of clues and look for the answers. The answers would be places or objects available in the campus. The answers to the clues would be related to astronomy. Teams will have to solve a series of clues in a limited time period. The top 3 teams to solve the clues are declared as the Winners.</p>",
+            rules: "<p>"
+                        +"<b>General Rules </b>"
+                        +"<ol>"
+                            +"<li>Use of internet for solving the clues is allowed.</li>"
+                            +"<li>Maximum Team Size: 3 members per team.</li>"
+                            +"<li>Teams must keep all the hints with them, they will be checked at final checkpoint.</li>"
+                            +"<li>To claim prize you need to be registered here.</li>"
+                        +"</ol>"
+                    +"</p>",
+            judges: null,
+           query: "<p class='link-text'>"
+                        +"Gaurav Kulkarni: +91-7742669667"
+                        +"<br>"
+                        +"Aarshi Chaurasia: +91-8290720034"
+                        +"<br>"
+                        +"Monil Narang:+91-9462236381"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
+                    +"</p>",
+            sponsors: null, 
+            otherURL: null,
+        },
+        {
+
+            eventUrl: 'forhackthecode',
+            fee:0,
+            paymentURL: null,
+            clubName: "Coding",
+            eventName: "For Hack the Code",
+            displayName: "For Hack the Code",
+            payName: "CSP",
+            eventDate: "21<sup>th</sup> Jan, 2019", //dont know
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 1,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                            +"Never do you know coding in all, If you can't Hack at all"
+                        +"</p>"
+                        +"<p>"
+                            +"Think that you are smart? Or you have got an eagle vision to spot the bugs? Does ‘Segmentation Fault’ send a chill through your spine? Why doubt when you can find out!"
+                        +"</p>",
+            eventDescription: "<p>"
+                                    +"This is an onsite event, the contest will be held on 20 Jan 19, 3 PM onwards."
+                                +"</p>"
+                                +"<p>"
+                                    +" You can form a team of at most two members."
+                                +"</p>"
+                                
+                                +"<p>"
+                                    +"Contest duration is 1 hours."
+                                +"</p>"
+                                +"<p>"
+                                    +"Please register yourself there and join."
+                                +"</p>"
+                               
+                                ,
+            rules: "<p>"
+                        +"<b>Key Details</b>"
+                        +"<ol>"
+                            +"<li>The first online round of the contest will be held on 21st January 2019 (Sunday).</li>"
+                            +"<li>Contest duration will be 40 min.</li>"
+                            +"<li>Team with exactly 2 members is allowed.</li>"
+                            +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
+                            +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
+                        +"</ol>"
+                        +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br>"
+                        +"Garvit Bhatia: +91-9414858869"
+                        +"<br>"
+                        +"Aditya Aggarwal: +91-8791636347"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
+                    +"</p>",
+            sponsors: null
+        },
+        {
+
+            eventUrl: 'iupc',
+            fee:0,
+            paymentURL: null,
+            clubName: "Coding",
+            eventName: "IUPC",
+            displayName: "Inter University Programming Challenge(IUPC)",
+            payName: "IUPC",
+            eventDate: "<p>"
+                            +"Online Round - 5<sup>th</sup> Jan, 2019"
+                            +"<br>"
+                            +"Onsite Round - 19<sup>st</sup> Jan, 2019"
+                        +"</p>",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 3,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                            +"See logic in everything around? Is your daily language “Syntax”?"
+                        +"</p>"
+                        +"<p>"
+                            +"The team contest designed to rattle your brains - Think you (and your partner(s)) are smart enough to crack the code? Ever wanted to experience the ACM – ICPC adrenaline? Want to battle it out with some of the best coders in the country?"
+                        +"</p>"
+                        +"<p>"
+                            +"Then register yourself for this legacy coding contest !"
+                        +"</p>",
+            eventDescription: "<p>"
+                                    +"The contest will involve 2 rounds – an online qualifier round and a final onsite battle!"
+                                +"</p>"
+                                +"<p>"
+                                    +"The registered teams will first compete in the online qualifier round - The teams that will cross the cut off will be invited to the onsite round to battle it out to the finish line."
+                                +"</p>"
+                                +"<p>"
+                                    +"Following the ICPC format, both online and onsite rounds will have a set of 10 questions, each ranging from cakewalk to hard level and you get 5 hours in each round to crack as many as you can!"
+                                +"</p>"
+                                +"<p>"
+                                    +"Certificates and prizes(worth Rs 20, 000) will be awarded to the top 3 winners of the onsite round."
+                                +"</p>"
+                                +"<b>Platform Partner:</b>"
+                                +"<p>HackerEarth</p>",
+            rules: "<p>"
+                        +"<b>Key Details of IUPC'19</b>"
+                        +"<ol>"
+                            +"<li>The first online round of the contest will be held on 5<sup>th</sup> January 2019.</li>"
+                            +"<li>Contest duration will be 5 hours.</li>"
+                            +"<li>Team with a maximum of 3 members is allowed. Team Members must be of the same college/university.</li>"
+                            +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
+                            +"<li>Teams that cross the cut off score in the Qualifier Round will be selected for the Onsite Round during PLINTH'18 at The LNMIIT, Jaipur.</li>"
+                            +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
+                        +"</ol>"
+                        +"<p>Prizes worth ₹ 20,000/- for grabs (only for the onsite Round) !!</p>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br>"
+                        +"Garvit Bhatia: +91-9414858869"
+                        +"<br>"
+                        +"Aditya Aggarwal: +91-8791636347"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
+                    +"</p>",
+            sponsors: null,
+            otherURL: null,
+        },    
+
     ],
  
 };
