@@ -3,6 +3,7 @@
 
 <head>
     <% include partials/head %>
+   
     <link rel="stylesheet" href="css/categories.css">
     <link rel="stylesheet" href="css/competitions.css">
     <script>
@@ -416,16 +417,20 @@
             remove();
         }
     </script>
-    <script>
-        if (screen.width > 1024) {
-            function remove() {
-                var elem = document.getElementById('rlbuttn_menu');
-                elem.parentNode.removeChild(elem);
-                return false;
+     <script>
+            var elem = document.getElementById('rlbuttn_menu');
+            if(elem !=null){
+                if (screen.width > 1024) {
+                    function remove() {
+                        
+                        elem.parentNode.removeChild(elem);
+                        return false;
+                    }
+                    remove();
+                }
             }
-            remove();
-        }
-    </script>
+            </script>
+        
     <script>
         if (screen.width < 500) {
             function remove() {
