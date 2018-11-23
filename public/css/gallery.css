@@ -98,7 +98,7 @@ input[type="checkbox"]:checked~.grid {
   }
 
   .grid {
-    margin-top: 25% !important
+    margin-top: 10% !important
   }
 }
 
