@@ -261,14 +261,7 @@
     }
 }
 
-@media only screen and (max-width: 1450px)and (min-width: 768px){
-	.ch-info h3 {
-		font-size: 20px !important;
-		float: left;
-		margin-right: 10% !important
-	}
 
-}
 @media (min-width: 768px) and (max-width: 929px){
     .col-md-4 {
         
