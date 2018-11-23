@@ -98,7 +98,7 @@ module.exports.competitions = {
         
         {
             eventUrl: 'robowar',
-            fee:700,
+            fee:null,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Robowar",
@@ -1006,7 +1006,7 @@ module.exports.competitions = {
             clubName: "Literature",
             eventName: "ComiKaze",
             displayName: "ComiKaze- A creative comic workshop with a comic writing competition",
-            payName: "RST",
+            payName: "COM",
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
