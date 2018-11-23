@@ -3,7 +3,7 @@
 
 <head>
     <% include partials/head %>
-   
+
     <link rel="stylesheet" href="css/categories.css">
     <link rel="stylesheet" href="css/competitions.css">
     <script>
@@ -315,9 +315,9 @@
                                 <li>
 
                                     <div class="ch-item ch-img-brdw more-details">
-                                            <div class="ch-info">
-                                                <h3 class="link">Brandwagon</h3>
-                                            </div>
+                                        <div class="ch-info">
+                                            <h3 class="link">Brandwagon</h3>
+                                        </div>
                                     </div>
 
                                 </li>
@@ -326,8 +326,8 @@
                             <div class="col-sm-12 col-lg-2 col-md-3">
                                 <li>
                                     <div class="ch-item ch-img-theq more-details">
-                                            <div class="ch-info">
-                                                <h3 class="link">The Quest</h3>
+                                        <div class="ch-info">
+                                            <h3 class="link">The Quest</h3>
 
                                         </div>
                                     </div>
@@ -358,17 +358,17 @@
 
                             </div>
                             <div class="col-sm-12 col-lg-2 col-md-3">
-                                    <li>
-    
-                                        <div class="ch-item ch-img-comikaze more-details">
-                                            <div class="ch-info">
-                                                <h3 class="link">Comikaze</h3>
-                                            </div>
+                                <li>
+
+                                    <div class="ch-item ch-img-comikaze more-details">
+                                        <div class="ch-info">
+                                            <h3 class="link">Comikaze</h3>
                                         </div>
-    
-                                    </li>
-    
-                                </div>
+                                    </div>
+
+                                </li>
+
+                            </div>
 
                         </div>
                     </div>
@@ -392,7 +392,7 @@
         window.addEventListener('load', function () {
 
             var el = document.querySelector('.preloader');
-            el.style.opacity = 2;
+            el.style.opacity = 1;
 
             (function fade() {
                 if ((el.style.opacity -= 0.15) < 0) {
@@ -417,28 +417,31 @@
             remove();
         }
     </script>
-     <script>
-            var elem = document.getElementById('rlbuttn_menu');
-            if(elem !=null){
-                if (screen.width > 1024) {
-                    function remove() {
-                        
-                        elem.parentNode.removeChild(elem);
-                        return false;
-                    }
-                    remove();
-                }
-            }
-            </script>
-        
     <script>
-        if (screen.width < 500) {
-            function remove() {
-                var elem = document.getElementById('faqbtn_rm');
-                elem.parentNode.removeChild(elem);
-                return false;
+        var elem = document.getElementById('rlbuttn_menu');
+        if (elem != null) {
+            if (screen.width > 1024) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
             }
-            remove();
+        }
+    </script>
+
+    <script>
+        var elem = document.getElementById('faqbtn_rm');
+        if (elem != null) {
+            if (screen.width < 500) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
         }
     </script>
     <script>

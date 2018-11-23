@@ -1,6 +1,178 @@
 module.exports.competitions = {
     competitions: [
         {
+
+            eventUrl: 'enigma',
+            fee:0,
+            paymentURL: null,
+            clubName: "Coding",
+            eventName: "Enigma",
+            displayName: "Enigma – The Plinth CodeSprint",
+            payName: "ENCS",
+            eventDate: "<p>"
+                            +"Online Round - 21:00, 15<sup>th</sup> Jan, 2018"
+                            +"<br>"
+                            +"Onsite Round - 20<sup>th</sup> Jan, 2018"
+                        +"</p>",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 1,
+            memberLowerLimit: 1,
+            prizeWorth: '₹ 15,000/-',
+            eventFee: null,
+            synopsis:  "<p>"
+                            +"Is your life summarised by the 4 words - Eat, Sleep, Code, Repeat? Want to prove yourself to be The Ultimate Code Master?"
+                        +"</p>"
+                        +"<p>"
+                            +"Tired of searching for the perfect team mates in every competition? Want to prove your worth as a solo coder? Looking for the perfect platform to display your skills?"
+                        +"</p>"
+                        +"<p>"
+                            +"This solo coding competition, is designed for the masterminds who think they perform best alone."
+                        +"</p>"
+                        +"<p>"
+                            +"So, if this is a challenge you dare to take on, then register yourself in this ultimate CodeSprint !"
+                        +"</p>",
+            eventDescription: "<p>"
+                                    +"The contest will involve 2 rounds – an online qualifier round and a final onsite battle!"
+                                +"</p>"
+                                +"<p>"
+                                    +"The registered particpants will first compete in the online qualifier round - The participants that qualify this round will get a chance to fight the codewar, to win, in the onsite round."
+                                +"</p>"
+                                +"<p>"
+                                    +"Both online and onsite rounds will have a set of 7 questions, each ranging from cakewalk to hard level and you get 4 hours in each round to crack as many as you can!"
+                                +"</p>"
+                                +"<p>"
+                                    +"Certificates and prizes(worth ₹ 15, 000) will be awarded to the top 3 winners of the onsite round."
+                                +"</p>"
+                                +"<p>"
+                                    +"<b>P.S :</b> There is a special detail about the online round held on CodeChef that will be revealed soon! Stay tuned!"
+                                +"</p>"
+                                +"<b>Platform Partner:</b>"
+                                +"<p>Online: CodeChef</p>"
+                                +"<p>Onsite: GeeksForGeeks</p>",
+            rules: "<p>"
+                        +"<b>Key Details of Enigma – The Plinth CodeSprint'18</b>"
+                        +"<ol>"
+                            +"<li>The first online round of the contest will be held on 15<sup>th</sup> January 2018 (Thursday).</li>"
+                            +"<li>Contest duration will be 3 hours.</li>"
+                            +"<li>This is a solo contest – no team participation is allowed.</li>"
+                            +"<li>Plagiarism by any means will lead to immediate disqualification of the participant.   </li>"
+                            +"<li>Participants that cross the cut off score in the Qualifier Round will be selected for the Onsite Round during PLINTH'18 at The LNMIIT, Jaipur.</li>"
+                            +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
+                        +"</ol>"
+                        +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br>"
+                        +"Garvit Bhatia: +91-9414858869"
+                        +"<br>"
+                        +"Aditya Aggarwal: +91-8791636347"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
+                    +"</p>",
+            sponsors: null,
+            otherURL: "https://www.codechef.com/PLCO2018/",
+        },
+        {
+
+            eventUrl: 'codeswap',
+            fee:0,
+            paymentURL: null,
+            clubName: "Coding",
+            eventName: "CodeSwap",
+            displayName: "CodeSwap",
+            payName: "CSP",
+            eventDate: "21<sup>th</sup> Jan, 2018",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 1,
+            memberLowerLimit: 1,
+            prizeWorth: '₹ 10,000/-',
+            eventFee: '₹ 50/-',
+            synopsis:  "<p>"
+                            +"Codeswap is a mind-enthralling contest for a team of two, where the long and complex problems not only test an individual’s concepts but also takes the competition to the next level by testing how well an individual understands their partner’s thinking in a short span of time."
+                        +"</p>"
+                        +"<p>"
+                            +"So you think you know your partner’s thinking well enough to complete the challenge? Then register now!"
+                        +"</p>",
+            eventDescription: "<p>"
+                                    +"In this contest a team of two people will have to solve only two problems in 40 minutes - sounds easy?"
+                                +"</p>"
+                                +"<p>"
+                                    +"Well here’s the catch - apart from the contest having lengthy and hard problems, each member will have to work on a problem simultaneously and half way through the contest the partners will switch systems and will continue the problem their partner had started."
+                                +"</p>"
+                                
+                                +"<p>"
+                                    +"Certificates and prizes(worth ₹ 10, 000) will be awarded to the top 3 winners of the onsite round."
+                                +"</p>"
+                               
+                                +"<b>Platform Partner:</b>"
+                                +"<p>Skillenza</p>",
+            rules: "<p>"
+                        +"<b>Key Details</b>"
+                        +"<ol>"
+                            +"<li>The first online round of the contest will be held on 21st January 2018 (Sunday).</li>"
+                            +"<li>Contest duration will be 40 min.</li>"
+                            +"<li>Team with exactly 2 members is allowed.</li>"
+                            +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
+                            +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
+                        +"</ol>"
+                        +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br>"
+                        +"Garvit Bhatia: +91-9414858869"
+                        +"<br>"
+                        +"Aditya Aggarwal: +91-8791636347"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
+                    +"</p>",
+            sponsors: null,
+            otherURL: "https://skillenza.com/challenge/codeswaplnmiit",
+        },
+        {
+
+            eventUrl: 'sif',
+            fee:{
+                startup: 1000,
+                student: 100,
+            },
+            paymentURL: true,
+            clubName: "Management",
+            eventName: "StartUp Intern Fair",
+            displayName: "StartUp Intern Fair",
+            payName: "SIF",
+            eventDate: "9AM - 6PM, 21<sup>st</sup> Jan 2018",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 1,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: '<br>₹ 100/-  Students <br>   ₹ 1000/-  Startups',
+            synopsis: "<p>Startup intern fair is a one-stop place for getting a chance to do an internship in some of the well-known and budding startups of the country. Ranging from technical to a non-technical domain, one can select the internship of their genre, get screened and get a chance to grab their favorite internship. SIF aims to provide a hassle free and an aggregated hiring process. The time has come to put an end to your impasse and land up in your dream internship.</p>",
+            eventDescription: "<p>Are you capable of making the next big app or writing geeky codes to build an awesome application or working out the next business model or writing beautiful blogs or are you too convincing to rephrase somebody's opinion but simply whiling away your time finding the best place to showcase your skills? Well, the time has come to put an end to your impasse.</p><p>Startup Intern Fair aims at connecting the budding startups looking out for their Jarvis to help them reach the level they have envisioned, with the young students waiting for the opportunities to enhance their skill set. Just like a fair, startups would set up their stall and screen the students based on their resume and personal interaction and if you have got what they require, then you might land up in your favourite internship be it technical , management or content writing.</p>",
+            rules: "<p>"
+                        +"<b>Registration Rules </b>"
+                        +"<ol>"
+                            +"<li>Carry at least two passport size photographs and a valid College ID. Without it, your entry in SIF shall be denied.</li>"
+                            +"<li>Students must bring their own copies of resumes. Carry at least as many copies as the internship profiles you are applying for.</li>"
+                            +"<li>One student can apply for multiple internship openings but can be selected in maximum of three. Once a student gets selected in 3 internships, he/she shall be debarred from applying further.</li>"
+                        +"</ol>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Deepanshu Sharma: +91-9636618379"
+                        +"<br>"
+                        +"Paresh Mishra: +91-9521876701"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:sif.plinth@gmail.com'>sif.plinth@gmail.com</a>"
+                    +"</p>",
+            sponsors: "Coming Soon",
+            otherURL: null,
+        },
+
+        {
             eventUrl: 'brandwagon',
             fee:null,
             paymentURL: true,
@@ -19,7 +191,7 @@ module.exports.competitions = {
                             +"<p>"
                                 +"“Pressing buzzers is like proposing a girl ... you must do it fast, or others will take that chance.” – Pickbrain" 
                                 +"<br>"
-                                +"What connects ‘Mitron’ and ‘Acche din’ ? Pretty easy, right? Then try this – Google is a _____ internet company and Facebook is a _____ internet compan"
+                                +"What connects ‘Mitron’ and ‘Acche din’ ? Pretty easy, right? Then try this – Google is a _____ internet company and Facebook is a _____ internet company"
                                 +"<br>"
                                 +"If you can already feel your grey cells warming up, then Brandwagon is the place to be. Test your knowledge about various domains of the business world."
                             +"</p>",
@@ -98,7 +270,7 @@ module.exports.competitions = {
         
         {
             eventUrl: 'robowar',
-            fee:700,
+            fee:null,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Robowar",
@@ -949,6 +1121,65 @@ module.exports.competitions = {
         },
         {
 
+            eventUrl: 'icengine',
+            fee:null,
+            paymentURL: true,
+            clubName: "Robotics",
+            eventName: "IC Engine",
+            displayName: "IC Engine",
+            payName: "RST",
+            eventDate: "19<sup>th</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 2,
+            memberLowerLimit: 2,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                           +"<p>"
+                                +"Design a remote-controlled IC engine car which can race against other competitors on an off-road dirt track." 
+                            +"</p>"
+                        +"</p>",
+            eventDescription: "<p>"
+                                 +"<p>"
+                                      +"The Literary Committee offers you the perfect opportunity to join the legacy of intellectual debaters by keeping your own opinion and firmly presenting your unhindered stance on the burning debatable topics of the current world. We welcome you to be a part of the flagship literary event of Plinth 2019.." 
+                                 +"</p>"
+                             +"</p>",
+            rules:   "<p>"
+            +"<b style='color: #4C4D64'>General Rules</b>"
+            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                +"<li>The participants must place their RC cars at the start line before start of the race. Any RC car starting beforehand will be given a warning and will be allowed to restart. </li>"
+                +"<li>The track will contain certain number of checkpoints and if the bot goes out of the track then it has to start with the previous checkpoint.</li>"
+                +"<li>If the RC car is unable to complete the obstacle for the second time the RC car can skip the course with 45 sec penalty.</li>"
+                +"<li>The vehicle cannot be touched for any other reason barring those stated above.</li>"
+                +"<li>Teams are not allowed to intentionally damage the opponent's machine.</li>"
+                +"<li>Organizers reserve the rights to change any or all of the above rules as they deem fit.</li>"
+                +"<li>Organizers decision will be final decision.</li>"
+            +"</ol>"
+            +"<b style='color: #4C4D64'>Team Specification</b>"
+            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                +"<li>A team may have a maximum of 4 members.</li>"
+                +"<li>Each participant can be a part of one team only. If same participant is found as a member of more than one team, will lead to disqualification of both teams.</li>"
+            +"</ol>"
+            +"<b style='color: #4C4D64'>Robot Specification</b>"
+            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                +"<li>Size – 600mm x 500mm x 500mm.</li>"
+                +"<li>Controlling - Participants must use a remote with frequency of band spectrum 2.4 GHz to control the machine.</li>"
+                +"<li>Engine – The vehicle must be propelled forward using IC engines (max power of 4.6cc). Any machine which uses DC Motors for propulsion will be disqualified. However, DC motors and servos can be used for steering mechanisms or any other control mechanisms apart from propulsion.</li>"
+                +"<li>Tires – Rubber tires.</li>"
+                +"<li>Steering - The machine must have an on-board power supply to run any mechanism requiring electric power for steering. The electric voltage anywhere in the machine should not exceed 12V at any point of time.</li>"
+            +"</ol>"
+        
+            
+        +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                       
+                    +"</p>",
+            sponsors: null,
+            otherURL: null,
+        },
+        {
+
             eventUrl: 'rostrum',
             fee:null,
             paymentURL: true,
@@ -1005,8 +1236,8 @@ module.exports.competitions = {
             paymentURL: true,
             clubName: "Literature",
             eventName: "ComiKaze",
-            displayName: "ComiKaze- A creative comic workshop with a comic writing competition",
-            payName: "RST",
+            displayName: "ComiKaze",
+            payName: "COM",
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
@@ -1015,6 +1246,8 @@ module.exports.competitions = {
             eventFee: null,
             synopsis:  "<p>"
                            +"<p>"
+                                + "<b>A creative comic workshop with a comic writing competition</b>"
+                                +"<br>"
                                 +"Have you ever been infatuated by Comics? Have you ever thought what would Batman do if The Joker held an entire country hostage? How would a Marvel vs DC fight appear? What new villain would Scooby Do and the gang come face to face with? Did you ever want to create your own comic book but didn’t know where to start? Well, Plinth 2019 is here, and we’ve got just the right thing for you. A Comics Workshop hosted by the one and only Abhijeet Kini. In the end, put all you’ve learnt to use and create a comic piece in the Comic writing competition and get a chance to win lucrative prizes!" 
                             +"</p>"
                         +"</p>",
@@ -1133,6 +1366,53 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null,
+            otherURL: null,
+        },
+        {
+
+            eventUrl: 'astroquiz',
+            fee:null,
+            paymentURL: true,
+            clubName: "Astronomy",
+            eventName: "Astro Quiz",
+            displayName: "Astro Quiz",
+            payName: "AQ",
+            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2018",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 2,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: null,
+            synopsis:  "<p>"
+                            +"Can you answer some basic questions on Astronomy? Well we have another event in for you which is an amalgam of fun and intellect."
+                        +"</p>"
+                        +"<p>"
+                            +"Astro-quiz again is a 2 round event. Both rounds will be based on a audio-visual question-answer pattern."
+                            +"<br>"
+                            +"It will be a quiz related to astronomy.Pictures and videos would be projected in front and participants have to answer the questions that follow. So people it is time to buck up and get ready to beat your brains out !!"
+                        +"</p>",
+            eventDescription: "<p>Astro quiz also has two rounds in which teams are required to answer questions related to the various aspects of astronomy. This quiz would be testing the knowledge of the participants in the field of astronomy.</p><p><b>Round 1: Preliminary Round</b><br>It is audio-visual round, questions are open for all teams, top 60% teams will qualify for second round.<br><br><b>Round 2: Final Round</b><br>This round is also a audio-visual round and it is based on the “pounce and bounce” system conducted by quizmaster at LNMIIT. More details will be introduced at the time of event.</p>",
+            rules: "<p>"
+                        +"<b>General Rules </b>"
+                        +"<ol>"
+                            +"<li>Use of calculators or any other form of electronic gadgets is strictly prohibited specifically mentioned by the Astronomy club.</li>"
+                            +"<li>Use of unfair means in any form will lead to disqualification from the event.</li>"
+                            +"<li>Maximum team size: 2 members per team.</li>"
+                            +"<li>In any case, the decision taken by quizmaster will be considered as final.</li>"
+                            +"<li>To claim prize you need to be registered here.</li>"
+                        +"</ol>"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Priyansh Jain: +91-8290925378"
+                        +"<br>"
+                        +"Ria Lamba: +91-9799494808"
+                        +"<br>"
+                        +"Kartik Shankavaram:+91-9460521848"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
+                    +"</p>",
+            sponsors: null,   
             otherURL: null,
         },
         {
@@ -1272,10 +1552,10 @@ module.exports.competitions = {
                                     +"Following the ICPC format, both online and onsite rounds will have a set of 10 questions, each ranging from cakewalk to hard level and you get 5 hours in each round to crack as many as you can!"
                                 +"</p>"
                                 +"<p>"
-                                    +"Certificates and prizes(worth Rs 20, 000) will be awarded to the top 3 winners of the onsite round."
-                                +"</p>"
-                                +"<b style='color: #4C4D64'>Platform Partner:</b>"
-                                +"<p>HackerEarth</p>",
+                                    +"Certificates and prizes will be awarded to the top 3 winners of the onsite round."
+                                +"</p>",
+                                // +"<b style='color: #4C4D64'>Platform Partner:</b>"
+                                // +"<p>HackerEarth</p>",
             rules: "<p>"
                         +"<b style='color: #4C4D64'>Key Details of IUPC'19</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
@@ -1283,10 +1563,10 @@ module.exports.competitions = {
                             +"<li>Contest duration will be 5 hours.</li>"
                             +"<li>Team with a maximum of 3 members is allowed. Team Members must be of the same college/university.</li>"
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
-                            +"<li>Teams that cross the cut off score in the Qualifier Round will be selected for the Onsite Round during PLINTH'18 at The LNMIIT, Jaipur.</li>"
+                            +"<li>Teams that cross the cut off score in the Qualifier Round will be selected for the Onsite Round during PLINTH'19 at The LNMIIT, Jaipur.</li>"
                             +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
                         +"</ol>"
-                        +"<p>Prizes worth ₹ 20,000/- for grabs (only for the onsite Round) !!</p>"
+                        // +"<p>Prizes worth ₹ 20,000/- for grabs (only for the onsite Round) !!</p>"
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
@@ -1311,6 +1591,10 @@ module.exports.competitionUrl = {
         {
             eventName: 'Into The Universe',
             eventUrl: '/intotheuniverse',
+        },
+        {
+            eventName: 'StartUp Intern Fair',
+            eventUrl: '/sif',
         },
         {
             eventName: 'Astro Hunt',
@@ -1402,6 +1686,14 @@ module.exports.competitionUrl = {
         {
             eventName: 'Comikaze',
             eventUrl: '/comikaze',
+        },
+        {
+            eventName: 'Enigma',
+            eventUrl: '/enigma',
+        },
+        {
+            eventName: 'Codeswap',
+            eventUrl: '/codeswap',
         },
        
     ],
