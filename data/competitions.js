@@ -1272,7 +1272,7 @@ module.exports.competitions = {
                                     +"Following the ICPC format, both online and onsite rounds will have a set of 10 questions, each ranging from cakewalk to hard level and you get 5 hours in each round to crack as many as you can!"
                                 +"</p>"
                                 +"<p>"
-                                    +"Certificates and prizes(worth Rs 20, 000) will be awarded to the top 3 winners of the onsite round."
+                                    +"Certificates and prizes will be awarded to the top 3 winners of the onsite round."
                                 +"</p>",
                                 // +"<b style='color: #4C4D64'>Platform Partner:</b>"
                                 // +"<p>HackerEarth</p>",
