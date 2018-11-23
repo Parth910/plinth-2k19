@@ -117,7 +117,7 @@ module.exports.competitions = {
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
                             +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
                         +"</ol>"
-                        +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
+                        // +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
@@ -130,15 +130,16 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: "https://skillenza.com/challenge/codeswaplnmiit",
+            otherURL: null,
         },
         {
 
             eventUrl: 'sif',
-            fee:{
-                startup: null,
-                student: null,
-            },
+            // fee:{
+            //     startup: null,
+            //     student: null,
+            // },
+            fee: null,
             paymentURL: true,
             clubName: "Management",
             eventName: "StartUp Intern Fair",
@@ -149,7 +150,7 @@ module.exports.competitions = {
             memberUpperLimit: 1,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: '<br>₹ 100/-  Students <br>   ₹ 1000/-  Startups',
+            eventFee: null,
             synopsis: "<p>Startup intern fair is a one-stop place for getting a chance to do an internship in some of the well-known and budding startups of the country. Ranging from technical to a non-technical domain, one can select the internship of their genre, get screened and get a chance to grab their favorite internship. SIF aims to provide a hassle free and an aggregated hiring process. The time has come to put an end to your impasse and land up in your dream internship.</p>",
             eventDescription: "<p>Are you capable of making the next big app or writing geeky codes to build an awesome application or working out the next business model or writing beautiful blogs or are you too convincing to rephrase somebody's opinion but simply whiling away your time finding the best place to showcase your skills? Well, the time has come to put an end to your impasse.</p><p>Startup Intern Fair aims at connecting the budding startups looking out for their Jarvis to help them reach the level they have envisioned, with the young students waiting for the opportunities to enhance their skill set. Just like a fair, startups would set up their stall and screen the students based on their resume and personal interaction and if you have got what they require, then you might land up in your favourite internship be it technical , management or content writing.</p>",
             rules: "<p>"
@@ -1173,8 +1174,14 @@ module.exports.competitions = {
         +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                       
-                    +"</p>",
+            // +"Khyati Doshi: +91-9636445125"
+            // +"<br>"
+            // +"Puru upadhyay: +91-9166015620"
+            // +"<br>"
+            // +"Robin Singh: +91-7011028780"
+            // +"<br><br>"
+            +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
+        +"</p>",
             sponsors: null,
             otherURL: null,
         },
@@ -1394,7 +1401,7 @@ module.exports.competitions = {
             eventDescription: "<p>Astro quiz also has two rounds in which teams are required to answer questions related to the various aspects of astronomy. This quiz would be testing the knowledge of the participants in the field of astronomy.</p><p><b>Round 1: Preliminary Round</b><br>It is audio-visual round, questions are open for all teams, top 60% teams will qualify for second round.<br><br><b>Round 2: Final Round</b><br>This round is also a audio-visual round and it is based on the “pounce and bounce” system conducted by quizmaster at LNMIIT. More details will be introduced at the time of event.</p>",
             rules: "<p>"
                         +"<b>General Rules </b>"
-                        +"<ol>"
+                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>Use of calculators or any other form of electronic gadgets is strictly prohibited specifically mentioned by the Astronomy club.</li>"
                             +"<li>Use of unfair means in any form will lead to disqualification from the event.</li>"
                             +"<li>Maximum team size: 2 members per team.</li>"
@@ -1404,12 +1411,12 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        +"Priyansh Jain: +91-8290925378"
-                        +"<br>"
-                        +"Ria Lamba: +91-9799494808"
-                        +"<br>"
-                        +"Kartik Shankavaram:+91-9460521848"
-                        +"<br><br>"
+                        // +"Priyansh Jain: +91-8290925378"
+                        // +"<br>"
+                        // +"Ria Lamba: +91-9799494808"
+                        // +"<br>"
+                        // +"Kartik Shankavaram:+91-9460521848"
+                        // +"<br><br>"
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null,   
@@ -1500,7 +1507,7 @@ module.exports.competitions = {
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
                             +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
                         +"</ol>"
-                        +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
+                        // +"<p>Prizes worth ₹ 15,000/- for grabs (only for the onsite Round) !!</p>"
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
