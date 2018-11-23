@@ -1005,7 +1005,7 @@ module.exports.competitions = {
             paymentURL: true,
             clubName: "Literature",
             eventName: "ComiKaze",
-            displayName: "ComiKaze- A creative comic workshop with a comic writing competition",
+            displayName: "ComiKaze",
             payName: "COM",
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
@@ -1015,6 +1015,8 @@ module.exports.competitions = {
             eventFee: null,
             synopsis:  "<p>"
                            +"<p>"
+                                + "<b>A creative comic workshop with a comic writing competition</b>"
+                                +"<br>"
                                 +"Have you ever been infatuated by Comics? Have you ever thought what would Batman do if The Joker held an entire country hostage? How would a Marvel vs DC fight appear? What new villain would Scooby Do and the gang come face to face with? Did you ever want to create your own comic book but didn’t know where to start? Well, Plinth 2019 is here, and we’ve got just the right thing for you. A Comics Workshop hosted by the one and only Abhijeet Kini. In the end, put all you’ve learnt to use and create a comic piece in the Comic writing competition and get a chance to win lucrative prizes!" 
                             +"</p>"
                         +"</p>",
