@@ -1273,9 +1273,9 @@ module.exports.competitions = {
                                 +"</p>"
                                 +"<p>"
                                     +"Certificates and prizes(worth Rs 20, 000) will be awarded to the top 3 winners of the onsite round."
-                                +"</p>"
-                                +"<b style='color: #4C4D64'>Platform Partner:</b>"
-                                +"<p>HackerEarth</p>",
+                                +"</p>",
+                                // +"<b style='color: #4C4D64'>Platform Partner:</b>"
+                                // +"<p>HackerEarth</p>",
             rules: "<p>"
                         +"<b style='color: #4C4D64'>Key Details of IUPC'19</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
@@ -1283,10 +1283,10 @@ module.exports.competitions = {
                             +"<li>Contest duration will be 5 hours.</li>"
                             +"<li>Team with a maximum of 3 members is allowed. Team Members must be of the same college/university.</li>"
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
-                            +"<li>Teams that cross the cut off score in the Qualifier Round will be selected for the Onsite Round during PLINTH'18 at The LNMIIT, Jaipur.</li>"
+                            +"<li>Teams that cross the cut off score in the Qualifier Round will be selected for the Onsite Round during PLINTH'19 at The LNMIIT, Jaipur.</li>"
                             +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
                         +"</ol>"
-                        +"<p>Prizes worth ₹ 20,000/- for grabs (only for the onsite Round) !!</p>"
+                        // +"<p>Prizes worth ₹ 20,000/- for grabs (only for the onsite Round) !!</p>"
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
