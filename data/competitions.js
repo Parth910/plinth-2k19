@@ -799,7 +799,7 @@ module.exports.competitions = {
                             +"</p>"
                         +"</p>",
             rules:  "<p>"
-                        +"<b style='color: #4C4D64'>General​​ ​​Rules</b>"
+                        +"<b style='color: #4C4D64'>General Rules</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>Each​ ​team​ ​can​ ​have​ ​a​ ​maximum​ ​of​ ​5​ ​members​ ​and​ ​also​ ​all​ ​members​ ​may​ ​not​ ​be​ ​of​ ​same college.</li>"
                             +"<li>A​ ​participant​ ​can’t​ ​be​ ​in​ ​2​ ​or​ ​more​ ​teams.</li>"
