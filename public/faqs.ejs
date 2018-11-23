@@ -3,7 +3,7 @@
 
 <head>
     <% include partials/head %>
-    
+
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/faqs.css">
 
@@ -362,28 +362,31 @@
             remove();
         }
     </script>
-     <script>
-            var elem = document.getElementById('rlbuttn_menu');
-            if(elem !=null){
-                if (screen.width > 1024) {
-                    function remove() {
-                        
-                        elem.parentNode.removeChild(elem);
-                        return false;
-                    }
-                    remove();
-                }
-            }
-            </script>
-        
     <script>
-        if (screen.width < 500) {
-            function remove() {
-                var elem = document.getElementById('faqbtn_rm');
-                elem.parentNode.removeChild(elem);
-                return false;
+        var elem = document.getElementById('rlbuttn_menu');
+        if (elem != null) {
+            if (screen.width > 1024) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
             }
-            remove();
+        }
+    </script>
+
+    <script>
+        var elem = document.getElementById('faqbtn_rm');
+        if (elem != null) {
+            if (screen.width < 500) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
         }
     </script>
     <script>

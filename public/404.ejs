@@ -90,13 +90,16 @@
         }
     </script>
     <script>
-        if (screen.width < 500) {
-            function remove() {
-                var elem = document.getElementById('faqbtn_rm');
-                elem.parentNode.removeChild(elem);
-                return false;
+        var elem = document.getElementById('faqbtn_rm');
+        if (elem != null) {
+            if (screen.width < 500) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
             }
-            remove();
         }
     </script>
     <script>
@@ -137,17 +140,17 @@
         history.pushState(obj, obj.Title, obj.Url);
     </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="js/js.js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="js/js.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'UA-125190547-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
 </body>
 
 </html>

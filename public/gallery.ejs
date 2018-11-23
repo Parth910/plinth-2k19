@@ -186,14 +186,17 @@
         </script>
     
     <script>
+        var elem = document.getElementById('faqbtn_rm');
+        if(elem !=null){
         if (screen.width < 500) {
             function remove() {
-                var elem = document.getElementById('faqbtn_rm');
+                
                 elem.parentNode.removeChild(elem);
                 return false;
             }
             remove();
         }
+    }
     </script>
     <script>
         if (screen.width > 500) {
