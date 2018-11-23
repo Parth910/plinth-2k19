@@ -19,7 +19,7 @@ module.exports.competitions = {
                             +"<p>"
                                 +"“Pressing buzzers is like proposing a girl ... you must do it fast, or others will take that chance.” – Pickbrain" 
                                 +"<br>"
-                                +"What connects ‘Mitron’ and ‘Acche din’ ? Pretty easy, right? Then try this – Google is a _____ internet company and Facebook is a _____ internet compan"
+                                +"What connects ‘Mitron’ and ‘Acche din’ ? Pretty easy, right? Then try this – Google is a _____ internet company and Facebook is a _____ internet company"
                                 +"<br>"
                                 +"If you can already feel your grey cells warming up, then Brandwagon is the place to be. Test your knowledge about various domains of the business world."
                             +"</p>",
