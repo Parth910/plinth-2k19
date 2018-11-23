@@ -57,3 +57,10 @@ button.btn-side:hover {
   float: right !important;
   margin-right: 10% !important
 }
+.thankyou_message h2 {
+  font-family: 'Raleway';
+    font-size: 22px;
+    color: #4C4D64;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
