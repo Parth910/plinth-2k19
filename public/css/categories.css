@@ -158,3 +158,124 @@ body {
         padding-top: 0px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 929px){
+    .i,.j {
+        
+        max-width: 49.333333% !important;
+	}
+    .fhtc{
+        margin-left:33% !important;
+
+    }
+    .quz{
+        margin-left:11% !important;
+    }
+   
+
+}
+
+@media (min-width: 930px) and (max-width: 1024px){
+    .fhtc{
+        margin-left:33% !important;
+
+    }
+    .quz{
+        margin-left:19% !important;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1220px){
+    .i,.j {
+        
+        max-width: 49.333333% !important;
+	}
+    .fhtc{
+        margin-left:39% !important;
+
+    }
+    .quz{
+        margin-left:21% !important;
+    }
+
+}
+@media (min-width: 1221px) and (max-width: 1349px){
+    .i,.j {
+        
+        max-width: 49.333333% !important;
+	}
+    .fhtc{
+        margin-left:39% !important;
+
+    }
+    .quz{
+        margin-left:23% !important;
+    }
+
+}
+@media (min-width: 1350px) and (max-width: 1440px){
+    .i,.j {
+        
+        max-width: 49.333333% !important;
+	}
+    .fhtc{
+        margin-left:39% !important;
+
+    }
+    .quz{
+        margin-left:27% !important;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1580px){
+    .fhtc{
+        margin-left:40% !important;
+
+    }
+    .quz{
+        margin-left:33% !important;
+    }
+
+}
+@media (min-width: 1581px) and (max-width: 1740px){
+    .fhtc{
+        margin-left:40% !important;
+
+    }
+    .quz{
+        margin-left:33% !important;
+    }
+
+}
+@media (min-width: 1741px) and (max-width: 1850px){
+    .fhtc{
+        margin-left:42% !important;
+
+    }
+    .quz{
+        margin-left:33% !important;
+    }
+
+}
+@media (min-width: 1851px) and (max-width: 1960px){
+    .i,.j {
+        
+        max-width: 24.333333% !important;
+	}
+    .fhtc{
+        margin-left:43% !important;
+
+    }
+    .quz{
+        margin-left:34% !important;
+    }
+
+}
+@media (min-width: 1961px) {
+    .fhtc{
+        margin-left:44% !important;
+
+    }
+    .quz{
+        margin-left:38% !important;
+    }
+
+}

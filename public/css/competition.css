@@ -100,3 +100,12 @@ ul {
     flex-grow: 0 !important
 }
 }
+
+
+/* @media (min-width: 930px) and (max-width: 1024px){
+    .col-md-4 {
+        
+        max-width: 27.333333% !important;
+    }
+
+} */

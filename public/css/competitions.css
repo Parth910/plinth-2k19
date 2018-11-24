@@ -203,7 +203,7 @@
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.ch-info p a:hover {
+.ch-info p a {
 	color: #fff222;
 	color: rgba(255, 242, 34, 0.8);
 }
@@ -215,7 +215,7 @@
 		0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.ch-item:hover .ch-info {
+.ch-item .ch-info {
 	opacity: 1;
 
 	-webkit-transform: scale(1);
@@ -261,11 +261,116 @@
     }
 }
 
-@media only screen and (max-width: 1450px)and (min-width: 768px){
-	.ch-info h3 {
-		font-size: 20px !important;
-		float: left;
-		margin-right: 10% !important
+
+@media (min-width: 768px) and (max-width: 929px){
+    .col-md-4 {
+        
+        max-width: 33.333333% !important;
+	}
+	.row {
+		
+		margin-left:-7px;
+	}
+
+}
+
+@media (min-width: 930px) and (max-width: 1024px){
+    .col-md-4 {
+        
+        max-width: 33.333333% !important;
+	}
+	.row {
+		
+		margin-left:-14px;
+	}
+
+}
+@media (min-width: 1025px) and (max-width: 1220px){
+    .col-md-4 {
+        
+        max-width: 27.333333%  !important;
+	}
+	.row {
+		
+		margin-left:129px;
+	}
+
+
+}
+@media (min-width: 1221px) and (max-width: 1349px){
+    .col-md-4 {
+        
+        max-width: 28.333333%  !important;
+	}
+	.row {
+		
+		margin-left:131px;
+	}
+
+}
+@media (min-width: 1350px) and (max-width: 1440px){
+    .col-md-4 {
+        
+        max-width: 25.333333% !important;
+	}
+	.row {
+		
+		margin-left:219px;
+	}
+
+}
+@media (min-width: 1441px) and (max-width: 1580px){
+    .col-md-4 {
+        
+        max-width: 26.333333% !important;
+	}
+	.row {
+		
+		margin-left: 228px;
+	}
+
+}
+@media (min-width: 1581px) and (max-width: 1740px){
+    .col-md-4 {
+        
+        max-width: 23.333333% !important;
+	}
+	.row {
+		
+		margin-left:289px;
+	}
+
+}
+@media (min-width: 1741px) and (max-width: 1850px){
+    .col-md-4 {
+        
+        max-width: 23.333333% !important;
+	}
+	.row {
+		
+		margin-left: 364px;
+	}
+
+}
+@media (min-width: 1851px) and (max-width: 1960px){
+    .col-md-4 {
+        
+        max-width: 21.333333% !important;
+	}
+	.row {
+		
+		margin-left: 424px;
+	}
+
+}
+@media (min-width: 1961px) {
+    .col-md-4 {
+        
+        max-width: 21.333333% !important;
+	}
+	.row {
+		
+		margin-left: 591px;
 	}
 
 }

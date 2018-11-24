@@ -4,8 +4,9 @@
 <head>
     <% include partials/head %>
 
-    <link rel="stylesheet" href="css/categories.css">
+   
     <link rel="stylesheet" href="css/competitions.css">
+    <link rel="stylesheet" href="css/categories.css">
     <script>
         var urls = <%- JSON.stringify(competitionUrl) %> ;
        </script>
@@ -54,8 +55,8 @@
                     <% if(category == "astronomy"){ %>
                     <div id="astronomy-list">
                         <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Astronomy</h1>
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row ">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-astro_quiz more-details">
                                         <div class="ch-info">
@@ -66,7 +67,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-astro_hunt more-details">
                                         <div class="ch-info">
@@ -76,7 +77,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12  col-md-4">
 
                                 <li>
 
@@ -98,8 +99,8 @@
                     <% } else if(category == "coding"){ %>
                     <div id="coding-list">
                         <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Coding</h1>
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row ">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
 
                                     <div class="ch-item ch-img-iupc more-details">
@@ -112,7 +113,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-enigma more-details">
                                         <div class="ch-info">
@@ -122,7 +123,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12 col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-code_swap more-details">
 
@@ -135,7 +136,10 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        </div>
+                            <div class="row fhtc">
+                                
+                            <div class="col-sm-12 col-lg-2 col-md-3 ">
                                 <li>
                                     <div class="ch-item ch-img-fhtc more-details">
                                         <div class="ch-info">
@@ -147,6 +151,7 @@
 
                             </div>
                         </div>
+                        
 
                     </div>
 
@@ -155,8 +160,8 @@
                     <% } else if(category == "robotics"){ %>
                     <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Robotics</h1>
                     <div id="robotics-list">
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row ">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-robowar more-details">
                                         <div class="ch-info">
@@ -166,7 +171,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-robosoccer more-details">
                                         <div class="ch-info">
@@ -177,7 +182,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12  col-md-4">
                                 <li>
                                     <div class="ch-item ch-img-lfr more-details">
                                         <div class="ch-info">
@@ -187,22 +192,23 @@
                                     </div>
                                 </li>
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
-
-                                <li>
-                                    <div class="ch-item ch-img-drone more-details">
-                                        <div class="ch-info">
-                                            <h3 class="link">Drone Obstruction</h3>
-
-                                        </div>
-                                    </div>
-                                </li>
-
-
-                            </div>
+                            
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row ">
+                                <div class="col-sm-12  col-md-4">
+
+                                        <li>
+                                            <div class="ch-item ch-img-drone more-details">
+                                                <div class="ch-info">
+                                                    <h3 class="link">Drone Obstruction</h3>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+        
+        
+                                    </div>
+                            <div class="col-sm-12 col-md-4">
                                 <li>
 
                                     <div class="ch-item ch-img-mazes more-details">
@@ -214,7 +220,7 @@
 
                                 </li>
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12 col-md-4">
 
                                 <li>
 
@@ -227,34 +233,35 @@
 
                                 </li>
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
-                                <li>
-
-                                    <div class="ch-item ch-img-roborace more-details">
-                                        <div class="ch-info">
-                                            <h3 class="link">Roborace</h3>
-                                        </div>
-                                    </div>
-
-                                </li>
-                            </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
-
-                                <li>
-
-                                    <div class="ch-item ch-img-tpr more-details">
-                                        <div class="ch-info">
-                                            <h3 class="link">Transporter</h3>
-
-                                        </div>
-                                    </div>
-
-                                </li>
-                            </div>
+                            
 
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row ">
+                                <div class="col-sm-12  col-md-4">
+                                        <li>
+        
+                                            <div class="ch-item ch-img-roborace more-details">
+                                                <div class="ch-info">
+                                                    <h3 class="link">Roborace</h3>
+                                                </div>
+                                            </div>
+        
+                                        </li>
+                                    </div>
+                                    <div class="col-sm-12  col-md-4">
+        
+                                        <li>
+        
+                                            <div class="ch-item ch-img-tpr more-details">
+                                                <div class="ch-info">
+                                                    <h3 class="link">Transporter</h3>
+        
+                                                </div>
+                                            </div>
+        
+                                        </li>
+                                    </div>
+                            <div class="col-sm-12  col-md-4">
                                 <li>
 
                                     <div class="ch-item ch-img-ice more-details">
@@ -266,7 +273,10 @@
 
                                 </li>
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            
+                        </div>
+                        <div class="row fhtc ">
+                        <div class="col-sm-12  col-md-4">
 
                                 <li>
 
@@ -287,7 +297,7 @@
                     <div id="management-list">
                         <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Management</h1>
 
-                        <div class="row justify-content-md-center">
+                        <div class="row fhtc">
                             <div class="col-sm-12 col-lg-2 col-md-3">
                                 <li>
 
@@ -310,8 +320,8 @@
                     <% } else if(category == "quizzing"){ %>
                     <div id="quizzing-list">
                         <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Quizzing</h1>
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row quz">
+                            <div class="col-sm-12 col-md-4 i">
                                 <li>
 
                                     <div class="ch-item ch-img-brdw more-details">
@@ -323,7 +333,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12 col-md-4 j">
                                 <li>
                                     <div class="ch-item ch-img-theq more-details">
                                         <div class="ch-info">
@@ -344,8 +354,8 @@
                     <% } else if(category == "literature"){ %>
                     <div id="literature-list">
                         <h1 style="padding-bottom:5vh;text-align: center; transform: scale(1);">Literature</h1>
-                        <div class="row justify-content-md-center">
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                        <div class="row quz">
+                            <div class="col-sm-12  col-md-4 i">
                                 <li>
 
                                     <div class="ch-item ch-img-rostrum more-details">
@@ -357,7 +367,7 @@
                                 </li>
 
                             </div>
-                            <div class="col-sm-12 col-lg-2 col-md-3">
+                            <div class="col-sm-12  col-md-4 j">
                                 <li>
 
                                     <div class="ch-item ch-img-comikaze more-details">
