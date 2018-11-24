@@ -4,7 +4,11 @@ li {
 }
 @media only screen and (max-width: 500px){
     h1{
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
+        text-align: center;
+    }
+    #backbtn {
+        padding-left: 20px;
     }
 }
 
@@ -100,12 +104,10 @@ ul {
     flex-grow: 0 !important
 }
 }
-
-
-/* @media (min-width: 930px) and (max-width: 1024px){
-    .col-md-4 {
-        
-        max-width: 27.333333% !important;
+@media only screen and (min-width:1024px){
+    h1{
+        /* padding-left: 5%; */
+        padding-right: 30%;
+        text-align: center;
     }
-
-} */
+}
