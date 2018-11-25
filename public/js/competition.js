@@ -262,7 +262,7 @@ function registerUser() {
                     $('#register-competitions').modal('hide');
                     $("#payOrderId").html(orderId);
                     $("#payAmount").html(fee);
-                    ('#pay-competitions').modal('show');
+                    $('#pay-competitions').modal('show');
                 }
             }).fail(function (err) {
                 alert('Sorry for any inconvenience, Try again later. If problem persists, contact payment@plinth.in');

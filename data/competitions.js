@@ -271,7 +271,7 @@ module.exports.competitions = {
         
         {
             eventUrl: 'robowar',
-            fee:null,
+            fee:700,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Robowar",
