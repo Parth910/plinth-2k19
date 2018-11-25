@@ -127,451 +127,29 @@
 
                     <div class="row justify-content-center" style="padding-top:10px">
                         <div class="col-md-6 col-sm-12" style="text-align:center">
-                            <a data-toggle="modal" data-target="#register-competitions"><button id='event'class='btn-live btn-side'>Event Registration</button></a>
+                            <a data-toggle="modal" data-target="#register-competitions"><button id='event' class='btn-live btn-side'>Event
+                                    Registration</button></a>
                         </div>
                     </div>
-                    <div id="register-competitions" class="uk-flex-top" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <form id="register-form" class="uk-form-stacked">
-                                <div class="uk-modal-header">
-                                    <button class="uk-modal-close-default black-fill" type="button" uk-close></button>
-
-                                    <h2 class="uk-text-center heading-text">
-                                        <span>Registration Form</span>
-                                    </h2>
-
-                                    <div class="uk-text-center black-fill">
-                                        <span class="eName">
-                                            <%- competition.displayName %>
-                                        </span>
-
-                                    </div>
-                                </div>
-                                <div class="uk-modal-body">
-
-                                    <% if(competition.payName == 'SIF'){ %>
-                                    <div id="SIF-content">
-
-                                        <div class="uk-margin ex-pad">
-                                            <label class="uk-form-label labell-text">Registering As</label>
-                                            <div class="uk-form-controls">
-
-                                                <label class="inputt-text">
-                                                    <input class="uk-radio" type="radio" name="sif_type" id="startup"
-                                                        value="Startup" required>
-                                                    Startup</label>
-                                                <br>
-                                                <label class="inputt-text">
-                                                    <input class="uk-radio" type="radio" name="sif_type" id="student"
-                                                        value="Student" required>
-                                                    Student</label>
-
-                                            </div>
-                                        </div>
-                                        <div id="startupContent" class="uk-grid-small" uk-grid>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="sif_startup_name">StartUp
-                                                    Name*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_name" type="text"
-                                                        required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="sif_website">Website*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_website" type="text"
-                                                        required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-1 uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_startup_contact_name">Name*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_contact_name"
-                                                        type="text" value="<%- user.name %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_startup_contact_email">Email*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_contact_email"
-                                                        type="email" value="<%- user.email %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_startup_contact_contactNumber">Contact
-                                                    Number*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_contact_contactNumber"
-                                                        type="number" value="<%- user.phoneNumber %>" required>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="uk-width-1-1 uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_startup_domain">Select
-                                                    Domain(s)*</label>
-                                                <div class="uk-form-controls">
-                                                    <select class="uk-select" size="6" id="sif_startup_domain" multiple
-                                                        required>
-                                                        <option value="Technical">Technical</option>
-                                                        <option value="Management">Management</option>
-                                                        <option value="Marketing">Marketing</option>
-                                                        <option value="Content Writing">Content
-                                                            Writing</option>
-                                                        <option value="Designing">Designing</option>
-                                                        <option value="Other">Other</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="uk-width-1-2@s uk-margin-top" id="technicalInterns">
-                                                <label class="uk-form-label labell-text" for="sif_startup_technical">Technical
-                                                    Interns*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_technical" type="number"
-                                                        min="1" value='0'>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top" id="managementInterns">
-                                                <label class="uk-form-label labell-text" for="sif_startup_management">Management
-                                                    Interns*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_management"
-                                                        type="number" min="1" value='0'>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top" id="marketingInterns">
-                                                <label class="uk-form-label labell-text" for="sif_startup_marketing">Marketing
-                                                    Interns*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_marketing" type="number"
-                                                        min="1" value='0'>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top" id="writingInterns">
-                                                <label class="uk-form-label labell-text" for="sif_startup_writing">Content
-                                                    Writing Interns*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_writing" type="number"
-                                                        min="1" value='0'>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top" id="designInterns">
-                                                <label class="uk-form-label labell-text" for="sif_startup_design">Designing
-                                                    Interns*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_design" type="number"
-                                                        min="1" value='0'>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top" id="otherInterns">
-                                                <label class="uk-form-label labell-text" for="sif_startup_other">Other
-                                                    Interns*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_startup_other" type="number"
-                                                        min="1" value='0'>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div id="studentContent" class="uk-grid-small" uk-grid>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="sif_student_name">Name*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_name" type="text"
-                                                        value="<%- user.name %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="sif_student_email">Email*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_email" type="email"
-                                                        value="<%- user.email %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_student_contactNumber">Contact
-                                                    Number*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_contactNumber"
-                                                        type="number" value="<%- user.phoneNumber %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_student_college">College*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_college" type="text"
-                                                        value="<%- user.college %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_student_city">City*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_city" type="text"
-                                                        value="<%- user.city %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_student_year">Year*</label>
-                                                <div class="uk-form-controls">
-
-                                                    <select class="uk-select" id="sif_student_year" required>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="NA" selected>NA</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_student_resume">Resume
-                                                    Link</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_resume" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s uk-margin-top">
-                                                <label class="uk-form-label labell-text" for="sif_student_linkedin">Linkedin
-                                                    Link</label>
-                                                <div class="uk-form-controls">
-
-                                                    <input class="uk-input inputt-text" id="sif_student_linkedin" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-margin ex-pad">
-                                            <label class="uk-form-label labell-text">Referrer Name</label>
-                                            <div class="uk-form-controls">
-                                                <input class="uk-input inputt-text" id="referral" type="text">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <% } else { %>
-                                    <div id="content">
-
-                                        <div class="uk-grid-small" uk-grid>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text">Team Name*</label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="teamName" type="text"
-                                                        required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text">Team Size*</label>
-                                                <div class="uk-form-controls">
-                                                    <select class="uk-select" id="teamSize" required>
-                                                        <% for(var i=competition.memberLowerLimit; i<=competition.memberUpperLimit; i++) {%>
-                                                        <% if(i != competition.memberLowerLimit){ %>
-                                                        <option value="<%= i %>">
-                                                            <%= i %>
-                                                        </option>
-                                                        <% } else { %>
-                                                        <option value="<%= i %>" selected>
-                                                            <%= i %>
-                                                        </option>
-                                                        <% } %>
-
-                                                        <% } %>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div id="team-content" class="uk-grid-small" uk-grid>
-                                            <% for(var i=0; i < competition.memberLowerLimit; i++) {%>
-                                            <% if(i == 0){ %>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-name-<%= i %>">Leader
-                                                    Name*
-                                                </label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-name-<%= i %>" type="text"
-                                                        value="<%= user.name %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-email-<%= i %>">Leader
-                                                    Email*
-                                                </label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-email-<%= i %>" type="email"
-                                                        value="<%= user.email %>" required> </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-number-<%= i %>">Leader
-                                                    Contact
-                                                    Number*
-                                                </label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-number-<%= i %>"
-                                                        type="number" value="<%= user.phoneNumber %>" required>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-college-<%= i %>">Leader
-                                                    College*
-                                                </label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-college-<%= i %>"
-                                                        type="text" value="<%= user.college %>" required> </div>
-                                            </div>
-                                            <% } else { %>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-name-<%= i %>">Member
-                                                    <%= i %> Name*</label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-name-<%= i %>" type="text"
-                                                        required> </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-email-<%= i %>">Member
-                                                    <%= i %> Email*</label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-email-<%= i %>" type="email"
-                                                        required> </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-number-<%= i %>">Member
-                                                    <%= i %> Contact
-                                                    Number*
-                                                </label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-number-<%= i %>"
-                                                        type="number" required> </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text" for="member-college-<%= i %>">Member
-                                                    <%= i %> College*</label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="member-college-<%= i %>"
-                                                        type="text" required> </div>
-                                            </div>
-                                            <% } %>
-
-                                            <% } %>
-
-                                        </div>
-
-                                        <div class="uk-grid-small" uk-grid>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text">Accomodation*</label>
-                                                <div class="uk-form-controls">
-                                                    <select class="uk-select" id="accomodation" required>
-                                                        <option value="Yes" selected>Yes</option>
-                                                        <option value="No">No</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-2@s">
-                                                <label class="uk-form-label labell-text">Referrer
-                                                    Name
-                                                </label>
-                                                <div class="uk-form-controls">
-                                                    <input class="uk-input inputt-text" id="referral" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <% } %>
-                                </div>
-                                <div class="uk-modal-footer uk-text-right">
-
-
-                                    <div id="error">
-                                        <div class="uk-text-center red-fill">* Please fill all the
-                                            required
-                                            inputs.
-                                        </div>
-                                        <br>
-                                    </div>
-
-                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                                    <button type="submit" class="uk-button uk-button-primary" id="submit-button">Submit</button>
-
-                                </div>
-                            </form>
-                            <input type="hidden" class="uk-input" id="mEmail" value="<%- user.email %>">
-                        </div>
-                    </div>
-
-                    <div id="pay-competitions" class="uk-flex-top" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <div class="uk-modal-header">
-                                <button class="uk-modal-close-default black-fill" type="button" uk-close></button>
-
-                                <h2 class="uk-text-center heading-text">
-                                    <span>Payment Form</span>
-                                </h2>
-
-                                <div class="uk-text-center black-fill">
-                                    <span class="eName">
-                                        <%- competition.displayName %>
-                                    </span>
-
-                                </div>
-                            </div>
-                            <div class="uk-modal-body uk-text-center">
-                                <p> Registration SuccessFull.</p>
-                                <div>Order Id:
-                                    <span id="payOrderId" class="inputt-text"></span>
-                                </div>
-                                <div>Amount:
-                                    <span class="inputt-text">₹
-                                        <span id="payAmount"></span>/-</span>
-                                </div>
-
-                                <p class="inputt-text">
-                                    <span class="labell-text">Note:</span>
-                                    <br> If you choose to pay later, visit
-                                    your profile and click Pay against
-                                    relevant Event Registration.</p>
-                            </div>
-                            <div class="uk-modal-footer uk-text-right">
-                                <button class="uk-button uk-button-default uk-modal-close" type="button" id="cancel-button">Pay
-                                    Later</button>
-                                <button type="submit" class="uk-button uk-button-primary" id="pay-button">Pay
-                                    Now</button>
-
-                            </div>
-                        </div>
-                    </div>
-
-
                     <% } else { %>
                     <div class="row justify-content-center" style="padding-top:10px">
                         <div class="col-md-6 col-sm-12" style="text-align:center">
-                            <a data-toggle="modal" data-target="#exampleModalCenter"><button class='btn-side'>Login</button></a>
+                            <a data-toggle="modal" data-target="#exampleModalCenter"><button id="comp_login" class='btn-side'>Login</button></a>
                         </div>
                     </div>
                     <% } %>
-                    </li>
+                    <!-- </li> -->
                     <% } %>
 
+                    <% if(competition.otherURL != null ){ %>
+
+                    <div class="row justify-content-center" style="padding-top:10px">
+                        <div class="col-md-6 col-sm-12" style="text-align:center">
+                            <a href="<%= competition.otherURL %>" target="_blank"><button id='event' class='btn-live btn-side'>Event
+                                    Registration</button></a>
+                        </div>
+                    </div>
+                    <% } %>
 
 
                     <!-- Competition Information -->
@@ -617,6 +195,433 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form -->
+
+
+    <div class="modal fade" id="register-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h2 class="heading lead text-center">
+                        <span>Registration Form</span>
+                    </h2>
+                </div>
+                <div class="text-center">
+                    <span class="eName">
+                        <%- competition.displayName %>
+                    </span>
+
+                </div>
+
+                <div class="modal-body">
+                    <form id="register-form" class="form-horizontal">
+
+                        <% if(competition.payName == 'SIF'){ %>
+                        <div id="SIF-content">
+
+                            <div class="uk-margin ex-pad">
+                                <label class="uk-form-label labell-text">Registering As</label>
+                                <div class="uk-form-controls">
+
+                                    <label class="inputt-text">
+                                        <input class="uk-radio" type="radio" name="sif_type" id="startup" value="Startup"
+                                            required>
+                                        Startup</label>
+                                    <br>
+                                    <label class="inputt-text">
+                                        <input class="uk-radio" type="radio" name="sif_type" id="student" value="Student"
+                                            required>
+                                        Student</label>
+
+                                </div>
+                            </div>
+                            <div id="startupContent" class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="sif_startup_name">StartUp
+                                        Name*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_name" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="sif_website">Website*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_website" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_startup_contact_name">Name*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_contact_name" type="text"
+                                            value="<%- user.name %>" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_startup_contact_email">Email*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_contact_email" type="email"
+                                            value="<%- user.email %>" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_startup_contact_contactNumber">Contact
+                                        Number*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_contact_contactNumber" type="number"
+                                            value="<%- user.phoneNumber %>" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="uk-width-1-1 uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_startup_domain">Select
+                                        Domain(s)*</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" size="6" id="sif_startup_domain" multiple required>
+                                            <option value="Technical">Technical</option>
+                                            <option value="Management">Management</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="Content Writing">Content
+                                                Writing</option>
+                                            <option value="Designing">Designing</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="uk-width-1-2@s uk-margin-top" id="technicalInterns">
+                                    <label class="uk-form-label labell-text" for="sif_startup_technical">Technical
+                                        Interns*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_technical" type="number"
+                                            min="1" value='0'>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top" id="managementInterns">
+                                    <label class="uk-form-label labell-text" for="sif_startup_management">Management
+                                        Interns*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_management" type="number"
+                                            min="1" value='0'>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top" id="marketingInterns">
+                                    <label class="uk-form-label labell-text" for="sif_startup_marketing">Marketing
+                                        Interns*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_marketing" type="number"
+                                            min="1" value='0'>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top" id="writingInterns">
+                                    <label class="uk-form-label labell-text" for="sif_startup_writing">Content
+                                        Writing Interns*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_writing" type="number" min="1"
+                                            value='0'>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top" id="designInterns">
+                                    <label class="uk-form-label labell-text" for="sif_startup_design">Designing
+                                        Interns*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_design" type="number" min="1"
+                                            value='0'>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top" id="otherInterns">
+                                    <label class="uk-form-label labell-text" for="sif_startup_other">Other
+                                        Interns*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_startup_other" type="number" min="1"
+                                            value='0'>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="studentContent" class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="sif_student_name">Name*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_name" type="text" value="<%- user.name %>"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="sif_student_email">Email*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_email" type="email" value="<%- user.email %>"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_student_contactNumber">Contact
+                                        Number*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_contactNumber" type="number"
+                                            value="<%- user.phoneNumber %>" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_student_college">College*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_college" type="text" value="<%- user.college %>"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_student_city">City*</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_city" type="text" value="<%- user.city %>"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_student_year">Year*</label>
+                                    <div class="uk-form-controls">
+
+                                        <select class="uk-select" id="sif_student_year" required>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="NA" selected>NA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_student_resume">Resume
+                                        Link</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_resume" type="text">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s uk-margin-top">
+                                    <label class="uk-form-label labell-text" for="sif_student_linkedin">Linkedin
+                                        Link</label>
+                                    <div class="uk-form-controls">
+
+                                        <input class="uk-input inputt-text" id="sif_student_linkedin" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-margin ex-pad">
+                                <label class="uk-form-label labell-text">Referrer Name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input inputt-text" id="referral" type="text">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <% } else { %>
+                        <div id="content">
+
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text">Team Name*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="teamName" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text">Team Size*</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" id="teamSize" required>
+                                            <% for(var i=competition.memberLowerLimit; i<=competition.memberUpperLimit; i++) {%>
+                                            <% if(i != competition.memberLowerLimit){ %>
+                                            <option value="<%= i %>">
+                                                <%= i %>
+                                            </option>
+                                            <% } else { %>
+                                            <option value="<%= i %>" selected>
+                                                <%= i %>
+                                            </option>
+                                            <% } %>
+
+                                            <% } %>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="team-content" class="uk-grid-small" uk-grid>
+                                <% for(var i=0; i < competition.memberLowerLimit; i++) {%>
+                                <% if(i == 0){ %>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-name-<%= i %>">Leader
+                                        Name*
+                                    </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-name-<%= i %>" type="text" value="<%= user.name %>"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-email-<%= i %>">Leader
+                                        Email*
+                                    </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-email-<%= i %>" type="email"
+                                            value="<%= user.email %>" required> </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-number-<%= i %>">Leader
+                                        Contact
+                                        Number*
+                                    </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-number-<%= i %>" type="number"
+                                            value="<%= user.phoneNumber %>" required>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-college-<%= i %>">Leader
+                                        College*
+                                    </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-college-<%= i %>" type="text"
+                                            value="<%= user.college %>" required> </div>
+                                </div>
+                                <% } else { %>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-name-<%= i %>">Member
+                                        <%= i %> Name*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-name-<%= i %>" type="text"
+                                            required> </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-email-<%= i %>">Member
+                                        <%= i %> Email*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-email-<%= i %>" type="email"
+                                            required> </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-number-<%= i %>">Member
+                                        <%= i %> Contact
+                                        Number*
+                                    </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-number-<%= i %>" type="number"
+                                            required> </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text" for="member-college-<%= i %>">Member
+                                        <%= i %> College*</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="member-college-<%= i %>" type="text"
+                                            required> </div>
+                                </div>
+                                <% } %>
+
+                                <% } %>
+
+                            </div>
+
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text">Accomodation*</label>
+                                    <div class="uk-form-controls">
+                                        <select class="uk-select" id="accomodation" required>
+                                            <option value="Yes" selected>Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <label class="uk-form-label labell-text">Referral Code
+                                    </label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input inputt-text" id="referral" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <% } %>
+                </div>
+                <div class="modal-footer">
+                    <div id="error">
+                        <div class="text-center">* Please fill all the
+                            required
+                            inputs.
+                        </div>
+                        <br>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                </div>
+                </form>
+                <input type="hidden" class="uk-input" id="mEmail" value="<%- user.email %>">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Registration Confirmation Modal| Payment Form -->
+    <div class="modal fade" id="pay-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button class="uk-modal-close-default black-fill" type="button" uk-close></button>
+
+                <h2 class="text-center heading-text">
+                    <span>Payment Form</span>
+                </h2>
+
+                <div class="text-center black-fill">
+                    <span class="eName">
+                        <%- competition.displayName %>
+                    </span>
+
+                </div>
+            </div>
+            <div class="modal-body text-center">
+                <p> Registration SuccessFull.</p>
+                <div>Order Id:
+                    <span id="payOrderId" class="inputt-text"></span>
+                </div>
+                <div>Amount:
+                    <span class="inputt-text">₹
+                        <span id="payAmount"></span>/-</span>
+                </div>
+
+                <p class="inputt-text">
+                    <span class="labell-text">Note:</span>
+                    <br> If you choose to pay offline. You can pay the same amount at the registraion
+                    desk</p>
+            </div>
+            <div class="modal-footer text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button" id="cancel-button">Pay
+                    Offline</button>
+                <button type="submit" class="uk-button uk-button-primary" id="pay-button">Pay
+                    Now</button>
+
             </div>
         </div>
     </div>

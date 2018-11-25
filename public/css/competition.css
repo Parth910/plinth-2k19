@@ -115,6 +115,9 @@ button.btn-side {
     width: 50%;
     font-size: 1.2em;
 }
+button#comp_login.btn-side{
+    width: 30%;
+}
 
 button.btn-live#event:hover {
     color: #fff;

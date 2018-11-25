@@ -259,10 +259,10 @@ function registerUser() {
                 if (data.status) {
                     orderId = data.orderId;
                     $('#submit-button').removeAttr("disabled");
-                    UIkit.modal('#register-competitions').hide();
+                    $('#register-competitions').modal('hide');
                     $("#payOrderId").html(orderId);
                     $("#payAmount").html(fee);
-                    UIkit.modal('#pay-competitions').show();
+                    ('#pay-competitions').modal('show');
                 }
             }).fail(function (err) {
                 alert('Sorry for any inconvenience, Try again later. If problem persists, contact payment@plinth.in');
