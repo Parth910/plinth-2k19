@@ -121,10 +121,7 @@
 
                     <!-- Competition Form -->
                     <% if(competition.paymentURL != null ){ %>
-                    <!-- <li id="payment"> -->
                     <% if(isLoggedIn){ %>
-
-
                     <div class="row justify-content-center" style="padding-top:10px">
                         <div class="col-md-6 col-sm-12" style="text-align:center">
                             <a data-toggle="modal" data-target="#register-competitions"><button id='event' class='btn-live btn-side'>Event
@@ -201,7 +198,7 @@
 
     <!-- Modal Form -->
 
-
+    <% if(isLoggedIn){ %>
     <div class="modal fade" id="register-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -583,9 +580,10 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Registration Confirmation Modal| Payment Form -->
-    <div class="modal fade" id="pay-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pay-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-header">
                 <button class="uk-modal-close-default black-fill" type="button" uk-close></button>
@@ -625,7 +623,7 @@
             </div>
         </div>
     </div>
-
+<% } %>
     <% include partials/footer %>
 
     <script src="js/jquery.min.js"></script>
