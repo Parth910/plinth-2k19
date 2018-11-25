@@ -4,201 +4,275 @@
 <head>
     <% include partials/head %>
 
-        <link rel="stylesheet" href="css/paystatus.css">
+    <link rel="stylesheet" href="css/common.css">
 
 </head>
 
 <body>
-
-    <% include partials/loader %>
-        <div id="home">
-            <canvas id="canvas"></canvas>
-
-            <% include partials/header %>
-                <div class="uk-position-center main-content ">
-
-                    <div class="scroll-content" id="style-7">
-                        <div class="inner-content">
-                            <div uk-grid>
-                                <h1 class="uk-align-center heading-text">
-                                    <span>Payment Details</span>
-                                </h1>
-                            </div>
-                            <div class="my-rotate">
-
-                                <div class="table-margin" uk-grid>
-                                    <h1 id="prof" class="uk-align-center sub-heading ">
-                                        <span>Transaction Details</span>
-                                    </h1>
-                                </div>
-                                <div class="table-margin" uk-grid>
-
-                                    <table id="userp" class="uk-table uk-grid-medium uk-table-middle">
-
-                                        <tbody class="uk-visible@m">
-
-                                            <tr>
-                                                <td class="head-font">Event Name</td>
-                                                <td class="body-font">
-                                                    <%- details.event.eventName %>
-                                                </td>
-
-                                                <td></td>
-                                                <td class="head-font">Date:</td>
-                                                <td class="body-font">
-                                                    <%- (details.date.paidAt).substring(0,25) %>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="head-font">Order ID</td>
-                                                <td class="body-font">
-                                                    <%- details.orderId %>
-                                                </td>
-                                                <td></td>
-                                                <td class="head-font">Transaction ID</td>
-                                                <td class="body-font">
-                                                    <%- details.tranId %>
-                                                </td>
-                                            </tr>
-                                            <tr>
-
-                                                <td class="head-font">Amount</td>
-                                                <td class="body-font">
-                                                    ₹
-                                                    <%- details.amount %> /-
-                                                </td>
-                                                <td></td>
-                                                <td class="head-font">Payment Status</td>
-                                                <td class="body-font">
-                                                    <% if(status == 'success'){ %>
-                                                        SuccessFull
-                                                        <% } else if(status == 'fail') { %>
-                                                            Failed
-                                                            <%  } else if(status == 'open') { %>
-                                                                Open
-                                                                <% } %>
-                                                </td>
+    <style>
+        .inner-content{
+            padding: 0 !important;
+        }
+    </style>
+    <div class="preloader">
+        <div class="preloader-ring"></div>
+    </div>
+    <% include partials/header %>
+    <!-- Shaders -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+                precision highp float;
+                #endif
+              void main(void) {
+               gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+              }
+            </script>
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 vertexPosition;
+        
+              uniform mat4 modelViewMatrix;
+              uniform mat4 perspectiveMatrix;
+        
+              void main(void) {
+                gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+              }
+            </script>
 
 
-                                            </tr>
+    <!-- three.js -->
 
+    <div id="webgl-output"></div>
 
-                                        </tbody>
+    <div class="bg-mask"></div>
 
-                                        <tbody class="uk-hidden@m">
-
-                                            <tr>
-                                                <td class="head-font">Event Name</td>
-                                                <td class="body-font">
-                                                    <%- details.event.eventName %>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td class="head-font">Date:</td>
-                                                <td class="body-font">
-                                                    <%- (details.date.paidAt).substring(0,25) %>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="head-font">Order ID</td>
-                                                <td class="body-font">
-                                                    <%- details.orderId %>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="head-font">Transaction ID</td>
-                                                <td class="body-font">
-                                                    <%- details.tranId %>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-
-
-                                                <td class="head-font">Amount</td>
-                                                <td class="body-font">
-                                                    ₹
-                                                    <%- details.amount %> /-
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-
-
-                                                <td class="head-font">Payment Status</td>
-                                                <td class="body-font">
-                                                    <% if(status == 'success'){ %>
-                                                        SuccessFull
-                                                        <% } else if(status == 'fail') { %>
-                                                            Failed
-                                                            <%  } else if(status == 'open') { %>
-                                                                Open
-                                                                <% } %>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
-
-                                </div>
-
-                                <div class="body-font uk-text-center" uk-grid>
-                                    For downloading the Receipt :
-                                    <a href="/pdf/generate/<%= details.orderId %>" target="_blank">Payment Receipt</a>
-                                </div>
-
-                                <div class="body-font uk-text-center" uk-grid>
-                                    For any query regarding payment :
-                                    <a href="mailto:payment@plinth.in" target="_blank">payment@plinth.in</a>
-                                </div>
-
-                            </div>
-
-                        </div>
-
+    <h1 style="padding-top:15vh; text-align: center;transform: scale(1);">Payment Status</h1>
+    <div class="main-content">
+        <div class="scroll-content" id="style-1">
+            <div class="inner-content">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12">
+                        <h4 style="text-align:center">
+                            <span>Transaction Details</span>
+                        </h4>
                     </div>
 
+                </div>
+                <div class="container">
+                <table class="table">
+
+                    <tbody>
+                        <tr>
+                            <div class="row justify-content-md-center">
+
+                                <div class="col-md-6">
+
+                                    <td class="head-font">Event Name:</td>
+                                    <td class="body-font">
+                                        <%- details.event.eventName %>
+                                    </td>
+                                </div>
+                                <div class="col-md-6">
+                                    <td class="head-font">Date:</td>
+                                    <td class="body-font">
+                                        <%- (details.date.paidAt).substring(0,25) %>
+                                    </td>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <div class="row justify-content-md-center">
+
+                                <div class="col-md-6">
+
+                                    <td class="head-font">Order ID</td>
+                                    <td class="body-font">
+                                        <%- details.orderId %>
+                                    </td>
+                                    </td>
+                                </div>
+                                <div class="col-md-6">
+                                    <td class="head-font">Transaction ID:</td>
+                                    <td class="body-font">
+                                        <%- details.tranId %>
+                                    </td>
+                                </div>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <div class="row justify-content-md-center">
+
+                                <div class="col-md-6">
+
+                                    <td class="head-font">Amount</td>
+                                    <td class="body-font">
+                                        ₹
+                                        <%- details.amount %> /-
+                                    </td>
+                                </div>
+                                <div class="col-md-6">
+                                    <td class="head-font">Payment Status</td>
+                                    <td class="body-font">
+                                        <% if(status == 'success'){ %>
+                                        SuccessFull
+                                        <% } else if(status == 'fail') { %>
+                                        Failed
+                                        <%  } else if(status == 'open') { %>
+                                        Open
+                                        <% } %>
+                                    </td>
+                                </div>
+                            </div>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+                <div class="text-center row">
+                    <div class="col-md-12">
+                        <p>
+                            For downloading the Receipt :
+                            <a href="/pdf/generate/<%= details.orderId %>" target="_blank">Payment Receipt</a></p>
+                    </div>
+
+                </div>
+
+                <div class="text-center row">
+                    <div class="col-md-12">
+                        <p>
+                            For any query regarding payment :
+                            <a href="mailto:payment@plinth.in" target="_blank">payment@plinth.in</a></p>
+                    </div>
 
                 </div>
 
 
-
-
-
-
-                <% include partials/leftbar %>
-
-
-
-                    <% include partials/rightbar %>
-
-
-                        <% include partials/footer %>
-
-
-
-
-
+            </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-        <!-- UIkit JS -->
-        <script src="js/uikit.min.js "></script>
-        <script src="js/uikit-icons.min.js "></script>
-        <script src="js/canvasloader.js "></script>
-        <script src="js/slowStar.js "></script>
-        <script src="js/printe.js"></script>
-        <script>
-
-            var obj = { Title: 'Status', Url: 'https://plinth.in/payment/paystatus' };
-            history.pushState(obj, obj.Title, obj.Url);
+    </div>
 
 
-        </script>
+
+
+
+
+
+
+    <% include partials/footer %>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sphere.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/printe.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+
+            var el = document.querySelector('.preloader');
+            el.style.opacity = 1;
+
+            (function fade() {
+                if ((el.style.opacity -= 0.15) < 0) {
+                    window.scrollTo(0, 0);
+                    el.style.display = "none";
+                    controls.redraw();
+                    controls.rend();
+                    controls.start();
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        });
+    </script>
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        var elem = document.getElementById('rlbuttn_menu');
+        if (elem != null) {
+            if (screen.width > 1024) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
+        }
+    </script>
+
+    <script>
+        var elem = document.getElementById('faqbtn_rm');
+        if (elem != null) {
+            if (screen.width < 500) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125190547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
+
+    <script>
+        var obj = {
+            Title: 'Status',
+            Url: 'https://plinth.in/payment/paystatus'
+        };
+        history.pushState(obj, obj.Title, obj.Url);
+    </script>
 
 </body>
 
