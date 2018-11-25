@@ -111,3 +111,13 @@ ul {
         text-align: center;
     }
 }
+button.btn-side {
+    width: 50%;
+    font-size: 1.2em;
+}
+
+button.btn-live#event:hover {
+    color: #fff;
+    background-color: #001F3F;
+  }
+  

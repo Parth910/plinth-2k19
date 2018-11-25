@@ -138,3 +138,36 @@ body {
         padding-top: 0px;
     }
 }
+button.btn-side {
+    width: 130px;
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-bottom: 5px;
+    /* letter-spacing: 0.1rem; */
+  
+  }
+  
+  button.btn-live {
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+  
+  button.btn-live#ca:hover {
+    color: #fff;
+    background-color: #001F3F;
+  }
+  
