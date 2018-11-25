@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var User = require('../schema/user');
 var Verify = require('./verify');
 var Utils = require('./utils');
-//var Payment = require('../schema/payment');
+var Payment = require('../schema/payment');
 var fs = require('fs');
 var PDFDocument = require('pdfkit');
 
