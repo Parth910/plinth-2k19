@@ -24,7 +24,10 @@ db.once('open', function(){
 
 var routes = require('./routes/index');
 var user = require('./routes/user');
+var payment = require('./routes/payment');
+var pdf = require('./routes/pdf');
 var sheet = require('./routes/sheet');
+//var cryptex = require('./routes/cryptex');
 var ex = require('./routes/404');
 
 var app = express();
@@ -53,7 +56,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/user', user);
+app.use('/payment', payment);
+app.use('/pdf', pdf);
 app.use('/sheet', sheet);
+//app.use('/cryptex', cryptex);
 app.use('/*', ex);
 
 /// catch 404 and forwarding to error handler

@@ -40,6 +40,7 @@ router.post('/register/:payName', Verify.verifyOrdinaryUser, function (req, res)
 
     var payment = new Payment();
     var payName = req.params.payName;
+    console.log(req);
     if (payName != '') {
         Payment.count({}, function (err, count) {
             var param_data = JSON.parse(req.body.postData);
@@ -56,6 +57,7 @@ router.post('/register/:payName', Verify.verifyOrdinaryUser, function (req, res)
             var order_id = "Plinth-" + payName + "-" + (count + 1) + "-" + id_tag;
             payment.orderId = order_id;
             payment.teamSize = payment.team.length;
+            
             payment.save(function (err) {
                 if (err) {
                     console.log(err);

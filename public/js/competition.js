@@ -252,6 +252,7 @@ function registerUser() {
             referrer:$('#referral').val(), 
             details: payDetails,
         };
+        console.log(data);
         $.post("/payment/register/" + mevent.payName,
             { postData: JSON.stringify(data) })
             .done(function (data) {

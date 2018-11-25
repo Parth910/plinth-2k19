@@ -135,7 +135,6 @@
                         </div>
                     </div>
                     <% } %>
-                    <!-- </li> -->
                     <% } %>
 
                     <% if(competition.otherURL != null ){ %>
@@ -203,17 +202,24 @@
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h2 class="heading lead text-center">
-                        <span>Registration Form</span>
-                    </h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal-title" style="text-align:center">
+                            <h3>
+                                <span>Registration Form</span>
+                            </h3>
+                            <div class="text-center">
+                                <h4>
+                                    <span class="eName">
+                                        <%- competition.displayName %>
+                                    </span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <span class="eName">
-                        <%- competition.displayName %>
-                    </span>
 
-                </div>
+
 
                 <div class="modal-body">
                     <form id="register-form" class="form-horizontal">
@@ -434,6 +440,7 @@
 
                         </div>
 
+                        <!-- Other than SIF -->
                         <% } else { %>
                         <div id="content">
 
@@ -509,7 +516,9 @@
                                         <input class="form-control input-md" id="member-college-<%= i %>" type="text"
                                             value="<%= user.college %>" required> </div>
                                 </div>
-                                <% } else { %>
+                            </div>
+                            <% } else { %>
+                            <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="control-label" for="member-name-<%= i %>">Member
@@ -527,6 +536,8 @@
                                         <input class="form-control input-md" id="member-email-<%= i %>" type="email"
                                             required> </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="control-label" for="member-number-<%= i %>">Member
@@ -576,66 +587,76 @@
                         <% } %>
                 </div>
                 <div class="modal-footer">
-                    <div id="error">
-                        <div class="text-center">* Please fill all the
-                            required
-                            inputs.
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="error">
+                                <div class="text-center">* Please fill all the
+                                    required
+                                    inputs.
+                                </div>
+                                <br>
+                            </div>
                         </div>
-                        <br>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                        </div>
                     </div>
 
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+
+
                 </div>
                 </form>
-                <input type="hidden" class="uk-input" id="mEmail" value="<%- user.email %>">
-            </div>
-        </div>
-    </div>
-
-    <!-- Registration Confirmation Modal| Payment Form -->
-    <div class="modal fade" id="pay-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button class="uk-modal-close-default black-fill" type="button" uk-close></button>
-
-                <h2 class="text-center heading-text">
-                    <span>Payment Form</span>
-                </h2>
-
-                <div class="text-center black-fill">
-                    <span class="eName">
-                        <%- competition.displayName %>
-                    </span>
-
-                </div>
-            </div>
-            <div class="modal-body text-center">
-                <p> Registration SuccessFull.</p>
-                <div>Order Id:
-                    <span id="payOrderId" class="inputt-text"></span>
-                </div>
-                <div>Amount:
-                    <span class="inputt-text">₹
-                        <span id="payAmount"></span>/-</span>
-                </div>
-
-                <p class="inputt-text">
-                    <span class="labell-text">Note:</span>
-                    <br> If you choose to pay offline. You can pay the same amount at the registraion
-                    desk.</p>
-            </div>
-            <div class="modal-footer text-right">
-                <button class="btn btn-secondary" data-dismiss="modal" type="button" id="cancel-button">Pay
-                    Offline</button>
-                <button type="submit" class="btn btn-primary" id="pay-button">Pay
-                    Now</button>
-
+                <input type="hidden" class="form-control input-md" id="mEmail" value="<%- user.email %>">
             </div>
         </div>
     </div>
     <% } %>
+    <!-- Registration Confirmation Modal| Payment Form -->
+    <div class="modal fade" id="pay-competitions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="uk-modal-close-default black-fill" type="button" uk-close></button>
+
+                    <h2 class="text-center heading-text">
+                        <span>Payment Form</span>
+                    </h2>
+
+                    <div class="text-center black-fill">
+                        <span class="eName">
+                            <%- competition.displayName %>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <p> Registration SuccessFull.</p>
+                    <div>Order Id:
+                        <span id="payOrderId" class="inputt-text"></span>
+                    </div>
+                    <div>Amount:
+                        <span class="inputt-text">₹
+                            <span id="payAmount"></span>/-</span>
+                    </div>
+
+                    <p class="inputt-text">
+                        <span class="labell-text">Note:</span>
+                        <br> If you choose to pay offline. You can pay the same amount at the registraion
+                        desk.</p>
+                </div>
+                <div class="modal-footer text-right">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button" id="cancel-button">Pay
+                        Offline</button>
+                    <button type="submit" class="btn btn-primary" id="pay-button">Pay
+                        Now</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <% include partials/footer %>
 
     <script src="js/jquery.min.js"></script>
