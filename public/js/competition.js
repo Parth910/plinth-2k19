@@ -227,7 +227,7 @@ function registerUser() {
 
             }
         }
-        console.log(teams);
+        //console.log(teams);
         payDetails = {
             teamName: $('#teamName').val(),
             teamSize: $('#teamSize option:selected').val(),
@@ -262,7 +262,7 @@ function registerUser() {
             referrer:$('#referral').val(), 
             details: payDetails,
         };
-        console.log(data);
+        //console.log(data);
         $.post("/payment/register/" + mevent.payName,
             { postData: JSON.stringify(data) })
             .done(function (data) {

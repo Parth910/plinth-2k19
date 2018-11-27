@@ -2,11 +2,13 @@ ul,
 li {
     font-family: 'Raleway', sans-serif;
 }
-@media only screen and (max-width: 500px){
-    h1{
+
+@media only screen and (max-width: 500px) {
+    h1 {
         font-size: 1.4rem !important;
         text-align: center;
     }
+
     #backbtn {
         padding-left: 20px;
     }
@@ -90,37 +92,113 @@ ul {
     -webkit-transform: skewY(-45deg);
     transform: skewY(-45deg);
 }
-.fa{
-    color: #b836c6 !important
 
-}
-@media only screen and (max-width: 520px){
-.fa{
-    line-height: 1.428571;
+.fa {
     color: #b836c6 !important
+}
 
+@media only screen and (max-width: 520px) {
+    .fa {
+        line-height: 1.428571;
+        color: #b836c6 !important
+    }
+
+    .col {
+        flex-grow: 0 !important
+    }
 }
-.col{
-    flex-grow: 0 !important
-}
-}
-@media only screen and (min-width:1024px){
-    h1{
+
+@media only screen and (min-width:1024px) {
+    h1 {
         /* padding-left: 5%; */
         padding-right: 30%;
         text-align: center;
     }
 }
+
 button.btn-side {
     width: 50%;
     font-size: 1.2em;
 }
-button#comp_login.btn-side{
+
+button#comp_login.btn-side {
     width: 30%;
 }
 
 button.btn-live#event:hover {
     color: #fff;
     background-color: #001F3F;
-  }
-  
+}
+
+/* Form Styling */
+.modal.fade#register-competitions {
+    width: 600px;
+    max-width: 100%;
+    height: 600px;
+    max-height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: snow;
+    box-shadow: 0 0 60px 10px rgba(207, 31, 230, 0.226);
+}
+
+.modal-title h3 {
+    color: #782181;
+}
+
+.modal-title h4 {
+    color: dimgrey;
+}
+
+label.control-label,
+input,.radio-inline {
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .modal.fade#register-competitions {
+        max-width: 90%;
+        max-height: 80%;
+    }
+}
+
+.modal.fade#pay-competitions {
+    width: 600px;
+    max-width: 100%;
+    height: 450px;
+    max-height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 60px 10px rgba(207, 31, 230, 0.226);
+    background: snow;
+}
+
+@media only screen and (max-width: 480px) {
+    .modal.fade#pay-competitions {
+        max-width: 92%;
+        max-height: 48%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1440px) {
+    .modal.fade#pay-competitions {
+        max-width: 92%;
+        max-height: 60%;
+    }
+}
+
+.modal-title h2 {
+    letter-spacing: 0.1rem;
+    color: #782181;
+}
+
+.modal-title .eName {
+    font-size: 24px;
+    color: dimgray;
+    font-weight: bold;
+}
