@@ -135,11 +135,10 @@ module.exports.competitions = {
         {
 
             eventUrl: 'sif',
-            // fee:{
-            //     startup: null,
-            //     student: null,
-            // },
-            fee: null,
+            fee:{
+                startup: 1000,
+                student: 100,
+            },
             paymentURL: true,
             clubName: "Management",
             eventName: "StartUp Intern Fair",
@@ -180,7 +179,7 @@ module.exports.competitions = {
             clubName: "Quizzinga",
             eventName: "Brandwagon",
             displayName: "Brandwagon",
-            payName: "INT", //Dont know
+            payName: "BW", //Dont know
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,

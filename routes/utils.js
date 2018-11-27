@@ -28,7 +28,7 @@ exports.pdf = function (result) {
         .text('plinth 2019', 50, 50, { align: 'center' })
         .moveDown(.1)
         .font('./public/fonts/Oxygen-Regular.ttf', 12)
-        .text('19th - 21st January', { align: 'center' })
+        .text('19th - 20th January', { align: 'center' })
 
     doc.moveTo(25, 110)
         .lineTo(575, 110)
@@ -349,7 +349,7 @@ exports.pdfView = function (result) {
         .text('plinth 2019', 50, 50, { align: 'center' })
         .moveDown(.1)
         .font('./public/fonts/Oxygen-Regular.ttf', 12)
-        .text('19th - 21st January', { align: 'center' })
+        .text('19th - 20th January', { align: 'center' })
 
     doc.moveTo(25, 110)
         .lineTo(575, 110)

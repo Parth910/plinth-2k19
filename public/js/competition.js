@@ -26,6 +26,16 @@ $("#rules").click(function () {
 });
 
 
+$('#startupContent').hide();
+$('#studentContent').hide();
+$('#technicalInterns').hide();
+$('#managementInterns').hide();
+$('#marketingInterns').hide();
+$('#writingInterns').hide();
+$('#designInterns').hide();
+$('#otherInterns').hide();
+$('#error').hide();
+
 var orderId;
 var fee;
 
