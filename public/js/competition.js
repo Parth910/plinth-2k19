@@ -244,7 +244,7 @@ function registerUser() {
         else {
             check = true;
         }
-        if( mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ' || mevent.payName == 'PRA'){
+        if( mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ'){
            
                 fee = mevent.fee * payDetails.teamSize;
              

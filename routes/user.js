@@ -176,6 +176,8 @@ router.get('/logout/mun', Verify.verifyOrdinaryUser, function (req, res) {
     res.redirect('/mun');
 });
 
+
+
 router.post('/user_validate', Verify.verifyOrdinaryUser, function (req, res) {
     User.findOne({
         'email': req.decoded.sub

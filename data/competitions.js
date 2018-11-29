@@ -136,20 +136,20 @@ module.exports.competitions = {
 
             eventUrl: 'sif',
             fee:{
-                startup: 1000,
-                student: 100,
+                startup: 1200,
+                student: 150,
             },
             paymentURL: true,
             clubName: "Management",
             eventName: "StartUp Intern Fair",
             displayName: "StartUp Intern Fair",
             payName: "SIF",
-            eventDate: "21<sup>st</sup> Jan 2019",
+            eventDate: "20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 1,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '<br>₹ 150/-  Students <br>   ₹ 1200/-  Startups',
             synopsis: "<p>Startup intern fair is a one-stop place for getting a chance to do an internship in some of the well-known and budding startups of the country. Ranging from technical to a non-technical domain, one can select the internship of their genre, get screened and get a chance to grab their favorite internship. SIF aims to provide a hassle free and an aggregated hiring process. The time has come to put an end to your impasse and land up in your dream internship.</p>",
             eventDescription: "<p>Are you capable of making the next big app or writing geeky codes to build an awesome application or working out the next business model or writing beautiful blogs or are you too convincing to rephrase somebody's opinion but simply whiling away your time finding the best place to showcase your skills? Well, the time has come to put an end to your impasse.</p><p>Startup Intern Fair aims at connecting the budding startups looking out for their Jarvis to help them reach the level they have envisioned, with the young students waiting for the opportunities to enhance their skill set. Just like a fair, startups would set up their stall and screen the students based on their resume and personal interaction and if you have got what they require, then you might land up in your favourite internship be it technical , management or content writing.</p>",
             rules: "<p>"
@@ -174,18 +174,18 @@ module.exports.competitions = {
 
         {
             eventUrl: 'brandwagon',
-            fee:null,
+            fee: 200,
             paymentURL: true,
             clubName: "Quizzinga",
             eventName: "Brandwagon",
             displayName: "Brandwagon",
-            payName: "BW", //Dont know
+            payName: "BW", 
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: '₹ 100/-', //dont know
+            eventFee: '₹ 200/-',
             synopsis:  "<p>"
                             +"<b style='color: #4C4D64'>Brandwagon</b>"
                             +"<p>"
@@ -197,15 +197,15 @@ module.exports.competitions = {
                             +"</p>",
             eventDescription: "<p>Event Description</p>"
                                 +"<p>"
-                                    +"<b style='color: #4C4D64'></b>" //dont know
+                                    +"<b style='color: #4C4D64'></b>" 
                                     +"<br>"
                                     +"The Quiz will be held in 2 rounds, both these rounds will take place back to back at LNMIIT during Plinth."
                                     +"<br><br>"
-                                    +"<b style='color: #4C4D64'></b>" //dont know
+                                    +"<b style='color: #4C4D64'></b>" 
                                     +"<br>"
                                     +"The final round will be between the top 8 teams from Prelims."
                                     +"<br><br>"
-                                    +"<b style='color: #4C4D64'></b>" //dont know
+                                    +"<b style='color: #4C4D64'></b>" 
                                     +"<br>"
                                     +"The decision of Quizmaster will be final and binding."
                                 +"</p>",
@@ -231,7 +231,7 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'thequest',
-            fee: null, //dont know
+            fee: 200, 
             paymentURL: true,
             clubName: "Quizzinga",
             eventName: "The Quest",
@@ -242,7 +242,7 @@ module.exports.competitions = {
             memberUpperLimit: 2,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: '₹ 100/-', //dont know
+            eventFee: '₹ 200/-', 
             synopsis:  "<p>"
                             +"Let your intellect shine, let the rolling of your brain race with every passing minute. The LNMIIT Quiz Club is back with its general quiz “The Quest” to warm up your grey cells."
                         +"</p>",
@@ -270,18 +270,18 @@ module.exports.competitions = {
         
         {
             eventUrl: 'robowar',
-            fee:700,
+            fee: 800,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Robowar",
             displayName: "Robowar",
             payName: "RW",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 6,
             memberLowerLimit: 2,
             prizeWorth: '₹ 50,000/-',
-            eventFee: '₹ 700/-',
+            eventFee: '₹ 800/-',
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
@@ -433,18 +433,18 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'robosoccer',
-            fee: null, //dont know
+            fee: 250,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Robosoccer",
             displayName: "Robosoccer",
             payName: "RS",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 6,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 25,000/-', //dont know
-            eventFee: '₹ 250/-', // dont know
+            prizeWorth: '₹ 25,000/-', 
+            eventFee: '₹ 250/-',
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
@@ -531,13 +531,13 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'droneobstruction',
-            fee:null,
+            fee:600,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Drone Obstruction",
             displayName: "Drone Obstruction",
             payName: "DO",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 5,
             memberLowerLimit: 1,
@@ -589,13 +589,13 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'lfr',
-            fee: null,
+            fee: 250,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "LFR",
             displayName: "LFR",
             payName: "LFR",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
             memberLowerLimit: 1,
@@ -644,18 +644,18 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'mazesolver',
-            fee: null, //dont know
+            fee: 250,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Maze Solver",
             displayName: "Maze Solver",
             payName: "MS",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 25,000/-', //dont know
-            eventFee: '₹ 250/-',      //dont know
+            prizeWorth: '₹ 25,000/-', 
+            eventFee: '₹ 250/-',      
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
@@ -747,13 +747,13 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'roborace',
-            fee: null,
+            fee: 250,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Roborace",
             displayName: "Roborace",
             payName: "RR",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
             memberLowerLimit: 1,
@@ -842,18 +842,18 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'rcplane',
-            fee: null, // dont know
+            fee: 500,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "RC Plane",
             displayName: "RC Plane",
             payName: "RCP",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 5,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 40,000/-', //dont know
-            eventFee: '₹ 500/-',  //dont know
+            prizeWorth: '₹ 40,000/-', 
+            eventFee: '₹ 500/-',  
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
@@ -1031,7 +1031,7 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'transporter',
-            fee: null, //dont know
+            fee: 250, 
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Transporter",
@@ -1041,8 +1041,8 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 5,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 25,000/-', //dont know
-            eventFee: '₹ 250/-',      //dont know
+            prizeWorth: '₹ 25,000/-', 
+            eventFee: '₹ 250/-',    
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
@@ -1122,18 +1122,18 @@ module.exports.competitions = {
         {
 
             eventUrl: 'icengine',
-            fee:null,
+            fee: 500,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "IC Engine",
             displayName: "IC Engine",
-            payName: "RST",
+            payName: "IC",
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 2,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '₹ 500/-',
             synopsis:  "<p>"
                            +"<p>"
                                 +"Design a remote-controlled IC engine car which can race against other competitors on an off-road dirt track." 
@@ -1187,7 +1187,7 @@ module.exports.competitions = {
         {
 
             eventUrl: 'rostrum',
-            fee:null,
+            fee: 200,
             paymentURL: true,
             clubName: "Literature",
             eventName: "Rostrum",
@@ -1198,7 +1198,7 @@ module.exports.competitions = {
             memberUpperLimit: 2,
             memberLowerLimit: 2,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '₹ 200/-',
             synopsis:  "<p>"
                            +"<p>"
                                 +"Step up to the rostrum to prove your point and endurance against backlashes and irenic but firm retaliations in the flagship event organised by the Literary Committee in Plinth&#39;19." 
@@ -1238,7 +1238,7 @@ module.exports.competitions = {
         {
 
             eventUrl: 'comikaze',
-            fee:null,
+            fee: 200,
             paymentURL: true,
             clubName: "Literature",
             eventName: "ComiKaze",
@@ -1249,7 +1249,7 @@ module.exports.competitions = {
             memberUpperLimit: 2,
             memberLowerLimit: 2,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '₹ 200/-',
             synopsis:  "<p>"
                            +"<p>"
                                 + "<b>A creative comic workshop with a comic writing competition</b>"
@@ -1290,7 +1290,7 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'intotheuniverse',
-            fee: null,
+            fee: 100,
             paymentURL: true,
             clubName: "Astronomy",
             eventName: "Into The Universe",
@@ -1301,7 +1301,7 @@ module.exports.competitions = {
             memberUpperLimit: 3,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '₹ 100/-',
             synopsis:  "<p>"
                             +"<b style='color: #4C4D64'>Crack the depiction</b>"
                             +"<p>"
@@ -1377,18 +1377,18 @@ module.exports.competitions = {
         {
 
             eventUrl: 'astroquiz',
-            fee:null,
+            fee: 100,
             paymentURL: true,
             clubName: "Astronomy",
             eventName: "Astro Quiz",
             displayName: "Astro Quiz",
             payName: "AQ",
-            eventDate: "19<sup>th</sup> - 21<sup>st</sup> Jan 2019",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '₹ 100/-',
             synopsis:  "<p>"
                             +"Can you answer some basic questions on Astronomy? Well we have another event in for you which is an amalgam of fun and intellect."
                         +"</p>"
@@ -1423,7 +1423,7 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'astrohunt',
-            fee: null,
+            fee: 100,
             paymentURL: true,
             clubName: "Astronomy",
             eventName: "Astro Hunt",
@@ -1434,7 +1434,7 @@ module.exports.competitions = {
             memberUpperLimit: 3,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: null,
+            eventFee: '₹ 100/-',
             synopsis:  "<p>"
                             +"Foresee the unfathomable and explore the mysteries of the universe. Only the sharp, intelligent and astronomy enthusiasts will make it to the end. The route to solve the mysteries of the universe lies within the depths of the dark sky and your imagination. It’s time to bring out the Galileo Galilei in you and look into the infinite cosmic depths."
                         +"</p>",
@@ -1469,8 +1469,8 @@ module.exports.competitions = {
             clubName: "Coding",
             eventName: "For Hack the Code",
             displayName: "For Hack the Code",
-            payName: "CSP",
-            eventDate: "21<sup>th</sup> Jan, 2019", //dont know
+            payName: "FHC",
+            eventDate: "21<sup>th</sup> Jan, 2019", 
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 1,
             memberLowerLimit: 1,
