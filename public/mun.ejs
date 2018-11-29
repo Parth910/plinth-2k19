@@ -88,7 +88,16 @@
                 
             }
        
-            
+            .btn-blue{
+                background-color: #205B9C;
+                color: #fff;
+            }
+            .btn-blue:hover{
+                color: snow;
+            }
+            .modal#payModel{
+                top: 10%;
+            }
             </style>
     <div id="mobile-bar"></div>
     <input type="checkbox" class="check" id="checked">
@@ -176,8 +185,19 @@
                 <span class="heading-primary--sub" style="float: right; font-size: 1.7rem">12<sup style="text-transform:lowercase">th</sup>-13<sup
                         style="text-transform:lowercase">th</sup> January</span>
             </h1>
+            <% if(isLoggedIn){ %>
+            <div class="col-1-of-2">
+                <a href="#register" class="btn btn--white btn--animated">Register</a>
+            </div>
+            <div class="col-1-of-2" style="padding-top: 20px;">
+                <a id="paynow" data-target="#payModel" data-toggle="modal" href="#" class="btn btn--white btn--animated">Pay
+                    Now</a>
+            </div>
 
-            <a href="#committees" class="btn btn--white btn--animated disabled">Register</a>
+            <% } else { %>
+            <a href="#register" class="btn btn--white btn--animated">Register</a>
+            <% } %>
+
         </div>
     </header>
 
@@ -376,58 +396,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">DISEC</span>
-                            </h4>
-                            <div class="card__details">
-                                <p style="font-size: 2rem;">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, delectus iste
-                                    perspiciatis molestias rerum nihil laborum perferendis excepturi tenetur nisi.
-                                </p>
-                            </div>
+            </div>
+        </section>
 
-                        </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                </div>
-                                <a href="#popup3" class="btn btn--white">Read more!</a>
-                            </div>
-                        </div>
+        <section class="section-stories" id="register">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Registration Form
+                </h2>
+                <div class="register-btn" style="padding-top:20px">
+                    <div class="col-1-of-2">
+                        <a href="https://goo.gl/forms/WuLxpKM0KKdJqlWJ2?fbclid=IwAR199bVlw0EuzGuqC7q21879KtSgG_-JO3VJYW9A5M74yy3HAv-Np-KZwGU"
+                            class="btn btn-blue btn--animated">Deligate</a>
+                    </div>
+                    <div class="col-1-of-2" style="padding-top:20px">
+                        <a href="#" class="btn btn-blue btn--animated disabled">International Press</a>
                     </div>
                 </div>
-                <!-- <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">DISEC</span>
-                            </h4>
-                            <div class="card__details">
-                                <p style="font-size: 2rem;">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, delectus iste
-                                    perspiciatis molestias rerum nihil laborum perferendis excepturi tenetur nisi.
-                                </p>
-                            </div>
 
-                        </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                </div>
-                                <a href="#popup3" class="btn btn--white">Read more!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -441,79 +428,9 @@
                     <h1 class="heading-secondary" style="padding-top:40px; font-size: 5.6rem">Revealing Soon!</h1>
                 </div>
             </div>
-
-            <!-- <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-                        <figcaption class="story__caption">Mary Smith</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Jack Wilson</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-                        <figcaption class="story__caption">Jack Wilson</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Jack Wilson</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-                        <figcaption class="story__caption">Jack Wilson</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-                        <figcaption class="story__caption">Jack Wilson</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
-
-
         </section>
+
+
 
         <section class="section-book" id="contact">
             <div class="row">
@@ -559,9 +476,9 @@
                     controlling financial matters ; passing bills ; electing a number of deferential personalities like
                     president, vice-president , speaker and deputy speaker of the house to sharing its power with the
                     upper house to amend the constitution.
-                   
+
                 </p>
-                <a href="#" class="btn btn--green disabled">Register now!</a>
+                <a href="#register" class="btn btn--green">Register now!</a>
             </div>
         </div>
     </div>
@@ -580,7 +497,7 @@
                     The UNHRC has 47 members elected by the United Nations General Assembly for staggered three-year
                     terms. It meets at the UN Office at Geneva.
                 </p>
-                <a href="#" class="btn btn--green disabled">Register now!</a>
+                <a href="#register" class="btn btn--green">Register now!</a>
             </div>
         </div>
     </div>
@@ -601,7 +518,7 @@
                     the international community and seeks out solutions to the challenges in the international security
                     regime. Ensuring this is vital for the international community.
                 </p>
-                <a href="#" class="btn btn--green disabled">Register now!</a>
+                <a href="#register" class="btn btn--green">Register now!</a>
             </div>
         </div>
     </div>
@@ -641,9 +558,127 @@
         </div>
     </div>
 
+    <!-- Pay Modal -->
+
+    <% if(isLoggedIn){ %>
+    <div class="modal fade" id="payModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-a">Payment Form</h5>
+                    <button type="button" id="form-close" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="mun-form">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" value='<%- user.name %>'
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" value='<%- user.email %>'
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_mun" class="control-label">Contact Number*</label>
+                            <input type="number" class="form-control" id="contact_mun" placeholder="Enter Contact Number"
+                            value="<%= user.phoneNumber %>" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="college">Institute Name*</label>
+                            <input type="text" class="form-control" id="college" placeholder="Enter Insitute Name"
+                                value='<%- user.college %>' required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter City" value='<%- user.city %>'
+                                required>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <label>Choose Delegation*</label>
+                            <br>
+                            <div class="form-check  form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="typeRadio" id="del" value="IP">
+                                    International Press
+                                </label>
+                            </div>
+                            <div class="form-check  form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="typeRadio" id="ip" value="Delegates">
+                                    Delegates
+                                </label>
+                            </div>
+
+                        </fieldset>
+
+                        <div id="hidden-matter">
+
+                            <div class="form-group">
+                                <label for="committee">Allotted Committee*</label>
+                                <select class="form-control" id="committee" required>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="portfolio">Allotted Portfolio</label>
+                                <input type="text" class="form-control" id="portfolio" placeholder="Enter Portfolio">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="referral">Refferal Code</label>
+                                <input type="text" class="form-control" id="referral" placeholder="Enter Referral Code">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="accomodation">Accomodation* ( will be paid separately afterwards)</label>
+                                <select class="form-control" id="accomodation" required>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group align-center">
+                                <label id="amount">Amount</label>
+
+                            </div>
+                            <div class="form-group">
+
+                                <input type="hidden" class="form-control" id="mEmail" value="<%- user.email %>">
+                            </div>
+
+                            <div class="align-center">
+                                <button type="submit" class="btn btn-dark btn--animated" id="submit-button">Pay</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mun.js"></script>
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
@@ -659,12 +694,6 @@
                 }
             });
         });
-    </script>
-    <script>
-        function userLoginInitiate(url) {
-            localStorage.setItem("tempURL", location.href);
-            window.location = location.origin + url;
-        }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="js/js.js"></script>
