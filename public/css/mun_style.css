@@ -2554,7 +2554,7 @@ only screen and (min-width: 125em) {
     letter-spacing: 1.2px;
     padding: 5px 17px;
     opacity: .75;
-    margin: 5px 13px;
+    margin: 0px 13px;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
   }
