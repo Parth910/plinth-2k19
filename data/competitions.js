@@ -1681,6 +1681,11 @@ module.exports.competitionUrl = {
         },
 
         {
+            eventName: 'Water Rocket',
+            eventUrl: '/waterrocket'
+        },
+
+        {
             eventName: 'StartUp Intern Fair',
             eventUrl: '/sif',
         },

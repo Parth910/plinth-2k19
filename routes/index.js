@@ -127,7 +127,7 @@ router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, fu
     var competitions = {
         astronomy: ['intotheuniverse', 'astrohunt', 'astroquiz'],
         coding: ['iupc', 'enigma', 'codeswap', 'forhackthecode'],
-        robotics: ['robowar', 'robosoccer', 'droneobstruction', 'lfr', 'mazesolver', 'roborace', 'rcplane', 'transporter', 'icengine', 'circuitdesign'],
+        robotics: ['robowar', 'robosoccer', 'droneobstruction', 'lfr', 'mazesolver', 'roborace', 'rcplane', 'transporter', 'icengine', 'circuitdesign', 'waterrocket'],
         quizzing: ['brandwagon', 'thequest'],
         literature: ['rostrum', 'comikaze'],
         management: ['sif'],
