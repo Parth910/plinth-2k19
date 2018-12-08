@@ -162,10 +162,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Deepanshu Sharma: +91-9636618379"
-                        // +"<br>"
-                        // +"Paresh Mishra: +91-9521876701"
-                        // +"<br><br>"
+                        +"Ujjwal Agarwal: +91-9828785561"
+                        +"<br>"
+                        +"Taruna Garg: +91-8441858324"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:sif.plinth@gmail.com'>sif.plinth@gmail.com</a>"
                     +"</p>",
             sponsors: "Coming Soon",
@@ -184,7 +184,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
-            prizeWorth: null,
+            prizeWorth: '₹ 40,000/-',
             eventFee: '₹ 200/-',
             synopsis:  "<p>"
                             +"<b style='color: #4C4D64'>Brandwagon</b>"
@@ -195,19 +195,18 @@ module.exports.competitions = {
                                 +"<br>"
                                 +"If you can already feel your grey cells warming up, then Brandwagon is the place to be. Test your knowledge about various domains of the business world."
                             +"</p>",
-            eventDescription: "<p>Event Description</p>"
-                                +"<p>"
-                                    +"<b style='color: #4C4D64'></b>" 
+            eventDescription:   "<p>"
+                                    +"<b style='color: #4C4D64'>Theme : </b>"
+                                    +"<strong>Business</strong>"
                                     +"<br>"
-                                    +"The Quiz will be held in 2 rounds, both these rounds will take place back to back at LNMIIT during Plinth."
-                                    +"<br><br>"
-                                    +"<b style='color: #4C4D64'></b>" 
+                                    +"Brandwagon is Quizzinga's flagship business quiz which is held every year during Plinth. It is a great platform to observe an amazing competition among some of the best business quizzers."
                                     +"<br>"
-                                    +"The final round will be between the top 8 teams from Prelims."
-                                    +"<br><br>"
-                                    +"<b style='color: #4C4D64'></b>" 
-                                    +"<br>"
+                                    +"<b style='color: #4C4D64'>Format</b>"
+                                    +"<p>"
+                                    +"The quiz will be held in two rounds. First round is the written round. "
+                                    +"Eight highest scoring teams from the first round will move on to the final round and compete for the first and second position. "
                                     +"The decision of Quizmaster will be final and binding."
+                                    +"</p>"
                                 +"</p>",
             rules:  "<p>"
                          +"<ol style='list-style-type: disc;padding-left:20px;'>"
@@ -225,6 +224,8 @@ module.exports.competitions = {
                         +"Hardik Tyagi:  +91-8264467624"
                         +"<br>"
                         +"For any query, contact us at <a href='quizzinga@plinth.in'>quizzinga@plinth.in</a>"
+                        +"<br>"
+                        +"Connect us at :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
                     +"</p>",
             sponsors: null,
             otherURL: null,
@@ -241,12 +242,24 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
-            prizeWorth: null,
+            prizeWorth: '₹ 40,000/-',
             eventFee: '₹ 200/-', 
             synopsis:  "<p>"
                             +"Let your intellect shine, let the rolling of your brain race with every passing minute. The LNMIIT Quiz Club is back with its general quiz “The Quest” to warm up your grey cells."
                         +"</p>",
-            eventDescription: "<p>The Quest will be held in 2 rounds, both these rounds will take place back to back at LNMIIT during Plinth. The final round will be between the top 8 teams from Prelims. The decision of Quizmaster will be final and binding.</p>",
+            eventDescription: "<p>"
+                            +"<b style='color: #4C4D64'>Theme : </b>"
+                            +"<strong> Mixed-bag</strong>"
+                            +"<br>"
+                            +"The Quest is Quizzinga's flagship general quiz which takes place every year during Plinth."
+                            +"<br>"
+                            +"<b style='color: #4C4D64'>Format</b>"
+                            +"<p>"
+                            +"The quiz will be held in two rounds. "
+                            +"First round is the written round. "
+                            +"Eight highest scoring teams from the first round will move on to the final round and compete for the first and second position."
+                            +"</p>"
+        +"</p>",
             rules:  "<p>"
                         +"<b style='color: #4C4D64'>General Rules </b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
@@ -263,6 +276,8 @@ module.exports.competitions = {
                         +"Hardik Tyagi: +91-8264467624"
                         +"<br>"
                         +"For any query, contact us at <a href='mailto:quizzinga@plinth.in'>quizzinga@plinth.in</a>"
+                        +"<br>"
+                        +"Connect us at :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
                     +"</p>",
             sponsors: null, 
             otherURL: null,
@@ -711,7 +726,7 @@ module.exports.competitions = {
                                 +"</p>",
             synopsis: "<p>"
                             +"<p>"
-                                +"The event will comprise of teams competing against each other to find the best circuit designing and innovative mind among them. The participants will use electronic components for virtual designing of their circuits like resistors, capacitors, common gate ICs, displays, etc. on Proteus (software tool used for designing circuits) to prove their circuit designing skills and abilities. The event will be based on two rounds based on theoretical and practical knowledge of participants"
+                                +"Build water rockets, and launch it in teams, trying to optimise for speed and direction. The competition is judged on specific parameters such as distance, flight time and target proximity."
                             +"</p>"
                         +"</p>",
             rules:  "<p>"
@@ -1355,7 +1370,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 2,
-            prizeWorth: null,
+            prizeWorth: '₹ 20,000/-',
             eventFee: '₹ 200/-',
             synopsis:  "<p>"
                            +"<p>"
@@ -1621,14 +1636,14 @@ module.exports.competitions = {
         },
         {
 
-            eventUrl: 'forhackthecode',
+            eventUrl: 'hackthecode',
             fee:null,
             paymentURL: null,
             clubName: "Coding",
-            eventName: "For Hack the Code",
-            displayName: "For Hack the Code",
+            eventName: "Hack the Code",
+            displayName: "Hack the Code",
             payName: "FHC",
-            eventDate: "21<sup>th</sup> Jan, 2019", 
+            eventDate: "19<sup>th</sup> Jan, 2019", 
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 1,
             memberLowerLimit: 1,
@@ -1641,7 +1656,7 @@ module.exports.competitions = {
                             +"Think that you are smart? Or you have got an eagle vision to spot the bugs? Does ‘Segmentation Fault’ send a chill through your spine? Why doubt when you can find out!"
                         +"</p>",
             eventDescription: "<p>"
-                                    +"This is an onsite event, the contest will be held on 20 Jan 19, 3 PM onwards."
+                                    +"This is an onsite event, the contest will be held on 19 Jan 19, 5 PM onwards."
                                 +"</p>"
                                 +"<p>"
                                     +" You can form a team of at most two members."
@@ -1658,8 +1673,8 @@ module.exports.competitions = {
             rules:  "<p>"
                         +"<b style='color: #4C4D64'>Key Details</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>The first online round of the contest will be held on 21st January 2019 (Sunday).</li>"
-                            +"<li>Contest duration will be 40 min.</li>"
+                            +"<li>The first online round of the contest will be held on 19th January 2019 (Sunday).</li>"
+                            +"<li>Contest duration will be 60 min.</li>"
                             +"<li>Team with exactly 2 members is allowed.</li>"
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the team.</li>"
                             +"<li>Penalty of 10 Minutes will be charged for every incorrect submission.</li>"
@@ -1782,8 +1797,8 @@ module.exports.competitionUrl = {
             eventUrl: '/codeswap',
         },
         {
-            eventName: 'For Hack the Code',
-            eventUrl: '/forhackthecode'
+            eventName: 'Hack the Code',
+            eventUrl: '/hackthecode'
         },
 
         {
