@@ -793,31 +793,62 @@ module.exports.competitions = {
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
-                                        +"Design and fabricate an autonomous vehicle capable of navigating efficiently through guided white lines on a Black floor.. The vehicle must be able to effectively follow the guiding path. The racers will be tested on speed and accuracy of path following."
+                                        +"The participating teams are required to build an autonomous robot that can follow the line and wall on a contrasting background(generally black lines on a white background or vice-versa). The main objective will be to test whether the robot can follow the track comprising of straight lines, curves, angles of different degrees, line breaks and walls. "
                                     +"</p>"
-                                    +"<b style='color: #4C4D64'>Description</b>"
-                                    +"<p>"
-                                        +"Line following Robot is a machine that can follow a path. The path can be visible like a black line ( Width: 3.5 cm ) on a white surface or it can be invisible like a magnetic field."
-                                    +"</p>"
-                                    +"<p>"
-                                        +"Sensing a line and maneuvering the robot to stay on course, while constantly correcting wrong moves using feedback mechanism forms a simple yet effective closed loop system."
-                                    +"</p>" 
-                                   
-                                    // +"<b style='color: #4C4D64'>Track</b>"
-                                    // +"<br>"
-                                    // +"<div class='uk-text-center'><img src='media/lfr-track.png' /></div>"
+                                    +
+                                    "<p>This competition will have three rounds.</p>"
+                                    +"<b style='color: #4C4D64'>ROUND 1</b>"
+                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                        +"<li>This round will involve following the line which is 3 cm in width and the point description will be disclosed on the spot before the commencement of the event. Based on the total time taken and points gained, teams will be selected for the next level.</li>"
+                                       
+
+                                    +"</ol>"
+
+                                    +"<b style='color: #4C4D64'>ROUND 2 </b>"
+                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                     
+                                        +"<li>The line is to be followed upto a certain checkpoint after which the bot would have to follow  vertical walls to complete the track. The vertical walls would be approximately of 10 cm in height. A time penalty of 15 seconds will be imposed each time the bot touches the wall."
+                                        +"<ul style='list-style-type: decimal; padding-left:30px;'> "
+                                        +"<li>There will be a certain number of checkpoints. In case the bot deviates from the line, it is required to start again from the previous checkpoint.</li>"
+                                        +"<li>In case of any technical problem, you will be given specified time to rectify it. (Only once)</li>"
+                                        +"<li>Any kind of disturbance or violation of rules from a team’s side will lead to the disqualification of the team.</li>"
+                                        +"<li>Organizers reserve the rights to change the above rules as they deem fit.	</li>"
+                                        +"<li>In case of any discrepancies, the organizers’ decision will be final and binding.</li>"
+                                        +"</ul>"
+                                    +"</li>"
+                                       
+                                       
+                                       
+        
+                                    +"</ol>"
+
                                 +"</p>",
             synopsis: "<p>"
                             +"An autonomous bot that follows black lines on white surface. It is an automated guided bot that follows visual lines embedded on the floor. The bot must be able to detect particular line and keep following it." 
                         +"</p>",
             rules:  "<p>"
-                        +"<b style='color: #4C4D64'>General Instructions</b>"
+            +"<b style='color: #4C4D64'>General rules</b>"
+            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                +"<li>A team can comprise a maximum of 4 members. Students from different Institutes can form a team.</li>"
+                
+                
+            +"</ol>"
+                        +"<b style='color: #4C4D64'>Robot Specification</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>Max. Number of members in a team: 4</li>"
-                            +"<li>No human intervention is allowed in between the race.</li>"
-                            +"<li>Point description will be disclosed on the spot before commencement of event.</li>"
-                            +"<li>Points earned will be calculated within the time limit and free time will be provided only once if any technical problem occurs.</li>"
-                            +"<li>In case of any discrepancies organiser’s decision will be final and binding.</li>"
+                            +"<li>The bot should fit in a box of dimension 30X25X25 cm (lXbXh).</li>"
+                            +"<li>No readymade mechanism is allowed for the bot construction</li>"
+                            +"<li>Bots are not allowed to fly or jump and only wheels are allowed for locomotion</li>"
+                            +"<li>During the run, no damage should be done by the bot to the arena in any way</li>"
+                            
+                        +"</ol>"
+                        
+                        +"<b style='color: #4C4D64'>Game Play</b>"
+                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                            +"<li>Only one autonomous bot per team is allowed.</li>"
+                            +"<li>No team member is allowed to touch the bot or enter the arena once the bot has started.	</li>"
+                            +"<li>Only one member of the team is allowed to handle the bot during the competition</li>"
+                            +"<li>Teams are not allowed to feed information about the arena to the bot, a team would be immediately disqualified if found doing so. However, contestants are allowed to adjust the sensors</li>"
+                            
                         +"</ol>"
                     +"</p>",
             judges: null,
