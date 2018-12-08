@@ -701,15 +701,10 @@ module.exports.competitions = {
                                     +"</ol>"
                                     +"<b style='color: #4C4D64'>ROUND 3 - Endurance (Time of flight)T</b>"
                                     +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                                        +"<li>This round tests the stability of the rocket.</li>"
-                                        +"<li>Two chances will be provided for launching the rocket.</li>"
-                                        +"<li>There will be three circular regions in the arena, having  P  points  for hitting,</li>"
-                                        +"<p>1. Region A  (5 meter radius region): P=50 points</p>"
-                                        +"<p>2. Region B  (7 meter radius region): P=25 points</p>"
-                                        +"<p>3. Region C (10 meter radius region): P=15 points</p>"
-                                        +"<p> Otherwise  = No points</p>"
+                                        +"<li>The water rocket can be launched from launch pad with any suitable angle as per your convenience and would be tested for maximum time of flight. This rocket can contain electronic components (maximum of one1 9gm servo), each pool has to present 1 water rocket only in this roundT</li>"
+                                   
                                         +"<br/>"
-                                        +"<p>Total points = P+ (10 x Time taken)</p>"
+                                       
         
                                     +"</ol>"
                                    
