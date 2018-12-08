@@ -24,7 +24,7 @@ router.get('/admin/check/:id', Verify.verifyOrdinaryUser, function (req, res) {
 
     checksum.genchecksum(paramaters, paytm.key, function (err, result) {
 
-        url = 'https://secure.paytm.in/oltp/HANDLER_INTERNAL/getTxnStatus?JsonData={%22MID%22:%22' + result['MID'] + '%22,%22ORDERID%22:%22' + result['ORDER_ID'] + '%22,%22CHECKSUMHASH%22:%22' + result['CHECKSUMHASH'] + '%22}';
+        url = 'https://securegw-stage.paytm.in/merchant-status/getTxnStatus?JsonData={%22MID%22:%22' + result['MID'] + '%22,%22ORDERID%22:%22' + result['ORDER_ID'] + '%22,%22CHECKSUMHASH%22:%22' + result['CHECKSUMHASH'] + '%22}';
 
         var request = require('request');
 
