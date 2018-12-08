@@ -63,12 +63,12 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Vrinda Goel: +91-8003890410"
-                        // +"<br>"
-                        // +"Garvit Bhatia: +91-9414858869"
-                        // +"<br>"
-                        // +"Aditya Aggarwal: +91-8791636347"
-                        // +"<br><br>"
+                        +"Nikhil Gogia: +91-8529832077"
+                        +"<br>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br>"
+                        +"Garvit Bhatia: +91-9414858869"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -223,9 +223,9 @@ module.exports.competitions = {
                         +"<br>"
                         +"Hardik Tyagi:  +91-8264467624"
                         +"<br>"
-                        +"For any query, contact us at <a href='quizzinga@plinth.in'>quizzinga@plinth.in</a>"
+                        +"For any query, contact us at: <a href='quizzinga@plinth.in'>quizzinga@plinth.in</a>"
                         +"<br>"
-                        +"Connect us at :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
+                        +"Connect with us on :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
                     +"</p>",
             sponsors: null,
             otherURL: null,
@@ -277,7 +277,7 @@ module.exports.competitions = {
                         +"<br>"
                         +"For any query, contact us at <a href='mailto:quizzinga@plinth.in'>quizzinga@plinth.in</a>"
                         +"<br>"
-                        +"Connect us at :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
+                        +"Connect with us on :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
                     +"</p>",
             sponsors: null, 
             otherURL: null,
@@ -1663,7 +1663,7 @@ module.exports.competitions = {
                                 +"</p>"
                                 
                                 +"<p>"
-                                    +"Contest duration is 1 hours."
+                                    +"Contest duration is 1 hour."
                                 +"</p>"
                                 +"<p>"
                                     +"Please register yourself there and join."
@@ -1710,7 +1710,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 3,
             memberLowerLimit: 1,
-            prizeWorth: null,
+            prizeWorth: '₹ 20,000/-',
             eventFee: null,
             synopsis:  "<p>"
                             +"See logic in everything around? Is your daily language “Syntax”?"
@@ -1749,12 +1749,12 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Vrinda Goel: +91-8003890410"
-                        // +"<br>"
-                        // +"Garvit Bhatia: +91-9414858869"
-                        // +"<br>"
-                        // +"Aditya Aggarwal: +91-8791636347"
-                        // +"<br><br>"
+                        +"Nikhil Gogia: +91-8529832077"
+                        +"<br>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br>"
+                        +"Garvit Bhatia: +91-9414858869"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
