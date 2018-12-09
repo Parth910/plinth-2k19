@@ -602,12 +602,6 @@ module.exports.competitions = {
             judges: null,
             query: "<p class='link-text'>"
                         +"Yash Agarwal : 7897835980"
-                        // +"<br>"
-                        // +"Kanishk Sharma: +91-7599063441"
-                        // +"<br>"
-                        // +"Pankhuri Vanjani: +91-9462346930"
-                        // +"<br>"
-                        // +"Anushrut: +91-7007135939"
                         +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
@@ -1581,12 +1575,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Gaurav Kulkarni: +91-7742669667"
-                        // +"<br>"
-                        // +"Malvika Maloo: +91-9950545133"
-                        // +"<br>"
-                        // +"Abhinav Binjola:+91-7742323105"
-                        // +"<br><br>"
+                        +"Daksh: +91-7055000051"
+                        +"<br>"
+                        +"Rachna: +91-9427787676"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -1628,12 +1620,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Priyansh Jain: +91-8290925378"
-                        // +"<br>"
-                        // +"Ria Lamba: +91-9799494808"
-                        // +"<br>"
-                        // +"Kartik Shankavaram:+91-9460521848"
-                        // +"<br><br>"
+                        +"Akshita Agarwal: +91-9560056024"
+                        +"<br>"
+                        +"Anubhav: +91-9407494762"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null,   
@@ -1668,12 +1658,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
            query: "<p class='link-text'>"
-                        // +"Gaurav Kulkarni: +91-7742669667"
-                        // +"<br>"
-                        // +"Aarshi Chaurasia: +91-8290720034"
-                        // +"<br>"
-                        // +"Monil Narang:+91-9462236381"
-                        // +"<br><br>"
+                        +"Sarthak: +91-8076167860"
+                        +"<br>"
+                        +"Raghav Nanda: +91-9079320501"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null, 
