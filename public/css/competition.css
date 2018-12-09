@@ -12,6 +12,10 @@ li {
     #backbtn {
         padding-left: 20px;
     }
+
+    button#comp_login.btn-side {
+        width: 34% !important;
+    }
 }
 
 #tab>p>b {
@@ -29,7 +33,7 @@ ul {
     color: #575757;
     text-align: center;
     height: 2.5em;
-    width: 5em;
+    width: 5.4em;
     vertical-align: middle;
     line-height: 2.5em;
     border-bottom: 1px solid #2f0028;
@@ -153,7 +157,8 @@ button.btn-live#event:hover {
 }
 
 label.control-label,
-input,.radio-inline {
+input,
+.radio-inline {
     color: grey;
     font-family: 'Raleway', sans-serif;
 }
