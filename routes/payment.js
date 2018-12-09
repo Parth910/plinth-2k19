@@ -155,7 +155,7 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                     case 'DO':
                         payment.amount = 600;
                         break;
-                    case 'LFR':
+                    case 'LWF':
                         payment.amount = 250;
                         break;
                     case 'MS':

@@ -293,7 +293,7 @@ module.exports.competitions = {
             payName: "RW",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
-            memberUpperLimit: 6,
+            memberUpperLimit: 8,
             memberLowerLimit: 2,
             prizeWorth: '₹ 50,000/-',
             eventFee: '₹ 800/-',
@@ -341,8 +341,8 @@ module.exports.competitions = {
             +"</ol>"
                         +"<b style='color: #4C4D64'>Robot Specification</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>The machine should fit in a box of dimension 350mm x 350mm x 500 mm (l x b x h) at any given point during the match. The external device used to control the machine or any external tank is not included in the size constraint.</li>"
-                            +"<li>The machine should not exceed 45 kilograms of weight excluding the weight of pneumatic/hydraulic source/tank and batteries, if any. Weight of remote controller will not be counted.</li>"
+                            +"<li>The machine should fit in a box of dimension 750mm x 750mm x 1000 mm (l x b x h) at any given point during the match. The external device used to control the machine or any external tank is not included in the size constraint.</li>"
+                            +"<li>The machine should not exceed 60 kilograms of weight excluding the weight of pneumatic/hydraulic source/tank and batteries, if any. Weight of remote controller will not be counted.</li>"
                             +"<li>Jumping and hopping is not allowed.Flying (using airfoil, helium balloons, ornithopters, etc.) is not allowed.</li>"
                             +"<li>The weight of adapters and the remote controller will not be included in this constraint Mobility.</li>"
                             +"<li>All robots must have easily visible and controlled mobility in order to compete.</li>"
@@ -449,14 +449,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
            query: "<p class='link-text'>"
-                        // +"Harshil Bhandari: +91-7597526581"
-                        // +"<br>"
-                        // +"Parth Agarwal: +91-9571016327"
-                        // +"<br>"
-                        // +"Shrawan Singh: +91-9680544845"
-                        // +"<br>"
-                        // +"Vikas Goyal: +91-9413820365"
-                        // +"<br><br>"
+                        +"Hemant Jindgar: +91-7023897272"
+                        +"<br>"
+                        +"Agraj Agarwal : +91-9068875477"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -551,10 +547,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Divyansh Shara: +91-7727050728"
-                        // +"<br>"
-                        // +"Harsh Upadhyay: +91-9929543341"
-                        // +"<br><br>"
+                        +"Keshav Nyati : +91-9119388593 "
+                        +"<br>"
+                        +"Yukti Agarwal : +91-7791949437"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -570,7 +566,7 @@ module.exports.competitions = {
             payName: "DO",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
-            memberUpperLimit: 5,
+            memberUpperLimit: 4,
             memberLowerLimit: 1,
             prizeWorth: '₹ 50,000/-',
             eventFee: '₹ 600/-',
@@ -605,14 +601,14 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Prakhar Kesarwani: +91-8209034268"
+                        +"Yash Agarwal : 7897835980"
                         // +"<br>"
                         // +"Kanishk Sharma: +91-7599063441"
                         // +"<br>"
                         // +"Pankhuri Vanjani: +91-9462346930"
                         // +"<br>"
                         // +"Anushrut: +91-7007135939"
-                        // +"<br><br>"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -633,30 +629,30 @@ module.exports.competitions = {
             prizeWorth: null,
             eventFee: "₹ 250",
             eventDescription: "<p>"
-                                    +"<b style='color: #4C4D64'>Problem Statement</b>"
-                                    +"<p>"
-                                        +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 70cms."
-                                    +"</p>"
+                                //     +"<b style='color: #4C4D64'>Problem Statement</b>"
+                                //     +"<p>"
+                                //         +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 70cms."
+                                //     +"</p>"
                                    
-                                   // +"<b style='color: #4C4D64'>Track</b>"
-                                    +"<br>"
-                                    +
-                                    "<p>This competition will have two rounds.Those teams which will be selected in first round, they will compete in second round.</p>"
-                                    +"<b style='color: #4C4D64'>Round 1</b>"
-                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                                        +"<li>This would be a qualifying round in which a quiz will be organized which will be comprising of basic to intermediate level questions based on electronic circuits and components.</li>"
-                                        +"<li>Scores of round 1 will be used in calculation of final result.</li>"
+                                //    // +"<b style='color: #4C4D64'>Track</b>"
+                                //     +"<br>"
+                                //     +
+                                //     "<p>This competition will have two rounds.Those teams which will be selected in first round, they will compete in second round.</p>"
+                                //     +"<b style='color: #4C4D64'>Round 1</b>"
+                                //     +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                //         +"<li>This would be a qualifying round in which a quiz will be organized which will be comprising of basic to intermediate level questions based on electronic circuits and components.</li>"
+                                //         +"<li>Scores of round 1 will be used in calculation of final result.</li>"
 
-                                    +"</ol>"
+                                //     +"</ol>"
 
-                                    +"<b style='color: #4C4D64'>Round 2</b>"
-                                    +"<p>The game field consists of an arena having dimensions 224 cm X 228 cm (lxb). It consists of the following:</p>"
-                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                                        +"<li>This round will be based on designing and implementing the circuit of which problem statement is been given to you on proteus. Proteus is a software tool suite used for electronic design automation. Designing becomes easy when it comes to proteus also it is the first step toward it.</li>"
-                                        +"<li>Each step towards designing a circuit contains marks. Also, there will be time constraint for the same.</li>"
-                                        +"<li>After this, final result will be generated by taking a definite proportion of marks scored in both round1 and round2.</li>"
+                                //     +"<b style='color: #4C4D64'>Round 2</b>"
+                                //     +"<p>The game field consists of an arena having dimensions 224 cm X 228 cm (lxb). It consists of the following:</p>"
+                                //     +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                //         +"<li>This round will be based on designing and implementing the circuit of which problem statement is been given to you on proteus. Proteus is a software tool suite used for electronic design automation. Designing becomes easy when it comes to proteus also it is the first step toward it.</li>"
+                                //         +"<li>Each step towards designing a circuit contains marks. Also, there will be time constraint for the same.</li>"
+                                //         +"<li>After this, final result will be generated by taking a definite proportion of marks scored in both round1 and round2.</li>"
         
-                                    +"</ol>"
+                                //     +"</ol>"
                                    
                                 +"</p>",
             synopsis: "<p>"
@@ -777,13 +773,13 @@ module.exports.competitions = {
             otherURL: null, 
         },
         {
-            eventUrl: 'lfr',
+            eventUrl: 'lwf',
             fee: 250,
             paymentURL: true,
             clubName: "Robotics",
-            eventName: "LFR",
-            displayName: "LFR",
-            payName: "LFR",
+            eventName: "LWF",
+            displayName: "Line-Wall Follower",
+            payName: "LWF",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 4,
@@ -824,7 +820,7 @@ module.exports.competitions = {
 
                                 +"</p>",
             synopsis: "<p>"
-                            +"An autonomous bot that follows black lines on white surface. It is an automated guided bot that follows visual lines embedded on the floor. The bot must be able to detect particular line and keep following it." 
+                            +"An autonomous bot that follows wall and black lines on white surface. It is an automated guided bot that follows visual lines embedded on the floor. The bot must be able to detect particular line and keep following it." 
                         +"</p>",
             rules:  "<p>"
             +"<b style='color: #4C4D64'>General rules</b>"
@@ -954,10 +950,14 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
            query: "<p class='link-text'>"
-                        // +"Rishabh Jain: +91-9521611320"
-                        // +"<br>"
-                        // +"Kritika Jain: +91-9131919809"
-                        // +"<br><br>"
+                        +"Siddharth Bhati : 8178140008"
+                        +"<br>"
+                        +"Kajal Agarwal : 8769647196"
+                        +"<br>"
+                        +"Shivam Saraswat : 9660484293"
+                        +"<br>"
+                        +"Satakshi : 7619726177"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -1049,10 +1049,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
            query: "<p class='link-text'>"
-                        // +"Ashish Raj Gupta: +91-7300044970"
-                        // +"<br>"
-                        // +"Karan Singh Chouhan: +91-8561875907"
-                        // +"<br><br>"
+                        +"Abhishek Thakur : +91-9234643577"
+                        +"<br>"
+                        +"Madhu Vinay : +91-9533077387"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -1238,10 +1238,8 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        // +"Yogesh Modi: +91-9784877567"
-                        // +"<br>"
-                        // +"Neha Jhamtani: +91-8769081710"
-                        // +"<br><br>"
+                        +"Shaivya Bora : 8107667477"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -1257,7 +1255,7 @@ module.exports.competitions = {
             payName: "TP",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
-            memberUpperLimit: 5,
+            memberUpperLimit: 4,
             memberLowerLimit: 1,
             prizeWorth: '₹ 25,000/-', 
             eventFee: '₹ 250/-',    
@@ -1326,12 +1324,14 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
            query: "<p class='link-text'>"
-                        // +"Khyati Doshi: +91-9636445125"
-                        // +"<br>"
-                        // +"Puru upadhyay: +91-9166015620"
-                        // +"<br>"
-                        // +"Robin Singh: +91-7011028780"
-                        // +"<br><br>"
+                        +"Robin Singh : +91 7011028780"
+                        +"<br>"
+                        +"Mohit Sharma : +91 9636183734"
+                        +"<br>"
+                        +"Arpit Jain : +91 7740911425"
+                        +"<br>"
+                        +"Prachi Singhal : +91-7611859725"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -1344,12 +1344,12 @@ module.exports.competitions = {
             paymentURL: true,
             clubName: "Robotics",
             eventName: "IC Engine",
-            displayName: "IC Engine",
+            displayName: "IC Engine Car",
             payName: "IC",
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
-            memberUpperLimit: 2,
-            memberLowerLimit: 2,
+            memberUpperLimit: 6,
+            memberLowerLimit: 1,
             prizeWorth: null,
             eventFee: '₹ 500/-',
             synopsis:  "<p>"
@@ -1359,7 +1359,7 @@ module.exports.competitions = {
                         +"</p>",
             eventDescription: "<p>"
                                  +"<p>"
-                                      +"The Literary Committee offers you the perfect opportunity to join the legacy of intellectual debaters by keeping your own opinion and firmly presenting your unhindered stance on the burning debatable topics of the current world. We welcome you to be a part of the flagship literary event of Plinth 2019.." 
+                                      +"A wireless RC Car, powered only by an IC engine that conforms to the NITTRO standards is required for partcipation by each team. The event is to complete and compete with other opponents on an off-road dirt track with many obstacles in the least possible time and to score maximum points." 
                                  +"</p>"
                              +"</p>",
             rules:   "<p>"
@@ -1868,8 +1868,8 @@ module.exports.competitionUrl = {
             eventUrl: '/droneobstruction',
         },
         {
-            eventName: 'LFR',
-            eventUrl: '/lfr',
+            eventName: 'LWF',
+            eventUrl: '/lwf',
         },
         {
             eventName: 'Maze Solver',
@@ -1889,7 +1889,7 @@ module.exports.competitionUrl = {
         },
 
         {
-            eventName: 'IC Engine',
+            eventName: 'IC Engine Car',
             eventUrl: '/icengine',
         },
 

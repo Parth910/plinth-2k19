@@ -782,7 +782,7 @@ exports.saveSheet = function (result) {
             case 'RW':
             case 'RS':
             case 'DO':
-            case 'LFR':
+            case 'LWF':
             case 'MS':
             case 'RR':
             case 'RCP':
@@ -975,7 +975,7 @@ exports.updateSheet = function (result) {
             case 'RW':
             case 'RS':
             case 'DO':
-            case 'LFR':
+            case 'LWF':
             case 'MS':
             case 'RR':
             case 'RCP':
