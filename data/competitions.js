@@ -323,9 +323,25 @@ module.exports.competitions = {
                             
                         +"</p>",
             rules:  "<p>"
+            +"<b style='color: #4C4D64'>General Rules</b>"
+            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                +"<li>The competition will be played on a knock-out basis.</li>"
+                +"<li>The bot will be inspected for safety before the event begins. If found to be unsafe for the participants/spectators, it will be discarded.</li>"
+                +"<li>The organizers reserve the right to change any or all of the rules as they deem fit. Changes in rules, if any, will be highlighted on the website.</li>"
+                +"<li>Violation of any of the rules will result in immediate disqualification.</li>"
+                +"<li>The maximum time limit for the clash of combatants inside the arena is 6 minutes.</li>"
+                +"<li>A bot will be declared immobile (out) if it cannot exhibit linear motion of at least one inch within 30 seconds. A bot with one side of its drive train disabled will not be counted out if it can demonstrate some degree of controlled movement.</li>"
+                +"<li>Teams that are not ready when called for battle will be considered to have declared a walkover, and will receive no points.</li>"
+                +"<li>The bot cannot be split into two sub-units. Two distinct parts connected by a flexible cable will be considered separate units.</li>"
+                +"<li>Damaging the arena will lead to immediate disqualification.Lego kits, readymade kits, car bases and development boards are not permitted. Readymade gear boxes are permitted.</li>"
+                +"<li>In all cases, the judges' decision will be final and binding.</li>"
+                +"<li>The team can comprise of a maximum of 4 students from the same institute or other institutes as well.</li>"
+                +"<li>The teams are not allowed to tamper with the opponent’s robot or hinder at their time of the competition.</li>"
+                
+            +"</ol>"
                         +"<b style='color: #4C4D64'>Robot Specification</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>The machine should fit in a box of dimension 350mm x 350mm x 500 mm (l x b x h) at any given point during the match. The external device used to control the machine or any external tank is not included in the size constraint</li>"
+                            +"<li>The machine should fit in a box of dimension 350mm x 350mm x 500 mm (l x b x h) at any given point during the match. The external device used to control the machine or any external tank is not included in the size constraint.</li>"
                             +"<li>The machine should not exceed 45 kilograms of weight excluding the weight of pneumatic/hydraulic source/tank and batteries, if any. Weight of remote controller will not be counted.</li>"
                             +"<li>Jumping and hopping is not allowed.Flying (using airfoil, helium balloons, ornithopters, etc.) is not allowed.</li>"
                             +"<li>The weight of adapters and the remote controller will not be included in this constraint Mobility.</li>"
@@ -777,31 +793,62 @@ module.exports.competitions = {
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
-                                        +"Design and fabricate an autonomous vehicle capable of navigating efficiently through guided white lines on a Black floor.. The vehicle must be able to effectively follow the guiding path. The racers will be tested on speed and accuracy of path following."
+                                        +"The participating teams are required to build an autonomous robot that can follow the line and wall on a contrasting background(generally black lines on a white background or vice-versa). The main objective will be to test whether the robot can follow the track comprising of straight lines, curves, angles of different degrees, line breaks and walls. "
                                     +"</p>"
-                                    +"<b style='color: #4C4D64'>Description</b>"
-                                    +"<p>"
-                                        +"Line following Robot is a machine that can follow a path. The path can be visible like a black line ( Width: 3.5 cm ) on a white surface or it can be invisible like a magnetic field."
-                                    +"</p>"
-                                    +"<p>"
-                                        +"Sensing a line and maneuvering the robot to stay on course, while constantly correcting wrong moves using feedback mechanism forms a simple yet effective closed loop system."
-                                    +"</p>" 
-                                   
-                                    // +"<b style='color: #4C4D64'>Track</b>"
-                                    // +"<br>"
-                                    // +"<div class='uk-text-center'><img src='media/lfr-track.png' /></div>"
+                                    +
+                                    "<p>This competition will have three rounds.</p>"
+                                    +"<b style='color: #4C4D64'>ROUND 1</b>"
+                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                        +"<li>This round will involve following the line which is 3 cm in width and the point description will be disclosed on the spot before the commencement of the event. Based on the total time taken and points gained, teams will be selected for the next level.</li>"
+                                       
+
+                                    +"</ol>"
+
+                                    +"<b style='color: #4C4D64'>ROUND 2 </b>"
+                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                     
+                                        +"<li>The line is to be followed upto a certain checkpoint after which the bot would have to follow  vertical walls to complete the track. The vertical walls would be approximately of 10 cm in height. A time penalty of 15 seconds will be imposed each time the bot touches the wall."
+                                        +"<ul style='list-style-type: decimal; padding-left:30px;'> "
+                                        +"<li>There will be a certain number of checkpoints. In case the bot deviates from the line, it is required to start again from the previous checkpoint.</li>"
+                                        +"<li>In case of any technical problem, you will be given specified time to rectify it. (Only once)</li>"
+                                        +"<li>Any kind of disturbance or violation of rules from a team’s side will lead to the disqualification of the team.</li>"
+                                        +"<li>Organizers reserve the rights to change the above rules as they deem fit.	</li>"
+                                        +"<li>In case of any discrepancies, the organizers’ decision will be final and binding.</li>"
+                                        +"</ul>"
+                                    +"</li>"
+                                       
+                                       
+                                       
+        
+                                    +"</ol>"
+
                                 +"</p>",
             synopsis: "<p>"
                             +"An autonomous bot that follows black lines on white surface. It is an automated guided bot that follows visual lines embedded on the floor. The bot must be able to detect particular line and keep following it." 
                         +"</p>",
             rules:  "<p>"
-                        +"<b style='color: #4C4D64'>General Instructions</b>"
+            +"<b style='color: #4C4D64'>General rules</b>"
+            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                +"<li>A team can comprise a maximum of 4 members. Students from different Institutes can form a team.</li>"
+                
+                
+            +"</ol>"
+                        +"<b style='color: #4C4D64'>Robot Specification</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>Max. Number of members in a team: 4</li>"
-                            +"<li>No human intervention is allowed in between the race.</li>"
-                            +"<li>Point description will be disclosed on the spot before commencement of event.</li>"
-                            +"<li>Points earned will be calculated within the time limit and free time will be provided only once if any technical problem occurs.</li>"
-                            +"<li>In case of any discrepancies organiser’s decision will be final and binding.</li>"
+                            +"<li>The bot should fit in a box of dimension 30X25X25 cm (lXbXh).</li>"
+                            +"<li>No readymade mechanism is allowed for the bot construction</li>"
+                            +"<li>Bots are not allowed to fly or jump and only wheels are allowed for locomotion</li>"
+                            +"<li>During the run, no damage should be done by the bot to the arena in any way</li>"
+                            
+                        +"</ol>"
+                        
+                        +"<b style='color: #4C4D64'>Game Play</b>"
+                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                            +"<li>Only one autonomous bot per team is allowed.</li>"
+                            +"<li>No team member is allowed to touch the bot or enter the arena once the bot has started.	</li>"
+                            +"<li>Only one member of the team is allowed to handle the bot during the competition</li>"
+                            +"<li>Teams are not allowed to feed information about the arena to the bot, a team would be immediately disqualified if found doing so. However, contestants are allowed to adjust the sensors</li>"
+                            
                         +"</ol>"
                     +"</p>",
             judges: null,
@@ -885,25 +932,23 @@ module.exports.competitions = {
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>Only 1 member of the team is allowed to handle the bot.</li>"
                             +"<li>Participants are not allowed to keep anything inside the arena other than the bot.</li>"
-                            +"<li>The time measured by the organizers will be final and will be used for scoring the teams.</li>"
+                            +"<li>Laptops/personal computers are not allowed near the arena. Other Wi-Fi, Bluetooth, etc.devices must be switched off. The organizers hold the right to check for these devices and theirusage and disqualify the team.     </li>"
                             +"<li>Time measured by any contestant by any other means is not acceptable for scoring.</li>"
                             +"<li>In case of any disputes / discrepancies, the organizers’ decision will be final and binding.</li>"
-                            +"<li>The organizers reserve the rights to change any or all of the above rules as they deem fit.</li>"
-                            +"<li>No team is allowed to take photograph or record their run.</li>"
+                            
+                            +"<li>The organizers reserve the rights to change any or all of the above rules as they deem fit. Change in rules, if any will be highlighted on the website and notified to the registered teams.</li>"
                         +"</ol>"
                         
                         +"<b style='color: #4C4D64'>Bot Specification</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>Each team can have only one bot.</li>"
-                            +"<li>The bot must fit into a cube of side 24cm.</li>"
-                            +"<li>The bot must use only on-board power supply. No external off-board power supply is allowed.</li>"
-                            +"<li>The max voltage difference between any two points must not exceed 24V.</li>"
-                            +"<li>The bot must be fully autonomous with all powering and motoring mechanisms self-contained.</li>"
-                            +"<li>Human operators are not permitted to enter any information into the bot during the event. The bot must not communicate with any wireless device also.</li>"
-                            +"<li>The bot must be started by only one switch. However, a team can have a separate switch for restart.</li>"
-                            +"<li>The bot cannot be constructed using ready-made Lego kits or any ready-made mechanism. But you can make use of ready-made gear assemblies and sensors.</li>"
-                            +"<li>Violating this clause will lead to the disqualification of the machine.</li>"
-                            +"<li>There is no constraint on the weight of the bot.</li>"
+                            +"<li>The autonomous bot must fit into the box of dimension 220 mm X 220 mm X 220 mm (lxbxh).</li>"
+                            +"<li>Bot must be started individually by only one switch. However,a team may have an onboard switch for restart. This switch has to be shown to the organizer before the run.</li>"
+                            +"<li>Bot must have a red LED which will glow once it reaches the end zone of the arena.</li>"
+                            +"<li>During the run, the autonomous bot must not damage the arena in any way. It is not allowed to leave anything behind or make any marks while traversing the arena. Any bot found damaging the arena will be immediately disqualified. The final decision is at the discretion of the organizers. </li>"
+                            +"<li>Bot must have ‘on board’ power supply.</li>"
+                            +"<li>When using the electric power supply, the potential difference between any 2 points must not exceed 24 V at any point of time during the game. </li>"
+                            +"<li>The autonomous bot should not separate or split into two or more units. All bots/units which are touching each other or are in the starting point will be considered as one bot.</li>"
+                            +"<li>The Machine cannot be constructed using readymade ‘Lego kits’ or any readymade mechanism.But they can make use of readymade gear assemblies. Violating this clause will lead to disqualification of the team.</li>"
                         +"</ol>"
                         
                     +"</p>",
