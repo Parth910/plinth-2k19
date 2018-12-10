@@ -46,43 +46,43 @@ exports.pdf = function (result) {
         .text(': ' + result.tranId, 160, 190)
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
-        .text('Order ID ', 300, 190)
+        .text('Order ID ', 50, 220)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': ' + result.orderId, 370, 190)
+        .text(': ' + result.orderId, 160, 220)
 
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
-        .text('Event Name ', 50, 220)
+        .text('Event Name ', 50, 250)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': ' + result.event.eventName, 160, 220, { width: '140' })
+        .text(': ' + result.event.eventName, 160, 250, { width: '140' })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
-        .text('Date ', 300, 220)
+        .text('Date ', 300, 250)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': ' + dateFormat(result.date.paidAt, format), 370, 220)
+        .text(': ' + dateFormat(result.date.paidAt, format), 370, 250)
 
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
-        .text('Amount ', 50, 250)
+        .text('Amount ', 50, 280)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': INR ' + result.amount + ' /-', 160, 250)
+        .text(': INR ' + result.amount + ' /-', 160, 280)
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
-        .text('Status ', 300, 250)
+        .text('Status ', 300, 280)
     if (result.status === 'TXN_SUCCESS') {
         doc.font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': Success', 370, 250)
+            .text(': Success', 370, 280)
     } else if (result.status === 'TXN_FAILURE') {
         doc.font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': Failed', 370, 250)
+            .text(': Failed', 370, 280)
     } else {
         doc.font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': Open', 370, 250)
+            .text(': Open', 370, 280)
     }
 
     if (result.status === 'TXN_SUCCESS') {
         doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-            .text('Event Details', 50, 290, { underline: true })
+            .text('Event Details', 50, 300, { underline: true })
 
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Organizer ', 50, 320)
