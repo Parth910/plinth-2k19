@@ -29,8 +29,8 @@ router.get('/admin/check/:id', Verify.verifyOrdinaryUser, function (req, res) {
         var request = require('request');
 
         request.post(url, function (error, response, body) {
-            res.json(JSON.parse(body));
-            return;
+        res.json(JSON.parse(body));
+        return;
         });
 
     });
