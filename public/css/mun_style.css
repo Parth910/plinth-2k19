@@ -1799,7 +1799,7 @@ only screen and (hover: none) {
 }
 
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 5* 4rem) / 4);
 }
 
 .row .col-2-of-3 {
