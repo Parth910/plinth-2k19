@@ -21,7 +21,8 @@ $('input[type="radio"]').click(function () {
             .end()
             .append('<option value="DISEC">DISEC</option>' +
                 '<option value="UNHRC">UNHRC</option>' +
-                '<option value="LOK SABHA">LOK SABHA</option>'); 
+                '<option value="LOK SABHA">LOK SABHA</option>' +
+                '<option value="The Stakeholders Meet">The Stakeholders Meet</option>'); 
 
         $('#amount').text('Amount :₹ 1500/-');
         $('#hidden-matter').show();
