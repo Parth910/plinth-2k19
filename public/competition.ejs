@@ -454,12 +454,21 @@
                 <div id="content">
 
                     <div class="row">
+                        <% if(competition.payName == 'ENCS'){ %>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">Codechef User Handle*</label>
+                                <input class="form-control input-md" id="teamName" type="text" required>
+                            </div>
+                        </div>
+                        <% } else { %>
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label class="control-label">Team Name*</label>
                                 <input class="form-control input-md" id="teamName" type="text" required>
                             </div>
                         </div>
+                        <% } %>
                         <div class="col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label class="control-label" for="teamSize">Team Size*</label>

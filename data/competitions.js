@@ -3,14 +3,14 @@ module.exports.competitions = {
         {
 
             eventUrl: 'enigma',
-            fee:null,
-            paymentURL: null,
+            fee:0,
+            paymentURL: true,
             clubName: "Coding",
             eventName: "Enigma",
             displayName: "Enigma – The Plinth CodeSprint",
             payName: "ENCS",
             eventDate: "<p>"
-                            +"Online Round - 21:00, 15<sup>th</sup> Jan, 2019"
+                            +"Online Round - 5th<sup>th</sup> Jan, 2019"
                             +"<br>"
                             +"Onsite Round - 20<sup>th</sup> Jan, 2019"
                         +"</p>",
@@ -18,7 +18,7 @@ module.exports.competitions = {
             memberUpperLimit: 1,
             memberLowerLimit: 1,
             prizeWorth: '₹ 15,000/-',
-            eventFee: null,
+            eventFee: '₹ 0 (Online Round)',
             synopsis:  "<p>"
                             +"Is your life summarised by the 4 words - Eat, Sleep, Code, Repeat? Want to prove yourself to be The Ultimate Code Master?"
                         +"</p>"
@@ -29,7 +29,7 @@ module.exports.competitions = {
                             +"This solo coding competition, is designed for the masterminds who think they perform best alone."
                         +"</p>"
                         +"<p>"
-                            +"So, if this is a challenge you dare to take on, then register yourself in this ultimate CodeSprint !"
+                            +"So, if this is a challenge you dare to take on, then register yourself in this ultimate CodeSprint!"
                         +"</p>",
             eventDescription: "<p>"
                                     +"The contest will involve 2 rounds – an online qualifier round and a final onsite battle!"
@@ -45,9 +45,9 @@ module.exports.competitions = {
                                 +"</p>"
                                 +"<p>"
                                     +"<b>P.S :</b> There is a special detail about the online round held on CodeChef that will be revealed soon! Stay tuned!"
-                                +"</p>",
-                                // +"<b>Platform Partner:</b>"
-                                // +"<p>Online: CodeChef</p>"
+                                +"</p>"
+                                +"<b>Platform Partner:</b>"
+                                +"<p>Online: CodeChef</p>",
                                 // +"<p>Onsite: GeeksForGeeks</p>",
             rules: "<p>"
                         +"<b>Key Details of Enigma – The Plinth CodeSprint'19</b>"
@@ -610,12 +610,12 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'circuitdesign',
-            fee:600,
+            fee:250,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Circuit Designing",
             displayName: "Circuit Designing",
-            payName: "WR",
+            payName: "CD",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
@@ -676,7 +676,7 @@ module.exports.competitions = {
         },
         {
             eventUrl: 'waterrocket',
-            fee:600,
+            fee:250,
             paymentURL: true,
             clubName: "Robotics",
             eventName: "Water Rocket",
@@ -1459,7 +1459,7 @@ module.exports.competitions = {
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
-            memberLowerLimit: 2,
+            memberLowerLimit: 1,
             prizeWorth: null,
             eventFee: '₹ 200/-',
             synopsis:  "<p>"
@@ -1478,7 +1478,7 @@ module.exports.competitions = {
                         +"<p>"
                             +"<ol style='list-style-type: disc;padding-left:20px;'>"
                                 +"<li>Teams can’t be of more than 2 members.</li>"
-                                +"<li>It is compulsory for both the team members to register individually for the workshop.</li>"
+                                //+"<li>It is compulsory for both the team members to register individually for the workshop.</li>"
                                 +"<li>No Plagiarism allowed.</li>"
                                 +"<li>The story has to be new and original. Famous characters can be present in the story.</li>"
                                 +"<li>No abusive content.</li>"
@@ -1729,14 +1729,14 @@ module.exports.competitions = {
         {
 
             eventUrl: 'iupc',
-            fee:null,
-            paymentURL: null,
+            fee:0,
+            paymentURL: true,
             clubName: "Coding",
             eventName: "IUPC",
-            displayName: "Inter University Programming Challenge(IUPC)",
+            displayName: "IUPC",
             payName: "IUPC",
             eventDate: "<p>"
-                            +"Online Round - 5<sup>th</sup> Jan, 2019"
+                            +"Online Round - 6<sup>th</sup> Jan, 2019"
                             +"<br>"
                             +"Onsite Round - 19<sup>st</sup> Jan, 2019"
                         +"</p>",
@@ -1744,7 +1744,7 @@ module.exports.competitions = {
             memberUpperLimit: 3,
             memberLowerLimit: 1,
             prizeWorth: '₹ 20,000/-',
-            eventFee: null,
+            eventFee: '₹0 (Online Round)',
             synopsis:  "<p>"
                             +"See logic in everything around? Is your daily language “Syntax”?"
                         +"</p>"
@@ -1765,9 +1765,9 @@ module.exports.competitions = {
                                 +"</p>"
                                 +"<p>"
                                     +"Certificates and prizes will be awarded to the top 3 winners of the onsite round."
-                                +"</p>",
-                                // +"<b style='color: #4C4D64'>Platform Partner:</b>"
-                                // +"<p>HackerEarth</p>",
+                                +"</p>"
+                                +"<b style='color: #4C4D64'>Platform Partner:</b>"
+                                +"<p>Codechef</p>",
             rules: "<p>"
                         +"<b style='color: #4C4D64'>Key Details of IUPC'19</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"

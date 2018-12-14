@@ -768,9 +768,9 @@ exports.saveSheet = function (result) {
 
 
             case 'IUPC':
-                break;
+                
             case 'ENCS':
-                break;
+                
 
             case 'RST':
 
@@ -788,6 +788,10 @@ exports.saveSheet = function (result) {
             case 'RCP':
             case 'PRA':
             case 'TP':
+            case 'IC':
+            case 'CD':
+            case 'WR':
+            case 'COM':
 
                 sheetID = process.env['SHEET_' + ('' + result.event.clubName).toUpperCase()];
                 ra = result.event.payName;
@@ -962,9 +966,9 @@ exports.updateSheet = function (result) {
 
 
             case 'IUPC':
-                break;
+                
             case 'ENCS':
-                break;
+                
 
             case 'RST':
             case 'INT':
@@ -981,6 +985,10 @@ exports.updateSheet = function (result) {
             case 'RCP':
             case 'PRA':
             case 'TP':
+            case 'IC':
+            case 'CD':
+            case 'WR':
+            case 'COM':
 
                 sheetID = process.env['SHEET_' + ('' + result.event.clubName).toUpperCase()];
                 ra = result.sheet;
