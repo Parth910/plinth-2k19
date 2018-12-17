@@ -195,14 +195,14 @@ router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, fu
 
 
 router.get('/workshops', Verify.verifyOrdinaryUser, function (req, res, next) {
-    //var workshopUrl = require('../data/workshops').workshopUrl;
+    var workshopUrl = require('../data/workshops').workshopUrl;
 
     if (req.decoded.sub === "") {
         isLoggedIn = false;
         res.render('workshops', {
             "page": 'workshops',
             "isLoggedIn": isLoggedIn,
-            //"workshopUrl" : workshopUrl.workshops,
+            "workshopUrl": workshopUrl.workshops,
         });
     } else {
         User.findOne({
@@ -219,8 +219,72 @@ router.get('/workshops', Verify.verifyOrdinaryUser, function (req, res, next) {
                     "page": 'workshops',
                     "isLoggedIn": isLoggedIn,
                     "user": user,
-                    //"workshopUrl" : workshopUrl.workshops,
+                    "workshopUrl": workshopUrl.workshops,
                 });
+            }
+        });
+    }
+
+
+});
+
+router.get('/workshops/:workshop', Verify.verifyOrdinaryUser, function (req, res, next) {
+
+    var workshopDetail = require('../data/workshops').workshops;
+    var worskhops = ['aiandml'];
+    var workshop = req.params.workshop;
+    var detail;
+    var valid = false;
+
+    if (worskhops.indexOf(workshop) > -1) {
+
+
+        valid = true;
+
+        workshopDetail.workshops.forEach(element => {
+
+            if (element.eventUrl == workshop) {
+
+                detail = element;
+            }
+        });
+
+
+    }
+
+
+    if (req.decoded.sub === "") {
+        isLoggedIn = false;
+        if (valid) {
+            res.render('workshop', {
+                "page": workshop,
+                "isLoggedIn": isLoggedIn,
+                "workshop": detail,
+            });
+        } else {
+            res.redirect('/404');
+        }
+    } else {
+        User.findOne({
+            'email': req.decoded.sub
+        }, function (err, user) {
+
+            isLoggedIn = user.valid;
+            // if there are any errors, return the error
+            if (err)
+                return done(err);
+            // check to see if theres already a user with that email
+            if (user) {
+                if (valid) {
+                    res.render('workshop', {
+                        "page": workshop,
+                        "isLoggedIn": isLoggedIn,
+                        "user": user,
+                        "workshop": detail,
+                    });
+                } else {
+                    res.redirect('/404');
+                }
             }
         });
     }

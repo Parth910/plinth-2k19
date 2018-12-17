@@ -3,9 +3,13 @@
 
 <head>
     <% include partials/head %>
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/competitions.css">
+    <link rel="stylesheet" href="./css/categories.css">
     <link rel="stylesheet" href="./css/workshops.css">
+    <script>
+        var urls = <%- JSON.stringify(workshopUrl) %> ;
 
+    </script>
 </head>
 
 <body>
@@ -40,14 +44,22 @@
     <div id="webgl-output"></div>
 
     <div class="bg-mask"></div>
-
-
-    <h1 style="padding-top:15vh; text-align: center">Workshops</h1>
-    <div class="conatiner">
-        <div class="row">
-            <div class="col col-12">
-                <div class="reveal_txt text-center" style="padding-top:25vh;">
-                    <h2 class="align-middle" style="color:#4C4D64">Revealing Soon!</h2>
+    <h1 style="padding-top:15vh; text-align: center; transform: scale(1);">Workshops</h1>
+    <div class="main-content">
+        <div class="scroll-content" id="style-1">
+            <div class="inner-content ch-grid">
+                <div class="text-padding" style="transform: scale(1);">
+                    <div class="row fhtc">
+                        <div class="col-sm-12 col-lg-2 col-md-3">
+                            <li>
+                                <div class="ch-item ch-img-aiandml more-details">
+                                    <div class="ch-info">
+                                        <h3 class="link">AI and ML - Python</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,6 +73,7 @@
     <script src="js/main.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/workshop.js"></script>
     <script>
         window.addEventListener('load', function () {
 
@@ -147,6 +160,7 @@
             remove();
         }
     </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="js/js.js"></script>
     <script>
@@ -158,7 +172,6 @@
         gtag('js', new Date());
         gtag('config', 'UA-125190547-1');
     </script>
-
 </body>
 
 </html>

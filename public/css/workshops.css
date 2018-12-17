@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1024px){
+    .ch-grid{
+        width: 104%;
+    }
+}
+.ch-img-aiandml {
+    background-image: url(../media/ainandml.png);
+}

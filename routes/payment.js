@@ -179,27 +179,8 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                     case 'WR':
                         payment.amount = 250;
                         break;
-                    case 'IOT':
+                    case 'AIML':
                         payment.amount = 600;
-                        break;
-                    case 'EH':
-                        payment.amount = 600;
-                        break;
-                    case 'AI':
-                        payment.amount = 700;
-                        break;
-                    case 'BB':
-                        payment.amount = 500;
-                        break;
-                    case 'TSS':
-
-
-                        payment.amount = 500;
-
-
-                        break;
-                    case 'UNE':
-                        payment.amount = 200;
                         break;
                     default:
                         payment.amount = 1000;

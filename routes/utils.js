@@ -813,30 +813,8 @@ exports.saveSheet = function (result) {
                 }
 
                 break;
-            case 'EH':
-            case 'BB':
-            case 'AI':
-            case 'IOT':
+            case 'AIML':
                 sheetID = process.env.SHEET_WORKSHOPS;
-                ra = result.event.payName;
-                value =
-                    [
-                        result.date.createdAt,
-                        result.date.paidAt,
-                        result.orderId,
-                        result.status,
-                        result.amount,
-                        result.team[0].name,
-                        result.team[0].email,
-                        result.team[0].phoneNumber,
-                        result.team[0].college,
-                        result.team[0].collegeId,
-                        result.accomodation,
-                    ];
-                break;
-            case 'UNE':    
-            case 'TSS':
-                sheetID = process.env.SHEET_LITERATURE;
                 ra = result.event.payName;
                 value =
                     [
@@ -1010,30 +988,8 @@ exports.updateSheet = function (result) {
                 }
 
                 break;
-            case 'EH':
-            case 'BB':
-            case 'AI':
-            case 'IOT':
+            case 'AIML':
                 sheetID = process.env.SHEET_WORKSHOPS;
-                ra = result.sheet;
-                value =
-                    [
-                        result.date.createdAt,
-                        result.date.paidAt,
-                        result.orderId,
-                        result.status,
-                        result.amount,
-                        result.team[0].name,
-                        result.team[0].email,
-                        result.team[0].phoneNumber,
-                        result.team[0].college,
-                        result.team[0].collegeId,
-                        result.accomodation,
-                    ];
-                break;
-            case 'UNE':
-            case 'TSS':
-                sheetID = process.env.SHEET_LITERATURE;
                 ra = result.sheet;
                 value =
                     [

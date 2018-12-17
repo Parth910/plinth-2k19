@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/competition.css">
+    <% if(isLoggedIn){ %>
+    <script>
+        var name = <%- JSON.stringify(user.name) %> ;
+                    var email = <%- JSON.stringify(user.email) %> ;
+                    var contact = <%- JSON.stringify(user.phoneNumber) %> ;
+                    var college = <%- JSON.stringify(user.college) %> ;
+                </script>
+    <% } %>
+    <script>
+        var current;
+        var next;
+        var mevent = <%- JSON.stringify(workshop) %> ;
+    </script>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-ring"></div>
+    </div>
+    <% include partials/header %>
+
+    <!-- Shaders -->
+    <script id="shader-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+	    precision highp float;
+	    #endif
+	  void main(void) {
+	   gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+	  }
+	</script>
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 vertexPosition;
+
+	  uniform mat4 modelViewMatrix;
+	  uniform mat4 perspectiveMatrix;
+
+	  void main(void) {
+	    gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+	  }
+	</script>
+
+    <!-- three.js -->
+
+    <div id="webgl-output"></div>
+
+    <div class="bg-mask"></div>
+    <div class="row justify-content-center" style="padding-top:12vh; transform: scale(1);">
+        <div class="offset-md-1 col-md-1">
+            <span class="back-back-icon" id="backbtn">
+                <a href="javascript:history.back()">
+                    <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+                </a>
+            </span>
+        </div>
+        <div class="col-md-6 col-sm-12">
+
+            <h1>
+                <%- workshop.displayName %>
+            </h1>
+        </div>
+    </div>
+
+
+
+    <div class="main-content">
+        <div class="scroll-content" style="overflow-x: hidden" id="style-1">
+            <div class="inner-content">
+                <div class="text-padding" style="transform: scale(1);">
+
+                    <div class="row justify-content-center">
+                        <% if(workshop.eventFee != null ){ %>
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Fee
+                            :
+                            <strong>
+                                <%- workshop.eventFee %></strong>
+                        </div>
+                        <% } %>
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Date
+                            :
+                            <strong>
+                                <%- workshop.eventDate %></strong>
+                        </div>
+                        <div class="col-md-3 col-sm-12" style="text-align:center"><img src="./media/2arrow.png" style="padding-right:10px">Venue
+                            :
+                            <strong>
+                                <%- workshop.eventVenue %></strong>
+                        </div>
+
+                    </div>
+
+                    <!-- Competition Form -->
+                    <% if(workshop.paymentURL != null ){ %>
+                    <% if(isLoggedIn){ %>
+                    <div class="row justify-content-center" style="padding-top:10px">
+                        <div class="col-md-6 col-sm-12" style="text-align:center">
+                            <a data-toggle="modal" data-target="#register-workshops"><button id='event' class='btn-live btn-side'>Event
+                                    Registration</button></a>
+                        </div>
+                    </div>
+                    <% } else { %>
+                    <div class="row justify-content-center" style="padding-top:10px">
+                        <div class="col-md-6 col-sm-12" style="text-align:center">
+                            <a data-toggle="modal" data-target="#exampleModalCenter"><button id="comp_login" class='btn-side'>Register</button></a>
+                        </div>
+                    </div>
+                    <% } %>
+                    <% } %>
+
+
+                    <!-- Worshop Information -->
+                    <div class="row" style="padding-top: 5vh;">
+                        <div class="col-2" style="padding-left: 5px;">
+                            <ul>
+                                <li>
+                                    <a class='list-item' id="synopsis" href='#'>
+                                        Synopsis
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='list-item' id="more" href='#'>
+                                        Structure
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='list-item' id="rules" href='#'>
+                                        Benefits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='list-item' id="query" href='#'>
+                                        Query
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="offset-1 col-8">
+                            <div id="synopsiscontent">
+                                <%- workshop.synopsis %>
+                            </div>
+                            <div id="morecontent" class="d-none">
+                                <%- workshop.workshopContent %>
+                            </div>
+                            <div id="rulescontent" class="d-none">
+                                <%- workshop.benefits %>
+                            </div>
+                            <div id="querycontent" class="d-none">
+                                <%- workshop.query %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Form -->
+
+    <% if(isLoggedIn){ %>
+    <div class="modal fade" id="register-workshops" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal-title" style="text-align:center">
+                            <h3>
+                                <span>Registration Form</span>
+                            </h3>
+                            <div class="text-center">
+                                <h4>
+                                    <span class="eName">
+                                        <%- workshop.displayName %>
+                                    </span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form" class="form-horizontal">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="name">
+                                        Name*</label>
+                                    <input class="form-control input-md" id="name" type="text" value="<%- user.name %>"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">
+                                        Email*</label>
+
+                                    <input class="form-control input-md" id="email" type="email" value="<%- user.email %>"
+                                        required> </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="number">
+                                        Contact Number*</label>
+
+                                    <input class="form-control input-md" id="number" type="number" value="<%- user.phoneNumber %>"
+                                        required> </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="college">
+                                        College*</label>
+
+                                    <input class="form-control input-md" id="college" type="text" value="<%- user.college %>"
+                                        required> </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="collegeid">
+                                        College ID</label>
+
+                                    <input class="form-control input-md" id="collegeid" type="text"> </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label">Accomodation*</label>
+
+                                    <select class="form-control" id="accomodation" required>
+                                        <option value="Yes" selected>Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label">Referral Code
+                                    </label>
+
+                                    <input class="form-control input-md" id="referral" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <div id="error">
+                        <div class="text-center">* Please fill all the
+                            required
+                            inputs.
+                        </div>
+                        <br>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+
+                </div>
+                </form>
+                <input type="hidden" class="form-control input-md" id="mEmail" value="<%- user.email %>">
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+    <!-- Registration Confirmation Modal| Payment Form -->
+    <div class="modal fade" id="pay-workshops" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal-title">
+                            <h2 class="text-center heading-text">
+                                <span>Payment Form</span>
+                            </h2>
+
+                            <div class="text-center black-fill">
+                                <span class="eName">
+                                    <%- workshop.displayName %>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <p> Registration Success!!!</p>
+                    <div>Order Id:
+                        <strong><span id="payOrderId" class="inputt-text"></span></strong>
+                    </div>
+                    <div>Amount:
+                        <strong><span class="inputt-text">₹
+                                <span id="payAmount"></span>/-</span></strong>
+                    </div>
+
+                    <p class="inputt-text">
+                        <span class="labell-text">Note:</span>
+                        If you choose to pay later, visit
+                        your profile and click Pay against
+                        relevant Event Registration.
+                    </p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button" id="cancel-button">Pay
+                        Later</button>
+                    <button type="submit" class="btn btn-primary" id="pay-button">Pay
+                        Now</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer %>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/sphere.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/competition.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/workshops.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+
+            var el = document.querySelector('.preloader');
+            el.style.opacity = 1;
+
+            (function fade() {
+                if ((el.style.opacity -= 0.15) < 0) {
+                    window.scrollTo(0, 0);
+                    el.style.display = "none";
+                    controls.redraw();
+                    controls.rend();
+                    controls.start();
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        });
+    </script>
+
+    <script>
+        if (screen.width > 1024) {
+            function remove() {
+                var elem = document.getElementById('rlbuttn');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        var elem = document.getElementById('rlbuttn_menu');
+        if (elem != null) {
+            if (screen.width > 1024) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
+        }
+    </script>
+
+    <script>
+        var elem = document.getElementById('faqbtn_rm');
+        if (elem != null) {
+            if (screen.width < 500) {
+                function remove() {
+
+                    elem.parentNode.removeChild(elem);
+                    return false;
+                }
+                remove();
+            }
+        }
+    </script>
+    <script>
+        if (screen.width > 500) {
+            function remove() {
+                var elem = document.getElementById('faq_rm');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width < 769) {
+            function remove() {
+                var elem = document.getElementById('seprate');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+    <script>
+        if (screen.width > 769) {
+            function remove() {
+                var elem = document.getElementById('mobsep');
+                elem.parentNode.removeChild(elem);
+                return false;
+            }
+            remove();
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="js/js.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-125190547-1');
+    </script>
+</body>
+
+</html>
