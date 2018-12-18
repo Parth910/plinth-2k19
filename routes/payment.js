@@ -353,6 +353,17 @@ router.post('/response', Verify.verifyOrdinaryUser, function (req, res) {
                     });
                 }
 
+                if (result.accomodation == 'Yes' || result.accomodation == 'YES') {
+                    Utils.accSheet({
+                        date: result.date.paidAt,
+                        email: result.email,
+                        orderId: result.orderId,
+                        status: result.status,
+                        team: result.teamName,
+                        teamsize: result.teamSize,
+                    });
+                }
+
             }
         });
     } else {

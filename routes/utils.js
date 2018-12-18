@@ -1121,3 +1121,46 @@ exports.resSheet = function (result) {
 
     });
 };
+
+exports.accSheet = function (result) {
+
+    sheetAuth.authenticate().then((auth) => {
+
+
+        var sheetID;
+        var ra;
+        var value;
+ 
+                sheetID = process.env.SHEET_ACCOMODATION;
+                ra = 'ACC';
+                value =
+                    [
+                        result.date,
+                        result.email,
+                        result.orderId,
+                        result.status,
+                        result.team,
+                        result.teamsize,
+                    ];
+                
+        console.log(ra);
+        var sheets = google.sheets('v4');
+        sheets.spreadsheets.values.append({
+            auth: auth,
+            spreadsheetId: sheetID,
+            range: ra + '!A3:B',
+            valueInputOption: "USER_ENTERED",
+            resource: {
+                values: [value]
+            }
+        }, (err, response) => {
+            if (err) {
+                console.log('The API returned an error: ' + err);
+                return;
+            } else {
+                console.log("Appended");
+            }
+        });
+
+    });
+};
