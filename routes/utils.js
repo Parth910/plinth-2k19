@@ -1051,6 +1051,7 @@ exports.capSheet = function (result) {
                         result.name,
                         result.orderId,
                         result.status,
+                        result.amount
                     ];
                 
         console.log(ra);

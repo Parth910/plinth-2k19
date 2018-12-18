@@ -350,6 +350,7 @@ router.post('/response', Verify.verifyOrdinaryUser, function (req, res) {
                         name: result.referrer,
                         orderId: result.orderId,
                         status: result.status,
+                        amount: result.amount
                     });
                 }
 
