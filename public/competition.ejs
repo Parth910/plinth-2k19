@@ -655,18 +655,26 @@
                     </div>
 
                     <p class="inputt-text">
+                        <% if(competition.clubName == 'Coding'){ %>
+                        <span class="labell-text">Note:</span>
+                        Online round is free event. There will be fee for onsite round, that would be notified later.
+                        <% } else { %>
                         <span class="labell-text">Note:</span>
                         If you choose to pay later, visit
                         your profile and click Pay against
                         relevant Event Registration.
+                        <% } %>
                     </p>
                 </div>
                 <div class="modal-footer text-center">
+                    <% if(competition.clubName == 'Coding'){ %>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <% } else { %>
                     <button class="btn btn-secondary" data-dismiss="modal" type="button" id="cancel-button">Pay
                         Later</button>
                     <button type="submit" class="btn btn-primary" id="pay-button">Pay
                         Now</button>
-
+                    <% } %>
                 </div>
             </div>
         </div>
