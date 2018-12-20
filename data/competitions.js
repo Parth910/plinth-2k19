@@ -137,7 +137,7 @@ module.exports.competitions = {
             eventUrl: 'sif',
             fee:{
                 startup: 1200,
-                student: 150,
+                student: 100,
             },
             paymentURL: true,
             clubName: "Management",
@@ -149,7 +149,7 @@ module.exports.competitions = {
             memberUpperLimit: 1,
             memberLowerLimit: 1,
             prizeWorth: null,
-            eventFee: '<br>₹ 150/-  Students <br>   ₹ 1200/-  Startups',
+            eventFee: '<br>₹ 100/-  Students <br>   ₹ 1200/-  Startups',
             synopsis: "<p>Startup intern fair is a one-stop place for getting a chance to do an internship in some of the well-known and budding startups of the country. Ranging from technical to a non-technical domain, one can select the internship of their genre, get screened and get a chance to grab their favorite internship. SIF aims to provide a hassle free and an aggregated hiring process. The time has come to put an end to your impasse and land up in your dream internship.</p>",
             eventDescription: "<p>Are you capable of making the next big app or writing geeky codes to build an awesome application or working out the next business model or writing beautiful blogs or are you too convincing to rephrase somebody's opinion but simply whiling away your time finding the best place to showcase your skills? Well, the time has come to put an end to your impasse.</p><p>Startup Intern Fair aims at connecting the budding startups looking out for their Jarvis to help them reach the level they have envisioned, with the young students waiting for the opportunities to enhance their skill set. Just like a fair, startups would set up their stall and screen the students based on their resume and personal interaction and if you have got what they require, then you might land up in your favourite internship be it technical , management or content writing.</p>",
             rules: "<p>"

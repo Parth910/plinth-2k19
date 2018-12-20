@@ -120,7 +120,7 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                         if (payment.team[0].type == 'Startup') {
                             payment.amount = 1200;
                         } else {
-                            payment.amount = 150;
+                            payment.amount = 100;
                         }
                         break;
                     case 'INT':
