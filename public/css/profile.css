@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden !important;
+}
+
 .table-margin {
   margin-left: 15%;
   margin-right: 15%;
@@ -83,9 +88,37 @@
 #about {
   padding-left: 16%;
 }
+
 .heading {
   /* font-size: 3.0vh;
   margin-top: 2% !important; */
   color: #4C4D64;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 379px) {
+  .main-content {
+    width: 102% !important;
+  }
+
+  .text-padding {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
+  .table {
+    margin-left: -6px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 380px) {
+  .main-content {
+    width: 103% !important;
+
+  }
+
+  .text-padding {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
 }
