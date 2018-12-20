@@ -226,7 +226,7 @@ button:focus {
 }
 
 .dropdown-menu {
-    background: rgba(51, 55, 69, 0.80);
+    background: rgba(51, 55, 69, 1);
     min-width: 8em;
     color: #fff;
 }
@@ -245,7 +245,11 @@ button:focus {
         font-size: 20px !important;
     }
     .cryptex{
-        margin-top: 15% !important;
+        margin-top: 5% !important;
+    }
+    .small{
+        font-size: 10px !important;
+        font-weight: bold;
     }
 }
 
@@ -321,6 +325,7 @@ button:focus {
 
 #desk-nav ul li {
     display: inline-flex;
+    margin-left: -50px;
 }
 
 
@@ -377,6 +382,7 @@ button:focus {
 
 .small {
     font-size: 20px;
+    padding-top: 10px;
 }
 
 .center-padding {

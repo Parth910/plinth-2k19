@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="./css/brain.css">
     <link rel="stylesheet" href="./css/cryptex.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
@@ -101,9 +102,8 @@
         </div>
 
         <% include partials/headercryp %>
-        <div class="home-delay">
             <div class="container">
-                <div class="plinth-text">
+                <div class="plinth-text animated fadeIn delay-4s">
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <p>
@@ -118,13 +118,40 @@
                 <div class="cryptex">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <span>Cryptex</span>
+                            <span class="animated fadeIn delay-5s">Cryptex</span>
+                            <p class="textp small small-padd animated flipInX slower delay-5s">
+                                Get ready, all set to dive into the vast ocean of web hunt to unravel the secrets.<br>
+                                This whole internet is yours, but mind you, the elusive clues are bound to leave you
+                                stumped.
+                            </p>
+                            <p class="textp small small-padd animated flipInX slower delay-5s">
+                                <strong><em>So, ready to accept the challenge?</em></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cryptex-play-btn animated lightSpeedIn slower delay-5s">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <% if(isLoggedIn){ %>
+                            <% if(newUser){ %>
+                            <a class="btn btn-secondary" onclick="startGame()">
+                                Start the Game!
+                            </a>
+                            <% }else{ %>
+                            <a class="btn btn-secondary button-font" href="/cryptex/play">
+                                Continue Playing ...
+                            </a>
+                            <% } %>
+                            <% } else { %>
+                            <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login to play!</a>
+                            <% } %>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
     </div>
 
 
