@@ -2,53 +2,113 @@
 <html lang="en">
 
 <head>
-    <% include partials/head %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= page.charAt(0).toUpperCase() + page.slice(1); %> | Plinth 2019, LNMIIT Jaipur | Techno-Management Literary
+        Fest</title>
+
+    <!-- Meta for SEO -->
+    <meta property="og:title" content="Plinth 2019, LNMIIT Jaipur | Techno-Management Literary Fest">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plinth.in">
+    <meta property="og:image" content="https://plinth.in/media/plinth.jpg">
+    <meta property="og:description" content="Plinth: 19th to 20th January. LNMIIT presents Techno-Management Literary Fest. Get ready for an awesome breathtaking journey.">
+
+    <meta name="author" content="Swarnim">
+    <meta name="theme-color" content="#090025">
+    <meta name="description" content="Plinth: 19th to 20th January. LNMIIT presents Techno-Management Literary Fest. Get ready for an awesome breathtaking journey.">
+    <meta name="keywords" content="plinth, plinth 2019, techfest, competitions, workshops, pro-night, jaipur, fest, India, Rajasthan, best, college, university, biggest, largest, lnmiit, mittal, students, robots, country, campaign, initiative, sponsors, games, artists,international, contacts, plinth lnmiit, plinth_lnmiit, plinthlnmiit, plinth.lnmiit, awesome, Science, Technology, lectures, talks, exhibitions, student outreach program, astronomy, robotics, startup, coding, iupc, codeswap, robowar, roborace, astro hunt, astro quiz, quiz, quizzinga, robosoccer, drone, maaze solver, transporter, rc place, sif, startup intern fair, intern fair, fair, tech shows , tech entertainment, tech extravaganza, revolution, social, exhibitions, 2k16, 2k17, 2k18, 2k19, 2016, 2017, 2016-17, 2017-18, 2018-19 plinth2k19, CAP, ca, cA, CAMPUS, campus ambassador, 2019, leader, mun, plinth 2k19">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@PlinthLNMIIT">
+    <meta name="twitter:creator" content="@nimbus_1212">
+
+    <meta name="twitter:title" content="Plinth 2019, LNMIIT Jaipur | Techno-Management Literary Fest">
+    <meta name="twitter:description" content="Come Join Your Friends on an awesome TechFest!! #Plinth #2k19.">
+    <meta name="twitter:image" content="https://plinth.in/media/plinth.png">
+    <meta name="twitter:domain" content="plinth.in">
+
+    <!-- Favicon -->
+    <link rel="favicon icon" href="/public/media/fav/favicon.ico" />
+    <link href="../media/fav/apple-icon-60x60.png" rel=apple-touch-icon sizes=60x60>
+    <link href="../media/fav/apple-icon-120x120.png" rel=apple-touch-icon sizes=120x120>
+    <link href="../media/fav/apple-icon-76x76.png" rel=apple-touch-icon sizes=76x76>
+    <link href="../media/fav/apple-icon-152x152.png" rel=apple-touch-icon sizes=152x152>
+    <link href="../media/fav/android-icon-192x192.png" rel="icon" type="image/png" sizes="192x192">
+    <meta name="msapplication-TileImage" content="https://plinth.in/media/ms-icon-144x144.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/brain.css">
+    <link rel="stylesheet" href="./css/cryptex.css">
 </head>
 
 <body>
+    <div class="loader" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="home">
+        <div id="index" class="full-window splash-screen" style="display: none">
+            <div class="brain-front">
+                <img class="image-1" src="./media/brain-front.png" alt="">
+                <img class="image-2" src="./media/brain-front-red.png" alt="">
+                <img class="image-3" src="./media/brain-front-blue.png" alt="">
+                <img class="image-4" src="./media/brain-front-purple.png" alt="">
+                <img class="image-5" src="./media/brain-front-laser.png" alt="">
+                <img class="image-6" src="./media/brain-front-line-1.png" alt="">
+                <img class="image-7" src="./media/brain-front-line-2.png" alt="">
+                <img class="image-8" src="./media/brain-front-fire.png" alt="">
+                <img class="image-9" src="./media/brain-front-fire-lines.png" alt="">
+                <img class="image-10" src="./media/brain-front-fire-lines-2.png" alt="">
+                <img class="image-11" src="./media/brain-front-synaps.png" alt="">
+                <img class="image-12" src="./media/brain-front-synaps-2.png" alt="">
+                <img class="image-13" src="./media/brain-front-line-3.png" alt="">
+            </div>
 
-    <div id="index" class="full-window splash-screen" style="display: none">
-        <div class="brain-front">
-            <img class="image-1" src="./media/brain-front.png" alt="">
-            <img class="image-2" src="./media/brain-front-red.png" alt="">
-            <img class="image-3" src="./media/brain-front-blue.png" alt="">
-            <img class="image-4" src="./media/brain-front-purple.png" alt="">
-            <img class="image-5" src="./media/brain-front-laser.png" alt="">
-            <img class="image-6" src="./media/brain-front-line-1.png" alt="">
-            <img class="image-7" src="./media/brain-front-line-2.png" alt="">
-            <img class="image-8" src="./media/brain-front-fire.png" alt="">
-            <img class="image-9" src="./media/brain-front-fire-lines.png" alt="">
-            <img class="image-10" src="./media/brain-front-fire-lines-2.png" alt="">
-            <img class="image-11" src="./media/brain-front-synaps.png" alt="">
-            <img class="image-12" src="./media/brain-front-synaps-2.png" alt="">
-            <img class="image-13" src="./media/brain-front-line-3.png" alt="">
-        </div>
+            <!-- Background -->
 
-        <!-- Background -->
+            <div class="bg">
+                <img src="./media/bg-pink-1.png" alt="" class="image-2">
+                <img src="./media/bg-blue-1.png" alt="" class="image-3">
+                <img src="./media/bg-pink-2.png" alt="" class="image-4">
+                <img src="./media/bg-green-1.png" alt="" class="image-5">
+                <img src="./media/bg-green-2.png" alt="" class="image-6">
+                <img src="./media/bg-red-1.png" alt="" class="image-7">
+                <img src="./media/bg-blue-2.png" alt="" class="image-8">
+                <img src="./media/bg-pink-3.png" alt="" class="image-9">
+                <img src="./media/bg-blue-3.png" alt="" class="image-10">
+            </div>
+            <div class="clouds">
+                <img src="./media/bg-cloud-1.png" alt="" class="cloud cloud-1">
+                <img src="./media/bg-cloud-2.png" alt="" class="cloud cloud-2">
+                <img src="./media/bg-cloud-3.png" alt="" class="cloud cloud-3">
+                <img src="./media/bg-cloud-4.png" alt="" class="cloud cloud-4">
+                <img src="./media/bg-cloud-5.png" alt="" class="cloud cloud-5">
+                <img src="./media/bg-cloud-6.png" alt="" class="cloud cloud-6">
+                <img src="./media/bg-cloud-7.png" alt="" class="cloud cloud-7">
+            </div>
 
-        <div class="bg">
-            <img src="./media/bg-pink-1.png" alt="" class="image-2">
-            <img src="./media/bg-blue-1.png" alt="" class="image-3">
-            <img src="./media/bg-pink-2.png" alt="" class="image-4">
-            <img src="./media/bg-green-1.png" alt="" class="image-5">
-            <img src="./media/bg-green-2.png" alt="" class="image-6">
-            <img src="./media/bg-red-1.png" alt="" class="image-7">
-            <img src="./media/bg-blue-2.png" alt="" class="image-8">
-            <img src="./media/bg-pink-3.png" alt="" class="image-9">
-            <img src="./media/bg-blue-3.png" alt="" class="image-10">
+            <% include partials/headercryp %>
+
         </div>
-        <div class="clouds">
-            <img src="./media/bg-cloud-1.png" alt="" class="cloud cloud-1">
-            <img src="./media/bg-cloud-2.png" alt="" class="cloud cloud-2">
-            <img src="./media/bg-cloud-3.png" alt="" class="cloud cloud-3">
-            <img src="./media/bg-cloud-4.png" alt="" class="cloud cloud-4">
-            <img src="./media/bg-cloud-5.png" alt="" class="cloud cloud-5">
-            <img src="./media/bg-cloud-6.png" alt="" class="cloud cloud-6">
-            <img src="./media/bg-cloud-7.png" alt="" class="cloud cloud-7">
-        </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/brain.js"></script>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="js/cryptex.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $("#loader").delay(1000).fadeOut(400, function () {
+                $("#home").fadeIn(200);
+            });
+        });
+    </script>
+    </script>
 </body>
 
 </html>

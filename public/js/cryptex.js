@@ -40,3 +40,16 @@ function submitAns() {
       alert('Sorry for any inconvenience, Try again later. If problem persists, contact admin@plinth.in');
     });
 }
+
+$(document).ready(function() {
+  $('.open-menu').on('click', function() {
+     $('.overlay').addClass('open');
+  });
+ 
+  $('.close-menu').on('click', function() {
+    $('.overlay').removeClass('open');
+  });
+  setTimeout(function () {
+    $('#nav-delay').css({"visibility":"visible"}).fadeIn(400);
+}, 6000);
+});
