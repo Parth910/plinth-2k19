@@ -5142,7 +5142,6 @@ body,
 html {
     overflow: hidden;
     padding: 0;
-    font-family: 'Oswald', san-serif;
     background-color: #060f16
 }
 
@@ -5184,11 +5183,11 @@ html {
 }
 
 .splash-screen {
-    transition: opacity 2s ease;
-    -webkit-transition: opacity 2s ease;
-    -moz-transition: opacity 2s ease;
-    -o-transition: opacity 2s ease;
-    -ms-transition: opacity 2s ease;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
     opacity: 1
 }
 

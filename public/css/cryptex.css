@@ -41,7 +41,7 @@ body {
 
 .overlay {
     position: fixed;
-    background: rgba(51, 55, 69, 0.80);
+    background: rgba(51, 55, 69, 0.90);
     top: 0;
     left: 0;
     width: 100%;
@@ -56,6 +56,7 @@ body {
     opacity: 1;
     visibility: visible;
     height: 100%;
+    z-index: 1;
 }
 
 .overlay .nav-title {
@@ -80,6 +81,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 20px;
+
 }
 
 .overlay ul {
@@ -194,6 +196,10 @@ button:focus {
     }
 }
 
+.home-delay {
+    visibility: hidden;
+}
+
 #nav-delay {
     visibility: hidden;
 }
@@ -226,24 +232,49 @@ button:focus {
 }
 
 @media only screen and (max-width: 480px) {
-    /* .modal-footer {
-        margin-left: 41% !important;
-    } */
-
     .dropdown-menu.show {
         left: 0px !important;
     }
-
-    /* .dropdown-menu.show>a.dropdown-item {
-        margin-left: -30px !important;
-    } */
+    .plinth{
+        font-size: 60px !important;
+    }
+    .date {
+        font-size: 30px !important;
+    }
+    .presents {
+        font-size: 20px !important;
+    }
+    .cryptex{
+        margin-top: 15% !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .dropdown-toggle::after {
         margin-top: 8% !important;
     }
+    .plinth-text{
+        margin-top: -2% !important;
+    }
 
+}
+@media only screen and (min-width: 1920px){
+    .plinth{
+        font-size: 100px !important;
+    }
+    .date {
+        font-size: 50px !important;
+    }
+    .presents {
+        font-size: 30px !important;
+    }
+    .cryptex{
+        margin-top: 8% !important;
+        font-size: 90px !important;
+    }
+    .plinth-text{
+        margin-top: 4% !important;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -309,4 +340,125 @@ button:focus {
 #desk-nav a:before {
     -webkit-transition: width .2s cubic-bezier(0.14, 0.59, 1, 1.01);
     transition: width .2s cubic-bezier(0.14, 0.59, 1, 1.01);
+}
+
+
+
+.plinth {
+    font: normal 80px rez;
+
+
+}
+
+.point {
+    color: white;
+}
+
+.presents {
+    font: normal 30px caviar;
+
+}
+
+.date {
+    font: bold 36px hn;
+
+}
+.cryptex {
+    font: bold 50px Raleway;
+    margin-top: 4%;
+}
+.button-font {
+    font: bold 22px caviar;
+}
+
+.textp {
+    font-family: caviar;
+}
+
+.small {
+    font-size: 20px;
+}
+
+.center-padding {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+
+}
+
+.small-padd {
+    padding-left: 0px;
+}
+
+.table-margin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.head-font {
+    font-family: 'Audiowide', cursive;
+    font-size: 1.3vw !important;
+    color: white !important;
+}
+
+.body-font {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2vw;
+}
+
+
+.sub-heading {
+    font-size: 1.8rem;
+}
+
+#prof {
+    margin-bottom: 5px;
+}
+
+#userp {
+    margin-top: 10px;
+}
+
+.no-margin {
+    margin-left: unset !important;
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 480px) {
+
+
+
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 640px) and (orientation: landscape) {
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (orientation : portrait) {
+
+    .head-font {
+        font-size: 2.4vh !important;
+    }
+
+    .body-font {
+        font-size: 1.8vh;
+    }
+
+    .table-margin {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
