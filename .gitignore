@@ -3,3 +3,4 @@ npm-debug.log
 .env
 credentials.json
 sheets.googleapis.com-cred.json
+public/media/cryptex
