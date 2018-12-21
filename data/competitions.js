@@ -473,36 +473,40 @@ module.exports.competitions = {
             prizeWorth: '₹ 25,000/-', 
             eventFee: '₹ 250/-',
             eventDescription: "<p>"
-                                    +"<b style='color: #4C4D64'>Problem Statement</b>"
-                                    +"<p>"
-                                        +"Design a wired or wireless robot that can move freely in the arena and can cover the arena quickly and score as many goals as possible in the time duration."
-                                    +"</p>"
-                                    +"<b style='color: #4C4D64'>Task Description</b>"
-                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                                        +"<li>Each team will have to defend the goal on its side as well as score the goal on the opposite side.</li>"
-                                        +"<li>The game will start at the count of 3 given by referee. In case a team starts its robot before the count of 3, the game will be restarted and a team making same mistake for more than 3 times will be disqualified.</li>"
-                                        +"<li>The ball can be either dragged or pushed by the team.</li>"
-                                        +"<li>The game will last for 5min.</li>"
-                                        +"<li>In case of jam up of robots for than 30 sec., the robots will have to kick- off again at the order of the referee.</li>"
-                                        +"<li>Each goal scored by a team by rolling the ball on the ground will fetch the team by 1 point."
-                                        +"<br>"
-                                        +"(*or, Point description will be disclosed on the spot before commencement of the event.)</li>"
+                                    +"<ol style='list-style-type: decimal;padding-left:20px;'>"
+                                        +"<li>The match will consist of two halves. The duration of one half will depend on type of match as- Initial knockout matches-4 min Quarter and Semi-final-4 min Final-5 min.</li>"
+                                        +"<li>In case of a draw, extra time of two minutes will be played. In this extra time the team scoring first will be declared winner. If a team commits foul in extra time, the other team will be declared winner.</li>"
+                                        +"<li>If no winner is declared even after the extra time, then a surprise element will be introduced.</li>"
+                                        +"<li>The judging criteria will be:</li>"
+                                            +"<ul style='list-style-type: disc;padding-left:40px;'>"
+                                                +"<li>+5 for first goal from both sides.</li>"
+                                                +"<li>+1 for each successive goal.</li>"
+                                                +"<li>-2 for each foul and the team will be disqualified for more than 3 fouls.</li>"
+                                            +"</ul>"
+                                        +"<li>It will be judged as a foul in the following circumstances:</li>"
+                                            +"<ul style='list-style-type: disc;padding-left:40px;'>"
+                                                +"<li>Lifting of ball in air by the bot.</li>"
+                                                +"<li>Damaging the arena or the opponent's bot.</li>"
+                                                +"<li>Foul behavior.</li>"
+                                                +"<li>Damaging the arena or the opponent's bot.</li>"
+                                            +"</ul>"  
                                     +"</ol>"
-                                    // +"<b style='color: #4C4D64'>Track</b>"
-                                    // +"<br>"
-                                    // +"<div class='uk-text-center'><img src='media/robosoccer-track.jpg' /></div>"
-                                   
-                                +"</p>",
+                                    +"<br>"
+                                    +"<b style='color: #4C4D64'>Track</b>"
+                                    +"<br><br>"
+                                    +"<div class='text-center'><img style= 'max-width:100% !important'src='media/robosoccer.PNG' /></div>"
+                            +"</p>",
             synopsis: "<p>"
-                            + "RoboSoccer is a football event in which robots on remote control stand against each other. Show your abilities and skills in robot control, dribbling and shooting to bring your team to victory."
+                            + "Design a wired or wireless robot that can move freely in the arena and can cover the arena quickly and score as many goals as possible in the time duration."
                         +"</p>",
             rules: "<p>"
                       
                         +"<b style='color: #4C4D64'>General Rules</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>A team can consist of a maximum of 6 members.</li>"
-                            +"<li>Team should bring 3 bots with them or an Individual can bring 1 bot and build his team here.</li>"
+                            +"<li>There can be maximum 3 robots playing for a team at a time.</li>"
                             +"<li>Maximum 3 robot can play from one side/team.</li>"
+                            +"<li>Each student must have id card of their college.</li>"
                             +"<li>Each team must declare a name for their team at the time of competition.</li>"
                             +"<li>The machines you build will be first checked for size and safety. The machine should not cause electric power breakdowns.</li>"
                             +"<li>The machine must not contain any combustible, corrosive, or otherwise dangerous materials for safety reasons. No explosive compression or decompression, either internal or external is permitted.</li>"
@@ -514,36 +518,14 @@ module.exports.competitions = {
                             +"<li>Bot can be wired or wireless. Wireless should have a minimum range of 14 feet. Wire length must be at least 14 feet.</li>"
                             +"<li>Bot dimensions: Without attachments Length <= 30 cm Breadth <= 30 cm Height <= 30 cm (10% tolerance allowed) Weight <= 5 kg</li>"
                             +"<li>Bot dimensions: with attachments Length <= 40 cm Breadth <= 40 cm Height <= 40 cm (10% tolerance allowed) Weight <= 5 kg</li>"
-                            +"<li>Robot must not: "
-                                +"<ul style='list-style-type: decimal; padding-left:30px;'> "
-                                    +"<li>Emit smoke or fire.</li>"
-                                    +"<li>Leak, stain or soil.</li>"
-                                    +"<li>Spray, throw or use projectiles.</li>"
-                                    +"<li>Jam, shock or electronically interface.</li>"
-                                    +"<li>Maximum battery voltage is 12V.</li>"
-                                +"</ul>"
-                            +"</li>"
                         +"</ol>"
-                        +"<b style='color: #4C4D64'>GamePlay Rules</b>"
+                        +"<b style='color: #4C4D64'>Arena Specifications</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>No human intervention is allowed in between the race.</li>"
-                            +"<li>Maximum 2 members per team will be allowed to remain close to field for operating the robot.</li>"
-                            +"<li>In case of any discrepancy the final decision rests in the hands of coordinators.</li>"
-                            +"<li>The competition is aimed at making the game friendly match.</li>"
-                            +"<li>The organizers reserve the right to change any or all of the rules as they desire. Changes in the rules as if any will be informed through e-mail or on website.</li>"
-                            +"<li>You have to arrange your own DC power source. It WILL NOT be provided from institute.</li>"
-                            +"<li>Any team found flouting any rules would be automatically disqualified.</li>"
-                            +"<li>At all the times, bots behavior should be non offensive, non destructive and non harmful to humans and track.</li>" 
+                            +"<li>Arena Dimensions: 300 cm by 200 cm.</li>"
+                            +"<li>Goal post Dimensions:50 cm by 25 cm.</li>"
+                            +"<li>Ball Diameter: 7 cm.</li>"
+                            +"<li>The arena will have wall boundaries.</li>" 
                         +"</ol>"
-
-                        +"<b style='color: #4C4D64'>Violation And Disqualification</b>"
-                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>During the match, the team members are not allowed to touch the machine or the arena without permission of referee. Failure to do so will lead to disqualification.</li>"
-                            +"<li>Any kind of damage to the arena will attract disqualification.</li>"
-                            +"<li>The teams will be asked to get ready 15 minutes before the start of their match. If a team is not ready within the stipulated time, they may be disqualified.</li>"
-                            +"<li>In any case, the decision of the judges will be final if they feel that any team is not playing with fair interest.</li>"
-                        +"</ol>"
-                        
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
@@ -576,9 +558,10 @@ module.exports.competitions = {
                                         +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 70cms."
                                     +"</p>"
                                    
-                                   // +"<b style='color: #4C4D64'>Track</b>"
                                     +"<br>"
-                                   // +"<div class='uk-text-center'><img src='media/drone-track.png' /></div>"
+                                    +"<b style='color: #4C4D64'>Track</b>"
+                                    +"<br><br>"
+                                    +"<div class='text-center'><img style= 'max-width:100% !important'src='media/drone-track.png' /></div>"
                                 +"</p>",
             synopsis: "<p>"
                             +"<p>"
@@ -596,7 +579,8 @@ module.exports.competitions = {
                             +"<li>They must not land their drone anywhere (except for the timeout)</li>"
                             +"<li>Each team would be allowed to skip any one of the obstacle.</li>"
                             +"<li>Team gaining the maximum points will win.</li>"
-                            +"<li>In case of a tie the team taking the lesser time would be declared the winner.</li>"  
+                            +"<li>In case of a tie the team taking the lesser time would be declared the winner.</li>" 
+                            +"<li>The size of drone must not exceed by 60cm.</li>" 
                         +"</ol>"
                     +"</p>",
             judges: null,
@@ -623,44 +607,33 @@ module.exports.competitions = {
             prizeWorth: null,
             eventFee: "₹ 250",
             eventDescription: "<p>"
-                                //     +"<b style='color: #4C4D64'>Problem Statement</b>"
-                                //     +"<p>"
-                                //         +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 70cms."
-                                //     +"</p>"
+                                +"<b style='color: #4C4D64'>ROUND 1</b>"
+                                +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                    +"<li>First round will be an MCQ test based on theoretical knowledge of concepts of basic electronics and knowledge of basics circuits like amplifier circuit, clipper circuit etc.</li>"
+                                    +"<li>Based on your scores in round 1 you will be given virtual money using which you can buy   components of your choice for round 2.</li>"
+                                +"</ol>"
+                                +"<b style='color: #4C4D64'>ROUND 2</b>"
+                                +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                    +"<li>You will be asked to provide a solution to the problems we face in our day to day lives through your knowledge of circuit designing. </li>"
+                                +"</ol>"
                                    
-                                //    // +"<b style='color: #4C4D64'>Track</b>"
-                                //     +"<br>"
-                                //     +
-                                //     "<p>This competition will have two rounds.Those teams which will be selected in first round, they will compete in second round.</p>"
-                                //     +"<b style='color: #4C4D64'>Round 1</b>"
-                                //     +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                                //         +"<li>This would be a qualifying round in which a quiz will be organized which will be comprising of basic to intermediate level questions based on electronic circuits and components.</li>"
-                                //         +"<li>Scores of round 1 will be used in calculation of final result.</li>"
-
-                                //     +"</ol>"
-
-                                //     +"<b style='color: #4C4D64'>Round 2</b>"
-                                //     +"<p>The game field consists of an arena having dimensions 224 cm X 228 cm (lxb). It consists of the following:</p>"
-                                //     +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                                //         +"<li>This round will be based on designing and implementing the circuit of which problem statement is been given to you on proteus. Proteus is a software tool suite used for electronic design automation. Designing becomes easy when it comes to proteus also it is the first step toward it.</li>"
-                                //         +"<li>Each step towards designing a circuit contains marks. Also, there will be time constraint for the same.</li>"
-                                //         +"<li>After this, final result will be generated by taking a definite proportion of marks scored in both round1 and round2.</li>"
-        
-                                //     +"</ol>"
-                                   
-                                +"</p>",
+                            +"</p>",
             synopsis: "<p>"
                             +"<p>"
-                                +"The event will comprise of teams competing against each other to find the best circuit designing and innovative mind among them. The participants will use electronic components for virtual designing of their circuits like resistors, capacitors, common gate ICs, displays, etc. on Proteus (software tool used for designing circuits) to prove their circuit designing skills and abilities. The event will be based on two rounds based on theoretical and practical knowledge of participants"
+                                +"<em>“Electronic communication is an instantaneous and illusory contact that creates a sense of intimacy without any emotional investment that leads to close friendships.” - Clifford Stoll</em>"
+                                +"<br><br>"
+                                +"The event will comprise of teams competing against each other to find the best circuit designing and innovative mind among them. The participants will use electronic components for designing of their analog circuits like resistors, capacitors, common gate ICs, displays, etc. to prove their circuit designing skills and abilities. The event will be based on two rounds based on theoretical and practical knowledge of electronics."
                             +"</p>"
                         +"</p>",
             rules:  "<p>"
                         +"<b style='color: #4C4D64'>General Instructions</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>One team must carry at least one laptop with them for Round 2. (It is recommended that each participant carry their laptops with them)</li>"
+                            +"<li>Partial marks will be given according to the completion of circuit in round 2. So, no need to worry if you are not able to complete your circuit.</li>"
+                            +"<li>Winner of the event will be chosen by combined scores of both the rounds.</li>"
                             +"<li>Students from different Educational Institutes can form a team.</li>"
                             +"<li>Organizers reserve the rights to change any or all of the above rules as they deem fit.</li>"
-                            +"<li>Organizers decision will be final decision..</li>"
+                            +"<li>Organizers decision will be final decision.</li>"
+                            +"<li>If you register for any event kindly check the website for regular updates.</li>"
                         +"</ol>"
                     +"</p>",
             judges: null,
@@ -757,9 +730,9 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        +"Abhishek Yadav: +91-7678123016"
+                        +"Ayush Mahajan: +91-9149332982"
                         +"<br>"
-                        +"Aman Bhardwaj: +91-9461616171"
+                        +"Sumedha Rana: +91-9457803486"
                         +"<br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
@@ -806,23 +779,22 @@ module.exports.competitions = {
                                         +"<li>In case of any discrepancies, the organizers’ decision will be final and binding.</li>"
                                         +"</ul>"
                                     +"</li>"
-                                       
-                                       
-                                       
-        
                                     +"</ol>"
-
+                                    +"<br>"
+                                    +"<b style='color: #4C4D64'>Track</b>"
+                                    +"<br><br>"
+                                    +"<div class='text-center'><img style= 'max-width:100% !important'src='media/lfr_arena.png' /></div>"
                                 +"</p>",
             synopsis: "<p>"
                             +"An autonomous bot that follows wall and black lines on white surface. It is an automated guided bot that follows visual lines embedded on the floor. The bot must be able to detect particular line and keep following it." 
                         +"</p>",
             rules:  "<p>"
-            +"<b style='color: #4C4D64'>General rules</b>"
-            +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                +"<li>A team can comprise a maximum of 4 members. Students from different Institutes can form a team.</li>"
+                        +"<b style='color: #4C4D64'>General rules</b>"
+                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                            +"<li>A team can comprise a maximum of 4 members. Students from different Institutes can form a team.</li>"
                 
                 
-            +"</ol>"
+                         +"</ol>"
                         +"<b style='color: #4C4D64'>Robot Specification</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>The bot should fit in a box of dimension 30X25X25 cm (lXbXh).</li>"
@@ -843,10 +815,10 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
            query: "<p class='link-text'>"
-                        // +"Rahul Asani: +91-8955552119"
-                        // +"<br>"
-                        // +"Prajjval Bharadwaj: +91-9636731362"
-                        // +"<br><br>"
+                        +"Nikhil Srivastava: +91-9079913526"
+                        +"<br>"
+                        +"Deepika: +91-7062887285"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
@@ -902,16 +874,16 @@ module.exports.competitions = {
                                         +"<li>The arena is composed of random paths made up of black strips.</li>"
                                         +"<li>All the distances are shown in fig.</li>"
                                         +"<li>Angle between two adjacent white lines in the path is 90 degree.</li>"
-                                        +"<li>The width of all white stripes will be 30mm.</li>"
+                                        +"<li>The width of all black stripes will be 30mm.</li>"
                                         +"<li>The figure below shows the sample arena.</li>"
                                         +"<li>The actual arena at the competition will consist of alterations in the path.</li>"
                                         +"<li>A black box of 330 mm x 330 mm is present at the end zone of the arena to indicate the end position.</li>"
                                     +"</ol>"
                                     +"<p>Note: The dimensions of the arena will be accurate to within 5% or 20 mm, whichever is less.</p>"
-
-                                    // +"<b style='color: #4C4D64'>Track</b>"
-                                    // +"<br>"
-                                    // +"<div class='uk-text-center'><img src='media/mazesolver-map.jpg' /></div>"
+                                    +"<br>"
+                                    +"<b style='color: #4C4D64'>Track</b>"
+                                    +"<br><br>"
+                                    +"<div class='text-center'><img style= 'max-width:100% !important'src='media/maze_arena.png' /></div>"
                                 +"</p>",
             synopsis: "<p>"
                             +"Make an autonomous bot that completes the maze in shortest time."
@@ -1160,7 +1132,7 @@ module.exports.competitions = {
                                         +"<li>After​ ​completing​ ​the​ ​manoeuvres​ ​proceed​ ​for​ ​spot​ ​landing.​ ​The​ ​landing​ ​zone​ ​will​ ​be marked​ ​on​ ​the​ ​airstrip.​ ​The​ ​plane​ ​is​ ​to​ ​touch​ ​down​ ​precisely​ ​in​ ​the​ ​arena.​ ​The​ ​better​ ​the touchdown​ ​greater​ ​the​ ​marks​ ​obtained.</li>"
                                         +"<li>In​ ​case​ ​of​ ​crash​ ​landing,​ ​no​ ​points​ ​will​ ​be​ ​given​ ​for​ ​landing.​ ​Damage​ ​to​ ​the​ ​propeller will​ ​not​ ​be​ ​consider​ ​as​ ​crash​ ​landing.</li>"
                                     +"</ol>"
-                                    +"<b style='color: #4C4D64'>Materials​​ ​​and​​ ​​services​​ to be ​​provided"
+                                    +"<b style='color: #4C4D64'>Materials​​ ​​and​​ ​​services​​ to be ​​provided</b>"
                                     +"<ol style='list-style-type: disc;padding-left:20px;'>"
                                         +"<li>​Electric​ ​Sockets​ ​(220-230V)​ ​will​ ​be​ ​provided​ ​for​ ​charging​ ​the​ ​batteries,​ ​radio​ ​set​ ​etc., in​ ​case​ ​you​ ​need​ ​more,​ ​you​ ​have​ ​to​ ​inform​ ​us​ ​well​ ​before​ ​the​ ​event.</li>"
                                         +"<li>But,​ ​you​ ​are​ ​strongly​ ​suggested​ ​to​ ​bring​ ​all​ ​the​ ​materials​ ​you​ ​require​ ​to​ ​repair​ ​your model.​ ​We​ ​cannot​ ​assure​ ​you​ ​of​ ​the​ ​materials​ ​we​ ​provide​.</li>"
@@ -1270,9 +1242,10 @@ module.exports.competitions = {
                                         +"In this round, certain changes will be made in the track and extra tasks will be added in the track. The team with minimum time and maximum points will win."
                                         +"</li>"
                                     +"</ol>"
-                                    // +"<b style='color: #4C4D64'>Track</b>"
-                                    // +"<br>"
-                                    // +"<div class='uk-text-center'><img src='media/transporter-track.jpg' /></div>"
+                                    +"<br>"
+                                    +"<b style='color: #4C4D64'>Track</b>"
+                                    +"<br><br>"
+                                    +"<div class='text-center'><img style= 'max-width:100% !important'src='media/transporter-track.jpg' /></div>"
                                 +"</p>",
             synopsis: "<p>"
                             +"<p>"
@@ -1385,12 +1358,10 @@ module.exports.competitions = {
         +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-            // +"Khyati Doshi: +91-9636445125"
-            // +"<br>"
-            // +"Puru upadhyay: +91-9166015620"
-            // +"<br>"
-            // +"Robin Singh: +91-7011028780"
-            // +"<br><br>"
+            +"Anushrut:  +91-7007135939"
+            +"<br>"
+            +"Abhishek Tiwari: +91-8764122500"
+            +"<br><br>"
             +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
         +"</p>",
             sponsors: null,
