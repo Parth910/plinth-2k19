@@ -7,7 +7,6 @@
         body {
             background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)), url('./media/2.jpg');
             background-size: cover;
-            /* <------ */
             background-repeat: repeat;
             background-position: center center;
             overflow-y: scroll !important;
@@ -39,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="container cryp-ques">
+    <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <% if(doc.length > 0){ %>
@@ -75,7 +74,7 @@
                     </li>
                 </ul>
                 <% } %>
-                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#add-center">Add Question</a>
+                <a class="btn btn-lg btn-secondary" href="#" data-toggle="modal" data-target="#add-center" style="margin-bottom:10px">Add Question</a>
             </div>
         </div>
     </div>

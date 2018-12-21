@@ -20,22 +20,61 @@ function submitAns() {
     .done(function (status) {
       console.log(status.response);
       if (status.response) {
-        UIkit.notification({
-          message: 'Congratulations! You got That Right.',
-          status: 'primary',
-          pos: 'top-center',
-          timeout: 1000
+        $.notify({
+          message: 'Congratulations! You got that right.'
+        }, {
+          element: 'body',
+          position: null,
+          type: "success",
+          allow_dismiss: true,
+          newest_on_top: false,
+          showProgressbar: false,
+          placement: {
+            from: "top",
+            align: "center"
+          },
+          offset: 20,
+          spacing: 10,
+          z_index: 1031,
+          delay: 5000,
+          timer: 1000,
+          url_target: '_blank',
+          mouse_over: null,
+          animate: {
+            enter: 'animated fadeInDown',
+            exit: 'animated fadeOutUp'
+          }
         });
         setTimeout(function () {
           location.reload();
         }, 2000);
       } else {
-        UIkit.notification({
-          message: 'Oops! Not a right answer.',
-          status: 'primary',
-          pos: 'top-center',
-          timeout: 2000
+        $.notify({
+          message: 'Oops! Not a right answer. Try Again!'
+        }, {
+          element: 'body',
+          position: null,
+          type: "danger",
+          allow_dismiss: true,
+          newest_on_top: false,
+          showProgressbar: false,
+          placement: {
+            from: "top",
+            align: "center"
+          },
+          offset: 20,
+          spacing: 10,
+          z_index: 1031,
+          delay: 5000,
+          timer: 1000,
+          url_target: '_blank',
+          mouse_over: null,
+          animate: {
+            enter: 'animated fadeInDown',
+            exit: 'animated fadeOutUp'
+          }
         });
+        
       }
 
     }).fail(function (err) {
@@ -60,7 +99,7 @@ $(document).ready(function () {
     $('#nav-delay').css({
       "visibility": "visible"
     }).fadeIn(400);
-  }, 6000);
+  }, 4000);
 });
 $('.toggle').click(function (e) {
   e.preventDefault();
@@ -77,3 +116,15 @@ $('.toggle').click(function (e) {
     $this.next().slideToggle(350);
   }
 });
+
+var modal = document.getElementById('myModal');
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var span = document.getElementsByClassName("close");
+
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}

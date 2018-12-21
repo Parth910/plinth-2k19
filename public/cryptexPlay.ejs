@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/headcryp %>
+    <style>
+        #home{
+            visibility: hidden;
+        }
+        .cryptex{
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="home">
+
+        <% include partials/headercryp %>
+        <div class="container">
+            <div class="cryptex small-padd" style="margin-top:-25px !important;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span>Cryptex</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cryp-ques">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <% if(user.cryptex.level != 28){ %>
+                        <br>
+                        <div class="heading"> Level
+                            <%= user.cryptex.level %>
+                        </div>
+                        <div class="small-padd">
+                            <div class="heading">
+                                Clue
+                            </div>
+                            <div class="text">
+                                <div>
+
+                                    <img id="myImg" src="<%= doc.image %>" alt="Level <%= user.cryptex.level %>" style="width:100%;max-width:400px">
+
+                                    <div class="text">
+
+                                        Click on image to enlarge.
+
+                                    </div>
+                                    <% if(doc.format != ""){ %>
+                                    <div class="text">
+
+                                        Answer Format:
+                                        <%= doc.format %>
+
+                                    </div>
+
+                                    <% } %>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="answer-box">
+                            <div class="center-padding small-padd">
+                                <div class="heading">
+                                    Answer
+                                </div>
+                                <div class="text">
+
+
+                                    <input class="input" id="answer" name="answer" type="text" required>
+                                </div>
+                                <br>
+                                <input type="button" value="Submit" class="btn btn-lg btn-secondary" onclick="submitAns()">
+                                <br>
+                                <br>
+
+                            </div>
+
+
+                        </div>
+                        <% } else { %>
+                        <div class="heading">
+                            Game is On
+                        </div>
+                        <p>
+                            Congratulations, you have solved all question. <br>
+                            Keep the eye on Leaderboard for results.
+                        </p>
+                        <% } %>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="js/cryptex.js"></script>
+    <script src="js/bootstrap-notify.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $("#loader").delay(1000).fadeOut(400, function () {
+                $("#home").css({
+                    "visibility": "visible"
+                }).fadeIn(200);
+            });
+        });
+    </script>
+    <script>
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
