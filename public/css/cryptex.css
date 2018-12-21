@@ -235,19 +235,24 @@ button:focus {
     .dropdown-menu.show {
         left: 0px !important;
     }
-    .plinth{
+
+    .plinth {
         font-size: 60px !important;
     }
+
     .date {
         font-size: 30px !important;
     }
+
     .presents {
         font-size: 20px !important;
     }
-    .cryptex{
+
+    .cryptex {
         margin-top: 5% !important;
     }
-    .small{
+
+    .small {
         font-size: 10px !important;
         font-weight: bold;
     }
@@ -257,26 +262,32 @@ button:focus {
     .dropdown-toggle::after {
         margin-top: 8% !important;
     }
-    .plinth-text{
+
+    .plinth-text {
         margin-top: -2% !important;
     }
 
 }
-@media only screen and (min-width: 1920px){
-    .plinth{
+
+@media only screen and (min-width: 1920px) {
+    .plinth {
         font-size: 100px !important;
     }
+
     .date {
         font-size: 50px !important;
     }
+
     .presents {
         font-size: 30px !important;
     }
-    .cryptex{
+
+    .cryptex {
         margin-top: 8% !important;
         font-size: 90px !important;
     }
-    .plinth-text{
+
+    .plinth-text {
         margin-top: 4% !important;
     }
 }
@@ -368,10 +379,12 @@ button:focus {
     font: bold 36px hn;
 
 }
+
 .cryptex {
     font: bold 50px Raleway;
     margin-top: 4%;
 }
+
 .button-font {
     font: bold 22px caviar;
 }
@@ -467,4 +480,41 @@ button:focus {
         margin-left: 2%;
         margin-right: 2%;
     }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul .inner {
+    padding-left: 1em;
+    overflow: hidden;
+    display: none;
+}
+
+ul .inner.show {
+    /*display: block;*/
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+ul li a.toggle {
+    width: 80%;
+    display: block;
+    background: rgba(93, 95, 97, 0.75);
+    color: #fefefe;
+    padding: 0.75em;
+    border-radius: 1.15em;
+    transition: background 0.3s ease;
+    margin-left: 10%;
+    border-color: #fefefe;
+    border-width: 2px;
+
+}
+
+ul li a.toggle:hover {
+    background: #ea2e49;
 }

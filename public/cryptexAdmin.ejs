@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/headcryp %>
+    <style>
+        body {
+            background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(73, 73, 73, 0.5)), url('./media/2.jpg');
+            background-size: cover;
+            /* <------ */
+            background-repeat: repeat;
+            background-position: center center;
+            overflow-y: scroll !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <% include partials/headercryp %>
+    <div class="container">
+        <div class="plinth-text">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <span class="plinth">plinth</span> <span class="date">2019</span>
+                        <br>
+                        <span class="presents">presents</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cryptex" style="padding-bottom: 20px;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span>Cryptex</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cryp-ques">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <% if(doc.length > 0){ %>
+                <ul class="accordion">
+                    <li>
+                        <%   for(var i=0; i<doc.length; i++) { %>
+                        <a class="toggle" href="javascript:void(0);">
+                            <h3>Level
+                                <%= doc[i].level %>
+                            </h3>
+                        </a>
+                        <ul class="inner">
+                            <li>
+                                <b>Image</b>
+                                <p> <img src="<%= doc[i].image %>" /> </p>
+                                <b>Answer</b>
+                                <p>
+                                    <%   for(var j=0; j <doc[i].answer.length; j++) { %>
+                                    <%= doc[i].answer[j] %>
+                                    <br>
+                                    <% } %>
+                                </p>
+                                <% if(doc[i].format != ""){ %>
+                                <b>Format</b>
+                                <p>
+                                    <%= doc[i].format %>
+                                </p>
+                                <% } %>
+                            </li>
+
+                        </ul>
+                        <%   } %>
+                    </li>
+                </ul>
+                <% } %>
+                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#add-center">Add Question</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="add-center" tabindex="-1" role="dialog" aria-labelledby="add-centerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="add-form" class="form-horizontal" method="post" action="/cryptex/add" enctype='multipart/form-data'>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="col-md-12 text-center">
+                            <h4 class="modal-title" id="add-centerLabel" style="color:dimgrey">Cryptex Question</h4>
+                        </div>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="level">
+                                        Level</label>
+                                    <input class="form-control input-md" name="level" type="number"> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="image">
+                                        Image</label>
+
+                                    <input class="form-control input-md" type="file" name="image" accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="answer">
+                                        Answer</label>
+
+                                    <input class="form-control input-md" name="answer" type="text"> </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="format">
+                                        Format</label>
+
+                                    <input class="form-control input-md" name="format" type="text"> </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn-primary" id="submit-button">Submit</button>
+                        <button type="button" class="btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="js/cryptex.js"></script>
+    </script>
+</body>
+
+</html>
