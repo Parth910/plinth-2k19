@@ -273,7 +273,7 @@ router.get('/leaderboard/:page?', Verify.verifyOrdinaryUser ,function(req, res) 
         email          : true,
     };
 
-    var perPage = 10;
+    var perPage = 5;
     var page = req.params.page || 1;
     if(page < 1 ){
         res.redirect('/cryptex/leaderboard');

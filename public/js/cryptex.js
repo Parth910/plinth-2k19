@@ -95,11 +95,6 @@ $(document).ready(function () {
       "visibility": "visible"
     }).fadeIn(400);
   }, 8000);
-  setTimeout(function () {
-    $('#nav-delay').css({
-      "visibility": "visible"
-    }).fadeIn(400);
-  }, 4000);
 });
 $('.toggle').click(function (e) {
   e.preventDefault();
@@ -116,15 +111,3 @@ $('.toggle').click(function (e) {
     $this.next().slideToggle(350);
   }
 });
-
-var modal = document.getElementById('myModal');
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-var span = document.getElementsByClassName("close");
-
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}

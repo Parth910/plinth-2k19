@@ -118,7 +118,26 @@
         <div class="dot"></div>
     </div>
     <div id="home">
-
+        <div class="bg">
+            <img src="./media/bg-pink-1.png" alt="" class="image-2">
+            <img src="./media/bg-blue-1.png" alt="" class="image-3">
+            <img src="./media/bg-pink-2.png" alt="" class="image-4">
+            <img src="./media/bg-green-1.png" alt="" class="image-5">
+            <img src="./media/bg-green-2.png" alt="" class="image-6">
+            <img src="./media/bg-red-1.png" alt="" class="image-7">
+            <img src="./media/bg-blue-2.png" alt="" class="image-8">
+            <img src="./media/bg-pink-3.png" alt="" class="image-9">
+            <img src="./media/bg-blue-3.png" alt="" class="image-10">
+        </div>
+        <div class="clouds">
+            <img src="./media/bg-cloud-1.png" alt="" class="cloud cloud-1">
+            <img src="./media/bg-cloud-2.png" alt="" class="cloud cloud-2">
+            <img src="./media/bg-cloud-3.png" alt="" class="cloud cloud-3">
+            <img src="./media/bg-cloud-4.png" alt="" class="cloud cloud-4">
+            <img src="./media/bg-cloud-5.png" alt="" class="cloud cloud-5">
+            <img src="./media/bg-cloud-6.png" alt="" class="cloud cloud-6">
+            <img src="./media/bg-cloud-7.png" alt="" class="cloud cloud-7">
+        </div>
         <% include partials/headercryp %>
         <div class="container">
             <div class="cryptex small-padd" style="margin-top:-25px !important;">
@@ -224,8 +243,26 @@
         });
     </script>
     <script>
+        setTimeout(function () {
+            $('#nav-delay').css({
+                "visibility": "visible"
+            }).fadeIn(400);
+        }, 2000);
+    </script>
+    <script>
         function closeModal() {
             document.getElementById('myModal').style.display = "none";
+        }
+        var modal = document.getElementById('myModal');
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var span = document.getElementsByClassName("close");
+
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
         }
     </script>
 </body>

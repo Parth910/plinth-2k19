@@ -172,7 +172,8 @@ button:focus {
     cursor: pointer;
     transition: transform 0.30s;
 }
-.close-menu{
+
+.close-menu {
     width: 9%;
 }
 
@@ -256,15 +257,16 @@ button:focus {
     }
 
     .small {
-        font-size: 10px !important;
+        font-size: 12px !important;
         font-weight: bold;
     }
-    input#answer{
+
+    input#answer {
         width: 240px;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1359px) {
     .dropdown-toggle::after {
         margin-top: 8% !important;
     }
@@ -272,16 +274,28 @@ button:focus {
     .plinth-text {
         margin-top: -2% !important;
     }
-    input#answer{
+
+    input#answer {
         width: 300px;
     }
-    #myImg{
+
+    #myImg {
         max-width: 500px !important;
     }
 
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1360px) and (max-height: 900px) {
+    #myImg {
+        max-width: 420px !important;
+    }
+
+    input#answer {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
     .plinth {
         font-size: 100px !important;
     }
@@ -302,17 +316,21 @@ button:focus {
     .plinth-text {
         margin-top: 4% !important;
     }
-    #myImg{
+
+    #myImg {
         max-width: 600px !important;
     }
-    .modal-content{
+
+    .modal-content {
         max-width: 900px !important;
         margin-top: 130px !important;
     }
-    .answer-box{
+
+    .answer-box {
         margin-top: 30px !important;
     }
-    input#answer{
+
+    input#answer {
         width: 400px;
     }
 }
@@ -446,7 +464,7 @@ button:focus {
 }
 
 .body-font {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2vw;
 }
 
