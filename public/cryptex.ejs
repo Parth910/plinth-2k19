@@ -97,6 +97,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <% if(isLoggedIn){ %>
+                        <% if(time){ %>
                         <% if(newUser){ %>
                         <a class="btn btn-secondary" onclick="startGame()">
                             Start the Game!
@@ -107,9 +108,13 @@
                         </a>
                         <% } %>
                         <% } else { %>
-                        <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login
-                            to play!</a>
-                        <% } %>
+                        <p class="textp small small-padd animated flipInX slower delay-5s">
+                            <strong>Going Live at 12:00 noon, 11 <sup>th</sup>January 2019</strong></p>
+                            <% } %>
+                            <% } else { %>
+                            <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login
+                                to play!</a>
+                            <% } %>
                     </div>
                 </div>
             </div>
