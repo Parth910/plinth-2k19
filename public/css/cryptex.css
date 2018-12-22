@@ -309,7 +309,6 @@ button:focus {
     }
 
     .cryptex {
-        margin-top: 8% !important;
         font-size: 90px !important;
     }
 
@@ -332,6 +331,9 @@ button:focus {
 
     input#answer {
         width: 400px;
+    }
+    .cryp-text{
+        padding-top: 40px;
     }
 }
 
@@ -425,7 +427,7 @@ button:focus {
 
 .cryptex {
     font: bold 50px Raleway;
-    margin-top: 4%;
+    margin-top: 0%;
 }
 
 .button-font {

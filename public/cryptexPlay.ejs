@@ -8,16 +8,16 @@
 
 <body>
     <style>
-        #home{
-            visibility: hidden;
-        }
-        .cryptex{
-            font-size: 40px;
-        }
-        #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+#home {
+    visibility: hidden;
+}
+.cryptex {
+    font-size: 40px;
+}
+#myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
 }
 
 #myImg:hover {
@@ -189,12 +189,10 @@
                                     Answer
                                 </div>
                                 <div class="text">
-
-
                                     <input class="input" id="answer" name="answer" type="text" required>
                                 </div>
                                 <br>
-                                <input type="button" value="Submit" class="btn btn-lg btn-secondary" onclick="submitAns()">
+                                <input id="myBtn" type="button" value="Submit" class="btn btn-lg btn-secondary" onclick="submitAns()">
                                 <br>
                                 <br>
 
@@ -264,6 +262,15 @@
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
         }
+    </script>
+    <script>
+        var input = document.getElementById("answer");
+        input.addEventListener("keyup", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("myBtn").click();
+            }
+        });
     </script>
 </body>
 
