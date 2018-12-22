@@ -1,0 +1,5577 @@
+/* Loader */
+body {
+    margin: 0;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    background: #3ac;
+    border-radius: 100%;
+    display: inline-block;
+    animation: slide 1s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0.1s;
+    background: #32aacc;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+    background: #64aacc;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.3s;
+    background: #96aacc;
+}
+
+.dot:nth-child(4) {
+    animation-delay: 0.4s;
+    background: #c8aacc;
+}
+
+.dot:nth-child(5) {
+    animation-delay: 0.5s;
+    background: #faaacc;
+}
+
+@-moz-keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.front {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+}
+
+.brain-1 .image-2 {
+    opacity: .2;
+    animation: brain-top-2 4s ease infinite 0s;
+    -webkit-animation: brain-top-2 4s ease infinite 0s;
+    -moz-animation: brain-top-2 4s ease infinite 0s;
+    -o-animation: brain-top-2 4s ease infinite 0s;
+    -ms-animation: brain-top-2 4s ease infinite 0s
+}
+
+@keyframes brain-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-webkit-keyframes brain-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-moz-keyframes brain-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-ms-keyframes brain-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-o-keyframes brain-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+.brain-1 .image-3 {
+    opacity: .2;
+    animation: brain-top-3 3.5s ease infinite 0s;
+    -webkit-animation: brain-top-3 3.5s ease infinite 0s;
+    -moz-animation: brain-top-3 3.5s ease infinite 0s;
+    -o-animation: brain-top-3 3.5s ease infinite 0s;
+    -ms-animation: brain-top-3 3.5s ease infinite 0s
+}
+
+@keyframes brain-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-webkit-keyframes brain-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-moz-keyframes brain-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-o-keyframes brain-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-ms-keyframes brain-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+.brain-1 .image-4 {
+    opacity: .3;
+    animation: brain-top-4 3.5s ease infinite .5s;
+    -webkit-animation: brain-top-4 3.5s ease infinite .5s;
+    -moz-animation: brain-top-4 3.5s ease infinite .5s;
+    -o-animation: brain-top-4 3.5s ease infinite .5s;
+    -ms-animation: brain-top-4 3.5s ease infinite .5s
+}
+
+@keyframes brain-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-1 .image-5 {
+    opacity: .3;
+    animation: brain-top-5 3.5s ease infinite 1.5s;
+    -webkit-animation: brain-top-5 3.5s ease infinite 1.5s;
+    -moz-animation: brain-top-5 3.5s ease infinite 1.5s;
+    -o-animation: brain-top-5 3.5s ease infinite 1.5s;
+    -ms-animation: brain-top-5 3.5s ease infinite 1.5s
+}
+
+@keyframes brain-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-1 .image-6 {
+    opacity: .2;
+    animation: brain-top-6 3.5s ease infinite 1s;
+    -webkit-animation: brain-top-6 3.5s ease infinite 1s;
+    -moz-animation: brain-top-6 3.5s ease infinite 1s;
+    -o-animation: brain-top-6 3.5s ease infinite 1s;
+    -ms-animation: brain-top-6 3.5s ease infinite 1s
+}
+
+@keyframes brain-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-1 .image-7 {
+    opacity: .3;
+    animation: brain-top-7 3.4s ease infinite 1s;
+    -webkit-animation: brain-top-7 3.4s ease infinite 1s;
+    -moz-animation: brain-top-7 3.4s ease infinite 1s;
+    -o-animation: brain-top-7 3.4s ease infinite 1s;
+    -ms-animation: brain-top-7 3.4s ease infinite 1s
+}
+
+@keyframes brain-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes brain-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes brain-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes brain-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes brain-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+.brain-1 .image-8 {
+    opacity: .2;
+    animation: brain-top-8 3.4s ease infinite 1.4s;
+    -webkit-animation: brain-top-8 3.4s ease infinite 1.4s;
+    -moz-animation: brain-top-8 3.4s ease infinite 1.4s;
+    -ms-animation: brain-top-8 3.4s ease infinite 1.4s;
+    -o-animation: brain-top-8 3.4s ease infinite 1.4s
+}
+
+@keyframes brain-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-webkit-keyframes brain-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-moz-keyframes brain-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-o-keyframes brain-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-ms-keyframes brain-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+.brain-1 .image-9 {
+    opacity: .2;
+    animation: brain-top-9 3.4s ease infinite 1.8s;
+    -webkit-animation: brain-top-9 3.4s ease infinite 1.8s;
+    -moz-animation: brain-top-9 3.4s ease infinite 1.8s;
+    -o-animation: brain-top-9 3.4s ease infinite 1.8s;
+    -ms-animation: brain-top-9 3.4s ease infinite 1.8s
+}
+
+@keyframes brain-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+.brain-1 .image-10 {
+    opacity: .3;
+    animation: brain-top-10 3.4s ease infinite 2.2s;
+    -webkit-animation: brain-top-10 3.4s ease infinite 2.2s;
+    -moz-animation: brain-top-10 3.4s ease infinite 2.2s;
+    -o-animation: brain-top-10 3.4s ease infinite 2.2s;
+    -ms-animation: brain-top-10 3.4s ease infinite 2.2s
+}
+
+@keyframes brain-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-1 .image-11 {
+    opacity: .1;
+    animation: brain-top-11 3.4s ease infinite 2.6s;
+    -webkit-animation: brain-top-11 3.4s ease infinite 2.6s;
+    -moz-animation: brain-top-11 3.4s ease infinite 2.6s;
+    -o-animation: brain-top-11 3.4s ease infinite 2.6s;
+    -ms-animation: brain-top-11 3.4s ease infinite 2.6s
+}
+
+@keyframes brain-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+.brain-1 .image-12 {
+    opacity: .5;
+    animation: brain-top-12 6s ease infinite 1s;
+    -webkit-animation: brain-top-12 6s ease infinite 1s;
+    -moz-animation: brain-top-12 6s ease infinite 1s;
+    -o-animation: brain-top-12 6s ease infinite 1s;
+    -ms-animation: brain-top-12 6s ease infinite 1s
+}
+
+@keyframes brain-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    25% {
+        opacity: .85
+    }
+}
+
+@-webkit-keyframes brain-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    25% {
+        opacity: .85
+    }
+}
+
+@-moz-keyframes brain-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    25% {
+        opacity: .85
+    }
+}
+
+@-ms-keyframes brain-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    25% {
+        opacity: .85
+    }
+}
+
+@-o-keyframes brain-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    25% {
+        opacity: .85
+    }
+}
+
+.brain-1 .image-13 {
+    opacity: .2;
+    animation: brain-top-13 7s ease infinite 1s;
+    -webkit-animation: brain-top-13 7s ease infinite 1s;
+    -moz-animation: brain-top-13 7s ease infinite 1s;
+    -ms-animation: brain-top-13 7s ease infinite 1s;
+    -o-animation: brain-top-13 7s ease infinite 1s
+}
+
+@keyframes brain-top-13 {
+    0% {
+        opacity: .2
+    }
+
+    40% {
+        opacity: .55
+    }
+
+    100% {
+        opacity: .1
+    }
+}
+
+@-webkit-keyframes brain-top-13 {
+    0% {
+        opacity: .2
+    }
+
+    40% {
+        opacity: .55
+    }
+
+    100% {
+        opacity: .1
+    }
+}
+
+@-moz-keyframes brain-top-13 {
+    0% {
+        opacity: .2
+    }
+
+    40% {
+        opacity: .55
+    }
+
+    100% {
+        opacity: .1
+    }
+}
+
+@-ms-keyframes brain-top-13 {
+    0% {
+        opacity: .2
+    }
+
+    40% {
+        opacity: .55
+    }
+
+    100% {
+        opacity: .1
+    }
+}
+
+@-o-keyframes brain-top-13 {
+    0% {
+        opacity: .2
+    }
+
+    40% {
+        opacity: .55
+    }
+
+    100% {
+        opacity: .1
+    }
+}
+
+.brain-1 .image-14 {
+    opacity: .1;
+    animation: brain-top-14 6s ease infinite 1s;
+    -webkit-animation: brain-top-14 6s ease infinite 1s;
+    -moz-animation: brain-top-14 6s ease infinite 1s;
+    -o-animation: brain-top-14 6s ease infinite 1s;
+    -ms-animation: brain-top-14 6s ease infinite 1s
+}
+
+@keyframes brain-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    45% {
+        opacity: .25
+    }
+}
+
+@-webkit-keyframes brain-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    45% {
+        opacity: .25
+    }
+}
+
+@-moz-keyframes brain-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    45% {
+        opacity: .25
+    }
+}
+
+@-o-keyframes brain-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    45% {
+        opacity: .25
+    }
+}
+
+@-ms-keyframes brain-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    45% {
+        opacity: .25
+    }
+}
+
+.brain-1 .image-15 {
+    opacity: .1;
+    animation: brain-top-15 6s ease infinite 1s;
+    -webkit-animation: brain-top-15 6s ease infinite 1s;
+    -moz-animation: brain-top-15 6s ease infinite 1s;
+    -o-animation: brain-top-15 6s ease infinite 1s;
+    -ms-animation: brain-top-15 6s ease infinite 1s
+}
+
+@keyframes brain-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+.brain-2 .image-2 {
+    opacity: .2;
+    animation: brain2-top-2 5s ease infinite 0s;
+    -webkit-animation: brain2-top-2 5s ease infinite 0s;
+    -moz-animation: brain2-top-2 5s ease infinite 0s;
+    -o-animation: brain2-top-2 5s ease infinite 0s;
+    -ms-animation: brain2-top-2 5s ease infinite 0s
+}
+
+@keyframes brain2-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-webkit-keyframes brain2-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-moz-keyframes brain2-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-o-keyframes brain2-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+@-ms-keyframes brain2-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    25% {
+        opacity: .45
+    }
+}
+
+.brain-2 .image-3 {
+    opacity: .2;
+    animation: brain2-top-3 3.5s ease infinite .8s;
+    -webkit-animation: brain2-top-3 3.5s ease infinite .8s;
+    -moz-animation: brain2-top-3 3.5s ease infinite .8s;
+    -o-animation: brain2-top-3 3.5s ease infinite .8s;
+    -ms-animation: brain2-top-3 3.5s ease infinite .8s
+}
+
+@keyframes brain2-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-webkit-keyframes brain2-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-moz-keyframes brain2-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-ms-keyframes brain2-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+@-o-keyframes brain2-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .6
+    }
+}
+
+.brain-2 .image-4 {
+    opacity: .3;
+    animation: brain2-top-4 3.5s ease infinite 1.3s;
+    -webkit-animation: brain2-top-4 3.5s ease infinite 1.3s;
+    -moz-animation: brain2-top-4 3.5s ease infinite 1.3s;
+    -o-animation: brain2-top-4 3.5s ease infinite 1.3s;
+    -ms-animation: brain2-top-4 3.5s ease infinite 1.3s
+}
+
+@keyframes brain2-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain2-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain2-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain2-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain2-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-2 .image-5 {
+    opacity: .3;
+    animation: brain2-top-5 3.5s ease infinite .2s;
+    -webkit-animation: brain2-top-5 3.5s ease infinite .2s;
+    -moz-animation: brain2-top-5 3.5s ease infinite .2s;
+    -ms-animation: brain2-top-5 3.5s ease infinite .2s;
+    -o-animation: brain2-top-5 3.5s ease infinite .2s
+}
+
+@keyframes brain2-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain2-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain2-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain2-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain2-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-2 .image-6 {
+    opacity: .2;
+    animation: brain2-top-6 3.5s ease infinite 1.5s;
+    -webkit-animation: brain2-top-6 3.5s ease infinite 1.5s;
+    -moz-animation: brain2-top-6 3.5s ease infinite 1.5s;
+    -o-animation: brain2-top-6 3.5s ease infinite 1.5s;
+    -ms-animation: brain2-top-6 3.5s ease infinite 1.5s
+}
+
+@keyframes brain2-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain2-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain2-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain2-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain2-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-2 .image-7 {
+    opacity: .3;
+    animation: brain2-top-7 3.7s ease infinite 2s;
+    -webkit-animation: brain2-top-7 3.7s ease infinite 2s;
+    -moz-animation: brain2-top-7 3.7s ease infinite 2s;
+    -ms-animation: brain2-top-7 3.7s ease infinite 2s;
+    -o-animation: brain2-top-7 3.7s ease infinite 2s
+}
+
+@keyframes brain2-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes brain2-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes brain2-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes brain2-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes brain2-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+.brain-2 .image-8 {
+    opacity: .2;
+    animation: brain2-top-8 3.2s ease infinite 2.4s;
+    -webkit-animation: brain2-top-8 3.2s ease infinite 2.4s;
+    -moz-animation: brain2-top-8 3.2s ease infinite 2.4s;
+    -o-animation: brain2-top-8 3.2s ease infinite 2.4s;
+    -ms-animation: brain2-top-8 3.2s ease infinite 2.4s
+}
+
+@keyframes brain2-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-moz-keyframes brain2-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-webkit-keyframes brain2-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-o-keyframes brain2-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-ms-keyframes brain2-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+.brain-2 .image-9 {
+    opacity: .2;
+    animation: brain2-top-9 3.7s ease infinite .4s;
+    -webkit-animation: brain2-top-9 3.7s ease infinite .4s;
+    -moz-animation: brain2-top-9 3.7s ease infinite .4s;
+    -ms-animation: brain2-top-9 3.7s ease infinite .4s;
+    -o-animation: brain2-top-9 3.7s ease infinite .4s
+}
+
+@keyframes brain2-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain2-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain2-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain2-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain2-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+.brain-2 .image-10 {
+    opacity: .3;
+    animation: brain2-top-10 3.6s ease infinite 1.3s;
+    -webkit-animation: brain2-top-10 3.6s ease infinite 1.3s;
+    -moz-animation: brain2-top-10 3.6s ease infinite 1.3s;
+    -ms-animation: brain2-top-10 3.6s ease infinite 1.3s;
+    -o-animation: brain2-top-10 3.6s ease infinite 1.3s
+}
+
+@keyframes brain2-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain2-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain2-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain2-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain2-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-2 .image-11 {
+    opacity: .1;
+    animation: brain2-top-11 3.5s ease infinite 2.6s;
+    -webkit-animation: brain2-top-11 3.5s ease infinite 2.6s;
+    -moz-animation: brain2-top-11 3.5s ease infinite 2.6s;
+    -ms-animation: brain2-top-11 3.5s ease infinite 2.6s;
+    -o-animation: brain2-top-11 3.5s ease infinite 2.6s
+}
+
+@keyframes brain2-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain2-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain2-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain2-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain2-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+.brain-2 .image-12 {
+    opacity: .5;
+    animation: brain2-top-12 5s ease infinite 0s;
+    -webkit-animation: brain2-top-12 5s ease infinite 0s;
+    -moz-animation: brain2-top-12 5s ease infinite 0s;
+    -o-animation: brain2-top-12 5s ease infinite 0s;
+    -ms-animation: brain2-top-12 5s ease infinite 0s
+}
+
+@keyframes brain2-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-webkit-keyframes brain2-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-moz-keyframes brain2-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-o-keyframes brain2-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-ms-keyframes brain2-top-12 {
+
+    0%,
+    100% {
+        opacity: .5
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+.brain-2 .image-13 {
+    opacity: .3;
+    animation: brain2-top-13 5s ease infinite .5s;
+    -webkit-animation: brain2-top-13 5s ease infinite .5s;
+    -moz-animation: brain2-top-13 5s ease infinite .5s;
+    -o-animation: brain2-top-13 5s ease infinite .5s;
+    -ms-animation: brain2-top-13 5s ease infinite .5s
+}
+
+@keyframes brain2-top-13 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-webkit-keyframes brain2-top-13 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-moz-keyframes brain2-top-13 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-o-keyframes brain2-top-13 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+@-ms-keyframes brain2-top-13 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    35% {
+        opacity: .8
+    }
+}
+
+.brain-2 .image-14 {
+    opacity: .1;
+    animation: brain2-top-14 5s ease infinite 0s;
+    -webkit-animation: brain2-top-14 5s ease infinite 0s;
+    -moz-animation: brain2-top-14 5s ease infinite 0s;
+    -ms-animation: brain2-top-14 5s ease infinite 0s;
+    -o-animation: brain2-top-14 5s ease infinite 0s
+}
+
+@keyframes brain2-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .25
+    }
+}
+
+@-webkit-keyframes brain2-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .25
+    }
+}
+
+@-moz-keyframes brain2-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .25
+    }
+}
+
+@-ms-keyframes brain2-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .25
+    }
+}
+
+@-o-keyframes brain2-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .25
+    }
+}
+
+.brain-2 .image-15 {
+    opacity: .1;
+    animation: brain2-top-15 5s ease infinite 0s;
+    -webkit-animation: brain2-top-15 5s ease infinite 0s;
+    -moz-animation: brain2-top-15 5s ease infinite 0s;
+    -o-animation: brain2-top-15 5s ease infinite 0s;
+    -ms-animation: brain2-top-15 5s ease infinite 0s
+}
+
+@keyframes brain2-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain2-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain2-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain2-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain2-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    35% {
+        opacity: .35
+    }
+}
+
+.brain-3 .image-2 {
+    opacity: .2;
+    animation: brain3-top-2 4s ease infinite 0s;
+    -webkit-animation: brain3-top-2 4s ease infinite 0s;
+    -moz-animation: brain3-top-2 4s ease infinite 0s;
+    -ms-animation: brain3-top-2 4s ease infinite 0s;
+    -o-animation: brain3-top-2 4s ease infinite 0s
+}
+
+@keyframes brain3-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .45
+    }
+}
+
+@-webkit-keyframes brain3-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .45
+    }
+}
+
+@-moz-keyframes brain3-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .45
+    }
+}
+
+@-o-keyframes brain3-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .45
+    }
+}
+
+@-ms-keyframes brain3-top-2 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .45
+    }
+}
+
+.brain-3 .image-3 {
+    opacity: .2;
+    animation: brain3-top-3 3.7s ease infinite 1.3s;
+    -webkit-animation: brain3-top-3 3.7s ease infinite 1.3s;
+    -moz-animation: brain3-top-3 3.7s ease infinite 1.3s;
+    -o-animation: brain3-top-3 3.7s ease infinite 1.3s;
+    -ms-animation: brain3-top-3 3.7s ease infinite 1.3s
+}
+
+@keyframes brain3-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .65
+    }
+}
+
+@-webkit-keyframes brain3-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .65
+    }
+}
+
+@-moz-keyframes brain3-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .65
+    }
+}
+
+@-o-keyframes brain3-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .65
+    }
+}
+
+@-ms-keyframes brain3-top-3 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .65
+    }
+}
+
+.brain-3 .image-4 {
+    opacity: .3;
+    animation: brain3-top-4 3.3s ease infinite .2s;
+    -webkit-animation: brain3-top-4 3.3s ease infinite .2s;
+    -moz-animation: brain3-top-4 3.3s ease infinite .2s;
+    -o-animation: brain3-top-4 3.3s ease infinite .2s;
+    -ms-animation: brain3-top-4 3.3s ease infinite .2s
+}
+
+@keyframes brain3-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain3-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain3-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain3-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain3-top-4 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-3 .image-5 {
+    opacity: .3;
+    animation: brain3-top-5 3.5s ease infinite .8s;
+    -webkit-animation: brain3-top-5 3.5s ease infinite .8s;
+    -moz-animation: brain3-top-5 3.5s ease infinite .8s;
+    -o-animation: brain3-top-5 3.5s ease infinite .8s;
+    -ms-animation: brain3-top-5 3.5s ease infinite .8s
+}
+
+@keyframes brain3-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain3-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain3-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain3-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain3-top-5 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-3 .image-6 {
+    opacity: .2;
+    animation: brain3-top-6 3.3s ease infinite 1.9s;
+    -webkit-animation: brain3-top-6 3.3s ease infinite 1.9s;
+    -moz-animation: brain3-top-6 3.3s ease infinite 1.9s;
+    -o-animation: brain3-top-6 3.3s ease infinite 1.9s;
+    -ms-animation: brain3-top-6 3.3s ease infinite 1.9s
+}
+
+@keyframes brain3-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain3-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain3-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain3-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain3-top-6 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-3 .image-7 {
+    opacity: .3;
+    animation: brain3-top-7 3.4s ease infinite 1.5s;
+    -webkit-animation: brain3-top-7 3.4s ease infinite 1.5s;
+    -moz-animation: brain3-top-7 3.4s ease infinite 1.5s;
+    -ms-animation: brain3-top-7 3.4s ease infinite 1.5s;
+    -o-animation: brain3-top-7 3.4s ease infinite 1.5s
+}
+
+@keyframes brain3-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes brain3-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes brain3-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes brain3-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes brain3-top-7 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: 1
+    }
+}
+
+.brain-3 .image-8 {
+    opacity: .2;
+    animation: brain3-top-8 3.6s ease infinite .1s;
+    -webkit-animation: brain3-top-8 3.6s ease infinite .1s;
+    -moz-animation: brain3-top-8 3.6s ease infinite .1s;
+    -o-animation: brain3-top-8 3.6s ease infinite .1s;
+    -ms-animation: brain3-top-8 3.6s ease infinite .1s
+}
+
+@keyframes brain3-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-webkit-keyframes brain3-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-o-keyframes brain3-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-moz-keyframes brain3-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+@-ms-keyframes brain3-top-8 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    10% {
+        opacity: .55
+    }
+}
+
+.brain-3 .image-9 {
+    opacity: .2;
+    animation: brain3-top-9 3.5s ease infinite 2s;
+    -webkit-animation: brain3-top-9 3.5s ease infinite 2s;
+    -moz-animation: brain3-top-9 3.5s ease infinite 2s;
+    -o-animation: brain3-top-9 3.5s ease infinite 2s;
+    -ms-animation: brain3-top-9 3.5s ease infinite 2s
+}
+
+@keyframes brain3-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain3-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain3-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain3-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain3-top-9 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    15% {
+        opacity: .75
+    }
+}
+
+.brain-3 .image-10 {
+    opacity: .3;
+    animation: brain3-top-10 3.3s ease infinite 1.4s;
+    -webkit-animation: brain3-top-10 3.3s ease infinite 1.4s;
+    -moz-animation: brain3-top-10 3.3s ease infinite 1.4s;
+    -o-animation: brain3-top-10 3.3s ease infinite 1.4s;
+    -ms-animation: brain3-top-10 3.3s ease infinite 1.4s
+}
+
+@keyframes brain3-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain3-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain3-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain3-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain3-top-10 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    12% {
+        opacity: .75
+    }
+}
+
+.brain-3 .image-11 {
+    opacity: .1;
+    animation: brain3-top-11 3.5s ease infinite 2.3s;
+    -webkit-animation: brain3-top-11 3.5s ease infinite 2.3s;
+    -moz-animation: brain3-top-11 3.5s ease infinite 2.3s;
+    -ms-animation: brain3-top-11 3.5s ease infinite 2.3s;
+    -o-animation: brain3-top-11 3.5s ease infinite 2.3s
+}
+
+@keyframes brain3-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain3-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain3-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain3-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain3-top-11 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+.brain-3 .image-12 {
+    opacity: .3;
+    animation: brain3-top-12 7s ease infinite 0s;
+    -webkit-animation: brain3-top-12 7s ease infinite 0s;
+    -moz-animation: brain3-top-12 7s ease infinite 0s;
+    -o-animation: brain3-top-12 7s ease infinite 0s;
+    -ms-animation: brain3-top-12 7s ease infinite 0s
+}
+
+@keyframes brain3-top-12 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    25% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes brain3-top-12 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    25% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes brain3-top-12 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    25% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes brain3-top-12 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    25% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes brain3-top-12 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    25% {
+        opacity: .75
+    }
+}
+
+.brain-3 .image-13 {
+    opacity: .2;
+    animation: brain3-top-13 5.5s ease infinite 1s;
+    -webkit-animation: brain3-top-13 5.5s ease infinite 1s;
+    -moz-animation: brain3-top-13 5.5s ease infinite 1s;
+    -o-animation: brain3-top-13 5.5s ease infinite 1s;
+    -ms-animation: brain3-top-13 5.5s ease infinite 1s
+}
+
+@keyframes brain3-top-13 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .65
+    }
+}
+
+@-webkit-keyframes brain3-top-13 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .65
+    }
+}
+
+@-o-keyframes brain3-top-13 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .65
+    }
+}
+
+@-ms-keyframes brain3-top-13 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .65
+    }
+}
+
+@-moz-keyframes brain3-top-13 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .65
+    }
+}
+
+.brain-3 .image-14 {
+    opacity: .1;
+    animation: brain3-top-14 7s ease infinite 0s;
+    -webkit-animation: brain3-top-14 7s ease infinite 0s;
+    -moz-animation: brain3-top-14 7s ease infinite 0s;
+    -o-animation: brain3-top-14 7s ease infinite 0s;
+    -ms-animation: brain3-top-14 7s ease infinite 0s
+}
+
+@keyframes brain3-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain3-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain3-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain3-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain3-top-14 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .35
+    }
+}
+
+.brain-3 .image-15 {
+    opacity: .1;
+    animation: brain3-top-15 7s ease infinite 0s;
+    -webkit-animation: brain3-top-15 7s ease infinite 0s;
+    -ms-animation: brain3-top-15 7s ease infinite 0s;
+    -moz-animation: brain3-top-15 7s ease infinite 0s;
+    -o-animation: brain3-top-15 7s ease infinite 0s
+}
+
+@keyframes brain3-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes brain3-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .3
+    }
+}
+
+@-ms-keyframes brain3-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .3
+    }
+}
+
+@-o-keyframes brain3-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .3
+    }
+}
+
+@-moz-keyframes brain3-top-15 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    60% {
+        opacity: .3
+    }
+}
+
+.wc-opacity-transform {
+    will-change: transform, opacity
+}
+
+.wc-opacity {
+    will-change: opacity
+}
+
+.bg .image-2 {
+    opacity: 0;
+    animation: bg-image-2 10s ease infinite 1s;
+    -webkit-animation: bg-image-2 10s ease infinite 1s;
+    -moz-animation: bg-image-2 10s ease infinite 1s;
+    -o-animation: bg-image-2 10s ease infinite 1s;
+    -ms-animation: bg-image-2 10s ease infinite 1s
+}
+
+@keyframes bg-image-2 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes bg-image-2 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes bg-image-2 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes bg-image-2 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes bg-image-2 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+}
+
+.bg .image-3 {
+    opacity: 0;
+    animation: bg-image-3 8s ease infinite 0s;
+    -webkit-animation: bg-image-3 8s ease infinite 0s;
+    -moz-animation: bg-image-3 8s ease infinite 0s;
+    -o-animation: bg-image-3 8s ease infinite 0s;
+    -ms-animation: bg-image-3 8s ease infinite 0s
+}
+
+@keyframes bg-image-3 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes bg-image-3 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes bg-image-3 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes bg-image-3 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes bg-image-3 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: 1
+    }
+}
+
+.bg .image-4 {
+    opacity: 0;
+    animation: bg-image-4 14s ease infinite 2s;
+    -webkit-animation: bg-image-4 14s ease infinite 2s;
+    -moz-animation: bg-image-4 14s ease infinite 2s;
+    -o-animation: bg-image-4 14s ease infinite 2s;
+    -ms-animation: bg-image-4 14s ease infinite 2s
+}
+
+@keyframes bg-image-4 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes bg-image-4 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes bg-image-4 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes bg-image-4 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes bg-image-4 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    60% {
+        opacity: 1
+    }
+}
+
+.bg .image-5 {
+    opacity: 0;
+    animation: bg-image-5 5s ease infinite 3s;
+    -webkit-animation: bg-image-5 5s ease infinite 3s;
+    -moz-animation: bg-image-5 5s ease infinite 3s;
+    -o-animation: bg-image-5 5s ease infinite 3s;
+    -ms-animation: bg-image-5 5s ease infinite 3s
+}
+
+@keyframes bg-image-5 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+}
+
+@-webkit-keyframes bg-image-5 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+}
+
+@-moz-keyframes bg-image-5 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+}
+
+@-o-keyframes bg-image-5 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+}
+
+@-ms-keyframes bg-image-5 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+}
+
+.bg .image-6 {
+    opacity: 0;
+    animation: bg-image-6 9s ease infinite 5s;
+    -webkit-animation: bg-image-6 9s ease infinite 5s;
+    -moz-animation: bg-image-6 9s ease infinite 5s;
+    -o-animation: bg-image-6 9s ease infinite 5s;
+    -ms-animation: bg-image-6 9s ease infinite 5s
+}
+
+@keyframes bg-image-6 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes bg-image-6 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: .3
+    }
+}
+
+@-moz-keyframes bg-image-6 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: .3
+    }
+}
+
+@-o-keyframes bg-image-6 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: .3
+    }
+}
+
+@-ms-keyframes bg-image-6 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    35% {
+        opacity: .3
+    }
+}
+
+.bg .image-7 {
+    opacity: 0;
+    animation: bg-image-7 8s ease infinite 3s;
+    -webkit-animation: bg-image-7 8s ease infinite 3s;
+    -moz-animation: bg-image-7 8s ease infinite 3s;
+    -o-animation: bg-image-7 8s ease infinite 3s;
+    -ms-animation: bg-image-7 8s ease infinite 3s
+}
+
+@keyframes bg-image-7 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .6
+    }
+}
+
+@-webkit-keyframes bg-image-7 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .6
+    }
+}
+
+@-moz-keyframes bg-image-7 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .6
+    }
+}
+
+@-o-keyframes bg-image-7 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .6
+    }
+}
+
+@-ms-keyframes bg-image-7 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .6
+    }
+}
+
+.bg .image-8 {
+    opacity: 0;
+    animation: bg-image-8 10s ease infinite 1.5s;
+    -webkit-animation: bg-image-8 10s ease infinite 1.5s;
+    -moz-animation: bg-image-8 10s ease infinite 1.5s;
+    -o-animation: bg-image-8 10s ease infinite 1.5s;
+    -ms-animation: bg-image-8 10s ease infinite 1.5s
+}
+
+@keyframes bg-image-8 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .75
+    }
+}
+
+@-webkit-keyframes bg-image-8 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .75
+    }
+}
+
+@-moz-keyframes bg-image-8 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .75
+    }
+}
+
+@-o-keyframes bg-image-8 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .75
+    }
+}
+
+@-ms-keyframes bg-image-8 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .75
+    }
+}
+
+.bg .image-9 {
+    opacity: 0;
+    animation: bg-image-9 15s ease infinite 2s;
+    -webkit-animation: bg-image-9 15s ease infinite 2s;
+    -moz-animation: bg-image-9 15s ease infinite 2s;
+    -o-animation: bg-image-9 15s ease infinite 2s;
+    -ms-animation: bg-image-9 15s ease infinite 2s
+}
+
+@keyframes bg-image-9 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .65
+    }
+}
+
+@-webkit-keyframes bg-image-9 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .65
+    }
+}
+
+@-moz-keyframes bg-image-9 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .65
+    }
+}
+
+@-o-keyframes bg-image-9 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .65
+    }
+}
+
+@-ms-keyframes bg-image-9 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .65
+    }
+}
+
+.bg .image-10 {
+    opacity: 0;
+    animation: bg-image-10 16s ease infinite 2.5s;
+    -webkit-animation: bg-image-10 16s ease infinite 2.5s;
+    -moz-animation: bg-image-10 16s ease infinite 2.5s;
+    -o-animation: bg-image-10 16s ease infinite 2.5s;
+    -ms-animation: bg-image-10 16s ease infinite 2.5s
+}
+
+@keyframes bg-image-10 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes bg-image-10 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .3
+    }
+}
+
+@-moz-keyframes bg-image-10 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .3
+    }
+}
+
+@-o-keyframes bg-image-10 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .3
+    }
+}
+
+@-ms-keyframes bg-image-10 {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    30% {
+        opacity: .3
+    }
+}
+
+.clouds .cloud-2,
+.clouds .cloud-3 {
+    right: 0
+}
+
+.clouds .cloud-4,
+.clouds .cloud-5 {
+    left: 0
+}
+
+.clouds .cloud {
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    -webkit-transition-property: opacity, transform;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: opacity, transform;
+    -moz-transition-timing-function: ease;
+    -o-transition-property: opacity, transform;
+    -o-transition-timing-function: ease;
+    -ms-transition-property: opacity, transform;
+    -ms-transition-timing-function: ease
+}
+
+.clouds .cloud-2 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 3s;
+    transition-duration: 13s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 3s;
+    -webkit-transition-duration: 13s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 3s;
+    -moz-transition-duration: 13s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 3s;
+    -ms-transition-duration: 13s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 3s;
+    -o-transition-duration: 13s
+}
+
+.clouds .cloud-3,
+.clouds .cloud-4 {
+    transform: translateX(0);
+    opacity: 1
+}
+
+.clouds .cloud-3 {
+    transition-delay: 0s;
+    transition-duration: 11s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 11s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 11s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 11s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 11s
+}
+
+.clouds .cloud-4 {
+    transition-delay: 0s;
+    transition-duration: 13s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 13s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 13s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 13s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 13s
+}
+
+.clouds .cloud-5 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+    transition-duration: 12s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 12s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 12s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 12s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 12s
+}
+
+.clouds .cloud-6 {
+    top: 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    transition-duration: 15s;
+    -webkit-transform: translateY(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 15s;
+    -moz-transform: translateY(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 15s;
+    -otransform: translateY(0);
+    -otransition-delay: 0s;
+    -otransition-duration: 15s;
+    -ms-transform: translateY(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 15s
+}
+
+.clouds .cloud-7 {
+    bottom: 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    transition-duration: 16s;
+    -webkit-transform: translateY(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 16s;
+    -moz-transform: translateY(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 16s;
+    -o-transform: translateY(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 16s;
+    -ms-transform: translateY(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 16s
+}
+
+.clouds.out .cloud-2 {
+    opacity: .1;
+    transition-delay: 0s;
+    transition-duration: 13s;
+    transform: translateX(50%);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 13s;
+    -webkit-transform: translateX(50%);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 13s;
+    -moz-transform: translateX(50%);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 13s;
+    -ms-transform: translateX(50%);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 13s;
+    -o-transform: translateX(50%)
+}
+
+.clouds.out .cloud-3 {
+    opacity: .1;
+    transition-delay: 2s;
+    transition-duration: 11s;
+    transform: translateX(50%);
+    -webkit-transition-delay: 2s;
+    -webkit-transition-duration: 11s;
+    -webkit-transform: translateX(50%);
+    -moz-transition-delay: 2s;
+    -moz-transition-duration: 11s;
+    -moz-transform: translateX(50%);
+    -ms-transition-delay: 2s;
+    -ms-transition-duration: 11s;
+    -ms-transform: translateX(50%);
+    -o-transition-delay: 2s;
+    -o-transition-duration: 11s;
+    -o-transform: translateX(50%)
+}
+
+.clouds.out .cloud-4 {
+    opacity: .1;
+    transition-delay: 1.7s;
+    transition-duration: 13s;
+    transform: translateX(-50%);
+    -webkit-transition-delay: 1.7s;
+    -webkit-transition-duration: 13s;
+    -webkit-transform: translateX(-50%);
+    -moz-transition-delay: 1.7s;
+    -moz-transition-duration: 13s;
+    -moz-transform: translateX(-50%);
+    -ms-transition-delay: 1.7s;
+    -ms-transition-duration: 13s;
+    -ms-transform: translateX(-50%);
+    -o-transition-delay: 1.7s;
+    -o-transition-duration: 13s;
+    -o-transform: translateX(-50%)
+}
+
+.clouds.out .cloud-5 {
+    opacity: .1;
+    transition-delay: 2.5s;
+    transition-duration: 12s;
+    transform: translateX(-50%);
+    -webkit-transition-delay: 2.5s;
+    -webkit-transition-duration: 12s;
+    -webkit-transform: translateX(-50%);
+    -moz-transition-delay: 2.5s;
+    -moz-transition-duration: 12s;
+    -moz-transform: translateX(-50%);
+    -o-transition-delay: 2.5s;
+    -o-transition-duration: 12s;
+    -o-transform: translateX(-50%);
+    -ms-transition-delay: 2.5s;
+    -ms-transition-duration: 12s;
+    -ms-transform: translateX(-50%)
+}
+
+.clouds.out .cloud-6 {
+    opacity: .1;
+    transition-delay: 2.5s;
+    transition-duration: 15s;
+    transform: translateY(-90%);
+    -webkit-transition-delay: 2.5s;
+    -webkit-transition-duration: 15s;
+    -webkit-transform: translateY(-90%);
+    -moz-transition-delay: 2.5s;
+    -moz-transition-duration: 15s;
+    -moz-transform: translateY(-90%);
+    -o-transition-delay: 2.5s;
+    -o-transition-duration: 15s;
+    -o-transform: translateY(-90%);
+    -ms-transition-delay: 2.5s;
+    -ms-transition-duration: 15s;
+    -ms-transform: translateY(-90%)
+}
+
+.clouds.out .cloud-7 {
+    opacity: .1;
+    transition-delay: 3s;
+    transition-duration: 16s;
+    transform: translateY(90%);
+    -webkit-transition-delay: 3s;
+    -webkit-transition-duration: 16s;
+    -webkit-transform: translateY(90%);
+    -moz-transition-delay: 3s;
+    -moz-transition-duration: 16s;
+    -moz-transform: translateY(90%);
+    -ms-transition-delay: 3s;
+    -ms-transition-duration: 16s;
+    -ms-transform: translateY(90%);
+    -o-transition-delay: 3s;
+    -o-transition-duration: 16s;
+    -o-transform: translateY(90%)
+}
+
+.clouds.step2 .cloud-2 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+    transition-duration: 6s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 6s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 6s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 6s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 6s
+}
+
+.clouds.step2 .cloud-3 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+    transition-duration: 4s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 4s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 4s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 4s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 4s
+}
+
+.clouds.step2 .cloud-4 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+    transition-duration: 6s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 6s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 6s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 6s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 6s
+}
+
+.clouds.step2 .cloud-5 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+    transition-duration: 5s;
+    -webkit-transform: translateX(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 5s;
+    -moz-transform: translateX(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 5s;
+    -o-transform: translateX(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 5s;
+    -ms-transform: translateX(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 5s
+}
+
+.clouds.step2 .cloud-6 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    transition-duration: 8s;
+    -webkit-transform: translateY(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 8s;
+    -moz-transform: translateY(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 8s;
+    -o-transform: translateY(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 8s;
+    -ms-transform: translateY(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 8s
+}
+
+.clouds.step2 .cloud-7 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    transition-duration: 9s;
+    -webkit-transform: translateY(0);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 9s;
+    -moz-transform: translateY(0);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 9s;
+    -o-transform: translateY(0);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 9s;
+    -ms-transform: translateY(0);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 9s
+}
+
+.clouds.step3 .cloud-2 {
+    opacity: .1;
+    transition-delay: 0s;
+    transition-duration: 8s;
+    transform: translateX(50%);
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 8s;
+    -webkit-transform: translateX(50%);
+    -o-transition-delay: 0s;
+    -o-transition-duration: 8s;
+    -o-transform: translateX(50%);
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 8s;
+    -moz-transform: translateX(50%);
+    -ms-transition-delay: 0s;
+    -ms-transition-duration: 8s;
+    -ms-transform: translateX(50%)
+}
+
+.clouds.step3 .cloud-3 {
+    opacity: .1;
+    transition-delay: 1s;
+    transition-duration: 6s;
+    transform: translateX(50%);
+    -webkit-transition-delay: 1s;
+    -webkit-transition-duration: 6s;
+    -webkit-transform: translateX(50%);
+    -o-transition-delay: 1s;
+    -o-transition-duration: 6s;
+    -o-transform: translateX(50%);
+    -moz-transition-delay: 1s;
+    -moz-transition-duration: 6s;
+    -moz-transform: translateX(50%);
+    -ms-transition-delay: 1s;
+    -ms-transition-duration: 6s;
+    -ms-transform: translateX(50%)
+}
+
+.clouds.step3 .cloud-4 {
+    opacity: .1;
+    transition-delay: 1.5s;
+    transition-duration: 8s;
+    transform: translateX(-50%);
+    -webkit-transition-delay: 1.5s;
+    -webkit-transition-duration: 8s;
+    -webkit-transform: translateX(-50%);
+    -moz-transition-delay: 1.5s;
+    -moz-transition-duration: 8s;
+    -moz-transform: translateX(-50%);
+    -o-transition-delay: 1.5s;
+    -o-transition-duration: 8s;
+    -o-transform: translateX(-50%);
+    -ms-transition-delay: 1.5s;
+    -ms-transition-duration: 8s;
+    -ms-transform: translateX(-50%)
+}
+
+.clouds.step3 .cloud-5 {
+    opacity: .1;
+    transition-delay: 2.2s;
+    transition-duration: 7s;
+    transform: translateX(-50%);
+    -webkit-transition-delay: 2.2s;
+    -webkit-transition-duration: 7s;
+    -webkit-transform: translateX(-50%);
+    -moz-transition-delay: 2.2s;
+    -moz-transition-duration: 7s;
+    -moz-transform: translateX(-50%);
+    -o-transition-delay: 2.2s;
+    -o-transition-duration: 7s;
+    -o-transform: translateX(-50%);
+    -ms-transition-delay: 2.2s;
+    -ms-transition-duration: 7s;
+    -ms-transform: translateX(-50%)
+}
+
+.clouds.step3 .cloud-6 {
+    opacity: .1;
+    transition-delay: 2.5s;
+    transition-duration: 10s;
+    transform: translateY(-90%);
+    -webkit-transition-delay: 2.5s;
+    -webkit-transition-duration: 10s;
+    -webkit-transform: translateY(-90%);
+    -moz-transition-delay: 2.5s;
+    -moz-transition-duration: 10s;
+    -moz-transform: translateY(-90%);
+    -o-transition-delay: 2.5s;
+    -o-transition-duration: 10s;
+    -o-transform: translateY(-90%);
+    -ms-transition-delay: 2.5s;
+    -ms-transition-duration: 10s;
+    -ms-transform: translateY(-90%)
+}
+
+.clouds.step3 .cloud-7 {
+    opacity: .1;
+    transition-delay: 2.6s;
+    transition-duration: 11s;
+    transform: translateY(90%);
+    -webkit-transition-delay: 2.6s;
+    -webkit-transition-duration: 11s;
+    -webkit-transform: translateY(90%);
+    -moz-transition-delay: 2.6s;
+    -moz-transition-duration: 11s;
+    -moz-transform: translateY(90%);
+    -o-transition-delay: 2.6s;
+    -o-transition-duration: 11s;
+    -o-transform: translateY(90%);
+    -ms-transition-delay: 2.6s;
+    -ms-transition-duration: 11s;
+    -ms-transform: translateY(90%)
+}
+
+.brain-front {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0, 0);
+    transition-delay: 1s;
+    transition-duration: 6s;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+    -webkit-transform: translate(-50%, -50%) scale(0, 0);
+    -webkit-transition-delay: 1s;
+    -webkit-transition-duration: 6s;
+    -webkit-transition-property: transform, opacity;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transform: translate(-50%, -50%) scale(0, 0);
+    -moz-transition-delay: 1s;
+    -moz-transition-duration: 6s;
+    -moz-transition-property: transform, opacity;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transform: translate(-50%, -50%) scale(0, 0);
+    -o-transition-delay: 1s;
+    -o-transition-duration: 6s;
+    -o-transition-property: transform, opacity;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transform: translate(-50%, -50%) scale(0, 0);
+    -ms-transition-delay: 1s;
+    -ms-transition-duration: 6s;
+    -ms-transition-property: transform, opacity;
+    -ms-transition-timing-function: ease-in-out
+}
+
+.brain-front.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1, 1);
+    -webkit-transform: translate(-50%, -50%) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) scale(1, 1);
+    -o-transform: translate(-50%, -50%) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) scale(1, 1)
+}
+
+.brain-front.hide {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0, 0);
+    transition-delay: .5s;
+    transition-duration: 3s;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+    -webkit-transform: translate(-50%, -50%) scale(0, 0);
+    -webkit-transition-delay: .5s;
+    -webkit-transition-duration: 3s;
+    -webkit-transition-property: transform, opacity;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transform: translate(-50%, -50%) scale(0, 0);
+    -moz-transition-delay: .5s;
+    -moz-transition-duration: 3s;
+    -moz-transition-property: transform, opacity;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transform: translate(-50%, -50%) scale(0, 0);
+    -o-transition-delay: .5s;
+    -o-transition-duration: 3s;
+    -o-transition-property: transform, opacity;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transform: translate(-50%, -50%) scale(0, 0);
+    -ms-transition-delay: .5s;
+    -ms-transition-duration: 3s;
+    -ms-transition-property: transform, opacity;
+    -ms-transition-timing-function: ease-in-out
+}
+
+.app-title,
+.app-title.hide {
+    transition-timing-function: ease
+}
+
+.brain-front .image-1 {
+    opacity: 0;
+    animation: brain-front-1 10s ease-in-out forwards 1s;
+    -webkit-animation: brain-front-1 10s ease-in-out forwards 1s;
+    -moz-animation: brain-front-1 10s ease-in-out forwards 1s;
+    -o-animation: brain-front-1 10s ease-in-out forwards 1s;
+    -ms-animation: brain-front-1 10s ease-in-out forwards 1s
+}
+
+@keyframes brain-front-1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes brain-front-1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes brain-front-1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes brain-front-1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes brain-front-1 {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.brain-front .image-2 {
+    opacity: .2;
+    animation: brain-front-21 5s ease-in-out infinite 8s;
+    -webkit-animation: brain-front-21 5s ease-in-out infinite 8s;
+    -moz-animation: brain-front-21 5s ease-in-out infinite 8s;
+    -o-animation: brain-front-21 5s ease-in-out infinite 8s;
+    -ms-animation: brain-front-21 5s ease-in-out infinite 8s
+}
+
+@keyframes brain-front-21 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    20% {
+        opacity: .9
+    }
+}
+
+@-webkit-keyframes brain-front-21 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    20% {
+        opacity: .9
+    }
+}
+
+@-moz-keyframes brain-front-21 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    20% {
+        opacity: .9
+    }
+}
+
+@-o-keyframes brain-front-21 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    20% {
+        opacity: .9
+    }
+}
+
+@-ms-keyframes brain-front-21 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    20% {
+        opacity: .9
+    }
+}
+
+.brain-front .image-3 {
+    opacity: .2;
+    animation: brain-front-31 6s ease-in-out infinite 10s;
+    -webkit-animation: brain-front-31 6s ease-in-out infinite 10s;
+    -moz-animation: brain-front-31 6s ease-in-out infinite 10s;
+    -o-animation: brain-front-31 6s ease-in-out infinite 10s;
+    -ms-animation: brain-front-31 6s ease-in-out infinite 10s
+}
+
+@keyframes brain-front-31 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .8
+    }
+}
+
+@-webkit-keyframes brain-front-31 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .8
+    }
+}
+
+@-moz-keyframes brain-front-31 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .8
+    }
+}
+
+@-o-keyframes brain-front-31 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .8
+    }
+}
+
+@-ms-keyframes brain-front-31 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    30% {
+        opacity: .8
+    }
+}
+
+.brain-front .image-4 {
+    opacity: .2;
+    animation: brain-front-41 7s ease-in-out infinite 11s;
+    -webkit-animation: brain-front-41 7s ease-in-out infinite 11s;
+    -moz-animation: brain-front-41 7s ease-in-out infinite 11s;
+    -o-animation: brain-front-41 7s ease-in-out infinite 11s;
+    -ms-animation: brain-front-41 7s ease-in-out infinite 11s
+}
+
+@keyframes brain-front-41 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    55% {
+        opacity: .9
+    }
+}
+
+@-webkit-keyframes brain-front-41 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    55% {
+        opacity: .9
+    }
+}
+
+@-moz-keyframes brain-front-41 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    55% {
+        opacity: .9
+    }
+}
+
+@-o-keyframes brain-front-41 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    55% {
+        opacity: .9
+    }
+}
+
+@-ms-keyframes brain-front-41 {
+
+    0%,
+    100% {
+        opacity: .2
+    }
+
+    55% {
+        opacity: .9
+    }
+}
+
+.brain-front .image-5 {
+    opacity: .15;
+    animation: brain-front-51 4s ease-in-out infinite 8s;
+    -webkit-animation: brain-front-51 4s ease-in-out infinite 8s;
+    -moz-animation: brain-front-51 4s ease-in-out infinite 8s;
+    -o-animation: brain-front-51 4s ease-in-out infinite 8s;
+    -ms-animation: brain-front-51 4s ease-in-out infinite 8s
+}
+
+@keyframes brain-front-51 {
+
+    0%,
+    100% {
+        opacity: .15
+    }
+
+    15% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain-front-51 {
+
+    0%,
+    100% {
+        opacity: .15
+    }
+
+    15% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain-front-51 {
+
+    0%,
+    100% {
+        opacity: .15
+    }
+
+    15% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain-front-51 {
+
+    0%,
+    100% {
+        opacity: .15
+    }
+
+    15% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain-front-51 {
+
+    0%,
+    100% {
+        opacity: .15
+    }
+
+    15% {
+        opacity: .35
+    }
+}
+
+.brain-front .image-6 {
+    opacity: .1;
+    animation: brain-front-61 3.5s ease-out infinite 9.5s;
+    -webkit-animation: brain-front-61 3.5s ease-out infinite 9.5s;
+    -moz-animation: brain-front-61 3.5s ease-out infinite 9.5s;
+    -ms-animation: brain-front-61 3.5s ease-out infinite 9.5s;
+    -o-animation: brain-front-61 3.5s ease-out infinite 9.5s
+}
+
+@keyframes brain-front-61 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-webkit-keyframes brain-front-61 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-moz-keyframes brain-front-61 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-o-keyframes brain-front-61 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+@-ms-keyframes brain-front-61 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    10% {
+        opacity: .35
+    }
+}
+
+.brain-front .image-7 {
+    opacity: .25;
+    animation: brain-front-71 4s ease-out infinite 11s;
+    -webkit-animation: brain-front-71 4s ease-out infinite 11s;
+    -moz-animation: brain-front-71 4s ease-out infinite 11s;
+    -o-animation: brain-front-71 4s ease-out infinite 11s;
+    -ms-animation: brain-front-71 4s ease-out infinite 11s
+}
+
+@keyframes brain-front-71 {
+
+    0%,
+    100% {
+        opacity: .25
+    }
+
+    5% {
+        opacity: .9
+    }
+}
+
+@-webkit-keyframes brain-front-71 {
+
+    0%,
+    100% {
+        opacity: .25
+    }
+
+    5% {
+        opacity: .9
+    }
+}
+
+@-o-keyframes brain-front-71 {
+
+    0%,
+    100% {
+        opacity: .25
+    }
+
+    5% {
+        opacity: .9
+    }
+}
+
+@-moz-keyframes brain-front-71 {
+
+    0%,
+    100% {
+        opacity: .25
+    }
+
+    5% {
+        opacity: .9
+    }
+}
+
+@-ms-keyframes brain-front-71 {
+
+    0%,
+    100% {
+        opacity: .25
+    }
+
+    5% {
+        opacity: .9
+    }
+}
+
+.brain-front .image-8 {
+    opacity: .1;
+    animation: brain-front-81 5s ease-out infinite 8s;
+    -webkit-animation: brain-front-81 5s ease-out infinite 8s;
+    -moz-animation: brain-front-81 5s ease-out infinite 8s;
+    -o-animation: brain-front-81 5s ease-out infinite 8s;
+    -ms-animation: brain-front-81 5s ease-out infinite 8s
+}
+
+@keyframes brain-front-81 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    13% {
+        opacity: .4
+    }
+}
+
+@-webkit-keyframes brain-front-81 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    13% {
+        opacity: .4
+    }
+}
+
+@-moz-keyframes brain-front-81 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    13% {
+        opacity: .4
+    }
+}
+
+@-o-keyframes brain-front-81 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    13% {
+        opacity: .4
+    }
+}
+
+@-ms-keyframes brain-front-81 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    13% {
+        opacity: .4
+    }
+}
+
+.brain-front .image-9 {
+    opacity: .1;
+    animation: brain-front-91 5s ease-out infinite 8s;
+    -webkit-animation: brain-front-91 5s ease-out infinite 8s;
+    -moz-animation: brain-front-91 5s ease-out infinite 8s;
+    -o-animation: brain-front-91 5s ease-out infinite 8s;
+    -ms-animation: brain-front-91 5s ease-out infinite 8s
+}
+
+@keyframes brain-front-91 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes brain-front-91 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .3
+    }
+}
+
+@-moz-keyframes brain-front-91 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .3
+    }
+}
+
+@-o-keyframes brain-front-91 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .3
+    }
+}
+
+@-ms-keyframes brain-front-91 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    40% {
+        opacity: .3
+    }
+}
+
+.brain-front .image-10 {
+    opacity: .1;
+    animation: brain-front-101 5s ease-out infinite 8s;
+    -webkit-animation: brain-front-101 5s ease-out infinite 8s;
+    -moz-animation: brain-front-101 5s ease-out infinite 8s;
+    -o-animation: brain-front-101 5s ease-out infinite 8s;
+    -ms-animation: brain-front-101 5s ease-out infinite 8s
+}
+
+@keyframes brain-front-101 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    20% {
+        opacity: .45
+    }
+}
+
+@-webkit-keyframes brain-front-101 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    20% {
+        opacity: .45
+    }
+}
+
+@-moz-keyframes brain-front-101 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    20% {
+        opacity: .45
+    }
+}
+
+@-ms-keyframes brain-front-101 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    20% {
+        opacity: .45
+    }
+}
+
+@-o-keyframes brain-front-101 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    20% {
+        opacity: .45
+    }
+}
+
+.brain-front .image-11 {
+    opacity: .3;
+    animation: brain-front-111 3s ease-out infinite 10s;
+    -webkit-animation: brain-front-111 3s ease-out infinite 10s;
+    -moz-animation: brain-front-111 3s ease-out infinite 10s;
+    -o-animation: brain-front-111 3s ease-out infinite 10s;
+    -ms-animation: brain-front-111 3s ease-out infinite 10s
+}
+
+@keyframes brain-front-111 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-webkit-keyframes brain-front-111 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-moz-keyframes brain-front-111 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-o-keyframes brain-front-111 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-ms-keyframes brain-front-111 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+.brain-front .image-12 {
+    opacity: .3;
+    animation: brain-front-121 3s ease-out infinite 10.5s;
+    -webkit-animation: brain-front-121 3s ease-out infinite 10.5s;
+    -ms-animation: brain-front-121 3s ease-out infinite 10.5s;
+    -moz-animation: brain-front-121 3s ease-out infinite 10.5s;
+    -o-animation: brain-front-121 3s ease-out infinite 10.5s
+}
+
+@keyframes brain-front-121 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-webkit-keyframes brain-front-121 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-moz-keyframes brain-front-121 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-o-keyframes brain-front-121 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+@-ms-keyframes brain-front-121 {
+
+    0%,
+    100% {
+        opacity: .3
+    }
+
+    10% {
+        opacity: .6
+    }
+}
+
+.brain-front .image-13 {
+    opacity: .1;
+    animation: brain-front-131 4s ease-out infinite 8s;
+    -webkit-animation: brain-front-131 4s ease-out infinite 8s;
+    -moz-animation: brain-front-131 4s ease-out infinite 8s;
+    -o-animation: brain-front-131 4s ease-out infinite 8s;
+    -ms-animation: brain-front-131 4s ease-out infinite 8s
+}
+
+@keyframes brain-front-131 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    15% {
+        opacity: .8
+    }
+}
+
+@-webkit-keyframes brain-front-131 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    15% {
+        opacity: .8
+    }
+}
+
+@-moz-keyframes brain-front-131 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    15% {
+        opacity: .8
+    }
+}
+
+@-o-keyframes brain-front-131 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    15% {
+        opacity: .8
+    }
+}
+
+@-ms-keyframes brain-front-131 {
+
+    0%,
+    100% {
+        opacity: .1
+    }
+
+    15% {
+        opacity: .8
+    }
+}
+
+.bg,
+.clouds {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    height: 100%;
+    width: 100%
+}
+
+.bg,
+.bg img,
+.clouds,
+.clouds img,
+body,
+html {
+    height: 100%
+}
+
+.bg,
+.bg img,
+.clouds,
+body,
+html {
+    width: 100%
+}
+
+.app-title h1,
+body,
+html {
+    font-weight: 400;
+    margin: 0
+}
+
+.start a,
+body,
+html {
+    color: #fff
+}
+
+body,
+html {
+    overflow: hidden;
+    padding: 0;
+    background-color: #060f16
+}
+
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+.bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.clouds {
+    top: 0;
+    left: 0
+}
+
+
+.splash-screen .brain-front,
+.splash-screen .brain-front img {
+    display: block;
+    top: 50%;
+    position: absolute
+}
+
+.clouds img {
+    position: absolute
+}
+
+.clouds img.cloud-1 {
+    width: 100%;
+    min-height: 100%
+}
+
+.splash-screen {
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    opacity: 1
+}
+
+.splash-screen.hide {
+    opacity: 0
+}
+
+.splash-screen .brain-front {
+    left: 50%;
+    max-width: 75%;
+    max-height: 75%;
+    width: 75%;
+    height: 75%
+}
+
+.splash-screen .brain-front img {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%
+}
+
+.brain-inside,
+.levels .brain img {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: block
+}
+
+.levels .brain {
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(100%/3);
+    height: 100%;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    opacity: .5;
+    cursor: pointer
+}
+
+.levels .brain img {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 95%
+}
+
+.levels.ready .brain.active,
+.levels.ready .brain:hover {
+    opacity: 1
+}
+
+.brain-inside {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: width 1.5s ease;
+    -webkit-transition: width 1.5s ease;
+    -o-transition: width 1.5s ease;
+    -moz-transition: width 1.5s ease;
+    -ms-transition: width 1.5s ease
+}
+
+.brain.active .brain-inside,
+.brain:hover .brain-inside {
+    width: 120%
+}
+
+.levels .brain.non-active {
+    width: 0;
+    opacity: 0
+}
+
+.levels .brain .level-title,
+.levels .brain.active .level-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-weight: 300;
+    font-size: 1.3em;
+    transition: font-size 2s ease;
+    -webkit-transition: font-size 2s ease;
+    -ms-transition: font-size 2s ease;
+    -o-transition: font-size 2s ease;
+    -moz-transition: font-size 2s ease
+}
+
+.levels .brain.non-active .level-title {
+    font-size: 0
+}
+
+.levels .brain.active .level-title,
+.levels .brain:hover .level-title {
+    font-size: 2.5em;
+    text-shadow: 0 0 25px rgba(128, 253, 249, .9)
+}
+
+.levels .brain.non-active:hover .level-title {
+    font-size: 0
+}
+
+.full-window {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+@media screen and (min-width:320px) and (max-width:610px) {
+    .splash-screen .brain-front {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .brain.active {
+        width: 90%
+    }
+
+    .brain.active .level-title,
+    .levels .brain:hover .level-title {
+        font-size: 1.5em
+    }
+
+    .brain.active .brain-inside {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:610px) {
+
+    /* .deal-play-2,
+    .flip-flop-card-2 {
+        left: 40%
+    } */
+
+    .bg .image-10,
+    .bg .image-2,
+    .bg .image-3,
+    .bg .image-4,
+    .bg .image-5,
+    .bg .image-6,
+    .bg .image-7,
+    .bg .image-8,
+    .bg .image-9,
+    .brain-1 .image-10,
+    .brain-1 .image-11,
+    .brain-1 .image-12,
+    .brain-1 .image-13,
+    .brain-1 .image-14,
+    .brain-1 .image-15,
+    .brain-1 .image-2,
+    .brain-1 .image-3,
+    .brain-1 .image-4,
+    .brain-1 .image-5,
+    .brain-1 .image-6,
+    .brain-1 .image-7,
+    .brain-1 .image-8,
+    .brain-1 .image-9,
+    .brain-2 .image-10,
+    .brain-2 .image-11,
+    .brain-2 .image-12,
+    .brain-2 .image-13,
+    .brain-2 .image-14,
+    .brain-2 .image-15,
+    .brain-2 .image-2,
+    .brain-2 .image-3,
+    .brain-2 .image-4,
+    .brain-2 .image-5,
+    .brain-2 .image-6,
+    .brain-2 .image-7,
+    .brain-2 .image-8,
+    .brain-2 .image-9,
+    .brain-3 .image-10,
+    .brain-3 .image-11,
+    .brain-3 .image-12,
+    .brain-3 .image-13,
+    .brain-3 .image-14,
+    .brain-3 .image-15,
+    .brain-3 .image-2,
+    .brain-3 .image-3,
+    .brain-3 .image-4,
+    .brain-3 .image-5,
+    .brain-3 .image-6,
+    .brain-3 .image-7,
+    .brain-3 .image-8,
+    .brain-3 .image-9 {
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        -ms-animation: none
+    }
+
+    .bg .image-2,
+    .bg .image-3,
+    .bg .image-4 {
+        opacity: 1
+    }
+
+    .bg .image-5 {
+        opacity: 0
+    }
+
+    .bg .image-10,
+    .bg .image-6,
+    .bg .image-7,
+    .bg .image-8,
+    .bg .image-9,
+    .clouds {
+        display: none
+    }
+
+    .clouds .cloud {
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none
+    }
+
+    .brain-1 .image-2 {
+        opacity: .2
+    }
+
+    .brain-1 .image-3 {
+        opacity: .4
+    }
+
+    .brain-1 .image-4 {
+        opacity: .6
+    }
+
+    .brain-1 .image-5,
+    .brain-1 .image-6,
+    .brain-1 .image-7 {
+        opacity: .4
+    }
+
+    .brain-1 .image-8 {
+        opacity: .3
+    }
+
+    .brain-1 .image-9 {
+        opacity: .4
+    }
+
+    .brain-1 .image-10 {
+        opacity: .3
+    }
+
+    .brain-1 .image-11 {
+        opacity: .2
+    }
+
+    .brain-1 .image-12 {
+        opacity: .6
+    }
+
+    .brain-1 .image-13 {
+        opacity: .4
+    }
+
+    .brain-1 .image-14 {
+        opacity: .15
+    }
+
+    .brain-1 .image-15 {
+        opacity: .18
+    }
+
+    .brain-2 .image-2 {
+        opacity: .2
+    }
+
+    .brain-2 .image-3 {
+        opacity: .3
+    }
+
+    .brain-2 .image-4 {
+        opacity: .4
+    }
+
+    .brain-2 .image-5 {
+        opacity: .3
+    }
+
+    .brain-2 .image-6,
+    .brain-2 .image-7 {
+        opacity: .4
+    }
+
+    .brain-2 .image-8,
+    .brain-2 .image-9 {
+        opacity: .3
+    }
+
+    .brain-2 .image-10,
+    .brain-2 .image-11 {
+        opacity: .2
+    }
+
+    .brain-2 .image-12 {
+        opacity: .6
+    }
+
+    .brain-2 .image-13 {
+        opacity: .3
+    }
+
+    .brain-2 .image-14 {
+        opacity: .15
+    }
+
+    .brain-2 .image-15 {
+        opacity: .18
+    }
+
+    .brain-3 .image-2 {
+        opacity: .15
+    }
+
+    .brain-3 .image-3 {
+        opacity: .3
+    }
+
+    .brain-3 .image-4,
+    .brain-3 .image-5 {
+        opacity: .4
+    }
+
+    .brain-3 .image-6 {
+        opacity: .3
+    }
+
+    .brain-3 .image-7 {
+        opacity: .4
+    }
+
+    .brain-3 .image-10,
+    .brain-3 .image-8,
+    .brain-3 .image-9 {
+        opacity: .3
+    }
+
+    .brain-3 .image-11 {
+        opacity: .2
+    }
+
+    .brain-3 .image-12 {
+        opacity: .6
+    }
+
+    .brain-3 .image-13 {
+        opacity: .3
+    }
+
+    .brain-3 .image-14 {
+        opacity: .15
+    }
+
+    .brain-3 .image-15 {
+        opacity: .18
+    }
+}

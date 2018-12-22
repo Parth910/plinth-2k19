@@ -136,6 +136,7 @@ body {
         padding-top: 0px;
     }
 }
+
 button.btn-side {
     width: 130px;
     transition: all .5s ease;
@@ -154,18 +155,32 @@ button.btn-side {
     -moz-border-radius: 5px;
     margin-bottom: 5px;
     /* letter-spacing: 0.1rem; */
-  
-  }
-  
-  button.btn-live {
+
+}
+
+button.btn-live {
     -webkit-animation: glowing 1500ms infinite;
     -moz-animation: glowing 1500ms infinite;
     -o-animation: glowing 1500ms infinite;
     animation: glowing 1500ms infinite;
-  }
-  
-  button.btn-live#ca:hover {
+}
+
+button.btn-live#ca:hover {
     color: #fff;
     background-color: #001F3F;
-  }
-  
+}
+
+@font-face {
+    font-family: rez;
+    src: url("../fonts/REZ.ttf");
+}
+
+@font-face {
+    font-family: caviar;
+    src: url("../fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: cl;
+    src: url("../fonts/ChampagneAndLimousines.ttf");
+}

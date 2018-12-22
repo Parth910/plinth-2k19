@@ -1,0 +1,83 @@
+<!-- Navbar -->
+<div class="navbar" id="nav-delay">
+   <a href="/"><img class="logo" src="./media/logo.svg" alt="Plinth" /></a>
+
+    <div class="navbar-buttons">
+        <% if(isLoggedIn){ %>
+        <div id="desk-nav">
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hi,
+                        <%- user.name %>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                        <a class="dropdown-item" href="/profile">Profile</a>
+                        <a class="dropdown-item" href="/user/logout">LogOut</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <% } else { %>
+
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><button class="button" type="button" name="button">
+                LOGIN</button></a>
+        <% } %>
+        <span><img class="open-menu" src="./media/menu.svg" alt="" /></span>
+    </div>
+</div>
+
+<!-- Overlay Navigation Menu -->
+<div class="overlay">
+    <nav class="overlay-menu">
+        <ul>
+            <li><a href="/cryptex">Home</a></li>
+            <li><a href="/">Plinth</a></li>
+            <li><a href="/cryptex/leaderboard">Leaderboard</a></li>
+            <li><a href="https://www.facebook.com/lnmiitquizzinga/" target="_blank">Hints & Clues</a></li>
+            <li><img class="close-menu" src="./media/close.svg" alt="" /></li>
+        </ul>
+    </nav>
+</div>
+
+
+<!-- Register Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center" id="exampleModalLongTitle">Register/Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Register yourself for different competitions through this portal to know further details
+                    and
+                    proceedings of PLINTH'19.
+                    Morever if you register through this platform , you would be able to get exclusive
+                    coupons
+                    and offers.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="col-sm-6 text-left">
+                    <a onclick='userLoginInitiate("/user/auth/google")'><button type="button" class="btn btn-outline-primary "><img
+                                class="g_icon" src="../media/g_icon.png">
+                            &nbspGoogle</button></a>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <a onclick='userLoginInitiate("/user/auth/facebook")'><button type="button" class="btn btn-outline-primary"><img
+                                class="f_icon" src="../media/f_icon.png">
+                            &nbspFacebook</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

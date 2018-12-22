@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/headcryp %>
+
+</head>
+
+<body>
+    <style>
+        #home {
+            visibility: hidden;
+        }
+
+        .cryptex {
+            font-size: 40px;
+        }
+
+        .heading {
+            font-size: 3.0vh;
+            font-weight: bold;
+            padding-bottom: 10px;
+            margin-top: -8px;
+        }
+
+        .cryp-result {
+            margin-top: 20px;
+        }
+        .page-link{
+            background: #6c757d;
+            color: #fff;
+        }
+        .page-link:hover{
+            color: #6c757d;
+        }
+    </style>
+
+    <div class="loader" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="home">
+        <div class="bg">
+            <img src="./media/bg-pink-1.png" alt="" class="image-2">
+            <img src="./media/bg-blue-1.png" alt="" class="image-3">
+            <img src="./media/bg-pink-2.png" alt="" class="image-4">
+            <img src="./media/bg-green-1.png" alt="" class="image-5">
+            <img src="./media/bg-green-2.png" alt="" class="image-6">
+            <img src="./media/bg-red-1.png" alt="" class="image-7">
+            <img src="./media/bg-blue-2.png" alt="" class="image-8">
+            <img src="./media/bg-pink-3.png" alt="" class="image-9">
+            <img src="./media/bg-blue-3.png" alt="" class="image-10">
+        </div>
+        <div class="clouds">
+            <img src="./media/bg-cloud-1.png" alt="" class="cloud cloud-1">
+            <img src="./media/bg-cloud-2.png" alt="" class="cloud cloud-2">
+            <img src="./media/bg-cloud-3.png" alt="" class="cloud cloud-3">
+            <img src="./media/bg-cloud-4.png" alt="" class="cloud cloud-4">
+            <img src="./media/bg-cloud-5.png" alt="" class="cloud cloud-5">
+            <img src="./media/bg-cloud-6.png" alt="" class="cloud cloud-6">
+            <img src="./media/bg-cloud-7.png" alt="" class="cloud cloud-7">
+        </div>
+        <% include partials/headercryp %>
+        <div class="container">
+            <div class="cryptex small-padd" style="margin-top:-25px !important;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span>Cryptex</span>
+                        <br>
+                        <span class="heading" style="font-size: 4vh"> Leaderboard
+                        </span>
+                        <br>
+                        <% if(isLoggedIn  && user.cryptex){ %>
+                        <a class="btn btn-sm btn-secondary" href="/cryptex/play">
+                            Back to Questions
+                        </a>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cryp-result">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="pagination justify-content-center">
+                            <% if(current != 1 ){ %>
+                            <li class="page-item"><a class="page-link" href="/cryptex/leaderboard/<%= current - 1 %> ">&laquo;
+                                    Previous</a></li>
+                            <% } %>
+                            <% if(current < pages){ %>
+                            <li class="page-item"><a class="page-link" href="/cryptex/leaderboard/<%= current + 1 %> ">Next
+                                    &raquo;</a></li>
+                            <% } %>
+                        </ul>
+                        <div class="table-responsive-md">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="table-active">
+                                        <th class="head-font text-center" scope="col">Rank</th>
+                                        <th class="head-font text-center" scope="col">Name</th>
+                                        <th class="head-font text-center" scope="col">College</th>
+                                        <th class="head-font text-center" scope="col">Level</th>
+                                        <% if(isLoggedIn && user.email == 'admin@plinth.in'){ %>
+                                        <th class="head-font text-center" scope="col">Email</th>
+                                        <% }%>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <%   for(var i=0; i<results.length; i++) { %>
+                                    <tr>
+
+                                        <th class="body-font text-center" scope="row">
+                                            #
+                                            <%= ( current - 1 ) * 5 + i + 1 %>
+                                        </th>
+                                        <td class="body-font text-center">
+                                            <%= results[i].name  %>
+                                        </td>
+                                        <td class="body-font text-center">
+                                            <%= results[i].college  %>
+                                        </td>
+                                        <td class="body-font text-center">
+                                            <% if(results[i].cryptex.level === 28 ){ %>
+                                            Completed
+                                            <% } else if(results[i].cryptex.level === 1 ){ %>
+                                            Started
+                                            <% }else{ %>
+                                            <%= results[i].cryptex.level  %>
+                                            <% } %>
+                                        </td>
+                                        <% if( isLoggedIn && user.email == 'admin@plinth.in'){ %>
+                                        <td class="body-font text-center">
+                                            <%= results[i].email  %>
+                                        </td>
+                                        <% }%>
+                                    </tr>
+                                    <% } %>
+
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="js/cryptex.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $("#loader").delay(1000).fadeOut(400, function () {
+                $("#home").css({
+                    "visibility": "visible"
+                }).fadeIn(200);
+            });
+        });
+    </script>
+    <script>
+        setTimeout(function () {
+            $('#nav-delay').css({
+                "visibility": "visible"
+            }).fadeIn(400);
+        }, 2000);
+    </script>
+
+</body>
+
+</html>

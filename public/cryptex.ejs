@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/headcryp %>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="home">
+
+        <div id="index" class="full-window splash-screen" style="display: none">
+            <div class="brain-front">
+                <img class="image-1" src="./media/brain-front.png" alt="">
+                <img class="image-2" src="./media/brain-front-red.png" alt="">
+                <img class="image-3" src="./media/brain-front-blue.png" alt="">
+                <img class="image-4" src="./media/brain-front-purple.png" alt="">
+                <img class="image-5" src="./media/brain-front-laser.png" alt="">
+                <img class="image-6" src="./media/brain-front-line-1.png" alt="">
+                <img class="image-7" src="./media/brain-front-line-2.png" alt="">
+                <img class="image-8" src="./media/brain-front-fire.png" alt="">
+                <img class="image-9" src="./media/brain-front-fire-lines.png" alt="">
+                <img class="image-10" src="./media/brain-front-fire-lines-2.png" alt="">
+                <img class="image-11" src="./media/brain-front-synaps.png" alt="">
+                <img class="image-12" src="./media/brain-front-synaps-2.png" alt="">
+                <img class="image-13" src="./media/brain-front-line-3.png" alt="">
+            </div>
+
+            <!-- Background -->
+
+            <div class="bg">
+                <img src="./media/bg-pink-1.png" alt="" class="image-2">
+                <img src="./media/bg-blue-1.png" alt="" class="image-3">
+                <img src="./media/bg-pink-2.png" alt="" class="image-4">
+                <img src="./media/bg-green-1.png" alt="" class="image-5">
+                <img src="./media/bg-green-2.png" alt="" class="image-6">
+                <img src="./media/bg-red-1.png" alt="" class="image-7">
+                <img src="./media/bg-blue-2.png" alt="" class="image-8">
+                <img src="./media/bg-pink-3.png" alt="" class="image-9">
+                <img src="./media/bg-blue-3.png" alt="" class="image-10">
+            </div>
+            <div class="clouds">
+                <img src="./media/bg-cloud-1.png" alt="" class="cloud cloud-1">
+                <img src="./media/bg-cloud-2.png" alt="" class="cloud cloud-2">
+                <img src="./media/bg-cloud-3.png" alt="" class="cloud cloud-3">
+                <img src="./media/bg-cloud-4.png" alt="" class="cloud cloud-4">
+                <img src="./media/bg-cloud-5.png" alt="" class="cloud cloud-5">
+                <img src="./media/bg-cloud-6.png" alt="" class="cloud cloud-6">
+                <img src="./media/bg-cloud-7.png" alt="" class="cloud cloud-7">
+            </div>
+
+        </div>
+
+        <% include partials/headercryp %>
+        <div class="container">
+            <div class="plinth-text animated fadeIn delay-4s">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <span class="plinth">plinth</span> <span class="date">2019</span>
+                            <br>
+                            <span class="presents">presents</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cryptex">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span class="animated fadeIn delay-5s">Cryptex</span>
+                        <br>
+                        <div class="cryp-text">
+                            <p class="textp small small-padd animated flipInX slower delay-5s">
+                                <b>
+                                    Get ready, all set to dive into the vast ocean of web hunt to unravel the secrets.
+                                    <br>
+                                    This whole internet is yours, but mind you, the elusive clues are bound to leave
+                                    you stumped.
+                                </b>
+                            </p>
+                            <p class="textp small small-padd animated flipInX slower delay-5s">
+                                <strong><em>So, ready to accept the challenge?</em></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cryptex-play-btn animated lightSpeedIn slower delay-5s">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <% if(isLoggedIn){ %>
+                        <% if(newUser){ %>
+                        <a class="btn btn-secondary" onclick="startGame()">
+                            Start the Game!
+                        </a>
+                        <% }else{ %>
+                        <a class="btn btn-secondary" href="/cryptex/play">
+                            Continue Playing ...
+                        </a>
+                        <% } %>
+                        <% } else { %>
+                        <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#exampleModalCenter">Login
+                            to play!</a>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="js/cryptex.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $("#loader").delay(1000).fadeOut(400, function () {
+                $("#home").fadeIn(200);
+            });
+        });
+    </script>
+    <script>
+        setTimeout(function () {
+            $('#nav-delay').css({
+                "visibility": "visible"
+            }).fadeIn(400);
+        }, 4000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/headcryp %>
+
+</head>
+
+<body>
+    <style>
+#home {
+    visibility: hidden;
+}
+.cryptex {
+    font-size: 40px;
+}
+#myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.99);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 70px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+    .close {
+        right: 30px !important;
+    }
+}
+.heading {
+    font-size: 3.0vh;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-top: -8px;
+}
+.answer-box{
+    margin-top: 10px ;
+}
+    </style>
+
+    <div class="loader" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="home">
+        <div class="bg">
+            <img src="./media/bg-pink-1.png" alt="" class="image-2">
+            <img src="./media/bg-blue-1.png" alt="" class="image-3">
+            <img src="./media/bg-pink-2.png" alt="" class="image-4">
+            <img src="./media/bg-green-1.png" alt="" class="image-5">
+            <img src="./media/bg-green-2.png" alt="" class="image-6">
+            <img src="./media/bg-red-1.png" alt="" class="image-7">
+            <img src="./media/bg-blue-2.png" alt="" class="image-8">
+            <img src="./media/bg-pink-3.png" alt="" class="image-9">
+            <img src="./media/bg-blue-3.png" alt="" class="image-10">
+        </div>
+        <div class="clouds">
+            <img src="./media/bg-cloud-1.png" alt="" class="cloud cloud-1">
+            <img src="./media/bg-cloud-2.png" alt="" class="cloud cloud-2">
+            <img src="./media/bg-cloud-3.png" alt="" class="cloud cloud-3">
+            <img src="./media/bg-cloud-4.png" alt="" class="cloud cloud-4">
+            <img src="./media/bg-cloud-5.png" alt="" class="cloud cloud-5">
+            <img src="./media/bg-cloud-6.png" alt="" class="cloud cloud-6">
+            <img src="./media/bg-cloud-7.png" alt="" class="cloud cloud-7">
+        </div>
+        <% include partials/headercryp %>
+        <div class="container">
+            <div class="cryptex small-padd" style="margin-top:-25px !important;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span>Cryptex</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cryp-ques">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <% if(user.cryptex.level != 28){ %>
+                        <br>
+                        <div class="heading"> Level
+                            <%= user.cryptex.level %>
+                        </div>
+                        <div class="small-padd">
+                            <div class="heading">
+                                Clue
+                            </div>
+                            <div class="text">
+                                <div>
+
+                                    <img id="myImg" src="<%= doc.image %>" alt="Level <%= user.cryptex.level %>" style="width:100%;max-width:400px">
+
+                                    <div class="text">
+
+                                        Click on image to enlarge.
+
+                                    </div>
+                                    <% if(doc.format != ""){ %>
+                                    <div class="text">
+
+                                        Answer Format:
+                                        <%= doc.format %>
+
+                                    </div>
+
+                                    <% } %>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="answer-box">
+                            <div class="center-padding small-padd">
+                                <div class="heading">
+                                    Answer
+                                </div>
+                                <div class="text">
+                                    <input class="input" id="answer" name="answer" type="text" required>
+                                </div>
+                                <br>
+                                <input id="myBtn" type="button" value="Submit" class="btn btn-lg btn-secondary" onclick="submitAns()">
+                                <br>
+                                <br>
+
+                            </div>
+
+
+                        </div>
+                        <% } else { %>
+                        <div class="heading">
+                            Game is On
+                        </div>
+                        <p>
+                            Congratulations, you have solved all question. <br>
+                            Keep the eye on Leaderboard for results.
+                        </p>
+                        <% } %>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="js/cryptex.js"></script>
+    <script src="js/bootstrap-notify.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $("#loader").delay(1000).fadeOut(400, function () {
+                $("#home").css({
+                    "visibility": "visible"
+                }).fadeIn(200);
+            });
+        });
+    </script>
+    <script>
+        setTimeout(function () {
+            $('#nav-delay').css({
+                "visibility": "visible"
+            }).fadeIn(400);
+        }, 2000);
+    </script>
+    <script>
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+        var modal = document.getElementById('myModal');
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var span = document.getElementsByClassName("close");
+
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    </script>
+    <script>
+        var input = document.getElementById("answer");
+        input.addEventListener("keyup", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("myBtn").click();
+            }
+        });
+    </script>
+</body>
+
+</html>
