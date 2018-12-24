@@ -1,8 +1,10 @@
 h3{
     color: antiquewhite !important
 }
+
 .card {
-    /* border: 1px solid #ddd !important; */
+    border: 1px solid #ddd !important;
+    border-top: transparent !important;
     border-radius: 60px !important;
     margin: 30px 0 !important;
     padding: 10px !important;
@@ -26,6 +28,9 @@ h3{
   }
   .profile-card .profile-name {
     margin-top: 0 !important;
+  }
+  .profile-name{
+      font-size: 20px !important
   }
   .profile-card  .profile-note  {
     height: 160px !important;
@@ -55,22 +60,17 @@ h3{
   .list-social {
     font-size: 1.75em !important;
   }
-  /****** Footer ******/
-  .footer {
-    background-color: #e6e6e6;
+  .fab:hover{
+      color: blueviolet !important;
   }
-  .footer p {
-    margin: 20px 0;
-    text-align: center;
-    color: #808080;
-  }
-  .footer .glyphicon-heart {
-    color: pink;
-  }
+ 
   @media only screen and (min-width: 2301px) {
     .profile-card .profile-photo {
         margin-left: 235px !important;
 
+    }
+    .th1{
+        margin-right: 5% !important
     }
 
 }
@@ -79,6 +79,9 @@ h3{
         margin-left: 197px !important;
 
     }
+    .th1{
+        margin-right: 4% !important
+    }
 
 }
   @media only screen and (min-width: 2021px) and (max-width:2150px){
@@ -86,12 +89,17 @@ h3{
         margin-left: 177px !important;
 
     }
-
+    .th1{
+        margin-right: 4% !important
+    }
 }
   @media only screen and (min-width: 1961px) and (max-width:2020px){
     .profile-card .profile-photo {
         margin-left: 163px !important;
 
+    }
+    .th1{
+        margin-right: 4% !important
     }
 
 }
@@ -100,13 +108,18 @@ h3{
     .profile-card .profile-photo {
         margin-left: 153px !important;
               }
+              .th1{
+                margin-right: 4.5% !important
+            }
 
   }
   @media only screen and (min-width: 1821px) and (max-width:1879px){
     .profile-card .profile-photo {
         margin-left: 146px !important;
               }
-
+              .th1{
+                margin-right: 3.5% !important
+            }
   }
 
   @media only screen and (min-width: 1800px) and (max-width:1820px){
@@ -114,6 +127,10 @@ h3{
         margin-left: 143px !important;
 
     }
+    .th1{
+        margin-right: 3.6% !important
+    }
+}
 
   
     @media only screen and (min-width: 1741px) and (max-width:1799px){
@@ -121,33 +138,45 @@ h3{
             margin-left: 134px !important;
     
         }
-    
-    }}
+        .th1{
+            margin-right: 4% !important
+        } 
+    }
     @media only screen and (min-width: 1670px) and (max-width:1740px){
         .profile-card .profile-photo {
             margin-left:122px !important;
     
         }
-    
+        .th1{
+            margin-right: 4% !important
+        }
     }
     @media only screen and (min-width: 1580px) and (max-width:1669px){
         .profile-card .profile-photo {
             margin-left: 115px !important;
     
         }
-    
+
+      .th1{
+            margin-right: 4% !important
+        }
     }
     @media only screen and (min-width: 1500px) and (max-width:1579px){
         .profile-card .profile-photo {
             margin-left: 108px !important;
     
         }
-    
+        .th1{
+            margin-right: 4% !important
+        }
     }
     @media only screen and (min-width: 1460px) and (max-width:1499px){
         .profile-card .profile-photo {
             margin-left: 91px !important;
     
+        }
+        .th1{
+            margin-right: 5% !important
         }
     
     }
@@ -156,49 +185,63 @@ h3{
             margin-left: 86px !important;
     
         }
-    
+        .th1{
+            margin-right: 5% !important
+        }
     }
      @media only screen and (min-width: 1350px) and (max-width:1409px){
         .profile-card .profile-photo {
             margin-left: 76px !important;
     
         }
-    
+        .th1{
+            margin-right: 5% !important
+        }
     }
     @media only screen and (min-width: 1320px) and (max-width:1349px){
         .profile-card .profile-photo {
             margin-left: 74px !important;
     
         }
-    
+        .th1{
+            margin-right: 5% !important
+        }
     }
     @media only screen and (min-width: 1260px) and (max-width:1319px){
         .profile-card .profile-photo {
             margin-left: 65px !important;
     
         }
-    
+        .th1{
+            margin-right: 5% !important
+        }
     }
     @media only screen and (min-width: 1200px) and (max-width:1259px){
         .profile-card .profile-photo {
             margin-left: 60px !important;
     
         }
-    
+        .th1{
+            margin-right: 5% !important
+        }
     }
     @media only screen and (min-width: 1150px) and (max-width:1199px){
         .profile-card .profile-photo {
             margin-left: 55px !important;
     
         }
-    
+        .th1{
+            margin-right: 4% !important
+        }
     }
     @media only screen and (min-width: 999px) and (max-width:1149px){
         .profile-card .profile-photo {
             margin-left: 30px !important;
     
         }
-    
+        .th1{
+            margin-right: 5% !important
+        }
     }
     @media only screen and (min-width: 800px) and (max-width:998px){
         .profile-card .profile-photo {
@@ -212,7 +255,9 @@ h3{
             margin-left:9px !important;
     
         }
-    
+        .th1{
+            margin-right: -5% !important
+        }
     }
     @media only screen and (min-width: 500px) and (max-width:739px){
         .profile-card .profile-photo {
@@ -226,15 +271,58 @@ h3{
             margin-left: 81px !important;
     
         }
-    
+        .th1{
+            margin-right: -6% !important
+        } 
     }
     @media only screen and (min-width: 350px) and (max-width:399px){
         .profile-card .profile-photo {
             margin-left: 62px !important;
     
         }
-    
+        .th1{
+            margin-right: -5% !important
+        }
     }
-    a{
+    @media only screen and (width: 360px) and (height:720px){
+        .profile-card .profile-photo {
+            margin-left: 50px !important;
+    
+        }
+        
+        .card-footer{
+            margin-top: -87px !important
+        }
+        .th1{
+            margin-right: -4% !important
+        }
+    }
+    @media only screen and (width: 360px) and (height:640px){
+        .profile-card .profile-photo {
+            margin-left: 51px !important;
+    
+        }
+        .card-footer{
+            margin-top: -80px !important
+        }
+        .th1{
+            margin-right: -5% !important
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:349px){
+        .profile-card .profile-photo {
+            margin-left: 28px !important;
+    
+        }
+        .card-footer{
+            margin-top: -80px !important
+        }
+        .th1{
+            margin-right: -2% !important
+        }
+    }
+  
+      a{
         text-decoration: none !important
     }
