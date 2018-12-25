@@ -184,11 +184,9 @@ function registerUser() {
                 check = true;
                 teams.push(team);
             }
-            if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
-                fee = mevent.fee.startup * 0.95;
-            } else {
+            
                 fee = mevent.fee.startup;
-            }
+            
 
         } else if ($('input[type="radio"][name="sif_type"]:checked').val() == 'Student') {
             team = {
