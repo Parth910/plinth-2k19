@@ -1,328 +1,391 @@
-h3{
+h3 {
     color: antiquewhite !important
 }
 
 .card {
-    border: 1px solid #ddd !important;
+    border: 2px solid #ddd !important;
     border-top: transparent !important;
     border-radius: 60px !important;
     margin: 30px 0 !important;
     padding: 10px !important;
     background-color: transparent !important;
 
-  }
-  .card-wrapper {
+}
+
+.card-wrapper {
     padding-top: 87px !important;
-  }
-  .profile-card {
+}
+
+.profile-card {
     margin-top: 0 !important;
     padding-top: 87px !important;
     text-align: center !important;
-  }
-  .profile-card .profile-photo {
+}
+
+.profile-card .profile-photo {
     border: 6px solid white !important;
     margin-left: 2px !important;
     position: absolute !important;
     top: -87px !important;
     width: 162px !important;
-  }
-  .profile-card .profile-name {
+}
+
+.profile-card .profile-name {
     margin-top: 0 !important;
-  }
-  .profile-name{
-      font-size: 20px !important
-  }
-  .profile-card  .profile-note  {
-    height: 160px !important;
+}
+
+.profile-name {
+    font-size: 20px !important
+}
+
+.profile-card .profile-note {
+    height: 170px !important;
     overflow: hidden !important;
     position: relative !important;
     color: antiquewhite !important;
-    
-  }
-  p{
-    font-size: 17px !important
-  }
- 
-  .card-footer {
+
+}
+
+.profile-note {
+    margin-top: -12px;
+}
+
+p {
+    font-size: 15px !important
+}
+
+.card-footer {
     background: transparent !important;
-    margin: -10px !important;
+    margin: -8px !important;
     margin-top: -109px !important;
-    padding: 3px !important;
+    padding: 6px !important;
     z-index: 500 !important;
     border: none !important;
-  }
-  .card-footer .list-inline {
+}
+
+.card-footer .list-inline {
     margin-bottom: 0 !important;
-  }
-  .deck > *:nth-child(3n + 4) {
+}
+
+.deck>*:nth-child(3n + 4) {
     clear: left !important;
-  }
-  .list-social {
+}
+
+.list-social {
     font-size: 1.75em !important;
-  }
-  .fab:hover{
-      color: blueviolet !important;
-  }
- 
-  @media only screen and (min-width: 2301px) {
+}
+
+.fab:hover {
+    color: blueviolet !important;
+}
+
+@media only screen and (min-width: 2301px) {
     .profile-card .profile-photo {
         margin-left: 235px !important;
 
     }
-    .th1{
+
+    .th1 {
         margin-right: 5% !important
     }
 
 }
-  @media only screen and (min-width: 2151px) and (max-width:2300px){
+
+@media only screen and (min-width: 2151px) and (max-width:2300px) {
     .profile-card .profile-photo {
         margin-left: 197px !important;
 
     }
-    .th1{
+
+    .th1 {
         margin-right: 4% !important
     }
 
 }
-  @media only screen and (min-width: 2021px) and (max-width:2150px){
+
+@media only screen and (min-width: 2021px) and (max-width:2150px) {
     .profile-card .profile-photo {
         margin-left: 177px !important;
 
     }
-    .th1{
+
+    .th1 {
         margin-right: 4% !important
     }
 }
-  @media only screen and (min-width: 1961px) and (max-width:2020px){
+
+@media only screen and (min-width: 1961px) and (max-width:2020px) {
     .profile-card .profile-photo {
         margin-left: 163px !important;
 
     }
-    .th1{
+
+    .th1 {
         margin-right: 4% !important
     }
 
 }
- 
-  @media only screen and (min-width: 1880px) and (max-width:1960px){
+
+@media only screen and (min-width: 1880px) and (max-width:1960px) {
     .profile-card .profile-photo {
         margin-left: 153px !important;
-              }
-              .th1{
-                margin-right: 4.5% !important
-            }
+    }
 
-  }
-  @media only screen and (min-width: 1821px) and (max-width:1879px){
+    .th1 {
+        margin-right: 4.5% !important
+    }
+
+}
+
+@media only screen and (min-width: 1821px) and (max-width:1879px) {
     .profile-card .profile-photo {
         margin-left: 146px !important;
-              }
-              .th1{
-                margin-right: 3.5% !important
-            }
-  }
+    }
 
-  @media only screen and (min-width: 1800px) and (max-width:1820px){
+    .th1 {
+        margin-right: 3.5% !important
+    }
+}
+
+@media only screen and (min-width: 1800px) and (max-width:1820px) {
     .profile-card .profile-photo {
         margin-left: 143px !important;
 
     }
-    .th1{
+
+    .th1 {
         margin-right: 3.6% !important
     }
 }
 
-  
-    @media only screen and (min-width: 1741px) and (max-width:1799px){
-        .profile-card .profile-photo {
-            margin-left: 134px !important;
-    
-        }
-        .th1{
-            margin-right: 4% !important
-        } 
-    }
-    @media only screen and (min-width: 1670px) and (max-width:1740px){
-        .profile-card .profile-photo {
-            margin-left:122px !important;
-    
-        }
-        .th1{
-            margin-right: 4% !important
-        }
-    }
-    @media only screen and (min-width: 1580px) and (max-width:1669px){
-        .profile-card .profile-photo {
-            margin-left: 115px !important;
-    
-        }
 
-      .th1{
-            margin-right: 4% !important
-        }
-    }
-    @media only screen and (min-width: 1500px) and (max-width:1579px){
-        .profile-card .profile-photo {
-            margin-left: 108px !important;
-    
-        }
-        .th1{
-            margin-right: 4% !important
-        }
-    }
-    @media only screen and (min-width: 1460px) and (max-width:1499px){
-        .profile-card .profile-photo {
-            margin-left: 91px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    
-    }
-    @media only screen and (min-width: 1410px) and (max-width:1459px){
-        .profile-card .profile-photo {
-            margin-left: 86px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    }
-     @media only screen and (min-width: 1350px) and (max-width:1409px){
-        .profile-card .profile-photo {
-            margin-left: 76px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    }
-    @media only screen and (min-width: 1320px) and (max-width:1349px){
-        .profile-card .profile-photo {
-            margin-left: 74px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    }
-    @media only screen and (min-width: 1260px) and (max-width:1319px){
-        .profile-card .profile-photo {
-            margin-left: 65px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    }
-    @media only screen and (min-width: 1200px) and (max-width:1259px){
-        .profile-card .profile-photo {
-            margin-left: 60px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    }
-    @media only screen and (min-width: 1150px) and (max-width:1199px){
-        .profile-card .profile-photo {
-            margin-left: 55px !important;
-    
-        }
-        .th1{
-            margin-right: 4% !important
-        }
-    }
-    @media only screen and (min-width: 999px) and (max-width:1149px){
-        .profile-card .profile-photo {
-            margin-left: 30px !important;
-    
-        }
-        .th1{
-            margin-right: 5% !important
-        }
-    }
-    @media only screen and (min-width: 800px) and (max-width:998px){
-        .profile-card .profile-photo {
-            margin-left: 14px !important;
-    
-        }
-    
-    }
-    @media only screen and (min-width: 740px) and (max-width:799px){
-        .profile-card .profile-photo {
-            margin-left:9px !important;
-    
-        }
-        .th1{
-            margin-right: -5% !important
-        }
-    }
-    @media only screen and (min-width: 500px) and (max-width:739px){
-        .profile-card .profile-photo {
-            margin-left: -21px !important;
-    
-        }
-    
-    }
-    @media only screen and (min-width: 400px) and (max-width:499px){
-        .profile-card .profile-photo {
-            margin-left: 81px !important;
-    
-        }
-        .th1{
-            margin-right: -6% !important
-        } 
-    }
-    @media only screen and (min-width: 350px) and (max-width:399px){
-        .profile-card .profile-photo {
-            margin-left: 62px !important;
-    
-        }
-        .th1{
-            margin-right: -5% !important
-        }
-    }
-    @media only screen and (width: 360px) and (height:720px){
-        .profile-card .profile-photo {
-            margin-left: 50px !important;
-    
-        }
-        
-        .card-footer{
-            margin-top: -87px !important
-        }
-        .th1{
-            margin-right: -4% !important
-        }
-    }
-    @media only screen and (width: 360px) and (height:640px){
-        .profile-card .profile-photo {
-            margin-left: 51px !important;
-    
-        }
-        .card-footer{
-            margin-top: -80px !important
-        }
-        .th1{
-            margin-right: -5% !important
-        }
+@media only screen and (min-width: 1741px) and (max-width:1799px) {
+    .profile-card .profile-photo {
+        margin-left: 134px !important;
+
     }
 
-    @media only screen and (min-width: 300px) and (max-width:349px){
-        .profile-card .profile-photo {
-            margin-left: 28px !important;
-    
-        }
-        .card-footer{
-            margin-top: -80px !important
-        }
-        .th1{
-            margin-right: -2% !important
-        }
+    .th1 {
+        margin-right: 4% !important
     }
-  
-      a{
-        text-decoration: none !important
+}
+
+@media only screen and (min-width: 1670px) and (max-width:1740px) {
+    .profile-card .profile-photo {
+        margin-left: 122px !important;
+
     }
+
+    .th1 {
+        margin-right: 4% !important
+    }
+}
+
+@media only screen and (min-width: 1580px) and (max-width:1669px) {
+    .profile-card .profile-photo {
+        margin-left: 115px !important;
+
+    }
+
+    .th1 {
+        margin-right: 4% !important
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1579px) {
+    .profile-card .profile-photo {
+        margin-left: 108px !important;
+
+    }
+
+    .th1 {
+        margin-right: 4% !important
+    }
+}
+
+@media only screen and (min-width: 1460px) and (max-width:1499px) {
+    .profile-card .profile-photo {
+        margin-left: 91px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+
+}
+
+@media only screen and (min-width: 1410px) and (max-width:1459px) {
+    .profile-card .profile-photo {
+        margin-left: 86px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+}
+
+@media only screen and (min-width: 1350px) and (max-width:1409px) {
+    .profile-card .profile-photo {
+        margin-left: 76px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+}
+
+@media only screen and (min-width: 1320px) and (max-width:1349px) {
+    .profile-card .profile-photo {
+        margin-left: 74px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+}
+
+@media only screen and (min-width: 1260px) and (max-width:1319px) {
+    .profile-card .profile-photo {
+        margin-left: 65px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1259px) {
+    .profile-card .profile-photo {
+        margin-left: 60px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+}
+
+@media only screen and (min-width: 1150px) and (max-width:1199px) {
+    .profile-card .profile-photo {
+        margin-left: 55px !important;
+
+    }
+
+    .th1 {
+        margin-right: 4% !important
+    }
+}
+
+@media only screen and (min-width: 999px) and (max-width:1149px) {
+    .profile-card .profile-photo {
+        margin-left: 30px !important;
+
+    }
+
+    .th1 {
+        margin-right: 5% !important
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:998px) {
+    .profile-card .profile-photo {
+        margin-left: 14px !important;
+
+    }
+
+}
+
+@media only screen and (min-width: 740px) and (max-width:799px) {
+    .profile-card .profile-photo {
+        margin-left: 9px !important;
+
+    }
+
+    .th1 {
+        margin-right: -5% !important
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:739px) {
+    .profile-card .profile-photo {
+        margin-left: -21px !important;
+
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width:499px) {
+    .profile-card .profile-photo {
+        margin-left: 81px !important;
+
+    }
+
+    .th1 {
+        margin-right: -6% !important
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width:399px) {
+    .profile-card .profile-photo {
+        margin-left: 62px !important;
+
+    }
+
+    .th1 {
+        margin-right: -5% !important
+    }
+}
+
+@media only screen and (width: 360px) and (height:720px) {
+    .profile-card .profile-photo {
+        margin-left: 50px !important;
+
+    }
+
+    .card-footer {
+        margin-top: -87px !important
+    }
+
+    .th1 {
+        margin-right: -4% !important
+    }
+}
+
+@media only screen and (width: 360px) and (height:640px) {
+    .profile-card .profile-photo {
+        margin-left: 51px !important;
+
+    }
+
+    .card-footer {
+        margin-top: -95px !important
+    }
+
+    .th1 {
+        margin-right: -5% !important
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:349px) {
+    .profile-card .profile-photo {
+        margin-left: 28px !important;
+
+    }
+
+    .card-footer {
+        margin-top: -80px !important
+    }
+
+    .th1 {
+        margin-right: -2% !important
+    }
+}
+
+a {
+    text-decoration: none !important
+}
