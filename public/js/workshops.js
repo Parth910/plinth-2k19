@@ -62,8 +62,8 @@ function registerUser() {
     }
 
     //fee = mevent.fee;
-    const dis = process.env.DISCOUNT_CODE;
-        
+    
+    const dis = mevent.discount;    
     if( ($('#referral').val()).indexOf(dis) > -1){
         fee = mevent.fee - mevent.fee*0.05;
     } else {

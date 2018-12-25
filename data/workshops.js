@@ -109,7 +109,9 @@ module.exports.workshops = {
                         +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
                     +"</p>",
             sponsors : null,
+            discount: "PLSUPER",
         },
+        
         
     ],
 };
