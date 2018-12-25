@@ -7,6 +7,7 @@ var Utils = require('./utils');
 var Payment = require('../schema/payment');
 var paytm = require('../config/paytm');
 var checksum = require('../checksum/checksum');
+var cadis = require('../config/cadis');
 
 
 
@@ -180,7 +181,11 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                         payment.amount = 250;
                         break;
                     case 'AIML':
-                        payment.amount = 600;
+                        if(payment.referrer.indexOf(cadis.dis) > -1 ){
+                            payment.amount = 570;  
+                        } else {
+                            payment.amount = 600;  
+                        }
                         break;
                     default:
                         payment.amount = 1000;
