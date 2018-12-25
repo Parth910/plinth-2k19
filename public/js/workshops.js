@@ -1,10 +1,9 @@
 
-
-
 $('#error').hide();
 
 var orderId;
 var fee;
+
 
 document.getElementById('register-form').onsubmit = function (e) {
     e.preventDefault();
@@ -62,9 +61,16 @@ function registerUser() {
         check = true;
     }
 
-  
+    //fee = mevent.fee;
+    
+    const dis = mevent.discount;    
+    if( ($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10){
+        fee = mevent.fee*0.95;
+    } else {
         fee = mevent.fee;
-  
+    }
+    
+    
     
   
 

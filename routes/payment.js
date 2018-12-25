@@ -7,6 +7,7 @@ var Utils = require('./utils');
 var Payment = require('../schema/payment');
 var paytm = require('../config/paytm');
 var checksum = require('../checksum/checksum');
+var cadis = require('../config/cadis');
 
 
 
@@ -29,8 +30,8 @@ router.get('/admin/check/:id', Verify.verifyOrdinaryUser, function (req, res) {
         var request = require('request');
 
         request.post(url, function (error, response, body) {
-        res.json(JSON.parse(body));
-        return;
+            res.json(JSON.parse(body));
+            return;
         });
 
     });
@@ -103,88 +104,172 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                 return done(err);
 
             if (payment) {
+                if (payment.referrer.indexOf(cadis.dis) > -1 && payment.referrer.length == 10) {
+                    switch (payName) {
 
-                switch (payName) {
+                        case 'MUN':
 
-                    case 'MUN':
+                            if (payment.team[0].delegation == 'IP') {
+                                payment.amount = 900*0.95;
+                            } else {
+                                payment.amount = 1500*0.95;
+                            }
 
-                        if (payment.team[0].delegation == 'IP') {
-                            payment.amount = 900;
-                        } else {
-                            payment.amount = 1500;
-                        }
+                            break;
+                        case 'SIF':
 
-                        break;
-                    case 'SIF':
+                            if (payment.team[0].type == 'Startup') {
+                                payment.amount = 1200;
+                            } else {
+                                payment.amount = 100*0.95;
+                            }
+                            break;
+                        case 'INT':
+                        case 'AH':
+                        case 'AQ':
+                            payment.amount = 100 * payment.teamSize*0.95;
+                            break;
+                        case 'RST':
+                            payment.amount = 200*0.95;
+                            break;
+                        case 'COM':
+                            payment.amount = 200*0.95;
+                            break;
+                        case 'IUPC':
+                            payment.amount = 0.01;
+                            break;
+                        case 'ENCS':
+                            payment.amount = 0.01;
+                            break;
+                        case 'BW':
+                            payment.amount = 200*0.95;
+                            break;
+                        case 'TQ':
+                            payment.amount = 200*0.95;
+                            break;
+                        case 'RW':
+                            payment.amount = 800*0.95;
+                            break;
+                        case 'RS':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'DO':
+                            payment.amount = 600*0.95;
+                            break;
+                        case 'LWF':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'MS':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'RR':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'RCP':
+                            payment.amount = 500*0.95;
+                            break;
+                        case 'TP':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'IC':
+                            payment.amount = 500*0.95;
+                            break;
+                        case 'CD':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'WR':
+                            payment.amount = 250*0.95;
+                            break;
+                        case 'AIML':
+                            payment.amount = 600*0.95;
+                            break;
+                        default:
+                            payment.amount = 1000;
+                            break;
+                    }
+                } else {
+                    switch (payName) {
 
-                        if (payment.team[0].type == 'Startup') {
-                            payment.amount = 1200;
-                        } else {
-                            payment.amount = 100;
-                        }
-                        break;
-                    case 'INT':
-                    case 'AH':
-                    case 'AQ':
-                        payment.amount = 100 * payment.teamSize;
-                        break;
-                    case 'RST':
-                        payment.amount = 200;
-                        break;
-                    case 'COM':
-                        payment.amount = 200;
-                        break;
-                    case 'IUPC':
-                        payment.amount = 0.01;
-                        break;
-                    case 'ENCS':
-                        payment.amount = 0.01;
-                        break;
-                    case 'BW':
-                        payment.amount = 200;
-                        break;
-                    case 'TQ':
-                        payment.amount = 200;
-                        break;
-                    case 'RW':
-                        payment.amount = 800;
-                        break;
-                    case 'RS':
-                        payment.amount = 250;
-                        break;
-                    case 'DO':
-                        payment.amount = 600;
-                        break;
-                    case 'LWF':
-                        payment.amount = 250;
-                        break;
-                    case 'MS':
-                        payment.amount = 250;
-                        break;
-                    case 'RR':
-                        payment.amount = 250;
-                        break;
-                    case 'RCP':
-                        payment.amount = 500;
-                        break;
-                    case 'TP':
-                        payment.amount = 250;
-                        break;
-                    case 'IC':
-                        payment.amount = 500;
-                        break;
-                    case 'CD':
-                        payment.amount = 250;
-                        break;
-                    case 'WR':
-                        payment.amount = 250;
-                        break;
-                    case 'AIML':
-                        payment.amount = 600;
-                        break;
-                    default:
-                        payment.amount = 1000;
-                        break;
+                        case 'MUN':
+
+                            if (payment.team[0].delegation == 'IP') {
+                                payment.amount = 900;
+                            } else {
+                                payment.amount = 1500;
+                            }
+
+                            break;
+                        case 'SIF':
+
+                            if (payment.team[0].type == 'Startup') {
+                                payment.amount = 1200;
+                            } else {
+                                payment.amount = 100;
+                            }
+                            break;
+                        case 'INT':
+                        case 'AH':
+                        case 'AQ':
+                            payment.amount = 100 * payment.teamSize;
+                            break;
+                        case 'RST':
+                            payment.amount = 200;
+                            break;
+                        case 'COM':
+                            payment.amount = 200;
+                            break;
+                        case 'IUPC':
+                            payment.amount = 0.01;
+                            break;
+                        case 'ENCS':
+                            payment.amount = 0.01;
+                            break;
+                        case 'BW':
+                            payment.amount = 200;
+                            break;
+                        case 'TQ':
+                            payment.amount = 200;
+                            break;
+                        case 'RW':
+                            payment.amount = 800;
+                            break;
+                        case 'RS':
+                            payment.amount = 250;
+                            break;
+                        case 'DO':
+                            payment.amount = 600;
+                            break;
+                        case 'LWF':
+                            payment.amount = 250;
+                            break;
+                        case 'MS':
+                            payment.amount = 250;
+                            break;
+                        case 'RR':
+                            payment.amount = 250;
+                            break;
+                        case 'RCP':
+                            payment.amount = 500;
+                            break;
+                        case 'TP':
+                            payment.amount = 250;
+                            break;
+                        case 'IC':
+                            payment.amount = 500;
+                            break;
+                        case 'CD':
+                            payment.amount = 250;
+                            break;
+                        case 'WR':
+                            payment.amount = 250;
+                            break;
+                        case 'AIML':
+                            payment.amount = 600;
+                            break;
+                        default:
+                            payment.amount = 1000;
+                            break;
+                    }
                 }
 
 

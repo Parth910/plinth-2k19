@@ -72,7 +72,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null
+             otherURL: null,
+            discount: "PLSUPER",
         },
         {
 
@@ -130,7 +131,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null,
+              otherURL: null, 
+              discount: "PLSUPER",
         },
         {
 
@@ -169,7 +171,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:sif.plinth@gmail.com'>sif.plinth@gmail.com</a>"
                     +"</p>",
             sponsors: "Coming Soon",
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
 
         {
@@ -228,7 +231,8 @@ module.exports.competitions = {
                         +"Connect with us on :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
             eventUrl: 'thequest',
@@ -280,7 +284,8 @@ module.exports.competitions = {
                         +"Connect with us on :<a href='https://www.facebook.com/lnmiitquizzinga/' target='_blank'><i style='padding-left: 10px; padding-right:10px' class='fab fa-facebook fa-lg'></i></a> <a href='https://www.instagram.com/quizzingalnm/' target='_blank'><i class='fab fa-instagram fa-lg'></i></a>"
                     +"</p>",
             sponsors: null, 
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         }, 
         
         {
@@ -456,7 +461,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'robosoccer',
@@ -536,7 +542,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'droneobstruction',
@@ -590,7 +597,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'circuitdesign',
@@ -645,7 +653,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'waterrocket',
@@ -737,7 +746,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'lwf',
@@ -822,7 +832,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'mazesolver',
@@ -927,7 +938,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'roborace',
@@ -1022,7 +1034,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'rcplane',
@@ -1211,7 +1224,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
             eventUrl: 'transporter',
@@ -1304,7 +1318,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null, 
+             otherURL: null, 
+             discount: "PLSUPER", 
         },
         {
 
@@ -1367,7 +1382,8 @@ module.exports.competitions = {
             +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
         +"</p>",
             sponsors: null,
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
 
@@ -1418,7 +1434,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:literary@plinth.in'>literary@plinth.in</a>" 
                     +"</p>",
             sponsors: null,
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
 
@@ -1471,7 +1488,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:literary@plinth.in'>literary@plinth.in</a>" 
                     +"</p>",
             sponsors: null,
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
             eventUrl: 'intotheuniverse',
@@ -1555,7 +1573,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
 
@@ -1600,7 +1619,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null,   
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
             eventUrl: 'astrohunt',
@@ -1638,7 +1658,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:astronomy@plinth.in'>astronomy@plinth.in</a>"
                     +"</p>",
             sponsors: null, 
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },
         {
 
@@ -1697,7 +1718,8 @@ module.exports.competitions = {
                         // +"<br><br>"
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
-            sponsors: null
+            sponsors: null,
+            discount: "PLSUPER",
         },
         {
 
@@ -1764,7 +1786,8 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-            otherURL: null,
+             otherURL: null, 
+             discount: "PLSUPER",
         },    
 
     ],

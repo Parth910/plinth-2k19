@@ -38,35 +38,53 @@ $('#error').hide();
 
 var orderId;
 var fee;
+const dis = mevent.discount;
+if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
+    fee = mevent.fee - mevent.fee * 0.05;
+} else {
+    fee = mevent.fee;
+}
 
-$('#sif_startup_domain option').mousedown(function(e) {
+$('#sif_startup_domain option').mousedown(function (e) {
     e.preventDefault();
     $(this).toggleClass('selected');
-    switch($(this).val()){
+    switch ($(this).val()) {
         case 'Technical':
             $('#technicalInterns').toggle('show');
-          
-            $('#sif_startup_technical').attr('required', function (_, attr) { return !attr });
+
+            $('#sif_startup_technical').attr('required', function (_, attr) {
+                return !attr
+            });
             break;
         case 'Management':
             $('#managementInterns').toggle('show');
-            $('#sif_startup_management').attr('required', function (_, attr) { return !attr });
+            $('#sif_startup_management').attr('required', function (_, attr) {
+                return !attr
+            });
             break;
         case 'Marketing':
             $('#marketingInterns').toggle('show');
-            $('#sif_startup_marketing').attr('required', function (_, attr) { return !attr });
+            $('#sif_startup_marketing').attr('required', function (_, attr) {
+                return !attr
+            });
             break;
         case 'Content Writing':
             $('#writingInterns').toggle('show');
-            $('#sif_startup_writing').attr('required', function (_, attr) { return !attr });
+            $('#sif_startup_writing').attr('required', function (_, attr) {
+                return !attr
+            });
             break;
         case 'Designing':
             $('#designInterns').toggle('show');
-            $('#sif_startup_design').attr('required', function (_, attr) { return !attr });
+            $('#sif_startup_design').attr('required', function (_, attr) {
+                return !attr
+            });
             break;
         case 'Other':
             $('#otherInterns').toggle('show');
-            $('#sif_startup_other').attr('required', function (_, attr) { return !attr });
+            $('#sif_startup_other').attr('required', function (_, attr) {
+                return !attr
+            });
             break;
         default:
             break;
@@ -82,12 +100,12 @@ $('input[type="radio"][name="sif_type"]').click(function () {
     var inputValue = $('input[type="radio"][name="sif_type"]:checked').val();
 
     if (inputValue === 'Startup') {
-       
-        
+
+
         $('#startupContent').show();
         $('#studentContent').hide();
-      
-        
+
+
     } else if (inputValue === 'Student') {
         $('#studentContent').show();
         $('#startupContent').hide();
@@ -115,9 +133,9 @@ $('#teamSize').on("change", function () {
 document.getElementById('register-form').onsubmit = function (e) {
     e.preventDefault();
     $('#submit-button').attr("disabled", true);
-   
-     registerUser();
- 
+
+    registerUser();
+
 }
 
 
@@ -126,15 +144,18 @@ function registerUser() {
 
     var teams = [];
     var team;
- 
+
     var payDetails = '';
     var check = false;
 
     if (mevent.payName == 'SIF') {
         if ($('input[type="radio"][name="sif_type"]:checked').val() == 'Startup') {
-            var domains=[], sele = $('option[class="selected"]');
-            for (var i=0, len=sele.length; i<len; i++) {domains.push(sele[i].value);}
-            
+            var domains = [],
+                sele = $('option[class="selected"]');
+            for (var i = 0, len = sele.length; i < len; i++) {
+                domains.push(sele[i].value);
+            }
+
             team = {
                 type: $('input[type="radio"][name="sif_type"]:checked').val(),
                 startupName: $('#sif_startup_name').val(),
@@ -152,22 +173,22 @@ function registerUser() {
             };
 
             if (team.startupName === "" ||
-                team.website === "" ||
                 team.email === "" ||
                 team.name === "" ||
                 team.phoneNumber === "") {
 
 
                 check = false;
-            }
-            else {
+            } else {
 
                 check = true;
                 teams.push(team);
             }
-            fee = mevent.fee.startup;
-        }
-        else if ($('input[type="radio"][name="sif_type"]:checked').val() == 'Student') {
+            
+                fee = mevent.fee.startup;
+            
+
+        } else if ($('input[type="radio"][name="sif_type"]:checked').val() == 'Student') {
             team = {
                 type: $('input[type="radio"][name="sif_type"]:checked').val(),
                 name: $('#sif_student_name').val(),
@@ -189,15 +210,17 @@ function registerUser() {
 
 
                 check = false;
-            }
-            else {
+            } else {
 
                 check = true;
                 teams.push(team);
             }
 
-
-            fee = mevent.fee.student;
+            if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
+                fee = mevent.fee.student * 0.95;
+            } else {
+                fee = mevent.fee.student;
+            }
         }
 
         payDetails = {
@@ -221,8 +244,7 @@ function registerUser() {
                 team.phoneNumber === "" ||
                 team.college === "") {
                 check = false;
-            }
-            else {
+            } else {
                 check = true;
 
             }
@@ -240,15 +262,20 @@ function registerUser() {
             payDetails.teams === "" ||
             payDetails.accomodation === "") {
             check = false;
-        }
-        else {
+        } else {
             check = true;
         }
-        if( mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ'){
-           
+
+        if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
+            if (mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ') {
+
+                fee = mevent.fee * payDetails.teamSize * 0.95;
+
+            } else {
                 fee = mevent.fee * payDetails.teamSize;
-             
-        } else {
+            }
+            fee = mevent.fee * 0.95;
+        }else{
             fee = mevent.fee;
         }
     }
@@ -259,12 +286,13 @@ function registerUser() {
             eventName: mevent.eventName,
             clubName: mevent.clubName,
             mEmail: $('#mEmail').val(),
-            referrer:$('#referral').val(), 
+            referrer: $('#referral').val(),
             details: payDetails,
         };
         //console.log(data);
-        $.post("/payment/register/" + mevent.payName,
-            { postData: JSON.stringify(data) })
+        $.post("/payment/register/" + mevent.payName, {
+                postData: JSON.stringify(data)
+            })
             .done(function (data) {
                 document.getElementById("register-form").reset();
                 if (data.status) {
@@ -291,7 +319,7 @@ function registerUser() {
 
 $("#cancel-button").click(function (e) {
     e.preventDefault();
-    window.location =  (window.location.origin + '/profile').replace(/([^:])(\/\/+)/g, '$1/'); 
+    window.location = (window.location.origin + '/profile').replace(/([^:])(\/\/+)/g, '$1/');
 
 });
 
