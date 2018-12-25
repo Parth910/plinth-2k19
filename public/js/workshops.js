@@ -64,7 +64,7 @@ function registerUser() {
     //fee = mevent.fee;
     
     const dis = mevent.discount;    
-    if( ($('#referral').val()).indexOf(dis) > -1){
+    if( ($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10){
         fee = mevent.fee - mevent.fee*0.05;
     } else {
         fee = mevent.fee;
