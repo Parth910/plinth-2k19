@@ -39,11 +39,8 @@ $('#error').hide();
 var orderId;
 var fee;
 const dis = mevent.discount;
-if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
-    fee = mevent.fee - mevent.fee * 0.05;
-} else {
-    fee = mevent.fee;
-}
+
+
 
 $('#sif_startup_domain option').mousedown(function (e) {
     e.preventDefault();
@@ -147,6 +144,11 @@ function registerUser() {
 
     var payDetails = '';
     var check = false;
+    var test = false;
+    const str = $('#referral').val().substring(7, 10);
+    if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
+        test = true;
+    }
 
     if (mevent.payName == 'SIF') {
         if ($('input[type="radio"][name="sif_type"]:checked').val() == 'Startup') {
@@ -184,9 +186,9 @@ function registerUser() {
                 check = true;
                 teams.push(team);
             }
-            
-                fee = mevent.fee.startup;
-            
+
+            fee = mevent.fee.startup;
+
 
         } else if ($('input[type="radio"][name="sif_type"]:checked').val() == 'Student') {
             team = {
@@ -216,7 +218,7 @@ function registerUser() {
                 teams.push(team);
             }
 
-            if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
+            if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test) {
                 fee = mevent.fee.student * 0.95;
             } else {
                 fee = mevent.fee.student;
@@ -266,7 +268,7 @@ function registerUser() {
             check = true;
         }
 
-        if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10) {
+        if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test) {
             if (mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ') {
 
                 fee = mevent.fee * payDetails.teamSize * 0.95;
@@ -275,7 +277,7 @@ function registerUser() {
                 fee = mevent.fee * payDetails.teamSize;
             }
             fee = mevent.fee * 0.95;
-        }else{
+        } else {
             fee = mevent.fee;
         }
     }

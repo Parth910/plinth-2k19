@@ -62,9 +62,13 @@ function registerUser() {
     }
 
     //fee = mevent.fee;
-    
+    var test = false;
+    const str = $('#referral').val().substring(7,10);
+    if(/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)){
+        test = true;
+    } 
     const dis = mevent.discount;    
-    if( ($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10){
+    if( ($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test){
         fee = mevent.fee*0.95;
     } else {
         fee = mevent.fee;

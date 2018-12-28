@@ -104,15 +104,20 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                 return done(err);
 
             if (payment) {
-                if (payment.referrer.indexOf(cadis.dis) > -1 && payment.referrer.length == 10) {
+                var test = false;
+                var str = payment.referrer.substring(7,10);
+                if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
+                    test = true;
+                }
+                if (payment.referrer.indexOf(cadis.dis) > -1 && payment.referrer.length == 10 && test) {
                     switch (payName) {
 
                         case 'MUN':
 
                             if (payment.team[0].delegation == 'IP') {
-                                payment.amount = 900*0.95;
+                                payment.amount = 900 * 0.95;
                             } else {
-                                payment.amount = 1500*0.95;
+                                payment.amount = 1500 * 0.95;
                             }
 
                             break;
@@ -121,19 +126,19 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             if (payment.team[0].type == 'Startup') {
                                 payment.amount = 1200;
                             } else {
-                                payment.amount = 100*0.95;
+                                payment.amount = 100 * 0.95;
                             }
                             break;
                         case 'INT':
                         case 'AH':
                         case 'AQ':
-                            payment.amount = 100 * payment.teamSize*0.95;
+                            payment.amount = 100 * payment.teamSize * 0.95;
                             break;
                         case 'RST':
-                            payment.amount = 200*0.95;
+                            payment.amount = 200 * 0.95;
                             break;
                         case 'COM':
-                            payment.amount = 200*0.95;
+                            payment.amount = 200 * 0.95;
                             break;
                         case 'IUPC':
                             payment.amount = 0.01;
@@ -142,46 +147,46 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             payment.amount = 0.01;
                             break;
                         case 'BW':
-                            payment.amount = 200*0.95;
+                            payment.amount = 200 * 0.95;
                             break;
                         case 'TQ':
-                            payment.amount = 200*0.95;
+                            payment.amount = 200 * 0.95;
                             break;
                         case 'RW':
-                            payment.amount = 800*0.95;
+                            payment.amount = 800 * 0.95;
                             break;
                         case 'RS':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'DO':
-                            payment.amount = 600*0.95;
+                            payment.amount = 600 * 0.95;
                             break;
                         case 'LWF':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'MS':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'RR':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'RCP':
-                            payment.amount = 500*0.95;
+                            payment.amount = 500 * 0.95;
                             break;
                         case 'TP':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'IC':
-                            payment.amount = 500*0.95;
+                            payment.amount = 500 * 0.95;
                             break;
                         case 'CD':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'WR':
-                            payment.amount = 250*0.95;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'AIML':
-                            payment.amount = 600*0.95;
+                            payment.amount = 600 * 0.95;
                             break;
                         default:
                             payment.amount = 1000;
@@ -429,7 +434,12 @@ router.post('/response', Verify.verifyOrdinaryUser, function (req, res) {
                         details: result,
                     })
                 }
-                if (result.referrer != undefined && result.referrer != '') {
+                var test = false;
+                var str = result.referrer.substring(7,10);
+                if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
+                    test = true;
+                }
+                if (result.referrer.indexOf(cadis.dis) > -1 && result.referrer.length == 10 && test) {
                     Utils.capSheet({
                         date: result.date.paidAt,
                         name: result.referrer,
