@@ -59,34 +59,42 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12">
                 <div class="table-responsive-md">
                     <table class="table">
 
                         <tbody>
                             <tr>
-                                <td class="head-font">Event Name:
+                                <td class="head-font"><b>Event Name:</b></td>
+                                <td class="body-font">
                                     <%- details.event.eventName %>
                                 </td>
-                                <td class="head-font">Date:
+                                <td class="head-font"><b>Date:</b></td>
+                                <td class="body-font">
                                     <%- (details.date.paidAt).substring(0,25) %>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td class="head-font">Order ID:
+
+                                <td class="head-font"><b>Order ID:</b></td>
+                                <td class="body-font">
                                     <%- details.orderId %>
                                 </td>
-                                <td class="head-font">Transaction ID:
+                                <td class="head-font"><b>Transaction ID:</b></td>
+                                <td class="body-font">
                                     <%- details.tranId %>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td class="head-font">Amount: ₹
+                                <td class="head-font"><b>Amount:</b></td>
+                                <td class="body-font">₹
                                     <%- details.amount %> /-</td>
-                                <td class="head-font">Payment Status:
 
+
+                                <td class="head-font"><b>Payment Status:</b> </td>
+                                <td class="body-font">
                                     <% if(status == 'success'){ %>
                                     SuccessFull
                                     <% } else if(status == 'fail') { %>
@@ -95,8 +103,6 @@
                                     Open
                                     <% } %>
                                 </td>
-
-
                             </tr>
                         </tbody>
 
