@@ -111,6 +111,102 @@ module.exports.workshops = {
             sponsors : null,
             discount: "PLSUPER",
         },
+        {
+            eventUrl: 'webdev',
+            fee: 350,
+            paymentURL: true,
+            clubName : "Workshops",
+            eventName : "Web-Dev",
+            displayName : "Web-Dev",
+            payName: "WEBD",
+            eventDate : "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
+            eventVenue : "The LNMIIT, Jaipur",
+            eventCompany : "CodingBlocks",
+            memberUpperLimit : 1,
+            memberLowerLimit : 1,
+            eventFee: '₹ 350/-',
+            synopsis: "<p>"
+                        +"<p>"
+                            +"The aim of the workshop on Web Development is to provide the students with the basic and most important skills required to be a successful Website Developer. Beginning with the introductory and most basic topics, the workshop will be making students familiar and comfortable with HTML, CSS, and Java Script, which are the bricks and beam for a professional website. Workshop will also be a source of proper exposure, guidance and techniques for the beginners and experienced ones too. By the end, the students will be able to make their own fully functioning website."
+                            +"</p>"
+                        +"</p>",
+            eventDescription : null,
+            highlights:null,
+            workshopContent: "<p>"
+                                    +"<p>"
+                                    +"<b style='color: #4C4D64'>Course Duration</b><br>"
+                                    +"The workshop will be conducted for 4 hours."
+                                    +"</p>"
+                            +"</p>",
+            rules: null,
+            benefits: "<p>"
+                                +"<ul style='list-style-type: disc;padding-left:20px;'>"
+                                +"<li>Expert guidance from the experienced coders and problem setters of Coding Blocks along with a one to one interaction.</li>"
+                                +"<li>Interactive Query Session along with Power Point Presentation and Study Material.</li>"
+                                +"<li>A start with the interesting field of Wed Development for the beginners and an added experience and bag full of guidance and techniques for the learned ones.</li>"
+                                +"<li>Improve your job prospects and get an edge over your counterparts.</li>" 
+                                +"<li>Certificate of Participation for the participants from Coding Blocks.</li>" 
+                                +"<li>The value of Coding Blocks’ Certification in a learning program is huge and adds benefits to CV.</li>" 
+                                 
+                            +"</p>",
+            query: "<p class='link-text'>"
+                        +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
+                    +"</p>",
+            sponsors : null,
+            discount: "PLSUPER",
+        },
+        {
+            eventUrl: 'android',
+            fee: 350,
+            paymentURL: true,
+            clubName : "Workshops",
+            eventName : "Android",
+            displayName : "Android",
+            payName: "AND",
+            eventDate : "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
+            eventVenue : "The LNMIIT, Jaipur",
+            eventCompany : "CodingBlocks",
+            memberUpperLimit : 1,
+            memberLowerLimit : 1,
+            eventFee: '₹ 350/-',
+            synopsis: "<p>"
+                        +"<p>"
+                            +"The workshop organised by Coding Blocks on Android App Development aims to provide the students with the skills that are helpful in designing and developing an Android Application. The workshop will be teaching the students some basic things needed to get started with Java and Kotlin etc. In the end, the learner will be able to design and develop a fully working Android App along with a course certification form CodingBlocks."
+                            +"</p>"
+                        +"</p>",
+            eventDescription : null,
+            highlights:null,
+            workshopContent: "<p>"
+                                    +"<b style='color: #4C4D64'>Topics to be Covered</b>"
+                                    +"<ul style='list-style-type: disc;padding-left:20px;'>"
+                                        +"<li>Getting Started with Android App Development Tools</li>"
+                                        +"<li>Activities and Basic UI Building</li>"
+                                        +"<li>Several other topics required to build a basic App</li>"
+                                    +"</ul>"
+                                    +"<br>"
+                                    +"<p>"
+                                    +"<b style='color: #4C4D64'>Course Duration</b><br>"
+                                    +"The workshop will continue for 4 hours."
+                                    +"</p>"
+                            +"</p>",
+            rules: null,
+            benefits: "<p>"
+                                +"<ul style='list-style-type: disc;padding-left:20px;'>"
+                                +"<li>Expert guidance from the experienced coders and problem setters of Coding Blocks along with a one to one interaction.</li>"
+                                +"<li>Interactive Query Session along with Power Point Presentation and Study Material.</li>"
+                                +"<li>A start with the interesting field of Android App Development for the beginners and an added experience and bag full of guidance and techniques for the learned ones.</li>"
+                                +"<li>Improve your job prospects and get an edge over your counterparts.</li>" 
+                                +"<li>Certificate of Participation for the participants from Coding Blocks</li>" 
+                                +"<li>The value of Coding Blocks’ Certification in a learning programme is huge and adds benefits to CV.</li>"  
+                            +"</p>",
+            query: "<p class='link-text'>"
+                        // +"For more info, visit : <a href='https://www.htindialabs.com' target= '_blank'>www.htindialabs.com</a>"
+                        // +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
+                    +"</p>",
+            sponsors : null,
+            discount: "PLSUPER",
+        },
         
         
     ],
@@ -121,6 +217,14 @@ module.exports.workshopUrl = {
         {
             eventName: 'AI and ML - Python',
             eventUrl: '/aiandml',
+        }, 
+        {
+            eventName: 'Web-Dev',
+            eventUrl: '/webdev',
+        }, 
+        {
+            eventName: 'Android',
+            eventUrl: '/android',
         },       
     ],
 };

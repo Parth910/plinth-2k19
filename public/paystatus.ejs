@@ -5,6 +5,7 @@
     <% include partials/head %>
 
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cryptex.css">
 
 </head>
 
@@ -46,111 +47,86 @@
     <div class="bg-mask"></div>
 
     <h1 style="padding-top:15vh; text-align: center;transform: scale(1);">Payment Status</h1>
-    <div class="main-content">
-        <div class="scroll-content" id="style-1">
-            <div class="inner-content">
-                <div class="row justify-content-md-center">
-                    <div class="col-md-12">
-                        <h4 style="text-align:center">
-                            <span>Transaction Details</span>
-                        </h4>
-                    </div>
-
-                </div>
-                <div class="container">
-                <table class="table">
-
-                    <tbody>
-                        <tr>
-                            <div class="row justify-content-md-center">
-
-                                <div class="col-md-6">
-
-                                    <td class="head-font">Event Name:</td>
-                                    <td class="body-font">
-                                        <%- details.event.eventName %>
-                                    </td>
-                                </div>
-                                <div class="col-md-6">
-                                    <td class="head-font">Date:</td>
-                                    <td class="body-font">
-                                        <%- (details.date.paidAt).substring(0,25) %>
-                                    </td>
-                                </div>
-                            </div>
-                        </tr>
-
-                        <tr>
-                            <div class="row justify-content-md-center">
-
-                                <div class="col-md-6">
-
-                                    <td class="head-font">Order ID</td>
-                                    <td class="body-font">
-                                        <%- details.orderId %>
-                                    </td>
-                                    </td>
-                                </div>
-                                <div class="col-md-6">
-                                    <td class="head-font">Transaction ID:</td>
-                                    <td class="body-font">
-                                        <%- details.tranId %>
-                                    </td>
-                                </div>
-                            </div>
-                        </tr>
-
-                        <tr>
-                            <div class="row justify-content-md-center">
-
-                                <div class="col-md-6">
-
-                                    <td class="head-font">Amount</td>
-                                    <td class="body-font">
-                                        ₹
-                                        <%- details.amount %> /-
-                                    </td>
-                                </div>
-                                <div class="col-md-6">
-                                    <td class="head-font">Payment Status</td>
-                                    <td class="body-font">
-                                        <% if(status == 'success'){ %>
-                                        SuccessFull
-                                        <% } else if(status == 'fail') { %>
-                                        Failed
-                                        <%  } else if(status == 'open') { %>
-                                        Open
-                                        <% } %>
-                                    </td>
-                                </div>
-                            </div>
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
-                <div class="text-center row">
-                    <div class="col-md-12">
-                        <p>
-                            For downloading the Receipt :
-                            <a href="/pdf/generate/<%= details.orderId %>" target="_blank">Payment Receipt</a></p>
-                    </div>
-
-                </div>
-
-                <div class="text-center row">
-                    <div class="col-md-12">
-                        <p>
-                            For any query regarding payment :
-                            <a href="mailto:payment@plinth.in" target="_blank">payment@plinth.in</a></p>
-                    </div>
-
-                </div>
-
-
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12">
+                <h4 style="text-align:center; padding-top:5vh;">
+                    <span>Transaction Details</span>
+                </h4>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="table-responsive-md">
+                    <table class="table">
+
+                        <tbody>
+                            <tr>
+                                <td class="head-font">Event Name:
+                                    <%- details.event.eventName %>
+                                </td>
+                                <td class="head-font">Date:
+                                    <%- (details.date.paidAt).substring(0,25) %>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="head-font">Order ID:
+                                    <%- details.orderId %>
+                                </td>
+                                <td class="head-font">Transaction ID:
+                                    <%- details.tranId %>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="head-font">Amount: ₹
+                                    <%- details.amount %> /-</td>
+                                <td class="head-font">Payment Status:
+
+                                    <% if(status == 'success'){ %>
+                                    SuccessFull
+                                    <% } else if(status == 'fail') { %>
+                                    Failed
+                                    <%  } else if(status == 'open') { %>
+                                    Open
+                                    <% } %>
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-center row">
+        <div class="col-md-12">
+            <p>
+                For downloading the Receipt :
+                <a href="/pdf/generate/<%= details.orderId %>" target="_blank">Payment Receipt</a></p>
+        </div>
+
+    </div>
+
+    <div class="text-center row">
+        <div class="col-md-12">
+            <p>
+                For any query regarding payment :
+                <a href="mailto:payment@plinth.in" target="_blank">payment@plinth.in</a></p>
+        </div>
+
+    </div>
+
+
+
 
 
 

@@ -3,8 +3,9 @@
 
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/competitions.css">
-    <link rel="stylesheet" href="./css/categories.css">
+    <!-- <link rel="stylesheet" href="./css/categories.css"> -->
     <link rel="stylesheet" href="./css/workshops.css">
     <script>
         var urls = <%- JSON.stringify(workshopUrl) %> ;
@@ -49,8 +50,8 @@
         <div class="scroll-content" id="style-1">
             <div class="inner-content ch-grid">
                 <div class="text-padding" style="transform: scale(1);">
-                    <div class="row fhtc">
-                        <div class="col-sm-12 col-lg-2 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
                             <li>
                                 <div class="ch-item ch-img-aiandml more-details">
                                     <div class="ch-info">
@@ -59,6 +60,27 @@
                                 </div>
                             </li>
                         </div>
+
+                        <div class="col-sm-12 col-md-4">
+                            <li>
+                                <div class="ch-item ch-img-webdev more-details">
+                                    <div class="ch-info">
+                                        <h3 class="link">Web-Dev</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4">
+                            <li>
+                                <div class="ch-item ch-img-android more-details">
+                                    <div class="ch-info">
+                                        <h3 class="link">Android</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+
                     </div>
                 </div>
             </div>

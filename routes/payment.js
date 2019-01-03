@@ -105,7 +105,7 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
 
             if (payment) {
                 var test = false;
-                var str = payment.referrer.substring(7,10);
+                var str = payment.referrer.substring(7, 10);
                 if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
                     test = true;
                 }
@@ -187,6 +187,12 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             break;
                         case 'AIML':
                             payment.amount = 600 * 0.95;
+                            break;
+                        case 'WEBD':
+                            payment.amount = 350 * 0.95;
+                            break;
+                        case 'AND':
+                            payment.amount = 350 * 0.95;
                             break;
                         default:
                             payment.amount = 1000;
@@ -270,6 +276,12 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             break;
                         case 'AIML':
                             payment.amount = 600;
+                            break;
+                        case 'WEBD':
+                            payment.amount = 350;
+                            break;
+                        case 'AND':
+                            payment.amount = 350;
                             break;
                         default:
                             payment.amount = 1000;
@@ -435,7 +447,7 @@ router.post('/response', Verify.verifyOrdinaryUser, function (req, res) {
                     })
                 }
                 var test = false;
-                var str = result.referrer.substring(7,10);
+                var str = result.referrer.substring(7, 10);
                 if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
                     test = true;
                 }

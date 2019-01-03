@@ -21,24 +21,37 @@ exports.pdf = function (result) {
     });
 
     var path = './data/' + Math.floor((Math.random() * 10) + 1) + '' + result.orderId + '.pdf';
-    doc.image('./public/media/plinth-logo.png', 25, 50, { height: 48 })
-    doc.image('./public/media/lnmiit-logo.jpeg', 475, 50, { height: 48 })
+    doc.image('./public/media/plinth-logo.png', 25, 50, {
+        height: 48
+    })
+    doc.image('./public/media/lnmiit-logo.jpeg', 475, 50, {
+        height: 48
+    })
 
     doc.font('./public/fonts/Righteous-Regular.ttf', 28)
-        .text('plinth 2019', 50, 50, { align: 'center' })
+        .text('plinth 2019', 50, 50, {
+            align: 'center'
+        })
         .moveDown(.1)
         .font('./public/fonts/Oxygen-Regular.ttf', 12)
-        .text('19th - 20th January', { align: 'center' })
+        .text('19th - 20th January', {
+            align: 'center'
+        })
 
     doc.moveTo(25, 110)
         .lineTo(575, 110)
         .stroke()
 
     doc.font('./public/fonts/Oxygen-Bold.ttf', 16)
-        .text('Payment Receipt', 50, 130, { align: 'center', underline: true })
+        .text('Payment Receipt', 50, 130, {
+            align: 'center',
+            underline: true
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-        .text('Transaction Details', 50, 160, { underline: true })
+        .text('Transaction Details', 50, 160, {
+            underline: true
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Transaction ID ', 50, 190)
@@ -54,7 +67,9 @@ exports.pdf = function (result) {
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Event Name ', 50, 250)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': ' + result.event.eventName, 160, 250, { width: '140' })
+        .text(': ' + result.event.eventName, 160, 250, {
+            width: '140'
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Date ', 300, 250)
@@ -82,7 +97,9 @@ exports.pdf = function (result) {
 
     if (result.status === 'TXN_SUCCESS') {
         doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-            .text('Event Details', 50, 300, { underline: true })
+            .text('Event Details', 50, 300, {
+                underline: true
+            })
 
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Organizer ', 50, 320)
@@ -93,27 +110,37 @@ exports.pdf = function (result) {
             .text('Venue ', 50, 350)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)
             .fillColor('blue')
-            .text(': The LNM Institute of Information Technology, Jaipur, India', 140, 350, { link: 'https://goo.gl/maps/g9nB7pgbRio' })
+            .text(': The LNM Institute of Information Technology, Jaipur, India', 140, 350, {
+                link: 'https://goo.gl/maps/g9nB7pgbRio'
+            })
             .fillColor('black')
 
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Event Link ', 50, 380)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)
             .fillColor('blue')
-            .text(': https://plinth.in', 140, 380, { link: 'https://plinth.in' })
+            .text(': https://plinth.in', 140, 380, {
+                link: 'https://plinth.in'
+            })
             .fillColor('black')
 
         if (result.event.payName === 'SIF') {
             if (result.team[0].type == 'Startup') {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-                    .text('Startup Details', 50, 420, { underline: true })
+                    .text('Startup Details', 50, 420, {
+                        underline: true
+                    })
             } else {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-                    .text('Participants Details', 50, 420, { underline: true })
+                    .text('Participants Details', 50, 420, {
+                        underline: true
+                    })
             }
         } else {
             doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-                .text('Participants Details', 50, 420, { underline: true })
+                .text('Participants Details', 50, 420, {
+                    underline: true
+                })
         }
 
 
@@ -121,7 +148,9 @@ exports.pdf = function (result) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 450)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.team[0].name, 160, 450, { width: '140' })
+                .text(': ' + result.team[0].name, 160, 450, {
+                    width: '140'
+                })
 
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Institute ', 300, 450)
@@ -165,7 +194,9 @@ exports.pdf = function (result) {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                     .text('Name ', 50, 480)
                     .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                    .text(': ' + result.team[0].name, 160, 480, { width: '140' })
+                    .text(': ' + result.team[0].name, 160, 480, {
+                        width: '140'
+                    })
 
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                     .text('Email ', 300, 480)
@@ -191,7 +222,9 @@ exports.pdf = function (result) {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                     .text('Name ', 50, 450)
                     .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                    .text(': ' + result.team[0].name, 160, 450, { width: '140' })
+                    .text(': ' + result.team[0].name, 160, 450, {
+                        width: '140'
+                    })
 
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                     .text('Institute ', 300, 450)
@@ -218,7 +251,9 @@ exports.pdf = function (result) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 450)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.team[0].name, 160, 450, { width: '140' })
+                .text(': ' + result.team[0].name, 160, 450, {
+                    width: '140'
+                })
 
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Institute ', 300, 450)
@@ -231,15 +266,17 @@ exports.pdf = function (result) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Email ', 50, 480)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' +  result.team[0].email, 160, 480)
+                .text(': ' + result.team[0].email, 160, 480)
 
-         
+
         } else {
 
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Team Name ', 50, 450)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.teamName, 160, 450, { width: '140' })
+                .text(': ' + result.teamName, 160, 450, {
+                    width: '140'
+                })
 
             if (result.teamSize != 1) {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
@@ -255,7 +292,9 @@ exports.pdf = function (result) {
                         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                             .text('Name ', 50, 490)
                             .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                            .text(': ' + result.team[i].name, 160, 490, { width: '140' })
+                            .text(': ' + result.team[i].name, 160, 490, {
+                                width: '140'
+                            })
 
                         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                             .text('Email ', 300, 490)
@@ -268,7 +307,9 @@ exports.pdf = function (result) {
                         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                             .text('Name ', 50, 490 + 40 * i)
                             .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                            .text(': ' + result.team[i].name, 160, 490 + 40 * i, { width: '140' })
+                            .text(': ' + result.team[i].name, 160, 490 + 40 * i, {
+                                width: '140'
+                            })
 
                         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                             .text('Email ', 300, 490 + 40 * i)
@@ -280,7 +321,9 @@ exports.pdf = function (result) {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                     .text('Name ', 50, 480)
                     .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                    .text(': ' + result.team[0].name, 160, 480, { width: '140' })
+                    .text(': ' + result.team[0].name, 160, 480, {
+                        width: '140'
+                    })
 
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                     .text('Email ', 300, 480)
@@ -315,8 +358,8 @@ exports.pdf = function (result) {
 
     // Stream contents to a file
     doc.pipe(
-        fs.createWriteStream(path)
-    )
+            fs.createWriteStream(path)
+        )
         .on('finish', function () {
             console.log('PDF closed');
         });
@@ -342,24 +385,37 @@ exports.pdfView = function (result) {
     });
 
     var path = './data/' + Math.floor((Math.random() * 10) + 1) + '' + result.orderId + '.pdf';
-    doc.image('./public/media/plinth-logo.png', 25, 50, { height: 48 })
-    doc.image('./public/media/lnmiit-logo.jpeg', 475, 50, { height: 48 })
+    doc.image('./public/media/plinth-logo.png', 25, 50, {
+        height: 48
+    })
+    doc.image('./public/media/lnmiit-logo.jpeg', 475, 50, {
+        height: 48
+    })
 
     doc.font('./public/fonts/Righteous-Regular.ttf', 28)
-        .text('plinth 2019', 50, 50, { align: 'center' })
+        .text('plinth 2019', 50, 50, {
+            align: 'center'
+        })
         .moveDown(.1)
         .font('./public/fonts/Oxygen-Regular.ttf', 12)
-        .text('19th - 20th January', { align: 'center' })
+        .text('19th - 20th January', {
+            align: 'center'
+        })
 
     doc.moveTo(25, 110)
         .lineTo(575, 110)
         .stroke()
 
     doc.font('./public/fonts/Oxygen-Bold.ttf', 16)
-        .text('Registration Details', 50, 130, { align: 'center', underline: true })
+        .text('Registration Details', 50, 130, {
+            align: 'center',
+            underline: true
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-        .text('Order Details', 50, 160, { underline: true })
+        .text('Order Details', 50, 160, {
+            underline: true
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Order ID ', 50, 190)
@@ -382,7 +438,9 @@ exports.pdfView = function (result) {
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Event Name ', 50, 220)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': ' + result.event.eventName, 160, 220, { width: '140' })
+        .text(': ' + result.event.eventName, 160, 220, {
+            width: '140'
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Date ', 300, 220)
@@ -393,7 +451,9 @@ exports.pdfView = function (result) {
 
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-        .text('Event Details', 50, 290, { underline: true })
+        .text('Event Details', 50, 290, {
+            underline: true
+        })
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Organizer ', 50, 320)
@@ -404,34 +464,46 @@ exports.pdfView = function (result) {
         .text('Venue ', 50, 350)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
         .fillColor('blue')
-        .text(': The LNM Institute of Information Technology, Jaipur, India', 140, 350, { link: 'https://goo.gl/maps/g9nB7pgbRio' })
+        .text(': The LNM Institute of Information Technology, Jaipur, India', 140, 350, {
+            link: 'https://goo.gl/maps/g9nB7pgbRio'
+        })
         .fillColor('black')
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Event Link ', 50, 380)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
         .fillColor('blue')
-        .text(': https://plinth.in', 140, 380, { link: 'https://plinth.in' })
+        .text(': https://plinth.in', 140, 380, {
+            link: 'https://plinth.in'
+        })
         .fillColor('black')
 
     if (result.event.payName === 'SIF') {
         if (result.team[0].type == 'Startup') {
             doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-                .text('Startup Details', 50, 420, { underline: true })
+                .text('Startup Details', 50, 420, {
+                    underline: true
+                })
         } else {
             doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-                .text('Participants Details', 50, 420, { underline: true })
+                .text('Participants Details', 50, 420, {
+                    underline: true
+                })
         }
     } else {
         doc.font('./public/fonts/Roboto-Bold.ttf', 16)
-            .text('Participants Details', 50, 420, { underline: true })
+            .text('Participants Details', 50, 420, {
+                underline: true
+            })
     }
 
     if (result.event.eventName === 'MUN' || result.event.eventName === 'mun') {
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Name ', 50, 450)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': ' + result.team[0].name, 160, 450, { width: '140' })
+            .text(': ' + result.team[0].name, 160, 450, {
+                width: '140'
+            })
 
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Institute ', 300, 450)
@@ -474,7 +546,9 @@ exports.pdfView = function (result) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 480)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.team[0].name, 160, 480, { width: '140' })
+                .text(': ' + result.team[0].name, 160, 480, {
+                    width: '140'
+                })
 
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Email ', 300, 480)
@@ -501,7 +575,9 @@ exports.pdfView = function (result) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 450)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.team[0].name, 160, 450, { width: '140' })
+                .text(': ' + result.team[0].name, 160, 450, {
+                    width: '140'
+                })
 
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Institute ', 300, 450)
@@ -528,7 +604,9 @@ exports.pdfView = function (result) {
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Name ', 50, 450)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': ' + result.team[0].name, 160, 450, { width: '140' })
+            .text(': ' + result.team[0].name, 160, 450, {
+                width: '140'
+            })
 
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Institute ', 300, 450)
@@ -538,17 +616,19 @@ exports.pdfView = function (result) {
 
 
 
-            doc.font('./public/fonts/Roboto-Bold.ttf', 14)
+        doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Email ', 50, 480)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': ' +  result.team[0].email, 160, 480)
+            .text(': ' + result.team[0].email, 160, 480)
 
     } else {
 
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Team Name ', 50, 450)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)
-            .text(': ' + result.teamName, 160, 450, { width: '140' })
+            .text(': ' + result.teamName, 160, 450, {
+                width: '140'
+            })
 
         if (result.teamSize != 1) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
@@ -564,7 +644,9 @@ exports.pdfView = function (result) {
                     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                         .text('Name ', 50, 490)
                         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                        .text(': ' + result.team[i].name, 160, 490, { width: '140' })
+                        .text(': ' + result.team[i].name, 160, 490, {
+                            width: '140'
+                        })
 
                     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                         .text('Email ', 300, 490)
@@ -577,7 +659,9 @@ exports.pdfView = function (result) {
                     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                         .text('Name ', 50, 490 + 40 * i)
                         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                        .text(': ' + result.team[i].name, 160, 490 + 40 * i, { width: '140' })
+                        .text(': ' + result.team[i].name, 160, 490 + 40 * i, {
+                            width: '140'
+                        })
 
                     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                         .text('Email ', 300, 490 + 40 * i)
@@ -589,7 +673,9 @@ exports.pdfView = function (result) {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 480)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.team[0].name, 160, 480, { width: '140' })
+                .text(': ' + result.team[0].name, 160, 480, {
+                    width: '140'
+                })
 
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Email ', 300, 480)
@@ -615,8 +701,8 @@ exports.pdfView = function (result) {
 
     // Stream contents to a file
     doc.pipe(
-        fs.createWriteStream(path)
-    )
+            fs.createWriteStream(path)
+        )
         .on('finish', function () {
             console.log('PDF closed');
         });
@@ -705,22 +791,21 @@ exports.saveSheet = function (result) {
             case 'MUN':
                 sheetID = process.env.SHEET_MUN;
                 ra = 'MUN';
-                value =
-                    [
-                        result.date.createdAt,
-                        result.date.paidAt,
-                        result.orderId,
-                        result.status,
-                        result.amount,
-                        result.team[0].name,
-                        result.team[0].email,
-                        result.team[0].phoneNumber,
-                        result.team[0].college,
-                        result.team[0].city,
-                        result.team[0].committee,
-                        result.team[0].portfolio,
-                        result.accomodation,
-                    ];
+                value = [
+                    result.date.createdAt,
+                    result.date.paidAt,
+                    result.orderId,
+                    result.status,
+                    result.amount,
+                    result.team[0].name,
+                    result.team[0].email,
+                    result.team[0].phoneNumber,
+                    result.team[0].college,
+                    result.team[0].city,
+                    result.team[0].committee,
+                    result.team[0].portfolio,
+                    result.accomodation,
+                ];
                 break;
 
             case 'SIF':
@@ -768,9 +853,9 @@ exports.saveSheet = function (result) {
 
 
             case 'IUPC':
-                
+
             case 'ENCS':
-                
+
 
             case 'RST':
 
@@ -814,23 +899,25 @@ exports.saveSheet = function (result) {
 
                 break;
             case 'AIML':
+            case 'WEBD':
+            case 'AND':
                 sheetID = process.env.SHEET_WORKSHOPS;
                 ra = result.event.payName;
-                value =
-                    [
-                        result.date.createdAt,
-                        result.date.paidAt,
-                        result.orderId,
-                        result.status,
-                        result.amount,
-                        result.team[0].name,
-                        result.team[0].email,
-                        result.team[0].phoneNumber,
-                        result.team[0].college,
-                        result.team[0].collegeId,
-                        result.accomodation,
-                    ];
+                value = [
+                    result.date.createdAt,
+                    result.date.paidAt,
+                    result.orderId,
+                    result.status,
+                    result.amount,
+                    result.team[0].name,
+                    result.team[0].email,
+                    result.team[0].phoneNumber,
+                    result.team[0].college,
+                    result.team[0].collegeId,
+                    result.accomodation,
+                ];
                 break;
+
             default:
                 sheetID = process.env.SHEET_TEST;
                 ra = 'SUO';
@@ -853,7 +940,15 @@ exports.saveSheet = function (result) {
                 return;
             } else {
                 console.log("Appended", response.updates.updatedRange);
-                Payment.findOneAndUpdate({ 'orderId': result.orderId }, { $set: { 'sheet': response.updates.updatedRange, } }, { 'new': true }, function (err1, res) {
+                Payment.findOneAndUpdate({
+                    'orderId': result.orderId
+                }, {
+                    $set: {
+                        'sheet': response.updates.updatedRange,
+                    }
+                }, {
+                    'new': true
+                }, function (err1, res) {
                     if (err1) {
                         console.log(err1)
                         return;
@@ -881,22 +976,21 @@ exports.updateSheet = function (result) {
             case 'MUN':
                 sheetID = process.env.SHEET_MUN;
                 ra = result.sheet;
-                value =
-                    [
-                        result.date.createdAt,
-                        result.date.paidAt,
-                        result.orderId,
-                        result.status,
-                        result.amount,
-                        result.team[0].name,
-                        result.team[0].email,
-                        result.team[0].phoneNumber,
-                        result.team[0].college,
-                        result.team[0].city,
-                        result.team[0].committee,
-                        result.team[0].portfolio,
-                        result.accomodation,
-                    ];
+                value = [
+                    result.date.createdAt,
+                    result.date.paidAt,
+                    result.orderId,
+                    result.status,
+                    result.amount,
+                    result.team[0].name,
+                    result.team[0].email,
+                    result.team[0].phoneNumber,
+                    result.team[0].college,
+                    result.team[0].city,
+                    result.team[0].committee,
+                    result.team[0].portfolio,
+                    result.accomodation,
+                ];
                 break;
 
             case 'SIF':
@@ -944,9 +1038,9 @@ exports.updateSheet = function (result) {
 
 
             case 'IUPC':
-                
+
             case 'ENCS':
-                
+
 
             case 'RST':
             case 'INT':
@@ -989,22 +1083,23 @@ exports.updateSheet = function (result) {
 
                 break;
             case 'AIML':
+            case 'WEBD':
+            case 'AND':
                 sheetID = process.env.SHEET_WORKSHOPS;
                 ra = result.sheet;
-                value =
-                    [
-                        result.date.createdAt,
-                        result.date.paidAt,
-                        result.orderId,
-                        result.status,
-                        result.amount,
-                        result.team[0].name,
-                        result.team[0].email,
-                        result.team[0].phoneNumber,
-                        result.team[0].college,
-                        result.team[0].collegeId,
-                        result.accomodation,
-                    ];
+                value = [
+                    result.date.createdAt,
+                    result.date.paidAt,
+                    result.orderId,
+                    result.status,
+                    result.amount,
+                    result.team[0].name,
+                    result.team[0].email,
+                    result.team[0].phoneNumber,
+                    result.team[0].college,
+                    result.team[0].collegeId,
+                    result.accomodation,
+                ];
                 break;
             default:
                 sheetID = process.env.SHEET_TEST;
@@ -1042,18 +1137,17 @@ exports.capSheet = function (result) {
         var sheetID;
         var ra;
         var value;
- 
-                sheetID = process.env.SHEET_CAMPUS;
-                ra = 'REF';
-                value =
-                    [
-                        result.date,
-                        result.name,
-                        result.orderId,
-                        result.status,
-                        result.amount
-                    ];
-                
+
+        sheetID = process.env.SHEET_CAMPUS;
+        ra = 'REF';
+        value = [
+            result.date,
+            result.name,
+            result.orderId,
+            result.status,
+            result.amount
+        ];
+
         console.log(ra);
         var sheets = google.sheets('v4');
         sheets.spreadsheets.values.append({
@@ -1086,21 +1180,20 @@ exports.resSheet = function (result) {
         var sheetID;
         var ra;
         var value;
- 
-                sheetID = process.env.SHEET_REGISTERATION;
-                ra = 'RES';
-                value =
-                    [
-                        '' + (new Date()),
-                        result.name,
-                        result.gender,
-                        result.email,
-                        result.phoneNumber,
-                        result.college,            
-                        result.city,
-                        result.year,
-                    ];
-                
+
+        sheetID = process.env.SHEET_REGISTERATION;
+        ra = 'RES';
+        value = [
+            '' + (new Date()),
+            result.name,
+            result.gender,
+            result.email,
+            result.phoneNumber,
+            result.college,
+            result.city,
+            result.year,
+        ];
+
         console.log(value);
         var sheets = google.sheets('v4');
         sheets.spreadsheets.values.append({
@@ -1131,19 +1224,18 @@ exports.accSheet = function (result) {
         var sheetID;
         var ra;
         var value;
- 
-                sheetID = process.env.SHEET_ACCOMODATION;
-                ra = 'ACC';
-                value =
-                    [
-                        result.date,
-                        result.email,
-                        result.orderId,
-                        result.status,
-                        result.team,
-                        result.teamsize,
-                    ];
-                
+
+        sheetID = process.env.SHEET_ACCOMODATION;
+        ra = 'ACC';
+        value = [
+            result.date,
+            result.email,
+            result.orderId,
+            result.status,
+            result.team,
+            result.teamsize,
+        ];
+
         console.log(ra);
         var sheets = google.sheets('v4');
         sheets.spreadsheets.values.append({
