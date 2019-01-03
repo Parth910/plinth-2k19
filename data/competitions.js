@@ -10,7 +10,7 @@ module.exports.competitions = {
             displayName: "Enigma – The Plinth CodeSprint",
             payName: "ENCS",
             eventDate: "<p>"
-                            +"Online Round - 5th<sup>th</sup> Jan, 2019"
+                            +"Online Round - 9th<sup>th</sup> Jan, 2019"
                             +"<br>"
                             +"Onsite Round - 20<sup>th</sup> Jan, 2019"
                         +"</p>",
@@ -52,7 +52,7 @@ module.exports.competitions = {
             rules: "<p>"
                         +"<b>Key Details of Enigma – The Plinth CodeSprint'19</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>The first online round of the contest will be held on 5<sup>th</sup> January 2019 (Saturday).</li>"
+                            +"<li>The first online round of the contest will be held on 9<sup>th</sup> January 2019 (Wednesday).</li>"
                             +"<li>Contest duration will be 3 hours.</li>"
                             +"<li>This is a solo contest – no team participation is allowed.</li>"
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the participant.   </li>"
@@ -298,7 +298,7 @@ module.exports.competitions = {
             payName: "RW",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
-            memberUpperLimit: 8,
+            memberUpperLimit: 6,
             memberLowerLimit: 2,
             prizeWorth: '₹ 50,000/-',
             eventFee: '₹ 800/-',
@@ -310,7 +310,7 @@ module.exports.competitions = {
                                     
                                     +"<b style='color: #4C4D64'>ARENA</b>"
                                     +"<p>"
-                                        +"The arena shall be having a metal flooring of area 18*18 feet. It will be surrounded by a metal cage of height 8 feet and on top. The cage will be covered with a polycarbonate layer of thickness about 5-7mm."
+                                        +"The arena shall be having a metal flooring of area 14*14 feet. It will be surrounded by a metal cage of height 7 feet and on top. The cage will be covered with a polycarbonate layer of thickness about 5-7mm."
                                     +"</p>"
                                     
                                 +"</p>",
@@ -340,7 +340,7 @@ module.exports.competitions = {
                 +"<li>The bot cannot be split into two sub-units. Two distinct parts connected by a flexible cable will be considered separate units.</li>"
                 +"<li>Damaging the arena will lead to immediate disqualification.Lego kits, readymade kits, car bases and development boards are not permitted. Readymade gear boxes are permitted.</li>"
                 +"<li>In all cases, the judges' decision will be final and binding.</li>"
-                +"<li>The team can comprise of a maximum of 4 students from the same institute or other institutes as well.</li>"
+                +"<li>The team can comprise of a maximum of 6 students from the same institute or other institutes as well.</li>"
                 +"<li>The teams are not allowed to tamper with the opponent’s robot or hinder at their time of the competition.</li>"
                 
             +"</ol>"
@@ -511,20 +511,23 @@ module.exports.competitions = {
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>A team can consist of a maximum of 6 members.</li>"
                             +"<li>There can be maximum 3 robots playing for a team at a time.</li>"
-                            +"<li>Maximum 3 robot can play from one side/team.</li>"
+                            +"<li>Team should bring maximum 3 bots with them or an individual can bring one bot and form team on spot.</li>"
                             +"<li>Each student must have id card of their college.</li>"
                             +"<li>Each team must declare a name for their team at the time of competition.</li>"
                             +"<li>The machines you build will be first checked for size and safety. The machine should not cause electric power breakdowns.</li>"
                             +"<li>The machine must not contain any combustible, corrosive, or otherwise dangerous materials for safety reasons. No explosive compression or decompression, either internal or external is permitted.</li>"
                             +"<li>Judges have the right to disqualify any machine whose working mechanism or game strategy is considered hazardous in any way.</li>"
                             +"<li>In case any kind of dispute arises the judges’ decision will be considered final and binding to all and no argument will be entertained</li>"
+                            +"<li>Organizers reserve the rights to change any or all of the above rules as they deem fit.</li>"
+                            +"<li>Organizers decision will be final decision.</li>"
                         +"</ol>"
                         +"<b style='color: #4C4D64'>Robot Details</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>Bot can be wired or wireless. Wireless should have a minimum range of 14 feet. Wire length must be at least 14 feet.</li>"
                             +"<li>Bot dimensions: Without attachments Length <= 30 cm Breadth <= 30 cm Height <= 30 cm (10% tolerance allowed) Weight <= 5 kg</li>"
                             +"<li>Bot dimensions: with attachments Length <= 40 cm Breadth <= 40 cm Height <= 40 cm (10% tolerance allowed) Weight <= 5 kg</li>"
-                        +"</ol>"
+                            +"<li>Maximum battery voltage is 12V.</li>"                        
+                            +"</ol>"
                         +"<b style='color: #4C4D64'>Arena Specifications</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>Arena Dimensions: 300 cm by 200 cm.</li>"
@@ -537,7 +540,7 @@ module.exports.competitions = {
             query: "<p class='link-text'>"
                         +"Keshav Nyati : +91-9119388593 "
                         +"<br>"
-                        +"Yukti Agarwal : +91-7791949437"
+                        +"Yukti Mittal : +91-7791949437"
                         +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
@@ -562,7 +565,7 @@ module.exports.competitions = {
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
                                     +"<p>"
-                                        +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 70cms."
+                                        +"Design a wireless remote controlled flying platform to complete an obstacle course in minimum time without crashing. The length and breadth of the drone should not exceed by 60cms."
                                     +"</p>"
                                    
                                     +"<br>"
@@ -1219,7 +1222,8 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
-                        +"Shaivya Bora : 8107667477"
+                        +"Shaivya Bora : +91-8107667477"
+                        +"Tanu Soni : +91-9179850362"
                         +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",

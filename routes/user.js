@@ -8,7 +8,6 @@ var googleValidate = require('../authenticate').googleValidate;
 var GoogleAuth = require('google-auth-library');
 var Verify = require('./verify');
 var User = require('../schema/user');
-var ca = require('../schema/ca');
 var googleSetting = require('../config/auth').googleAuth;
 var Utils = require('./utils');
 

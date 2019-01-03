@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var User = require('../schema/user');
-var ca = require('../schema/ca');
 var Verify = require('./verify');
 
 /* GET home page. */
