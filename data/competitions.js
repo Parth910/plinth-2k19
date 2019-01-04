@@ -615,7 +615,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
-            prizeWorth: null,
+            prizeWorth: '₹ 25,000/-',
             eventFee: "₹ 250",
             eventDescription: "<p>"
                                 +"<b style='color: #4C4D64'>ROUND 1</b>"
@@ -671,7 +671,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 3,
             memberLowerLimit: 1,
-            prizeWorth: null,
+            prizeWorth: '₹ 25,000/-',
             eventFee: "₹ 250",
             eventDescription: "<p>"
                                     +"<b style='color: #4C4D64'>Problem Statement</b>"
@@ -772,7 +772,7 @@ module.exports.competitions = {
                                         +"The participating teams are required to build an autonomous robot that can follow the line and wall on a contrasting background(generally black lines on a white background or vice-versa). The main objective will be to test whether the robot can follow the track comprising of straight lines, curves, angles of different degrees, line breaks and walls. "
                                     +"</p>"
                                     +
-                                    "<p>This competition will have three rounds.</p>"
+                                    "<p>This competition will have two rounds.</p>"
                                     +"<b style='color: #4C4D64'>ROUND 1</b>"
                                     +"<ol style='list-style-type: disc;padding-left:20px;'>"
                                         +"<li>This round will involve following the line which is 3 cm in width and the point description will be disclosed on the spot before the commencement of the event. Based on the total time taken and points gained, teams will be selected for the next level.</li>"
@@ -805,6 +805,7 @@ module.exports.competitions = {
                         +"<b style='color: #4C4D64'>General rules</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
                             +"<li>A team can comprise a maximum of 4 members. Students from different Institutes can form a team.</li>"
+                            +"<li>The dimension of the tracks will be accurate to within 5% or 20mm, whichever is less.</li>"
                 
                 
                          +"</ol>"
@@ -1338,7 +1339,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 6,
             memberLowerLimit: 1,
-            prizeWorth: null,
+            prizeWorth: '₹ 40,000/-',
             eventFee: '₹ 500/-',
             synopsis:  "<p>"
                            +"<p>"
