@@ -106,6 +106,8 @@ module.exports.workshops = {
             query: "<p class='link-text'>"
                         +"For more info, visit : <a href='https://www.htindialabs.com' target= '_blank'>www.htindialabs.com</a>"
                         +"<br><br>"
+                        +"Suyash Agrawal: +91-7339875167"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
                     +"</p>",
             sponsors : null,
@@ -150,6 +152,8 @@ module.exports.workshops = {
                                  
                             +"</p>",
             query: "<p class='link-text'>"
+                        +"Suyash Agrawal: +91-7339875167"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
                     +"</p>",
             sponsors : null,
@@ -200,8 +204,8 @@ module.exports.workshops = {
                                 +"<li>The value of Coding Blocks’ Certification in a learning programme is huge and adds benefits to CV.</li>"  
                             +"</p>",
             query: "<p class='link-text'>"
-                        // +"For more info, visit : <a href='https://www.htindialabs.com' target= '_blank'>www.htindialabs.com</a>"
-                        // +"<br><br>"
+                        +"Suyash Agrawal: +91-7339875167"
+                        +"<br><br>"
                         +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
                     +"</p>",
             sponsors : null,

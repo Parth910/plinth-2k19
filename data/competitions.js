@@ -604,12 +604,12 @@ module.exports.competitions = {
              discount: "PLSUPER", 
         },
         {
-            eventUrl: 'circuitdesign',
+            eventUrl: 'electrothon',
             fee:250,
             paymentURL: true,
             clubName: "Robotics",
-            eventName: "Circuit Designing",
-            displayName: "Circuit Designing",
+            eventName: "Electrothon",
+            displayName: "Electrothon",
             payName: "CD",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
@@ -1883,8 +1883,8 @@ module.exports.competitionUrl = {
         },
 
         {
-            eventName: 'Circuit Design',
-            eventUrl: '/circuitdesign'
+            eventName: 'Electrothon',
+            eventUrl: '/electrothon'
         },
 
         {
