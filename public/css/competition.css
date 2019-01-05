@@ -186,7 +186,7 @@ input,
 @media only screen and (max-width: 480px) {
     .modal.fade#pay-competitions {
         max-width: 92%;
-        max-height: 48%;
+        max-height: 55%;
     }
 }
 
