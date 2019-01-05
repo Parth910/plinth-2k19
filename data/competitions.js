@@ -1793,8 +1793,148 @@ module.exports.competitions = {
             sponsors: null,
              otherURL: null, 
              discount: "PLSUPER",
-        },    
+        },
+        {
+            eventUrl: 'design',
+            fee: 100,
+            paymentURL: true,
+            clubName: "ASME",
+            eventName: "3D Designing",
+            displayName: "3D Designing",
+            payName: "DES",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 2,
+            memberLowerLimit: 1,
+            prizeWorth: '₹ 10,000/-',
+            eventFee: '₹ 100/-',
+            synopsis:  "<p>"
+                                +"<p>"
+                                +"<b>What is the event about?</b>"
+                                +"<p>"
+                                    +"‘Pratibimb’ provides a platform to the budding designers, whether as individuals aspiring to showcase their skills amidst their deserving audience,or as teams collaborating their efforts towards implementation and proper utilization of their skill-set under a single roof. It will not only help achieve a achieve a common goal, i.e. of coming up with new ideas of sustainability, but will also enhance our designing potential." 
+                                +"</p>"
+                                +"<p>"
+                                    +"‘Pratibimb’ under the aegis of Plinth ’18,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
+                                +"</p>"
+                                +"<p>"
+                                    +"‘Pratibimb’ is a designing competition which promises to bring before such challenges that would test your mental ability and skills, that you've learnt so far, to it's best." 
+                                +"</p>"
+                            +"</p>"
+                            +"<br>"
+                            +"<p>"
+                                +"<b>What can you learn?</b>"
+                                +"<p>"
+                                    +"As is rightly said, a competitive environment stimulates oneself to push on their limits. Hence, this event will not only motivate the participants to perform better than their peers, bringing out your talent multifold but also give you a chance to interact and exchange ideas with some of the great minds from all around the country. Presentation imperceptibly helps you enhance your communication skills or offers an opportunity to test them. Designing, in itself, is a field that assists students boost up their creativity and logical thinking." 
+                                +"</p>"
+                            +"</p>"
+                            +"<br>"
+                                +"<p>"
+                                +"<b>Why should you attend it?</b>"
+                                +"<p>"
+                                    +"‘Pratibimb’ as an event is the first of its kind motivating the participants to come with innovative ideas while enhancing their design skills. Also as it is said, an even greater idea is born in the exchange of some great ideas, Pratibimb is here to give you that very needed ground of exchange. After all, keeping up the world's fads is what defines a mechanical engineer." 
+                                +"</p>"                        
+                            +"</p>"
 
+                        +"</p>",
+            eventDescription: "<p>"
+                            +"For detailed description view: <em><a href='media/3D Designing Themes ASME.pdf' target= '_blank'>3D Designing Themes</a></em>"
+                            +"</p>",
+            rules:  "<p>"
+                        +"<b style='color: #4C4D64'>General Rules </b>"
+                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                            +"<li>Maximum Team Size: 2 members per team.</li>"
+                            +"<li>PPT presentation with showing of their design or poster.</li>"
+                            +"<li>Presentation of 10 min and 5 min of Q&A round.</li>"
+                            +"<li>Organizers' decision will be final.</li>"
+                            +"<br>"
+                        +"</ol>"
+                        +"<b style='color: #4C4D64'>Points Distribution</b>"
+                            +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                            +"<li>Design: 40 points</li>"
+                            +"<li>Presentation: 30 points</li>"
+                            +"<li>Q&A round: 20 points</li>"
+                            +"<li>Soft Skills: 10 points</li>"
+                            +"<li>Total: 100 points</li>"
+                    +"</ol>"
+                    +"</p>",
+            judges: null,
+           query: "<p class='link-text'>"
+                        +"Aman Kotwani: +91-9785891383"
+                        +"<br>"
+                        +"Madhav Khandelwal: +91-9799276361"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:asme@lnmiit.ac.in'>asme@lnmiit.ac.in</a>"
+                    +"</p>",
+            sponsors: null, 
+             otherURL: null, 
+             discount: "PLSUPER",
+        },
+        {
+            eventUrl: 'poster',
+            fee: 100,
+            paymentURL: true,
+            clubName: "ASME",
+            eventName: "Poster Desiging",
+            displayName: "Poster Designing",
+            payName: "POD",
+            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 2,
+            memberLowerLimit: 1,
+            prizeWorth: '₹ 10,000/-',
+            eventFee: '₹ 100/-',
+            synopsis:  "<p>"
+            +"<p>"
+            +"<b>What is the event about?</b>"
+            +"<p>"
+                +"‘Pratibimb’ provides a platform to the budding designers, whether as individuals aspiring to showcase their skills amidst their deserving audience,or as teams collaborating their efforts towards implementation and proper utilization of their skill-set under a single roof. It will not only help achieve a achieve a common goal, i.e. of coming up with new ideas of sustainability, but will also enhance our designing potential." 
+            +"</p>"
+            +"<p>"
+                +"‘Pratibimb’ under the aegis of Plinth ’18,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
+            +"</p>"
+            +"<p>"
+                +"‘Pratibimb’ is a designing competition which promises to bring before such challenges that would test your mental ability and skills, that you've learnt so far, to it's best." 
+            +"</p>"
+        +"</p>"
+        +"<br>"
+        +"<p>"
+            +"<b>What can you learn?</b>"
+            +"<p>"
+                +"As is rightly said, a competitive environment stimulates oneself to push on their limits. Hence, this event will not only motivate the participants to perform better than their peers, bringing out your talent multifold but also give you a chance to interact and exchange ideas with some of the great minds from all around the country. Presentation imperceptibly helps you enhance your communication skills or offers an opportunity to test them. Designing, in itself, is a field that assists students boost up their creativity and logical thinking." 
+            +"</p>"
+        +"</p>"
+        +"<br>"
+            +"<p>"
+            +"<b>Why should you attend it?</b>"
+            +"<p>"
+                +"‘Pratibimb’ as an event is the first of its kind motivating the participants to come with innovative ideas while enhancing their design skills. Also as it is said, an even greater idea is born in the exchange of some great ideas, Pratibimb is here to give you that very needed ground of exchange. After all, keeping up the world's fads is what defines a mechanical engineer." 
+            +"</p>"                        
+        +"</p>"
+                        +"</p>",
+            eventDescription: "<p>Symmetry : Designers are to create an artwork based on symmetry. Symmetry can be mirror symmetry, line symmetry, shape symmetry, radial symmetry.</p>",
+            rules:  "<p>"
+                        +"<b style='color: #4C4D64'>General Rules </b>"
+                        +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                            +"<li>Maximum Team Size: 2 members per team.</li>"
+                            +"<li>To claim prize you need to be registered here.</li>"
+                            +"<li>Organizers' decision will be final.</li>"
+                        +"</ol>"
+                    +"</p>",
+            judges: null,
+           query: "<p class='link-text'>"
+                        +"Aman Kotwani: +91-9785891383"
+                        +"<br>"
+                        +"Madhav Khandelwal: +91-9799276361"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:asme@lnmiit.ac.in'>asme@lnmiit.ac.in</a>"
+                    +"</p>",
+            sponsors: null, 
+             otherURL: null, 
+             discount: "PLSUPER",
+        },
+  
+           
     ],
  
 };
@@ -1912,6 +2052,14 @@ module.exports.competitionUrl = {
         {
             eventName: 'Codeswap',
             eventUrl: '/codeswap',
+        },
+        {
+            eventName: '3D Designing',
+            eventUrl: '/design',
+        },
+        {
+            eventName: 'Poster Designing',
+            eventUrl: '/poster',
         },
        
     ],

@@ -877,6 +877,8 @@ exports.saveSheet = function (result) {
             case 'CD':
             case 'WR':
             case 'COM':
+            case 'DES':
+            case 'POD':
 
                 sheetID = process.env['SHEET_' + ('' + result.event.clubName).toUpperCase()];
                 ra = result.event.payName;
@@ -1061,6 +1063,8 @@ exports.updateSheet = function (result) {
             case 'CD':
             case 'WR':
             case 'COM':
+            case 'DES':
+            case 'POD':
 
                 sheetID = process.env['SHEET_' + ('' + result.event.clubName).toUpperCase()];
                 ra = result.sheet;

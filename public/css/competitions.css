@@ -139,6 +139,15 @@
 .ch-img-comikaze{
 	background-image: url(../media/comikaze.jpg);
 }
+.ch-img-pra{
+	background-image: url(../media/pra.jpg);
+}
+.ch-img-design{
+	background-image: url(../media/design2.jpeg);
+}
+.ch-img-poster{
+	background-image: url(../media/design.jpeg);
+}
 
 
 
@@ -441,7 +450,7 @@
 
     }
     .quz{
-        margin-left:27% !important;
+        margin-left:26% !important;
     }
 }
 @media (min-width: 1441px) and (max-width: 1580px){

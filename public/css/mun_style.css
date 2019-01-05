@@ -1804,7 +1804,7 @@ only screen and (hover: none) {
 }
 .row .col-1-of-3 {
  
-  width: calc((100% - 15*3rem) / 2);
+  width: calc((100% - 2 * 6rem) / 3);
 }
 
 .row .col-2-of-3 {

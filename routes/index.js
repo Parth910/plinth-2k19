@@ -68,7 +68,7 @@ router.get('/competitions', Verify.verifyOrdinaryUser, function (req, res, next)
 });
 
 router.get('/competitions/:category', Verify.verifyOrdinaryUser, function (req, res, next) {
-    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management'];
+    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management', 'pratibimb'];
     var competitionUrls = require('../data/competitions').competitionUrl;
     var category = req.params.category;
     var valid = false;
@@ -122,7 +122,7 @@ router.get('/competitions/:category', Verify.verifyOrdinaryUser, function (req, 
 
 router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, function (req, res, next) {
     var competitionDetail = require('../data/competitions').competitions;
-    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management'];
+    var categories = ['astronomy', 'coding', 'robotics', 'quizzing', 'literature', 'management', 'pratibimb'];
     var competitions = {
         astronomy: ['intotheuniverse', 'astrohunt', 'astroquiz'],
         coding: ['iupc', 'enigma', 'codeswap', 'hackthecode'],
@@ -130,6 +130,7 @@ router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, fu
         quizzing: ['brandwagon', 'thequest'],
         literature: ['rostrum', 'comikaze'],
         management: ['sif'],
+        pratibimb: ['design', 'poster']
     };
     var category = req.params.category;
     var competition = req.params.competition;

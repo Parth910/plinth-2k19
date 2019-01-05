@@ -115,9 +115,9 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                         case 'MUN':
 
                             if (payment.team[0].delegation == 'IP') {
-                                payment.amount = 900 * 0.95;
+                                payment.amount = 900;
                             } else {
-                                payment.amount = 1500 * 0.95;
+                                payment.amount = 1500;
                             }
 
                             break;
@@ -193,6 +193,12 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             break;
                         case 'AND':
                             payment.amount = 350 * 0.95;
+                            break;
+                        case 'DES':
+                            payment.amount = 100 * 0.95;
+                            break;
+                        case 'POD':
+                            payment.amount = 100 * 0.95;
                             break;
                         default:
                             payment.amount = 1000;
@@ -282,6 +288,12 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             break;
                         case 'AND':
                             payment.amount = 350;
+                            break;
+                        case 'DES':
+                            payment.amount = 100;
+                            break;
+                        case 'POD':
+                            payment.amount = 100;
                             break;
                         default:
                             payment.amount = 1000;
