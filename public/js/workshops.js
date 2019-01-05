@@ -1,4 +1,7 @@
-
+$(".back-back-icon").click(function () {
+    var url = "" + window.location;
+    window.location = url.substring(0, url.lastIndexOf('/'));
+});
 $('#error').hide();
 
 var orderId;

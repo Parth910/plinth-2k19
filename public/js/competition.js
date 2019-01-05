@@ -1,3 +1,8 @@
+$(".back-back-icon").click(function () {
+    var url = "" + window.location;
+    window.location = url.substring(0, url.lastIndexOf('/'));
+});
+
 $("#synopsis").click(function () {
     $("#querycontent").addClass("d-none");
     $("#morecontent").addClass("d-none");
