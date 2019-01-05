@@ -88,7 +88,7 @@ router.get('/competitions/:category', Verify.verifyOrdinaryUser, function (req, 
                 "competitionUrl": competitionUrls.competitions,
             });
         } else {
-            res.redirect('/404');
+            res.redirect('/competitions');
         }
 
     } else {
@@ -110,7 +110,7 @@ router.get('/competitions/:category', Verify.verifyOrdinaryUser, function (req, 
                         "competitionUrl": competitionUrls.competitions,
                     });
                 } else {
-                    res.redirect('/404');
+                    res.redirect('/competitions');
                 }
 
             }
@@ -161,7 +161,7 @@ router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, fu
                 "competition": detail,
             });
         } else {
-            res.redirect('/404');
+            res.redirect('/competitions');
         }
 
     } else {
@@ -182,7 +182,7 @@ router.get('/competitions/:category/:competition', Verify.verifyOrdinaryUser, fu
                         "competition": detail,
                     });
                 } else {
-                    res.redirect('/404');
+                    res.redirect('/competitions');
                 }
 
             }
@@ -262,7 +262,7 @@ router.get('/workshops/:workshop', Verify.verifyOrdinaryUser, function (req, res
                 "workshop": detail,
             });
         } else {
-            res.redirect('/404');
+            res.redirect('/workshops');
         }
     } else {
         User.findOne({
@@ -283,7 +283,7 @@ router.get('/workshops/:workshop', Verify.verifyOrdinaryUser, function (req, res
                         "workshop": detail,
                     });
                 } else {
-                    res.redirect('/404');
+                    res.redirect('/workshops');
                 }
             }
         });
