@@ -14,7 +14,7 @@ exports.getToken = function (user) {
     jwt.setExpiration(new Date('2020-06-31'));
 
     var token = jwt.compact();
-    var buffer = Buffer.from(token);
+    var buffer = new Buffer(token);
     var finalToken = buffer.toString('base64');
     return finalToken;
 
@@ -29,7 +29,7 @@ exports.verifyOrdinaryUser = function (req, res, next) {
         req.decoded = decoded;
         return next();
     };
-    var buffer = Buffer.from(tokenx, 'base64');
+    var buffer = new Buffer(tokenx, 'base64');
     var token = buffer.toString('ascii');
 
         // decode token

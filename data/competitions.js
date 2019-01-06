@@ -4,7 +4,7 @@ module.exports.competitions = {
 
             eventUrl: 'enigma',
             fee:0,
-            paymentURL: true,
+            paymentURL: null,
             clubName: "Coding",
             eventName: "Enigma",
             displayName: "Enigma – The Plinth CodeSprint",
@@ -72,7 +72,7 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-             otherURL: null,
+             otherURL: "https://www.codechef.com/PELT2019",
             discount: "PLSUPER",
         },
         {
