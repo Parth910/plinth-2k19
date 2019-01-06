@@ -1746,6 +1746,8 @@ module.exports.competitions = {
             prizeWorth: '₹ 20,000/-',
             eventFee: '₹0 (Online Round)',
             synopsis:  "<p>"
+                            +"<b style='color: #4C4D64'>Contest Link: </b> <a href='https://www.codechef.com/PILT2019' target= '_blank'>www.codechef.com/PILT2019</a>"
+                            +"<br><br>"
                             +"See logic in everything around? Is your daily language “Syntax”?"
                         +"</p>"
                         +"<p>"

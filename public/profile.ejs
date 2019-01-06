@@ -108,6 +108,7 @@
                                     <td>
                                         <%= user.rEvents[i].status %>
                                     </td>
+                                    <% if(user.rEvents[i].event.clubName != 'Coding') { %>
                                     <td>
                                         <a href="/pdf/view/<%= user.rEvents[i].orderId %>" target="_blank">View</a>
                                         <br>
@@ -140,6 +141,10 @@
                                             });
                                         </script>
                                     </td>
+                                    <% } else { %>
+                                        <td><a href="/pdf/view/<%= user.rEvents[i].orderId %>" target="_blank">View</a>
+                                        </td>
+                                        <% } %>
                                 </tr>
                                 <% } %>
                             </tbody>

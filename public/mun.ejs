@@ -64,6 +64,7 @@
             <li><a href="#about" class="page_scroll">About</a></li>
             <li><a href="#organiser" class="page_scroll">Organiser's desk</a></li>
             <li><a href="#committees" class="page_scroll">Committees</a></li>
+            <li><a href="#eb" class="page_scroll">Executive Board</a></li>
             <li><a href="#contact" class="page_scroll">Contact Us</a></li>
             <li><a href="/" class="page_scroll">Plinth</a></li>
             <% if(isLoggedIn){ %>
@@ -95,6 +96,7 @@
                 <li><a href="#about" class="page_scroll">About</a></li>
                 <li><a href="#organiser" class="page_scroll">Organiser's Desk</a></li>
                 <li><a href="#committees" class="page_scroll">Committees</a></li>
+                <li><a href="#eb" class="page_scroll">Executive Board</a></li>
                 <li><a href="#contact" class="page_scroll">Contact Us</a></li>
                 <li><a href="/" class="page_scroll">Plinth</a></li>
                 <% if(isLoggedIn){ %>
@@ -123,7 +125,7 @@
     </div>
 
 
-    <header class="header">
+    <header class="header" id="reg-home">
         <div class="header__logo-box">
             <img src="./media/mun/logo.png" alt="Logo" class="header__logo">
         </div>
@@ -138,7 +140,7 @@
             </h1>
             <% if(isLoggedIn){ %>
             <div class="col-1-of-2">
-                <a href="#register" class="btn btn--white btn--animated">Register</a>
+                <a href="https://goo.gl/forms/WuLxpKM0KKdJqlWJ2?fbclid=IwAR199bVlw0EuzGuqC7q21879KtSgG_-JO3VJYW9A5M74yy3HAv-Np-KZwGU" class="btn btn--white btn--animated">Register</a>
             </div>
             <div class="col-1-of-2" style="padding-top: 20px;">
                 <a id="paynow" data-target="#payModel" data-toggle="modal" href="#" class="btn btn--white btn--animated">Pay
@@ -146,7 +148,7 @@
             </div>
 
             <% } else { %>
-            <a href="#register" class="btn btn--white btn--animated">Register</a>
+            <a href="https://goo.gl/forms/WuLxpKM0KKdJqlWJ2?fbclid=IwAR199bVlw0EuzGuqC7q21879KtSgG_-JO3VJYW9A5M74yy3HAv-Np-KZwGU" class="btn btn--white btn--animated">Register</a>
             <% } %>
 
         </div>
@@ -320,69 +322,85 @@
                 </div>
 
                 <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">DISEC</span>
-                                </h4>
-                                <div class="card__details">
-                                    <p style="font-size: 2rem;">
-                                        Agenda <br>
-                                        <em>"Israeli actions in occupied east Jerusalem and the rest of the occupied Palestinian territory"</em>
-                                    </p>
-                                </div>
-    
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
                             </div>
-                            <div class="card__side card__side--back card__side--back-3">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                    </div>
-                                    <a href="#popup3" class="btn btn--white">Read more!</a>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">DISEC</span>
+                            </h4>
+                            <div class="card__details">
+                                <p style="font-size: 2rem;">
+                                    Agenda <br>
+                                    <em>"Israeli actions in occupied east Jerusalem and the rest of the occupied
+                                        Palestinian territory"</em>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
                                 </div>
+                                <a href="#popup3" class="btn btn--white">Read more!</a>
                             </div>
                         </div>
                     </div>
-
-
-    
-             
-
-
-
-
-            </div>
-        </section>
-        
-        <section class="section-stories" id="register">
-
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    Registration Form
-                </h2>
-                <div class="register-btn" style="padding-top:60px">
-                    <div class="col-1-of-2">
-                        <a href="https://goo.gl/forms/WuLxpKM0KKdJqlWJ2?fbclid=IwAR199bVlw0EuzGuqC7q21879KtSgG_-JO3VJYW9A5M74yy3HAv-Np-KZwGU"
-                            class="btn btn-blue btn--animated">Deligate</a>
-                    </div>
-                    <!-- <div class="col-1-of-2" style="padding-top:20px">
-                        <a href="#" class="btn btn-blue btn--animated disabled">International Press</a>
-                    </div> -->
                 </div>
-
             </div>
         </section>
 
-        <section class="section-stories">
-
+        <section class="section-stories" id="eb">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                    Executive Boards
+                    Executive Board
                 </h2>
-                <div class="reveal-soon">
-                    <h1 class="heading-secondary" style="padding-top:40px; font-size: 5.6rem">Revealing Soon!</h1>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="./media/mun/parth.jpg" alt="Parth Pareek" class="story__img">
+                        <figcaption class="story__caption">Parth Pareek</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">The Lok Sabha</h3>
+                        <p>
+                           <b>Mr. Pareek </b>has an experience of more than 150 MUNs. He has an excellent command over both English and HIndi and his in depth knowledge leaves the delegates in awe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="./media/mun/Akshit.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Akshit Seth</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">UNHRC</h3>
+                        <p>
+                           <b>Mr. Seth</b> is an ardent MUNner and has been involved in MUNs since a long time. It is a pleasure to have him with us.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="./media/mun/tammana.jpg" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Tammana Tasneem Krity</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">DISEC</h3>
+                        <p>
+                           <b>Ms. Tasneem </b>is a resident of Dhaka, Bangladesh and is currently involved with United Nations Youth and Students association of Bangladesh.
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -401,12 +419,12 @@
                                 </h2>
                             </div>
                             <div class="contact-us">
-                                <h3 class='heading-secondary' style="font-size:18px;text-transform: none;">Pulkit Mathur: <a href="tel:+91-9462230822"
-                                        style="text-decoration:none;color: #1E4D8B">+919462230822</a></h3><br>
-                                <h3 class='heading-secondary' style="font-size:18px;text-transform: none;">Eklavaya Singh Shekhawat: <a href="tel:+91-9462230822"
-                                        style="text-decoration:none;color: #1E4D8B">+919462230822</a></h3><br>
-                                <h3 class='heading-secondary' style="font-size:18px;text-transform: none;">Mail Us At : <a href="mailto: mun@plinth.in"
-                                        style="text-decoration:none;text-transform: lowercase;color: #1E4D8B">mun@plinth.in</a></h3>
+                                <h3 class='heading-secondary' style="font-size:18px;text-transform: none;">Pulkit
+                                    Mathur: <a href="tel:+91-9462230822" style="text-decoration:none;color: #1E4D8B">+919462230822</a></h3><br>
+                                <h3 class='heading-secondary' style="font-size:18px;text-transform: none;">Eklavaya
+                                    Singh Shekhawat: <a href="tel:+91-9462230822" style="text-decoration:none;color: #1E4D8B">+919462230822</a></h3><br>
+                                <h3 class='heading-secondary' style="font-size:18px;text-transform: none;">Mail Us At :
+                                    <a href="mailto: mun@plinth.in" style="text-decoration:none;text-transform: lowercase;color: #1E4D8B">mun@plinth.in</a></h3>
                             </div>
                         </div>
                     </div>
@@ -437,7 +455,7 @@
                     upper house to amend the constitution.
 
                 </p>
-                <a href="#register" class="btn btn--green">Register now!</a>
+                <a href="#reg-home" class="btn btn--green">Register now!</a>
             </div>
         </div>
     </div>
@@ -456,7 +474,7 @@
                     The UNHRC has 47 members elected by the United Nations General Assembly for staggered three-year
                     terms. It meets at the UN Office at Geneva.
                 </p>
-                <a href="#register" class="btn btn--green">Register now!</a>
+                <a href="#reg-home" class="btn btn--green">Register now!</a>
             </div>
         </div>
     </div>
@@ -477,7 +495,7 @@
                     the international community and seeks out solutions to the challenges in the international security
                     regime. Ensuring this is vital for the international community.
                 </p>
-                <a href="#register" class="btn btn--green">Register now!</a>
+                <a href="#reg-home" class="btn btn--green">Register now!</a>
             </div>
         </div>
     </div>
