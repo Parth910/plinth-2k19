@@ -1730,7 +1730,7 @@ module.exports.competitions = {
 
             eventUrl: 'iupc',
             fee:0,
-            paymentURL: true,
+            paymentURL: null,
             clubName: "Coding",
             eventName: "IUPC",
             displayName: "IUPC",
@@ -1746,8 +1746,6 @@ module.exports.competitions = {
             prizeWorth: '₹ 20,000/-',
             eventFee: '₹0 (Online Round)',
             synopsis:  "<p>"
-                            +"<b style='color: #4C4D64'>Contest Link: </b> <a href='https://www.codechef.com/PILT2019' target= '_blank'>www.codechef.com/PILT2019</a>"
-                            +"<br><br>"
                             +"See logic in everything around? Is your daily language “Syntax”?"
                         +"</p>"
                         +"<p>"
@@ -1793,7 +1791,7 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-             otherURL: null, 
+             otherURL: "https://www.codechef.com/PILT2019", 
              discount: "PLSUPER",
         },
         {
