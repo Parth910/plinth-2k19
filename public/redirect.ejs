@@ -153,12 +153,20 @@
   <% include partials/footer %>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/loginscript.js"></script>
   <script src="js/scrollmagic.js"></script>
   <script src="js/sphere.js"></script>
   <script src="js/main.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/redirect.js "></script>
+  <script>
+
+    var obj = { Title: 'Register', Url: 'https://plinth.in/user/redirect' };
+    history.pushState(obj, obj.Title, obj.Url);
+
+
+</script>
   <script>
     window.addEventListener('load', function () {
 
@@ -200,14 +208,6 @@
         remove();
       }
     }
-  </script>
-
-  <script>
-    var obj = {
-      Title: 'Register',
-      Url: 'https://plinth.in/user/redirect'
-    };
-    history.pushState(obj, obj.Title, obj.Url);
   </script>
   <script>
     if (screen.width > 769) {

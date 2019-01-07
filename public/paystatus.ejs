@@ -144,12 +144,20 @@
     <% include partials/footer %>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/loginscript.js"></script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/sphere.js"></script>
     <script src="js/main.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/printe.js"></script>
+    <script>
+
+        var obj = { Title: 'Status', Url: 'https://plinth.in/payment/paystatus' };
+        history.pushState(obj, obj.Title, obj.Url);
+
+
+    </script>
     <script>
         window.addEventListener('load', function () {
 
@@ -246,14 +254,6 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-125190547-1');
-    </script>
-
-    <script>
-        var obj = {
-            Title: 'Status',
-            Url: 'https://plinth.in/payment/paystatus'
-        };
-        history.pushState(obj, obj.Title, obj.Url);
     </script>
 
 </body>

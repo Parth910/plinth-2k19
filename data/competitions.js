@@ -1403,7 +1403,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 2,
-            prizeWorth: '₹ 20,000/-',
+            prizeWorth: '₹ 25,000/-',
             eventFee: '₹ 200/-',
             synopsis:  "<p>"
                            +"<p>"
