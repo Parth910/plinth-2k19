@@ -38,7 +38,7 @@ router.get('/', Verify.verifyOrdinaryUser, function (req, res, next) {
 
             var timeframe = false;
 
-            if((new Date().getTime()) > 1547188199000){
+            if((new Date().getTime()) > 1547180999000){
                 timeframe = true;
             }
 
