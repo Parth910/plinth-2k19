@@ -141,7 +141,7 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             payment.amount = 200 * 0.95;
                             break;
                         case 'IUPC':
-                            payment.amount = 0.01;
+                            payment.amount = 250 * 0.95;
                             break;
                         case 'ENCS':
                             payment.amount = 0.01;
@@ -200,6 +200,9 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                         case 'POD':
                             payment.amount = 100 * 0.95;
                             break;
+                        case 'KA':
+                            payment.amount = 300 * 0.95;
+                            break;
                         default:
                             payment.amount = 1000;
                             break;
@@ -236,7 +239,7 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             payment.amount = 200;
                             break;
                         case 'IUPC':
-                            payment.amount = 0.01;
+                            payment.amount = 250;
                             break;
                         case 'ENCS':
                             payment.amount = 0.01;
@@ -294,6 +297,9 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             break;
                         case 'POD':
                             payment.amount = 100;
+                            break;
+                        case 'KA':
+                            payment.amount = 300;
                             break;
                         default:
                             payment.amount = 1000;

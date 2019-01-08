@@ -10,14 +10,14 @@ module.exports.competitions = {
             displayName: "Enigma – The Plinth CodeSprint",
             payName: "ENCS",
             eventDate: "<p>"
-                            +"Online Round - 9th<sup>th</sup> Jan, 2019"
+                            +"Online Round - 10th<sup>th</sup> Jan, 2019"
                             +"<br>"
                             +"Onsite Round - 20<sup>th</sup> Jan, 2019"
                         +"</p>",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 1,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 15,000/-',
+            prizeWorth: '₹ 20,000/-(Cash) + Goodies Worth: ₹ 15,000/-',
             eventFee: '₹ 0 (Online Round)',
             synopsis:  "<p>"
                             +"Is your life summarised by the 4 words - Eat, Sleep, Code, Repeat? Want to prove yourself to be The Ultimate Code Master?"
@@ -30,6 +30,8 @@ module.exports.competitions = {
                         +"</p>"
                         +"<p>"
                             +"So, if this is a challenge you dare to take on, then register yourself in this ultimate CodeSprint!"
+                        +"<br>"
+                        +"P.S. : <b>The round is rated for Div1 + Div2.</b>"                        
                         +"</p>",
             eventDescription: "<p>"
                                     +"The contest will involve 2 rounds – an online qualifier round and a final onsite battle!"
@@ -38,21 +40,23 @@ module.exports.competitions = {
                                     +"The registered particpants will first compete in the online qualifier round - The participants that qualify this round will get a chance to fight the codewar, to win, in the onsite round."
                                 +"</p>"
                                 +"<p>"
-                                    +"Both online and onsite rounds will have a set of 7 questions, each ranging from cakewalk to hard level and you get 4 hours in each round to crack as many as you can!"
+                                    +"Both online and onsite rounds will have a set of 7 questions, each ranging from cakewalk to hard level and you get 3 hours in each round to crack as many as you can!"
                                 +"</p>"
                                 +"<p>"
-                                    +"Certificates and prizes(worth ₹ 15, 000) will be awarded to the top 3 winners of the onsite round."
+                                    +"Certificates and prizes(worth ₹ 35,000) will be awarded to the winners of the onsite round."
                                 +"</p>"
+                                +"<br>"
                                 +"<p>"
-                                    +"<b>P.S :</b> There is a special detail about the online round held on CodeChef that will be revealed soon! Stay tuned!"
+                                    +"<b>Special Detail:</b> Participants selected for the onsite round, will get to attend Code Sessions by ACM-ICPC World Finalist KAran Aggarwal for <b>free of cost.</b>"
                                 +"</p>"
+                                +"<br>"
                                 +"<b>Platform Partner:</b>"
                                 +"<p>Online: CodeChef</p>",
                                 // +"<p>Onsite: GeeksForGeeks</p>",
             rules: "<p>"
                         +"<b>Key Details of Enigma – The Plinth CodeSprint'19</b>"
                         +"<ol style='list-style-type: disc;padding-left:20px;'>"
-                            +"<li>The first online round of the contest will be held on 9<sup>th</sup> January 2019 (Wednesday).</li>"
+                            +"<li>The first online round of the contest will be held on 10<sup>th</sup> January 2019 (Thursday).</li>"
                             +"<li>Contest duration will be 3 hours.</li>"
                             +"<li>This is a solo contest – no team participation is allowed.</li>"
                             +"<li>Plagiarism by any means will lead to immediate disqualification of the participant.   </li>"
@@ -66,8 +70,6 @@ module.exports.competitions = {
                         +"Nikhil Gogia: +91-8529832077"
                         +"<br>"
                         +"Vrinda Goel: +91-8003890410"
-                        +"<br>"
-                        +"Garvit Bhatia: +91-9414858869"
                         +"<br><br>"
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
@@ -1729,8 +1731,8 @@ module.exports.competitions = {
         {
 
             eventUrl: 'iupc',
-            fee:0,
-            paymentURL: null,
+            fee:250,
+            paymentURL: true,
             clubName: "Coding",
             eventName: "IUPC",
             displayName: "IUPC",
@@ -1743,8 +1745,8 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 3,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 20,000/-',
-            eventFee: '₹0 (Online Round)',
+            prizeWorth: '₹ 30,000/-',
+            eventFee: '₹250 (Onsite Round)',
             synopsis:  "<p>"
                             +"See logic in everything around? Is your daily language “Syntax”?"
                         +"</p>"
@@ -1785,15 +1787,59 @@ module.exports.competitions = {
                         +"Nikhil Gogia: +91-8529832077"
                         +"<br>"
                         +"Vrinda Goel: +91-8003890410"
-                        +"<br>"
-                        +"Garvit Bhatia: +91-9414858869"
                         +"<br><br>"
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-             otherURL: "https://www.codechef.com/PILT2019", 
+             otherURL: null, 
              discount: "PLSUPER",
         },
+
+        {
+            eventUrl: 'cskaranaggarwal',
+            fee:300,
+            paymentURL: true,
+            clubName: "Coding",
+            eventName: "Code Sessions",
+            displayName: "<p>"
+                            +"<b>Code Sessions - Karan Aggarwal</b>"
+                        +"</p>",
+            payName: "KA",
+            eventDate: "20<sup>th</sup> Jan, 2019",
+            eventVenue: "The LNMIIT, Jaipur",
+            memberUpperLimit: 1,
+            memberLowerLimit: 1,
+            prizeWorth: null,
+            eventFee: '₹300 (Early Bird)',
+            synopsis:  "<p>"
+                            +"Ten thousand teams. Two regions. Two splendid top performances. The journey from an being ordinary student to representing India at the most prestigious programming contest in the world - The International Collegiate Programming Contest, this speaker has surely had an eventful journey. For the first time ever, Cybros in association with Women Techmakers brings to you an opportunity to learn from one of India's best coders – Karan Aggarwal – an opportunity to Master Code with The Code Master!"
+                        +"</p>",
+            eventDescription: "<p>"
+                                    +"Programming is a sport - It is passion, it is undeterred dedication, it is patience - it is an addiction. And who would know this better than the one who represented India at the most prestigious coding competition in the world - The ACM ICPC. Cybros in association with Women Techmakers presents CodeSessions with Karan Aggarwal - one of the best coders in the country."
+                                    +"<br>"
+                                    +"<ol style='list-style-type: disc;padding-left:20px;'>"
+                                    +"<li><b>Special Detail:</b> Mr Karan would also be teaching a topic(to be declared onsite) whose question would be included in the enigma onsite round.</li>"
+                                    +"<li><b>Special Offer:</b> The workshop will be complimentary for contestants who qualify for the onsite round of Enigma</li>"
+                                    +"<li><b>Special Prize:</b> to Best female coder in enigma which would be conducted just after CodeSessions.</li>"
+                                    +"<br>"
+                                +"</ol>"
+                            +"</p>",
+            rules: "<p>"
+                       +"Be one time. That's it !"
+                    +"</p>",
+            judges: null,
+            query: "<p class='link-text'>"
+                        +"Nikhil Gogia: +91-8529832077"
+                        +"<br>"
+                        +"Vrinda Goel: +91-8003890410"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
+                    +"</p>",
+            sponsors: null,
+             otherURL: null, 
+             discount: "PLSUPER",
+        },
+
         {
             eventUrl: 'design',
             fee: 100,
@@ -2094,6 +2140,10 @@ module.exports.competitionUrl = {
         {
             eventName: 'Poster Designing',
             eventUrl: '/poster',
+        },
+        {
+            eventName: 'Code Sessions',
+            eventUrl: '/cskaranaggarwal',
         },
        
     ],

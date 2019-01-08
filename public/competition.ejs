@@ -449,6 +449,70 @@
 
                 </div>
 
+                <!-- Karan Aggarwal -->
+                <% } else if(competition.payName == 'KA'){ %>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">
+                                            Name*</label>
+                                        <input class="form-control input-md" id="name" type="text" value="<%- user.name %>"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">
+                                            Email*</label>
+    
+                                        <input class="form-control input-md" id="email" type="email" value="<%- user.email %>"
+                                            required> </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="number">
+                                            Contact Number*</label>
+    
+                                        <input class="form-control input-md" id="number" type="number" value="<%- user.phoneNumber %>"
+                                            required> </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="college">
+                                            College*</label>
+    
+                                        <input class="form-control input-md" id="college" type="text" value="<%- user.college %>"
+                                            required> </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="collegeid">
+                                            College ID</label>
+    
+                                        <input class="form-control input-md" id="collegeid" type="text"> </div>
+                                </div>
+    
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Accomodation*</label>
+    
+                                        <select class="form-control" id="accomodation" required>
+                                            <option value="Yes" selected>Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Referral Code
+                                        </label>
+    
+                                        <input class="form-control input-md" id="referral" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+
                 <!-- Other than SIF -->
                 <% } else { %>
                 <div id="content">
@@ -655,26 +719,17 @@
                     </div>
 
                     <p class="inputt-text">
-                        <% if(competition.clubName == 'Coding'){ %>
-                        <span class="labell-text">Note:</span>
-                        Online round is free event. There will be fee for onsite round, that would be notified later.
-                        <% } else { %>
                         <span class="labell-text">Note:</span>
                         If you choose to pay later, visit
                         your profile and click Pay against
-                        relevant Event Registration.
-                        <% } %>
+                        relevant Event Registration. 
                     </p>
                 </div>
                 <div class="modal-footer text-center">
-                    <% if(competition.clubName == 'Coding'){ %>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <% } else { %>
                     <button class="btn btn-secondary" data-dismiss="modal" type="button" id="cancel-button">Pay
                         Later</button>
                     <button type="submit" class="btn btn-primary" id="pay-button">Pay
                         Now</button>
-                    <% } %>
                 </div>
             </div>
         </div>

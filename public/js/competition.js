@@ -233,6 +233,57 @@ function registerUser() {
         payDetails = {
             teams: teams,
         };
+    }else if (mevent.payName == 'KA'){
+        team = {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            phoneNumber: $('#number').val(),
+            college: $('#college').val(),
+            collegeId: $('#collegeid').val(),
+        };
+    
+        teams.push(team);
+        if (team.name === "" ||
+            team.email === "" ||
+            team.phoneNumber === "" ||
+            team.college === "") {
+            check = false;
+        }
+        else {
+            check = true;
+    
+        }
+     
+        payDetails = {
+            teamSize: '1',
+            teams: teams,
+            accomodation: $('#accomodation').val(),
+        };
+    
+        if (payDetails.teamName === "" ||
+            payDetails.teamSize === "" ||
+            payDetails.teams === "" ||
+            payDetails.accomodation === "") {
+            check = false;
+        }
+        else {
+            check = true;
+        }
+    
+        //fee = mevent.fee;
+        var test = false;
+        const str = $('#referral').val().substring(7,10);
+        if(/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)){
+            test = true;
+        } 
+        const dis = mevent.discount;    
+        if( ($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test){
+            fee = mevent.fee*0.95;
+        } else {
+            fee = mevent.fee;
+        }
+        
+    
     } else {
         var teamSS = $('#teamSize option:selected').val();
 

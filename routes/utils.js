@@ -903,6 +903,7 @@ exports.saveSheet = function (result) {
             case 'AIML':
             case 'WEBD':
             case 'AND':
+            case 'KA':
                 sheetID = process.env.SHEET_WORKSHOPS;
                 ra = result.event.payName;
                 value = [
@@ -1089,6 +1090,7 @@ exports.updateSheet = function (result) {
             case 'AIML':
             case 'WEBD':
             case 'AND':
+            case 'KA':
                 sheetID = process.env.SHEET_WORKSHOPS;
                 ra = result.sheet;
                 value = [
