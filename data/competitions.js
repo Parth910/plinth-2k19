@@ -1341,7 +1341,7 @@ module.exports.competitions = {
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 6,
             memberLowerLimit: 1,
-            prizeWorth: '₹ 40,000/-',
+            prizeWorth: '₹ 50,000/-',
             eventFee: '₹ 500/-',
             synopsis:  "<p>"
                            +"<p>"
@@ -1848,7 +1848,7 @@ module.exports.competitions = {
             eventName: "3D Designing",
             displayName: "3D Designing",
             payName: "DES",
-            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
+            eventDate: "20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
@@ -1861,7 +1861,7 @@ module.exports.competitions = {
                                     +"‘Pratibimb’ provides a platform to the budding designers, whether as individuals aspiring to showcase their skills amidst their deserving audience,or as teams collaborating their efforts towards implementation and proper utilization of their skill-set under a single roof. It will not only help achieve a achieve a common goal, i.e. of coming up with new ideas of sustainability, but will also enhance our designing potential." 
                                 +"</p>"
                                 +"<p>"
-                                    +"‘Pratibimb’ under the aegis of Plinth ’18,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
+                                    +"‘Pratibimb’ under the aegis of Plinth ’19,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
                                 +"</p>"
                                 +"<p>"
                                     +"‘Pratibimb’ is a designing competition which promises to bring before such challenges that would test your mental ability and skills, that you've learnt so far, to it's best." 
@@ -1911,6 +1911,7 @@ module.exports.competitions = {
                                 +"<li>The participants may enter this challenge individually, or as a design team, given that we believe in freedom of opinion!</li>"
                                 +"<li>All team members must be enrolled as a student in an educational institution or online program during the semester/term in which they contribute to the design.</li>"
                                 +"<li>The Challenge is not open to any person who has been employed or is presently working as a professional in 3D printing.</li>"
+                                +"<li>Partcipants are required to bring their respective designs to the competition along with a ppt.</li>"
                                 +"<li>Organizers' decision will be final.</li>"                            
                             +"</ol>"
                         +"</p>"
@@ -1935,7 +1936,7 @@ module.exports.competitions = {
             eventName: "Poster Desiging",
             displayName: "Poster Designing",
             payName: "POD",
-            eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
+            eventDate: "20<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
             memberUpperLimit: 2,
             memberLowerLimit: 1,
@@ -1948,7 +1949,7 @@ module.exports.competitions = {
                 +"‘Pratibimb’ provides a platform to the budding designers, whether as individuals aspiring to showcase their skills amidst their deserving audience,or as teams collaborating their efforts towards implementation and proper utilization of their skill-set under a single roof. It will not only help achieve a achieve a common goal, i.e. of coming up with new ideas of sustainability, but will also enhance our designing potential." 
             +"</p>"
             +"<p>"
-                +"‘Pratibimb’ under the aegis of Plinth ’18,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
+                +"‘Pratibimb’ under the aegis of Plinth ’19,the Techno-Management Literary fest of LNMIIT, brings with it an enormous opportunity for designers to bring their talent in front of the world,and also get applauded for their skills along with a chance of winning cash prizes adds cherry to the cake. The ASME LNMIIT believes in fostering the growth of mechanical engineers via challenges and not all opportunities are found in classrooms." 
             +"</p>"
             +"<p>"
                 +"‘Pratibimb’ is a designing competition which promises to bring before such challenges that would test your mental ability and skills, that you've learnt so far, to it's best." 
@@ -1978,6 +1979,7 @@ module.exports.competitions = {
                             +"<li>Maximum Team Size: 2 members per team.</li>"
                             +"<li>PPT presentation with showing of their design or poster.</li>"
                             +"<li>Presentation of 10 min and 5 min of Q&A round.</li>"
+                            +"<li>Partcipants are required to bring their respective designs to the competition along with a ppt.</li>"
                             +"<li>The decision made by the jury will be considered final.</li>"
                             +"<br>"
                         +"</ol>"
