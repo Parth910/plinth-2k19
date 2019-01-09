@@ -295,6 +295,13 @@
         
         max-width: 33.333333% !important;
 	}
+	.spa {
+			
+		max-width: 38% !important;
+	}
+	
+
+
 	.row {
 		
 		margin-left:-14px;
@@ -509,3 +516,5 @@
         margin-left:38% !important;
     }
 
+	@media (min-width: 930px) and (max-width: 1024px){
+			}
