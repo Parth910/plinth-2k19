@@ -30,7 +30,7 @@ ul {
 
 .list-item {
     background: #2f0028;
-    color: #575757;
+    color: #fff !important;
     text-align: center;
     height: 2.5em;
     width: 5.4em;
@@ -41,6 +41,7 @@ ul {
     display: block;
     text-decoration: none;
     transition: all .25s linear;
+    cursor: pointer;
 }
 
 .list-item:hover {

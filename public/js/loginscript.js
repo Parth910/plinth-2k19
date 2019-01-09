@@ -1,3 +1,9 @@
+function userLoginInitiate(url) {
+    localStorage.clear();
+    window.localStorage.setItem("tempURL", location.href);
+    window.location = location.origin + url;
+}
+
 $(document).ready(function () {
     if ($(window).width() > 739) {
         setTimeout(function () {
@@ -13,8 +19,3 @@ $(document).ready(function () {
     }
 
 });
-
-function userLoginInitiate(url) {
-    localStorage.setItem("tempURL", location.href);
-    window.location = location.origin + url;
-}
