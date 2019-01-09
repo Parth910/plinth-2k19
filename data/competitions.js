@@ -759,7 +759,7 @@ module.exports.competitions = {
             fee: 250,
             paymentURL: true,
             clubName: "Robotics",
-            eventName: "LWF",
+            eventName: "Line-Wall Follower",
             displayName: "Line-Wall Follower",
             payName: "LWF",
             eventDate: "19<sup>th</sup> - 20<sup>th</sup> Jan 2019",
@@ -1225,8 +1225,8 @@ module.exports.competitions = {
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"
+                        +"Bhavya Pareek : +91-9982202001"
                         +"Shaivya Bora : +91-8107667477"
-                        +"Tanu Soni : +91-9179850362"
                         +"<br><br>"
                         +"For any query, contact us at <a href='mailto:robotics@plinth.in'>robotics@plinth.in</a>"
                     +"</p>",
@@ -1334,8 +1334,8 @@ module.exports.competitions = {
             fee: 500,
             paymentURL: true,
             clubName: "Robotics",
-            eventName: "IC Engine",
-            displayName: "IC Engine Car",
+            eventName: "Nitro Race",
+            displayName: "Nitro Race",
             payName: "IC",
             eventDate: "19<sup>th</sup> Jan 2019",
             eventVenue: "The LNMIIT, Jaipur",
@@ -2079,7 +2079,7 @@ module.exports.competitionUrl = {
             eventUrl: '/droneobstruction',
         },
         {
-            eventName: 'LWF',
+            eventName: 'Line-Wall Follower',
             eventUrl: '/lwf',
         },
         {
@@ -2100,7 +2100,7 @@ module.exports.competitionUrl = {
         },
 
         {
-            eventName: 'IC Engine Car',
+            eventName: 'Nitro Race',
             eventUrl: '/icengine',
         },
 

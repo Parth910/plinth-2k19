@@ -47,9 +47,21 @@ function registerUser() {
             .done(function (data) {
               
                 if (data.status) {
-                    setTimeout(function () {
-                        window.location = localStorage.getItem('tempURL');
-                    }, 300);
+                    // setTimeout(function () {
+                    //     window.location = localStorage.getItem('tempURL');
+                    // }, 300);
+                    var urlRedirect = localStorage.getItem('tempURL');
+                    if(urlRedirect === null || urlRedirect === undefined){
+                      setTimeout(function () {
+                            window.location.href = "https://plinth.in";
+                              }, 300);
+                      
+                    }
+                    else {
+                      setTimeout(function () {
+                          window.location = urlRedirect;
+                            }, 300);
+                          }
                 } else {
                     $('#submit-button').attr("disabled", false);
                 }

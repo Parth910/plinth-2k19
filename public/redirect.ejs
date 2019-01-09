@@ -29,9 +29,21 @@
   </h1>
 
   <script>
-    setTimeout(function () {
-          window.location = localStorage.getItem('tempURL');
+    // setTimeout(function () {
+    //       window.location = localStorage.getItem('tempURL');
+    //         }, 2000);
+    var urlRedirect = localStorage.getItem('tempURL');
+    if(urlRedirect === null || urlRedirect === undefined){
+      setTimeout(function () {
+            window.location.href = "https://plinth.in";
+              }, 2000);
+      
+    }
+    else {
+      setTimeout(function () {
+          window.location = urlRedirect;
             }, 2000);
+          }
     </script>
 
   <% }else{ %>
@@ -161,12 +173,12 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/redirect.js "></script>
   <script>
-
-    var obj = { Title: 'Register', Url: 'https://plinth.in/user/redirect' };
+    var obj = {
+      Title: 'Register',
+      Url: 'https://plinth.in/user/redirect'
+    };
     history.pushState(obj, obj.Title, obj.Url);
-
-
-</script>
+  </script>
   <script>
     window.addEventListener('load', function () {
 
