@@ -1892,6 +1892,7 @@ module.exports.competitions = {
                             +"<li>Maximum Team Size: 2 members per team.</li>"
                             +"<li>PPT presentation with showing of their design or poster.</li>"
                             +"<li>Presentation of 10 min and 5 min of Q&A round.</li>"
+                            +"<li>Partcipants are required to bring their respective designs to the competition along with a ppt.</li>"
                             +"<li>The decision made by the jury will be considered final.</li>"
                             +"<br>"
                         +"</ol>"
