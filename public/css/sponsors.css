@@ -44,7 +44,7 @@
 }
 
 .ch-img-1s{
-  background-image: url(../media/sponsors_2k18/microsoft.png);
+  background-image: url(../media/sponsors_2k19/avas.png);
   background-repeat:no-repeat;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@
   
 }
 .ch-img-2s{
-    background-image: url(../media/sponsors_2k18/Havells_Logo.png);
+    background-image: url(../media/sponsors_2k19/codechef.png);
     background-repeat:no-repeat;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
     position: relative;
   }
   .ch-img-3s{
-    background-image: url(../media/sponsors_2k18/philips.png);
+    background-image: url(../media/sponsors_2k19/qrato.png);
     background-repeat:no-repeat;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
     position: relative;
   }
   .ch-img-4s{
-    background-image: url(../media/sponsors_2k18/peta-india-logo.svg);
+    background-image: url(../media/sponsors_2k19/icicbank.png);
     background-repeat:no-repeat;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
     position: relative;
   }
   .ch-img-5s{
-    background-image: url(../media/sponsors_2k18/festPav.png);
+    background-image: url(../media/sponsors_2k19/fbdev.png);
     background-repeat:no-repeat;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
     position: relative;
   }
   .ch-img-6s{
-    background-image: url(../media/sponsors_2k18/DUAssassins.jpg);
+    background-image: url(../media/sponsors_2k19/womanintech.png);
     background-repeat:no-repeat;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@
     position: relative;
   }
   .ch-img-7{
-    background-image: url(../media/sponsors_2k18/MyCaptain.png);
+    background-image: url(../media/sponsors_2k19/manya_logo.jpg);
     background-repeat:no-repeat;
     background-position: center;
     background-repeat: no-repeat;
@@ -454,13 +454,22 @@
         color: #fff222;
         color: rgba(255, 242, 34, 0.8);
     }
-    
-    .ch-item {
-        box-shadow:
-            inset 0 0 0 110px rgba(200, 95, 66, 0.4),
-            inset 0 0 0 0px rgba(255, 255, 255, 0.8),
-            0 1px 2px rgba(0, 0, 0, 0.1);
+    .bu{
+      margin-top: 173px !important
     }
+    .bus{
+      margin-top: 193px !important
+    }
+    .ch-info p {
+      color: #fff;
+      padding: 10px 5px;
+      font-style: italic;
+      /* margin: -103px 1px; */
+      font-size: 12px;
+      border-top: 0px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    
     
     .ch-item .ch-info {
         opacity: 1;
