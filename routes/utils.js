@@ -247,7 +247,7 @@ exports.pdf = function (result) {
             }
 
 
-        } else if (result.event.clubName === 'Workshops' || result.event.payName === 'UNE') {
+        } else if (result.event.clubName === 'Workshops') {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 450)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)
@@ -270,13 +270,22 @@ exports.pdf = function (result) {
 
 
         } else {
+            if (result.event.payName === 'ENCS') {
+                doc.font('./public/fonts/Roboto-Bold.ttf', 14)
+                    .text('CodeChef Username ', 50, 450)
+                    .font('./public/fonts/Oxygen-Regular.ttf', 14)
+                    .text(': ' + result.teamName, 180, 450, {
+                        width: '140'
+                    })
+            } else {
+                doc.font('./public/fonts/Roboto-Bold.ttf', 14)
+                    .text('Team Name ', 50, 450)
+                    .font('./public/fonts/Oxygen-Regular.ttf', 14)
+                    .text(': ' + result.teamName, 160, 450, {
+                        width: '140'
+                    })
+            }
 
-            doc.font('./public/fonts/Roboto-Bold.ttf', 14)
-                .text('Team Name ', 50, 450)
-                .font('./public/fonts/Oxygen-Regular.ttf', 14)
-                .text(': ' + result.teamName, 160, 450, {
-                    width: '140'
-                })
 
             if (result.teamSize != 1) {
                 doc.font('./public/fonts/Roboto-Bold.ttf', 14)
@@ -600,7 +609,7 @@ exports.pdfView = function (result) {
         }
 
 
-    } else if (result.event.clubName === 'Workshops' || result.event.payName === 'UNE') {
+    } else if (result.event.clubName === 'Workshops') {
         doc.font('./public/fonts/Roboto-Bold.ttf', 14)
             .text('Name ', 50, 450)
             .font('./public/fonts/Oxygen-Regular.ttf', 14)

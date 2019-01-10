@@ -3,8 +3,8 @@ module.exports.competitions = {
         {
 
             eventUrl: 'enigma',
-            fee:0,
-            paymentURL: null,
+            fee:200,
+            paymentURL: true,
             clubName: "Coding",
             eventName: "Enigma",
             displayName: "Enigma – The Plinth CodeSprint",
@@ -18,7 +18,7 @@ module.exports.competitions = {
             memberUpperLimit: 1,
             memberLowerLimit: 1,
             prizeWorth: '₹ 20,000/-(Cash) + Goodies Worth: ₹ 15,000/-',
-            eventFee: '₹ 0 (Online Round)',
+            eventFee: '₹ 200 (Onsite Round)',
             synopsis:  "<p>"
                             +"Is your life summarised by the 4 words - Eat, Sleep, Code, Repeat? Want to prove yourself to be The Ultimate Code Master?"
                         +"</p>"
@@ -74,7 +74,7 @@ module.exports.competitions = {
                         +"For any query, contact us at <a href='mailto:coding@plinth.in'>coding@plinth.in</a>"
                     +"</p>",
             sponsors: null,
-             otherURL: "https://www.codechef.com/PELT2019",
+             otherURL: null,
             discount: "PLSUPER",
         },
         {
