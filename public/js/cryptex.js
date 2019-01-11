@@ -50,7 +50,8 @@ function submitAns() {
         }, 2000);
       } else {
         $.notify({
-          message: 'Oops! Not a right answer. Try Again!'
+          message: 'Oops! Not a right answer. Try Again! <br> Ask for a hint <b><u>here.</u></b>',
+          url: 'https://www.facebook.com/lnmiitquizzinga/',
         }, {
           element: 'body',
           position: null,

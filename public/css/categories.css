@@ -218,11 +218,14 @@ body {
         max-width: 49.333333% !important;
 	}
     .fhtc{
-        margin-left:40% !important;
+        margin-left:38% !important;
 
     }
     .quz{
         margin-left:26% !important;
+    }
+    .ex{
+        margin-left: 40% !important;
     }
 }
 @media (min-width: 1441px) and (max-width: 1580px){
@@ -261,11 +264,14 @@ body {
         max-width: 24.333333% !important;
 	}
     .fhtc{
-        margin-left:43% !important;
+        margin-left:42% !important;
 
     }
     .quz{
         margin-left:34% !important;
+    }
+    .ex{
+        margin-left: 43% !important;   
     }
 
 }
@@ -277,5 +283,6 @@ body {
     .quz{
         margin-left:38% !important;
     }
+    
 
 }
