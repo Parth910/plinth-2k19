@@ -264,6 +264,9 @@ button:focus {
     input#answer {
         width: 240px;
     }
+    html,body{
+        overflow-y: scroll !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1359px) {
