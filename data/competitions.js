@@ -31,7 +31,7 @@ module.exports.competitions = {
                         +"<p>"
                             +"So, if this is a challenge you dare to take on, then register yourself in this ultimate CodeSprint!"
                         +"<br>"
-                        +"P.S. : <b>The round is rated for Div1 + Div2.</b>"                        
+                        +"P.S. : <b>The online round is rated for Div1 + Div2.</b>"                        
                         +"</p>",
             eventDescription: "<p>"
                                     +"The contest will involve 2 rounds – an online qualifier round and a final onsite battle!"
@@ -1825,7 +1825,7 @@ module.exports.competitions = {
                                 +"</ol>"
                             +"</p>",
             rules: "<p>"
-                       +"Be one time. That's it !"
+                       +"Be on time. That's it !"
                     +"</p>",
             judges: null,
             query: "<p class='link-text'>"

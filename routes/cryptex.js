@@ -163,12 +163,15 @@ router.get('/play', Verify.verifyOrdinaryUser, function (req, res) {
                 return done(err);
             // check to see if theres already a user with that email
             if (user) {
-                if (user.cryptex.level === undefined) {
+             /*    if (user.cryptex.level === undefined) {
                     console.log('level undefined');
                     res.redirect('/cryptex');
                     return;
-                }
-                if (user.cryptex.level === limitLevel) {
+                } */
+
+                res.redirect('/cryptex');
+                return;
+               /*  if (user.cryptex.level === limitLevel) {
                     res.render('cryptexPlay', {
                         "page": 'cryptex',
                         "isLoggedIn": isLoggedIn,
@@ -192,7 +195,7 @@ router.get('/play', Verify.verifyOrdinaryUser, function (req, res) {
                             });
                         }
                     })
-                }
+                } */
 
             }
         });
