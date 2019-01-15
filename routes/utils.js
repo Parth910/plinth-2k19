@@ -247,7 +247,7 @@ exports.pdf = function (result) {
             }
 
 
-        } else if (result.event.clubName === 'Workshops') {
+        } else if (result.event.clubName === 'Workshops' || result.event.payName === 'KA') {
             doc.font('./public/fonts/Roboto-Bold.ttf', 14)
                 .text('Name ', 50, 450)
                 .font('./public/fonts/Oxygen-Regular.ttf', 14)

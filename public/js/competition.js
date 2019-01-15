@@ -47,6 +47,7 @@ const dis = mevent.discount;
 
 
 
+
 $('#sif_startup_domain option').mousedown(function (e) {
     e.preventDefault();
     $(this).toggleClass('selected');
@@ -233,7 +234,7 @@ function registerUser() {
         payDetails = {
             teams: teams,
         };
-    }else if (mevent.payName == 'KA'){
+    } else if (mevent.payName == 'KA') {
         team = {
             name: $('#name').val(),
             email: $('#email').val(),
@@ -241,49 +242,53 @@ function registerUser() {
             college: $('#college').val(),
             collegeId: $('#collegeid').val(),
         };
-    
+
         teams.push(team);
         if (team.name === "" ||
             team.email === "" ||
             team.phoneNumber === "" ||
             team.college === "") {
             check = false;
-        }
-        else {
+        } else {
             check = true;
-    
+
         }
-     
+
         payDetails = {
             teamSize: '1',
             teams: teams,
             accomodation: $('#accomodation').val(),
         };
-    
+
         if (payDetails.teamName === "" ||
             payDetails.teamSize === "" ||
             payDetails.teams === "" ||
             payDetails.accomodation === "") {
             check = false;
-        }
-        else {
+        } else {
             check = true;
         }
-    
+
         //fee = mevent.fee;
         var test = false;
-        const str = $('#referral').val().substring(7,10);
-        if(/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)){
+        const str = $('#referral').val().substring(7, 10);
+        if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
             test = true;
+        }
+        const dis = mevent.discount;
+        const diska = mevent.discybros;
+        if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test) {
+            fee = mevent.fee * 0.95;
+         } else if (($('#referral').val()).indexOf(diska) > -1){  
+            fee = mevent.fee * 0.5;
+
         } 
-        const dis = mevent.discount;    
-        if( ($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test){
-            fee = mevent.fee*0.95;
-        } else {
+        else {
             fee = mevent.fee;
         }
-        
-    
+
+
+
     } else {
         var teamSS = $('#teamSize option:selected').val();
 
@@ -323,19 +328,22 @@ function registerUser() {
         } else {
             check = true;
         }
+        
 
-        if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test) {
-            if (mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ') {
+            if (($('#referral').val()).indexOf(dis) > -1 && ($('#referral').val()).length == 10 && test) {
+                if (mevent.payName == 'INT' || mevent.payName == 'AH' || mevent.payName == 'AQ') {
 
-                fee = mevent.fee * payDetails.teamSize * 0.95;
+                    fee = mevent.fee * payDetails.teamSize * 0.95;
 
+                } else {
+                    fee = mevent.fee * payDetails.teamSize;
+                }
+                fee = mevent.fee * 0.95;
             } else {
-                fee = mevent.fee * payDetails.teamSize;
+                fee = mevent.fee;
             }
-            fee = mevent.fee * 0.95;
-        } else {
-            fee = mevent.fee;
-        }
+        
+
     }
 
     if (check == true) {

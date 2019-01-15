@@ -207,7 +207,17 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             payment.amount = 1000;
                             break;
                     }
-                } else {
+                } else if(payment.referrer.indexOf(cadis.kadis) > -1 ){
+                    switch(payName){
+                        case 'KA':
+                        payment.amount = 150;
+                        break;
+                    default:
+                        payment.amount = 1000;
+                        break;
+                    }
+                }
+                else {
                     switch (payName) {
 
                         case 'MUN':
@@ -469,7 +479,7 @@ router.post('/response', Verify.verifyOrdinaryUser, function (req, res) {
                 if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
                     test = true;
                 }
-                if (result.referrer.indexOf(cadis.dis) > -1 && result.referrer.length == 10 && test) {
+                if (result.referrer.indexOf(cadis.dis) > -1 && result.referrer.length == 10 && test || result.referrer.indexOf(cadis.kadis) > -1 ) {
                     Utils.capSheet({
                         date: result.date.paidAt,
                         name: result.referrer,

@@ -1838,6 +1838,7 @@ module.exports.competitions = {
             sponsors: null,
              otherURL: null, 
              discount: "PLSUPER",
+             discybros: "PLCSKA50",
         },
 
         {
