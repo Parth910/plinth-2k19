@@ -2,7 +2,7 @@ var fs = require('fs');
 var PDFDocument = require('pdfkit');
 var nodemailer = require('nodemailer');
 var dateFormat = require('dateformat');
-var format = 'dd-mm-yyyy hh:MM TT';
+var format = 'dd-mm-yyyy h:MM TT';
 var format1 = 'dd-mm-yyyy hh:MM:ss TT';
 let google = require('googleapis');
 let sheetAuth = require('../sheetAuth');
@@ -74,7 +74,7 @@ exports.pdf = function (result) {
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
         .text('Date ', 300, 250)
         .font('./public/fonts/Oxygen-Regular.ttf', 14)
-        .text(': ' + dateFormat(result.date.paidAt, format), 370, 250)
+        .text(': ' + dateFormat(result.date.paidAt,format), 370, 250)
 
 
     doc.font('./public/fonts/Roboto-Bold.ttf', 14)
