@@ -2,7 +2,7 @@ var fs = require('fs');
 var PDFDocument = require('pdfkit');
 var nodemailer = require('nodemailer');
 var dateFormat = require('dateformat');
-var format = 'dd-mm-yyyy h:MM TT';
+var format = 'dd-mm-yyyy';
 var format1 = 'dd-mm-yyyy hh:MM:ss TT';
 let google = require('googleapis');
 let sheetAuth = require('../sheetAuth');
@@ -913,6 +913,7 @@ exports.saveSheet = function (result) {
             case 'WEBD':
             case 'AND':
             case 'KA':
+            case 'RSC':
                 sheetID = process.env.SHEET_WORKSHOPS;
                 ra = result.event.payName;
                 value = [
@@ -1100,6 +1101,7 @@ exports.updateSheet = function (result) {
             case 'WEBD':
             case 'AND':
             case 'KA':
+            case 'RSC':
                 sheetID = process.env.SHEET_WORKSHOPS;
                 ra = result.sheet;
                 value = [

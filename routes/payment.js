@@ -203,21 +203,23 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                         case 'KA':
                             payment.amount = 300 * 0.95;
                             break;
+                        case 'RSC':
+                            payment.amount = 100 * 0.95;
+                            break;
                         default:
                             payment.amount = 1000;
                             break;
                     }
-                } else if(payment.referrer.indexOf(cadis.kadis) > -1 ){
-                    switch(payName){
+                } else if (payment.referrer.indexOf(cadis.kadis) > -1) {
+                    switch (payName) {
                         case 'KA':
-                        payment.amount = 150;
-                        break;
-                    default:
-                        payment.amount = 1000;
-                        break;
+                            payment.amount = 150;
+                            break;
+                        default:
+                            payment.amount = 1000;
+                            break;
                     }
-                }
-                else {
+                } else {
                     switch (payName) {
 
                         case 'MUN':
@@ -310,6 +312,9 @@ router.post('/initiate/:payName', Verify.verifyOrdinaryUser, function (req, res)
                             break;
                         case 'KA':
                             payment.amount = 300;
+                            break;
+                        case 'RSC':
+                            payment.amount = 100;
                             break;
                         default:
                             payment.amount = 1000;
@@ -479,7 +484,7 @@ router.post('/response', Verify.verifyOrdinaryUser, function (req, res) {
                 if (/^([0-3]|[0-3][0-9]|[0-3][0-9][0-9])$/.test(str)) {
                     test = true;
                 }
-                if (result.referrer.indexOf(cadis.dis) > -1 && result.referrer.length == 10 && test || result.referrer.indexOf(cadis.kadis) > -1 ) {
+                if (result.referrer.indexOf(cadis.dis) > -1 && result.referrer.length == 10 && test || result.referrer.indexOf(cadis.kadis) > -1) {
                     Utils.capSheet({
                         date: result.date.paidAt,
                         name: result.referrer,

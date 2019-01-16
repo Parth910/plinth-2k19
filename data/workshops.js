@@ -121,7 +121,7 @@ module.exports.workshops = {
             eventName : "Web-Dev",
             displayName : "Web-Dev",
             payName: "WEBD",
-            eventDate : "19<sup>th</sup> Jan 2019",
+            eventDate : "20<sup>th</sup> Jan 2019",
             eventVenue : "The LNMIIT, Jaipur",
             eventCompany : "CodingBlocks",
             memberUpperLimit : 1,
@@ -167,7 +167,7 @@ module.exports.workshops = {
             eventName : "Android",
             displayName : "Android",
             payName: "AND",
-            eventDate : "20<sup>th</sup> Jan 2019",
+            eventDate : "19<sup>th</sup> Jan 2019",
             eventVenue : "The LNMIIT, Jaipur",
             eventCompany : "CodingBlocks",
             memberUpperLimit : 1,
@@ -211,6 +211,47 @@ module.exports.workshops = {
             sponsors : null,
             discount: "PLSUPER",
         },
+        {
+            eventUrl: 'rubikscube',
+            fee: 100,
+            paymentURL: true,
+            clubName : "Workshops",
+            eventName : "Rubik's Cube",
+            displayName : "Rubik's Cube",
+            payName: "RSC",
+            eventDate : "20<sup>th</sup> Jan 2019",
+            eventVenue : "The LNMIIT, Jaipur",
+            eventCompany : null,
+            memberUpperLimit : 1,
+            memberLowerLimit : 1,
+            eventFee: '₹ 100/-',
+            synopsis: "<p>"
+                        +"<p>"
+                            +"This introductory workshop is on the most famous puzzle of all time and it might be one of your childhood dreams of solving a Rubik's cube. Well, it is a really big misconception that to solve this you need some kind of exceptional mind. well, I really think this workshop will change your concept about rubiks cube."
+                            +"</p>"
+                        +"</p>",
+            eventDescription : null,
+            highlights:null,
+            workshopContent: "<p>"
+                            +"You would be able to easily solve a Rubik's cube after this session. but to make your solve faster all you are going to need after this is practice. and also there is going to be a competition for the 3x3 Rubik's cube solve and 3x3 cube solve with one hand."
+            
+                            +"</p>",
+            rules: null,
+            benefits: "<p>"
+                            +"The main benefit is that this can develop into a really nice habit. and this also intrigues the mind. and of course, solving a cube does give a really satisfying feeling."
+                            +"<br>"
+                            +"There will be a competition after the workshop and the winner will be rewarded by cash prize which is going to be announced after the workshop."         
+                        +"</p>",
+            query: "<p class='link-text'>"
+                        +"Suyash Agrawal: +91-7339875167"
+                        +"<br>"
+                        +"Piyush Soni: +91-+918094329993"
+                        +"<br><br>"
+                        +"For any query, contact us at <a href='mailto:workshops@plinth.in'>workshops@plinth.in</a>" 
+                    +"</p>",
+            sponsors : null,
+            discount: "PLSUPER",
+        },
         
         
     ],
@@ -229,6 +270,10 @@ module.exports.workshopUrl = {
         {
             eventName: 'Android',
             eventUrl: '/android',
+        },
+        {
+            eventName: 'Rubik\'s Cube' ,
+            eventUrl: '/rubikscube',
         },       
     ],
 };
