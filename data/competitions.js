@@ -4,7 +4,7 @@ module.exports.competitions = {
 
             eventUrl: 'enigma',
             fee:200,
-            paymentURL: null,
+            paymentURL: true,
             clubName: "Coding",
             eventName: "Enigma",
             displayName: "Enigma – The Plinth CodeSprint",
