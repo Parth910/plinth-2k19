@@ -228,6 +228,33 @@ h3{
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
   }
+  .ch-img-20{
+    background-image: url(../media/sponsors_2k19/i3india.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:110px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  }
+  .ch-img-21{
+    background-image: url(../media/sponsors_2k19/ht\ india.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:110px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  }
+  .ch-img-22{
+    background-image: url(../media/sponsors_2k19/onnbikes.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:110px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  }
 
   .ch-img-vivo{
     background-image: url(../media/sponsors_2k19/vivo.png);
