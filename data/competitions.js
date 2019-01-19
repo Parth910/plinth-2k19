@@ -312,7 +312,7 @@ module.exports.competitions = {
                                     
                                     +"<b style='color: #4C4D64'>ARENA</b>"
                                     +"<p>"
-                                        +"The arena shall be having a metal flooring of area 14*14 feet. It will be surrounded by a metal cage of height 7 feet and on top. The cage will be covered with a polycarbonate layer of thickness about 5-7mm."
+                                        +"The arena shall be having a woodden flooring of area 15*15 feet. It will be surrounded by a metal cage of height 7 feet and on top. The cage will be covered with a polycarbonate layer of thickness about 5-7mm."
                                     +"</p>"
                                     
                                 +"</p>",
